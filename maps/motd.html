@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#16110e">
+<title>Mob of the Dead – Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Mob of the Dead theme: rusted prison reds & grays */
+  :root {
+    --map-bg: #16110e;
+    --map-bg2: #221913;
+    --bg: #16110e;
+    --bg-card: #221913;
+    --bg-card-hover: #2d221a;
+    --line: #403023;
+    --map-accent: #d14f2e;
+    --map-accent2: #c9b8a3;
+    --map-glow: rgba(209, 79, 46, 0.35);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="motd">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo2">&#8249; Black Ops 2</a></nav>
+
+  <header class="map-header">
+    <h1>Mob of the Dead</h1>
+    <div class="sub">Black Ops 2 &middot; Alcatraz prison</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main">Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 2&ndash;4 &mdash; NOT possible solo</b> (the final step is Weasel versus the mobsters).</li>
+        <li>Hell's Retriever obtained &mdash; <button class="xref" data-goto="wonder">see Wonder Weapons tab</button></li>
+        <li>The plane built &mdash; <button class="xref" data-goto="build">see Buildables tab</button></li>
+      </ul>
+    </div>
+
+    <h2>"Pop Goes the Weasel" &mdash; full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Get the Warden's Key.</b> It hangs above either the Warden's Office entrance or the Cafeteria entrance. Enter Afterlife at the station across from that entrance, hold jump to float up into the ghost room, and zap the electrical panel to drop the key. Revive yourself and pick it up.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s1-1.jpg" alt="Warden's Key step" loading="lazy"><figcaption>The key hangs above the entrance</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s1-2.jpg" alt="Warden's Key alternate location" loading="lazy"><figcaption>The alternate spot &mdash; whichever side it spawned</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s1-3.jpg" alt="Zapping the panel in Afterlife" loading="lazy"><figcaption>Zap the panel in Afterlife to drop it</figcaption></figure>
+        </div></li>
+      <li data-num="2"><b>Obtain the Hell's Retriever.</b> Feed the three Cerberus dog heads (6 kills each), then grab the tomahawk in the Citadel Tunnels.
+        <span class="xref">Full walkthrough with all 3 dog-head locations &mdash; see Wonder Weapons tab</span></li>
+      <li data-num="3"><b>Collect the five blue skulls for the free Blundergat.</b> Throw the Hell's Retriever at each of the five skull spots, then claim the Blundergat from the middle table in the Warden's Office.
+        <span class="xref">All 5 skull locations with screenshots &mdash; see Wonder Weapons tab, Blundergat card</span>
+        <div class="callout"><b>This exact Blundergat is required</b> &mdash; one from the Mystery Box does NOT count for the quest.</div></li>
+      <li data-num="4"><b>Build the plane and fly to the Golden Gate Bridge.</b> Collect all five parts and assemble the Icarus on the roof runway, then board it with your crew. On the bridge you get Pack-a-Punch; after 30 seconds the electric chairs spawn &mdash; sit to return to Alcatraz.
+        <span class="xref">All 5 parts with screenshots &mdash; see Buildables tab, Icarus card</span>
+        <figure class="shot"><img src="../img/motd/motd-s4-plane3.jpg" alt="Golden Gate Bridge with the electric chairs" loading="lazy"><figcaption>The bridge &mdash; the four electric chairs send you back</figcaption></figure></li>
+      <li data-num="5"><b>Collect the Spoon.</b> Reveal it behind the movie poster near the Warden's Office, zap it in Afterlife, then Retriever it off the Cafeteria shelf. This is the start of the Golden Spork side quest.
+        <span class="xref">Full walkthrough with screenshots &mdash; see Side Easter Eggs tab, Golden Spork card</span></li>
+      <li data-num="6"><b>Refuel and fly to the bridge two more times.</b> A gas can now spawns in each area where a plane part was found. Collect all five, refuel the plane, and fly again &mdash; repeat until you have made <b>three total trips</b> to the bridge.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s6-1.jpg" alt="Gas can spawn" loading="lazy"><figcaption>Gas cans appear where the parts were</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s6-2.jpg" alt="Refueling the plane" loading="lazy"><figcaption>Refuel at the plane, then fly again</figcaption></figure>
+        </div></li>
+      <li data-num="7"><b>Enter the mobsters' prison numbers.</b> After the third bridge trip, go to the Citadel Tunnels number pad. Enter Afterlife from the top of the stairs and input the four numbers from the characters' prison suits, in order:
+        <span class="loc">101 &nbsp;&rarr;&nbsp; 872 &nbsp;&rarr;&nbsp; 481 &nbsp;&rarr;&nbsp; 386</span>
+        <div class="callout">The pad blinks and changes digits after each correct number. Afterlife kills you if you don't revive in time &mdash; split this across TWO Afterlife uses instead of dying.</div>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s7-1.jpg" alt="Number pad 101" loading="lazy"><figcaption>101</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s7-2.jpg" alt="Number pad 872" loading="lazy"><figcaption>872</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s7-3.jpg" alt="Number pad 481" loading="lazy"><figcaption>481</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s7-4.jpg" alt="Number pad 386" loading="lazy"><figcaption>386</figcaption></figure>
+        </div></li>
+      <li data-num="8"><b>Follow the headphones.</b> After reviving, Brutus speaks and the screen goes black-and-white with Stanley Ferguson's narration. Headphones spawn one after another &mdash; pick each up and listen until the narration ends, then find the next. Five total:
+        <span class="loc">1. The Citadel Tunnels staircase &middot; 2. Close to Double Tap &middot; 3. The walkway between the Warden's Office and the Cafeteria &middot; 4. The staircase from the Cafeteria to the Infirmary &middot; 5. The staircase to the rooftop</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s8-1.jpg" alt="Headphones 1" loading="lazy"><figcaption>1 &mdash; Citadel Tunnels staircase</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s8-2.jpg" alt="Headphones 2" loading="lazy"><figcaption>2 &mdash; near Double Tap</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s8-3.jpg" alt="Headphones 3" loading="lazy"><figcaption>3 &mdash; Warden's Office &harr; Cafeteria walkway</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s8-4.jpg" alt="Headphones 4" loading="lazy"><figcaption>4 &mdash; Cafeteria &rarr; Infirmary staircase</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s8-5.jpg" alt="Headphones 5" loading="lazy"><figcaption>5 &mdash; staircase to the rooftop</figcaption></figure>
+        </div></li>
+      <li data-num="9"><b>Enter Afterlife and board the plane.</b> With all five headphones heard, get set for the finale. Enter Afterlife in the Infirmary and interact with the plane &mdash; no refuel needed. You'll board it in Afterlife mode.
+        <figure class="shot"><img src="../img/motd/motd-s9-1.jpg" alt="Boarding the plane in Afterlife" loading="lazy"><figcaption>Board the plane while in Afterlife</figcaption></figure></li>
+      <li data-num="10"><b>Break or continue the cycle.</b> At the bridge, revive at the electric chair &mdash; then it's a PvP showdown: Weasel versus the mobsters.
+        <span class="loc">Weasel dies &rarr; the cycle CONTINUES: the loop resets and all four wake up back in Alcatraz. &middot; Weasel wins &rarr; the cycle is BROKEN: the loop ends (canon leading into Blood of the Dead).</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s10-1.jpg" alt="Bridge showdown" loading="lazy"><figcaption>The showdown begins at the bridge</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s10-2.jpg" alt="Weasel vs mobsters" loading="lazy"><figcaption>Weasel vs. the mobsters</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s10-3.jpg" alt="Ending" loading="lazy"><figcaption>Either way, everyone gets the achievement</figcaption></figure>
+        </div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <p class="blurb">Tap an easter egg to open its guide.</p>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-wpn-spork.png" alt="The Golden Spork">
+        <span class="acc-title"><b>Golden Spork</b><small>One-hit-kill melee until round 33</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>The plane built and flown</b> &mdash; <button class="xref" data-goto="build">see Buildables tab</button></li>
+        <li><b>Hell's Retriever</b> &mdash; <button class="xref" data-goto="wonder">see Wonder Weapons tab</button></li>
+        <li><b>The Acid Gat</b> (Blundergat + Acid Gat Kit) &mdash; you must get the 50 kills with this exact weapon</li>
+      </ul>
+    </div>
+    <ol class="steps">
+      <li><b>Reveal and grab the Spoon.</b> Face the Warden's Office and look right for the cell with the movie poster. Throw the Hell's Retriever at the poster to reveal an Afterlife door, then use the Afterlife station just left of it. In Afterlife, look at the ground, find the Spoon and zap it &mdash; an audio cue plays. Revive yourself, head to the Cafeteria, and throw the Retriever at the Spoon on the metal shelf in the back to collect it.
+        <button type="button" class="sound-btn" data-audio="../audio/motd-spork-cue-laugh.mp3">&#9654; Play the in-game cue</button>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-spork-spoon1.jpg" alt="The movie poster cell" loading="lazy"><figcaption>The movie poster cell, right of the Warden's Office</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-spork-spoon2.jpg" alt="The revealed Afterlife door" loading="lazy"><figcaption>The Afterlife door the poster hides</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-spork-spoon3.jpg" alt="Zapping the spoon on the ground in Afterlife" loading="lazy"><figcaption>Zap the Spoon on the ground (Afterlife)</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-spork-spoon4.jpg" alt="The spoon on the Cafeteria shelf" loading="lazy"><figcaption>Then Retriever it off the Cafeteria shelf</figcaption></figure>
+        </div></li>
+      <li><b>Sink the Spoon in the bathtub.</b> Head to the Infirmary (the room with the Mystery Box) and find the bloodied bathtub in the back-right. Interact with it &mdash; the Spoon sinks into the tub.
+        <figure class="shot"><img src="../img/motd/motd-spork-gs1.jpg" alt="The bloodied bathtub in the Infirmary" loading="lazy"><figcaption>The bathtub in the back-right of the Infirmary</figcaption></figure></li>
+      <li><b>Kill exactly 50 zombies with the Acid Gat &mdash; in the Showers.</b> Both parts matter: it has to be the Acid Gat, and the kills have to happen in the Showers. After the 50th kill you'll hear an <b>ominous laugh</b>.
+        <button type="button" class="sound-btn" data-audio="../audio/motd-spork-cue-laugh.mp3">&#9654; Play the in-game cue</button>
+        <div class="callout"><b>The laugh is your confirmation</b> &mdash; without it, the bathtub won't give you anything. If nothing happens, you're short on kills or killed some outside the Showers.</div>
+        <figure class="shot"><img src="../img/motd/motd-spork-gs2.jpg" alt="Acid Gat kills in the Showers" loading="lazy"><figcaption>Acid Gat kills, in the Showers only</figcaption></figure></li>
+      <li><b>Claim the Golden Spork.</b> After the laugh, return to the bathtub and interact with it to take the Golden Spork.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-spork-gs3.jpg" alt="The spork in the bathtub" loading="lazy"><figcaption>Back to the tub &mdash; the Spork is waiting</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-spork-gs4.jpg" alt="Holding the Golden Spork" loading="lazy"><figcaption>The Golden Spork in hand</figcaption></figure>
+        </div></li>
+      <li><b>How it works:</b> a melee weapon that one-hit-kills zombies all the way up to <b>round 33</b>.</li>
+    </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <p class="blurb">Tap a weapon to open its guide. Golden Spork coming soon.</p>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-wpn-retriever.png" alt="The Hell's Retriever">
+        <span class="acc-title"><b>Hell's Retriever</b><small>Returning tomahawk &middot; free &middot; needed for the main quest</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <ol class="steps">
+      <li>Find the three Cerberus dog-head drawings on the walls and feed each one <b>6 zombie kills</b> right in front of it. You'll see the zombies flip through the air as the head devours them &mdash; when it's fed, the head disappears.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-hr-a.jpg" alt="Dog head in Broadway cell block" loading="lazy"><figcaption>1 &mdash; Broadway cell block, near the B23R wall-buy (up the stairs from spawn)</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-hr-b.jpg" alt="Dog head in the Infirmary" loading="lazy"><figcaption>2 &mdash; the Infirmary, by the entryway to the Roof</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-hr-c.jpg" alt="Dog head in the Docks" loading="lazy"><figcaption>3 &mdash; Docks lower area, near the workbench under the bridge to Jugger-Nog</figcaption></figure>
+        </div></li>
+      <li>With all three heads fed, head to the Citadel Tunnels and turn right &mdash; the tunnel is now open. Pick up the Hell's Retriever inside.
+        <figure class="shot"><img src="../img/motd/motd-hr-d.jpg" alt="Hell's Retriever pickup tunnel" loading="lazy"><figcaption>The now-open tunnel in the Citadel Tunnels</figcaption></figure></li>
+      <li><b>How it works:</b> it's on your tactical button (L1/LB). Hold the button to throw harder for more damage and to pull in power-ups from further away. It always flies back to you, so you can't lose it.</li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-wpn-redeemer.png" alt="The Hell's Redeemer">
+        <span class="acc-title"><b>Hell's Redeemer</b><small>Upgraded Retriever &middot; charged throws insta-kill &middot; round 10+</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Hell's Retriever already obtained</b> (card above)</li>
+        <li><b>Round 10 or later</b>, and the plane built so you can reach the bridge &mdash; <button class="xref" data-goto="build">see Buildables tab</button></li>
+        <li>Discipline: during the bridge round you may kill with <b>nothing but the Retriever</b></li>
+      </ul>
+    </div>
+    <ol class="steps">
+      <li><b>Get kills with the Retriever.</b> Kill roughly <b>10&ndash;15 zombies</b> with the Hell's Retriever. You'll hear an Afterlife-style audio cue confirming this part is done.
+        <button type="button" class="sound-btn" data-audio="../audio/motd-redeemer-cue-kills.mp3">&#9654; Play the in-game cue</button>
+        <div class="callout"><b>Listen for the cue</b> &mdash; it's the only confirmation the game gives you. There's no on-screen message.</div>
+        <figure class="shot"><img src="../img/motd/motd-red-a.jpg" alt="Killing zombies with the Hell's Retriever" loading="lazy"><figcaption>Rack up Retriever kills until the cue plays</figcaption></figure></li>
+      <li><b>Fly to the Golden Gate Bridge on round 10 or later</b>, and for that entire round kill <b>only</b> with the Hell's Retriever &mdash; no guns, no melee. A second audio cue confirms it.
+        <button type="button" class="sound-btn" data-audio="../audio/motd-redeemer-cue-kills.mp3">&#9654; Play the in-game cue</button>
+        <div class="callout">If you kill anything with another weapon during this round, the step fails and you'll have to retry it on a later bridge trip.</div>
+        <figure class="shot"><img src="../img/motd/motd-red-b.jpg" alt="Using the Retriever on the Golden Gate Bridge" loading="lazy"><figcaption>Retriever-only kills on the bridge</figcaption></figure></li>
+      <li><b>Throw the Retriever into the lava.</b> Back at Alcatraz, go to the first dog head in the Broadway cell block and throw the Hell's Retriever down into the lava pit below. It's consumed and vanishes from your loadout &mdash; that's supposed to happen.
+        <figure class="shot"><img src="../img/motd/motd-red-lava.jpg" alt="The lava pit below the Broadway cell block" loading="lazy"><figcaption>Throw it down into the lava below</figcaption></figure></li>
+      <li><b>Finish the round</b>, then on the new round head back down and <b>enter Afterlife</b>. Collect the Hell's Redeemer from the same spot in the Citadel Tunnels where you originally picked up the Retriever.
+        <figure class="shot"><img src="../img/motd/motd-red-pickup.jpg" alt="Picking up the Hell's Redeemer in Afterlife" loading="lazy"><figcaption>The pickup prompt &mdash; only visible in Afterlife</figcaption></figure></li>
+      <li><b>How it works:</b> hold L1/LB to charge before throwing. Charged at least once, it <b>insta-kills any zombie</b> &mdash; and Brutus too, once his helmet is off. You can charge up to <b>three</b> times; the pulses while holding tell you the charge level.</li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-wpn-blundergat.png" alt="The Blundergat">
+        <span class="acc-title"><b>Blundergat</b><small>5 blue skulls &rarr; free from the Warden's Office</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Hell's Retriever obtained</b> (card above) &mdash; you throw it at each skull</li>
+        <li>Alternative: the Blundergat can also drop from the Mystery Box, but see the warning below</li>
+      </ul>
+    </div>
+    <div class="callout"><b>For the main Easter egg you must use THIS free Blundergat</b> &mdash; a Mystery Box one does not count for the quest.</div>
+    <p class="blurb">The five skulls are technically only visible in Afterlife, but if you throw the Hell's Retriever at the exact spots below you never have to enter Afterlife at all.</p>
+    <ol class="steps">
+      <li><b>Skull 1 &mdash; the prison cell.</b> Leave spawn through C-D Street and look in the first cell on the right. Throw the Hell's Retriever at the toilet, between the shelf and the bed.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-bg-s1.jpg" alt="First cell on the right off C-D Street" loading="lazy"><figcaption>Stand here &mdash; first cell on the right</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-bg-s1b.jpg" alt="Skull collected in the cell" loading="lazy"><figcaption>The skull, between the shelf and the bed</figcaption></figure>
+        </div></li>
+      <li><b>Skull 2 &mdash; the Warden's Office.</b> Inside the office, hug the wall to the right of Speed Cola and look out at the two electricity poles by the Warden's House. Throw the Retriever at the <b>top of the second pole</b>.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-bg-s2.jpg" alt="Looking out at the electricity poles" loading="lazy"><figcaption>Right of Speed Cola, looking at the poles</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-bg-s2b.jpg" alt="Skull at the top of the second pole" loading="lazy"><figcaption>Aim for the top of the second pole</figcaption></figure>
+        </div></li>
+      <li><b>Skull 3 &mdash; the Roof.</b> Up where the plane is built, go to the back-left corner, look above the lamp post and throw the Retriever at the roof edge.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-bg-s3.jpg" alt="Roof back left corner" loading="lazy"><figcaption>Back-left corner of the roof</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-bg-s3b.jpg" alt="Skull above the lamp post" loading="lazy"><figcaption>The corner above the lamp post</figcaption></figure>
+        </div></li>
+      <li><b>Skull 4 &mdash; Jugger-Nog, upstairs Docks.</b> Stand opposite Jugger-Nog, look up into the back corner, and throw the Retriever at the lamp <b>while jumping</b>.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-bg-s4.jpg" alt="Looking up at the lamp opposite Jugger-Nog" loading="lazy"><figcaption>Opposite Jugger-Nog, looking up</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-bg-s4b.jpg" alt="Throwing at the lamp while jumping" loading="lazy"><figcaption>Jump as you throw at the lamp</figcaption></figure>
+        </div></li>
+      <li><b>Skull 5 &mdash; the Docks, by the Mystery Box.</b> In the back of the Docks, look into the closed-off section and throw the Retriever at the <b>second wooden pillar from the left</b> &mdash; the middle one past PhD Flopper.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-bg-s5.jpg" alt="The wooden pillars in the closed-off dock section" loading="lazy"><figcaption>The pillars past PhD Flopper</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-bg-s5b.jpg" alt="Skull on the middle pillar" loading="lazy"><figcaption>Second pillar from the left &mdash; the middle one</figcaption></figure>
+        </div></li>
+      <li><b>Claim it.</b> With all five skulls collected, go to the Warden's Office and interact with the <b>middle table</b> &mdash; the Blundergat burns into existence for you to pick up.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-bg-claim.jpg" alt="The Warden's Office middle table alight" loading="lazy"><figcaption>The middle table in the Warden's Office</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-bg-hero.jpg" alt="Picking up the Blundergat" loading="lazy"><figcaption>Hold to pick up the Blundergat</figcaption></figure>
+        </div></li>
+      <li><b>Upgrade path:</b> the Blundergat converts into the Acid Gat with the Acid Gat Kit &mdash; <button class="xref" data-goto="build">see Buildables tab</button></li>
+    </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <p class="blurb">Tap a buildable to open its guide.</p>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-s4-plane2.jpg" alt="The Icarus" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Icarus (the plane)</b><small>5 parts &middot; your ride to Pack-a-Punch on the bridge</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <p class="blurb">Most parts need the Warden's Key (main quest step 1) and Afterlife work. Build everything on the roof runway.</p>
+    <ol class="steps">
+      <li><b>The Engine.</b> Enter Afterlife above the Warden's Office and follow the path right to zap an electric panel. Then enter Afterlife at the Docks in Building 64 and zap the three activated generators. Finally use the Warden's Key on the right-hand cell as you enter the Warden's Office and take the Engine.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s4-engine1.jpg" alt="Engine step" loading="lazy"><figcaption>Zap the panel above the Warden's Office</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s4-engine2.jpg" alt="Engine generators" loading="lazy"><figcaption>The generators in Building 64 at the Docks</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s4-engine3.jpg" alt="Engine cell" loading="lazy"><figcaption>Open the cell with the Warden's Key</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s4-engine4.jpg" alt="Engine pickup" loading="lazy"><figcaption>Grab the Engine</figcaption></figure>
+        </div></li>
+      <li><b>The Sheets.</b> Enter Afterlife opposite the Showers to find the ghost door. Look up at the pipes and zap the electrical panel, then head into the Showers and zap the panel opposite the laundry machine. Interact with the laundry machine to start a 30-second lockdown &mdash; survive it and take the Sheets.
+        <figure class="shot"><img src="../img/motd/motd-s4-sheets.jpg" alt="Sheets step" loading="lazy"><figcaption>The laundry machine lockdown</figcaption></figure></li>
+      <li><b>The Rigging.</b> Unlock the number pad at the bottom of the Citadel Tunnels stairs with the Warden's Key. Enter Afterlife at the top of the stairs and look left on the way down &mdash; three glowing numbers. Enter them on the pad, revive yourself, then take the Rigging from the elevator below.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s4-rig1.jpg" alt="Rigging numbers" loading="lazy"><figcaption>The three numbers on the stair wall (Afterlife)</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s4-rig2.jpg" alt="Rigging elevator" loading="lazy"><figcaption>The Rigging in the elevator</figcaption></figure>
+        </div></li>
+      <li><b>The Gas Tanks.</b> In the Docks, stand at the Afterlife panel spot and activate the power switch to grab the Gas Tanks &mdash; then enter Afterlife and zap the same switch to free yourself.
+        <figure class="shot"><img src="../img/motd/motd-s4-gas.jpg" alt="Gas tanks step" loading="lazy"><figcaption>The Docks power switch</figcaption></figure></li>
+      <li><b>The Valves.</b> In the Infirmary, open the locked cabinet with the Warden's Key and take the Valves.
+        <figure class="shot"><img src="../img/motd/motd-s4-valves.jpg" alt="Valves cabinet" loading="lazy"><figcaption>The locked Infirmary cabinet</figcaption></figure></li>
+      <li><b>Open the runway and build.</b> Enter Afterlife in the Infirmary with your back to the Roof; head right into the secret room, climb through, and zap the rooftop power switch. Revive, then build all five parts into the plane on the runway.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-s4-plane1.jpg" alt="Rooftop power switch in Afterlife" loading="lazy"><figcaption>Zap the rooftop switch through the secret room</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-s4-plane2.jpg" alt="Runway checklist" loading="lazy"><figcaption>The runway checklist &mdash; parts build here</figcaption></figure>
+        </div></li>
+      <li>Flying it is the main quest &mdash; <button class="xref" data-goto="main">see Main Easter Egg tab</button></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-wpn-acidgat.png" alt="The Acid Gat">
+        <span class="acc-title"><b>Acid Gat Kit</b><small>3 parts &middot; converts the Blundergat into the Acid Gat</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>You need a Blundergat first</b> &mdash; either the free quest one or a Mystery Box drop works for this.</li>
+        <li>The conversion is reversible: you can swap back to the Blundergat later and it keeps its Pack-a-Punch status.</li>
+      </ul>
+    </div>
+    <p class="blurb">The Acid Gat fires rounds that behave like a Monkey Bomb &mdash; zombies are drawn to the impact and take heavy splash damage. Each part has 3 possible spawns.</p>
+    <ol class="steps">
+      <li><b>Part 1 &mdash; the Motor.</b> Always in the Warden's Office. Check all three:
+        <span class="loc">1. Near the Uzi wall-buy, next to the locked door that holds a plane part</span>
+        <span class="loc">2. In the left corner of the Mystery Box spawn spot</span>
+        <span class="loc">3. By the boarded-up fireplace, left of Speed Cola</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-acid-motor-a.jpg" alt="Motor by the Uzi wall-buy" loading="lazy"><figcaption>1 &mdash; by the Uzi wall-buy</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-motor-b.jpg" alt="Motor at the Mystery Box corner" loading="lazy"><figcaption>2 &mdash; left corner of the Mystery Box spot</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-motor-c.jpg" alt="Motor by the fireplace near Speed Cola" loading="lazy"><figcaption>3 &mdash; boarded-up fireplace, left of Speed Cola</figcaption></figure>
+        </div></li>
+      <li><b>Part 2 &mdash; the Case.</b> Always in the Cell Block. Check all three:
+        <span class="loc">1. On a trolley to the right, just outside the Library at spawn</span>
+        <span class="loc">2. Opposite the Afterlife box in Michigan Avenue, across from the stairs to the Showers</span>
+        <span class="loc">3. Beneath the stairs coming down from the Warden's Office toward the Cell Block center, near the B23R wall-buy</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-acid-case-a.jpg" alt="Case on the trolley outside the Library" loading="lazy"><figcaption>1 &mdash; the trolley outside the Library</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-case-b.jpg" alt="Case in Michigan Avenue" loading="lazy"><figcaption>2 &mdash; Michigan Avenue, opposite the Afterlife box</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-case-c.jpg" alt="Case beneath the stairs near B23R" loading="lazy"><figcaption>3 &mdash; beneath the stairs, near the B23R wall-buy</figcaption></figure>
+        </div></li>
+      <li><b>Part 3 &mdash; the Acid Bottle.</b> Always in the Infirmary. Check all three:
+        <span class="loc">1. On a metal tray in the left area of the Infirmary</span>
+        <span class="loc">2. In the corner with the bloodied bathtubs</span>
+        <span class="loc">3. By a bloodied bathtub, opposite the Mystery Box spawn</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-acid-bottle-a.jpg" alt="Acid bottle on the metal tray" loading="lazy"><figcaption>1 &mdash; the metal tray, left side of the Infirmary</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-bottle-b.jpg" alt="Acid bottle in the bathtub corner" loading="lazy"><figcaption>2 &mdash; the bloodied bathtub corner</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-bottle-c.jpg" alt="Acid bottle by a bathtub opposite the Mystery Box" loading="lazy"><figcaption>3 &mdash; by the bathtub opposite the Mystery Box</figcaption></figure>
+        </div></li>
+      <li><b>Build it and convert.</b> Take all three parts to any workbench, then trade your Blundergat in at the finished kit to get the Acid Gat.
+        <span class="loc">Workbenches: by Electric Cherry in the upstairs Cell Block (safest) &middot; back-right corner of the Cafeteria mess hall &middot; underneath the Docks, left of the generator room</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-acid-build1.jpg" alt="Building the Acid Gat Kit" loading="lazy"><figcaption>The kit assembled on the workbench</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-acid-build2.jpg" alt="Trading the Blundergat for the Acid Gat" loading="lazy"><figcaption>Trade in the Blundergat to get the Acid Gat</figcaption></figure>
+        </div></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/motd/motd-shield-hero.jpg" alt="The Zombie Shield" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Zombie Shield</b><small>3 parts &middot; protects your back &middot; no prerequisites</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <p class="blurb">Worth grabbing early &mdash; it guards your back while you train zombies. Nothing needs unlocking first: you can collect all three parts in one trip. Each part has 3 possible spawns.</p>
+    <ol class="steps">
+      <li><b>Part 1 &mdash; the Cell Door.</b> All three spots are around the Citadel Tunnels:
+        <span class="loc">1. The spiral stairs on the left, running from the Citadel Tunnels down to the Docks</span>
+        <span class="loc">2. In the elevator hallway at the bottom of the Citadel Tunnels</span>
+        <span class="loc">3. In the far-right corner as you leave the Citadel Tunnels, before Building 64 (the generator room)</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-shield-door-b.jpg" alt="Cell door at the spiral stairs" loading="lazy"><figcaption>1 &mdash; the spiral stairs down to the Docks</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-shield-door-c.jpg" alt="Cell door in the elevator hallway" loading="lazy"><figcaption>2 &mdash; the elevator hallway at the bottom</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-shield-door-a.jpg" alt="Cell door in the corner before Building 64" loading="lazy"><figcaption>3 &mdash; far-right corner before Building 64</figcaption></figure>
+        </div></li>
+      <li><b>Part 2 &mdash; the Clamp.</b> All three spots are inside Building 64 / the generator room at the Docks:
+        <span class="loc">1. On a shelf against the brick wall behind the entrance to Building 64</span>
+        <span class="loc">2. On the floor, tucked by a generator</span>
+        <span class="loc">3. On a shelf in the back-right corner</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-shield-clamp-a.jpg" alt="Clamp on the shelf by the entrance" loading="lazy"><figcaption>1 &mdash; shelf on the brick wall behind the entrance</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-shield-clamp-b.jpg" alt="Clamp on the floor by a generator" loading="lazy"><figcaption>2 &mdash; on the floor by a generator</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-shield-clamp-c.jpg" alt="Clamp on the back right shelf" loading="lazy"><figcaption>3 &mdash; shelf in the back-right corner</figcaption></figure>
+        </div></li>
+      <li><b>Part 3 &mdash; the Hand Trolley.</b> All three spots are out in the Docks:
+        <span class="loc">1. In front of the large crane, just left of the locked door needed for a plane part</span>
+        <span class="loc">2. By the cargo on the left, on the way to the Mystery Box and the Sniper Tower trap</span>
+        <span class="loc">3. Underneath the Sniper Tower on the left, directly opposite the Mystery Box</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/motd/motd-shield-trolley-a.jpg" alt="Hand trolley by the crane" loading="lazy"><figcaption>1 &mdash; in front of the crane, by the locked door</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-shield-trolley-b.jpg" alt="Hand trolley by the cargo" loading="lazy"><figcaption>2 &mdash; by the cargo, heading toward the Sniper Tower</figcaption></figure>
+          <figure class="shot"><img src="../img/motd/motd-shield-trolley-c.jpg" alt="Hand trolley under the Sniper Tower" loading="lazy"><figcaption>3 &mdash; under the Sniper Tower, opposite the Mystery Box</figcaption></figure>
+        </div></li>
+      <li><b>Build it.</b> Take all three parts to any workbench and assemble the shield.
+        <span class="loc">Workbenches: the Cafeteria (most open space) &middot; the upstairs cell block in Broadway &middot; under the Docks</span></li>
+    </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Reaching Pack-a-Punch</h2>
+    <p class="blurb">Pack-a-Punch sits on the Golden Gate Bridge &mdash; you fly there.</p>
+    <ol class="steps">
+      <li>Build the Icarus &mdash; all 5 parts. <button class="xref" data-goto="build">See Buildables tab</button></li>
+      <li>Board the plane on the roof runway with your team and fly to the bridge. The Pack-a-Punch machine is right there (5,000 points).</li>
+      <li>After 30 seconds on the bridge, the electric chairs spawn &mdash; sit in one to return to Alcatraz.
+        <figure class="shot"><img src="../img/motd/motd-s4-plane3.jpg" alt="The bridge with the electric chairs" loading="lazy"><figcaption>PaP trips end in the electric chairs</figcaption></figure></li>
+      <li>Later trips: a gas can spawns in each area where a plane part was found &mdash; collect all five and refuel the plane to fly again.</li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Five perks are available in a normal game. Locations are <b>fixed</b> &mdash; nothing moves between matches. Note there is no Quick Revive on this map: going down puts you into Afterlife, where you revive yourself.</p>
+    <div class="callout"><b>Power each machine on its own.</b> Unlike other maps, there's no single switch that turns the perks on. For every machine: go into Afterlife, shoot its <b>voltmeter</b> with electricity, then revive yourself. You can usually do this while you're already in Afterlife for something else.</div>
+    <figure class="shot"><img src="../img/motd/motd-perk-afterlife.jpg" alt="A perk voltmeter being powered in Afterlife" loading="lazy"><figcaption>The voltmeter next to each machine &mdash; zap this in Afterlife</figcaption></figure>
+
+    <table class="data-table">
+      <tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr>
+      <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Take considerably more hits before going down &mdash; the one perk worth buying first.</td><td>Upper level of the Docks, near the gondola platform.</td></tr>
+      <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload noticeably faster.</td><td>Back room of the Warden's Office &mdash; you have to open the office door using Afterlife first.</td></tr>
+      <tr><td><b>Double Tap Root Beer 2.0</b></td><td>2000</td><td>Higher fire rate, and each bullet does double damage.</td><td>Top level of the Citadel Tunnels, down the staircase just left of the Warden's Office.</td></tr>
+      <tr><td><b>Electric Cherry</b></td><td>2000</td><td>Reloading releases a burst of electricity that stuns nearby zombies &mdash; and outright kills them on lower rounds. It debuted here and it's strong on this map's narrow walkways.</td><td>Top level of the cell block above spawn, by the B23R / Broadway catwalks.</td></tr>
+      <tr><td><b>Deadshot Daiquiri</b></td><td>1500</td><td>Aim assist snaps to the head, with tighter hipfire and less recoil.</td><td>Against the back wall of the Infirmary, right before the doorway out to the Roof.</td></tr>
+    </table>
+
+    <h2>What each machine looks like</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/motd/motd-perk-jug.jpg" alt="Jugger-Nog &mdash; upper Docks by the gondola platform" loading="lazy"><figcaption>Jugger-Nog &mdash; upper Docks by the gondola platform</figcaption></figure>
+      <figure class="shot"><img src="../img/motd/motd-perk-speed.jpg" alt="Speed Cola &mdash; back room of the Warden's Office" loading="lazy"><figcaption>Speed Cola &mdash; back room of the Warden's Office</figcaption></figure>
+      <figure class="shot"><img src="../img/motd/motd-perk-dt.jpg" alt="Double Tap 2.0 &mdash; top of the Citadel Tunnels" loading="lazy"><figcaption>Double Tap 2.0 &mdash; top of the Citadel Tunnels</figcaption></figure>
+      <figure class="shot"><img src="../img/motd/motd-perk-cherry.jpg" alt="Electric Cherry &mdash; cell block above spawn" loading="lazy"><figcaption>Electric Cherry &mdash; cell block above spawn</figcaption></figure>
+      <figure class="shot"><img src="../img/motd/motd-perk-deadshot.jpg" alt="Deadshot Daiquiri &mdash; back wall of the Infirmary" loading="lazy"><figcaption>Deadshot Daiquiri &mdash; back wall of the Infirmary</figcaption></figure>
+    </div>
+  
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>

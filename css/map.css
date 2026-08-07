@@ -1,0 +1,305 @@
+/* Shared layout for map guide pages. Per-map theme = override the vars below in the page. */
+:root {
+  --map-bg: #0d0d10;
+  --map-bg2: #17171d;
+  --map-accent: #a83af0;
+  --map-accent2: #3af0c8;
+  --map-text: #e8e6e0;
+  --map-glow: rgba(168, 58, 240, 0.35);
+}
+
+body.map-page {
+  background: var(--map-bg);
+  color: var(--map-text);
+}
+
+.map-header {
+  padding: 14px 4px 10px;
+}
+.map-header h1 {
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--map-accent2);
+  text-shadow: 0 0 18px var(--map-glow);
+}
+.map-header .sub { color: var(--text-dim); font-size: 0.84rem; margin-top: 4px; }
+
+/* ---- Tab bar: horizontally scrollable pills ---- */
+.tab-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 2px 12px;
+  background: linear-gradient(var(--map-bg) 85%, transparent);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: var(--map-bg2);
+  color: var(--map-text);
+  font: inherit;
+  font-size: 0.84rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.tab-btn.active {
+  border-color: var(--map-accent);
+  color: var(--map-accent2);
+  box-shadow: 0 0 12px var(--map-glow), inset 0 0 8px rgba(0,0,0,0.4);
+}
+
+.tab-panel { display: none; padding-top: 6px; }
+.tab-panel.active { display: block; }
+
+/* ---- Requirements box ---- */
+.req-box {
+  border: 1px solid var(--map-accent);
+  border-radius: 12px;
+  background: linear-gradient(160deg, rgba(255,255,255,0.03), transparent), var(--map-bg2);
+  padding: 14px;
+  margin: 10px 0 18px;
+  box-shadow: 0 0 16px var(--map-glow);
+}
+.req-box h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--map-accent2);
+  margin-bottom: 8px;
+}
+.req-box ul { list-style: none; }
+.req-box li {
+  font-size: 0.88rem;
+  padding: 4px 0 4px 22px;
+  position: relative;
+}
+.req-box li::before {
+  content: "\2726";
+  position: absolute;
+  left: 2px;
+  color: var(--map-accent);
+}
+
+/* ---- Section headings inside tabs ---- */
+.tab-panel h2 {
+  font-size: 1.05rem;
+  color: var(--map-accent2);
+  margin: 22px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+.tab-panel h2:first-child { margin-top: 8px; }
+.tab-panel p.blurb { color: var(--text-dim); font-size: 0.86rem; margin: 6px 0 10px; }
+
+/* ---- Checklist steps (tap to check, saved locally) ---- */
+.steps { list-style: none; counter-reset: step; margin: 8px 0 4px; }
+.steps > li {
+  position: relative;
+  counter-increment: step;
+  background: var(--map-bg2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 12px 12px 46px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+#tab-main .steps > li { cursor: pointer; }
+.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--map-accent);
+  color: var(--map-accent2);
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps > li[data-num]::before { content: attr(data-num); }
+.steps > li.done { opacity: 0.45; }
+.steps > li.done::before { content: "\2713"; background: var(--map-accent); color: #000; }
+
+.steps .loc {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--map-accent2);
+}
+.steps .loc::before { content: "\1F4CD "; }
+
+/* Cross-reference chips — work anywhere: steps, requirement boxes, tables */
+.xref {
+  display: inline-block;
+  font: inherit;
+  font-size: 0.8rem;
+  background: none;
+  color: var(--map-accent);
+  border: 1px dashed var(--map-accent);
+  border-radius: 8px;
+  padding: 3px 8px;
+}
+button.xref { cursor: pointer; }
+button.xref:active { background: var(--map-accent); color: #000; }
+.steps .xref { margin-top: 6px; }
+.req-box .xref, .data-table .xref { margin-top: 4px; }
+
+/* ---- Weapon/section accordion cards ---- */
+details.acc {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--map-bg2);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+details.acc > summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  cursor: pointer;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+details.acc > summary::-webkit-details-marker { display: none; }
+details.acc > summary img {
+  width: 92px;
+  height: 54px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 8px var(--map-glow));
+}
+details.acc > summary .acc-title { min-width: 0; }
+details.acc > summary .acc-title b {
+  display: block;
+  font-size: 1rem;
+  color: var(--map-accent2);
+  letter-spacing: 0.02em;
+}
+details.acc > summary .acc-title small {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.74rem;
+  margin-top: 2px;
+}
+details.acc > summary .acc-chev {
+  margin-left: auto;
+  color: var(--map-accent);
+  font-size: 1.3rem;
+  transition: transform 0.15s;
+}
+details.acc[open] > summary .acc-chev { transform: rotate(90deg); }
+details.acc[open] > summary { border-bottom: 1px solid var(--line); }
+.acc-body { padding: 4px 12px 12px; }
+.acc-body .steps > li { background: var(--map-bg); }
+
+/* ---- Inline sound-cue buttons ---- */
+.sound-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  background: var(--map-bg2);
+  border: 1px solid var(--map-accent2);
+  color: var(--map-accent2);
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.sound-btn:active { background: var(--map-accent2); color: #000; }
+.sound-btn.playing {
+  background: var(--map-accent2);
+  color: #000;
+  animation: soundpulse 0.9s ease-in-out infinite;
+}
+@keyframes soundpulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--map-glow); }
+  50% { box-shadow: 0 0 0 7px transparent; }
+}
+
+/* ---- Callouts / warnings ---- */
+.callout {
+  border-left: 3px solid var(--map-accent);
+  background: var(--map-bg2);
+  border-radius: 0 10px 10px 0;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin: 10px 0;
+}
+
+/* ---- Screenshot frames ---- */
+figure.shot {
+  margin: 10px 0 16px;
+  background: var(--map-bg2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+figure.shot img { display: block; width: 100%; height: auto; }
+figure.shot figcaption {
+  padding: 8px 10px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.shot-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+@media (min-width: 520px) { .shot-grid { grid-template-columns: 1fr 1fr; } }
+
+/* ---- Simple data table (coins, plants, etc.) ---- */
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin: 10px 0; }
+.data-table th, .data-table td {
+  border: 1px solid var(--line);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.data-table th {
+  color: var(--map-accent2);
+  background: var(--map-bg2);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ---- Perk table cells: machine photo above the name ---- */
+.perk-cell { width: 42%; }
+.perk-cell img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  margin-bottom: 6px;
+}
+
+/* ---- Coin combo table icons ---- */
+.coin-ico { width: 42px; height: 42px; object-fit: contain; display: block; }
+
+/* ---- Reset progress button ---- */
+.reset-progress {
+  display: block;
+  margin: 26px auto 0;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}

@@ -1,0 +1,266 @@
+/* ---- Base / mobile-first ---- */
+:root {
+  --bg: #0d0d10;
+  --bg-card: #17171d;
+  --bg-card-hover: #1f1f27;
+  --text: #e8e6e0;
+  --text-dim: #9a978f;
+  --line: #2a2a33;
+  --accent: #a83af0; /* overridden per game/map */
+  --accent2: #3af0c8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+  line-height: 1.45;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 14px 48px;
+}
+
+/* ---- Header ---- */
+.site-header {
+  text-align: center;
+  padding: 26px 10px 18px;
+}
+
+.site-header h1 {
+  font-size: 1.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ff4d4d, #a83af0 55%, #3af0c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.site-header .sub {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+/* ---- Back bar on subpages ---- */
+.back-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 4px 6px;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+.back-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-card);
+  color: var(--text);
+}
+.back-bar a:active { background: var(--bg-card-hover); }
+
+/* ---- Game cards (homepage) ---- */
+.game-list { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+
+.game-card {
+  display: block;
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+  border-radius: 14px;
+  padding: 16px 44px 16px 16px;
+  overflow: hidden;
+  transition: background 0.15s;
+}
+.game-card:active { background: var(--bg-card-hover); }
+
+.game-card .glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 140% at 100% 0%, var(--accent) 0%, transparent 55%);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.game-card h2 {
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+.game-card .meta {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  margin-top: 3px;
+}
+
+.game-card .chev,
+.map-row .chev {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent);
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  margin-top: 8px;
+  letter-spacing: 0.03em;
+}
+
+/* ---- Map list (game pages) ---- */
+.game-title {
+  padding: 10px 4px 16px;
+}
+.game-title h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent2);
+}
+.game-title .sub { color: var(--text-dim); font-size: 0.85rem; margin-top: 4px; }
+
+.map-list { display: flex; flex-direction: column; gap: 10px; }
+
+.map-row {
+  display: block;
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 44px 14px 14px;
+}
+.map-row:active { background: var(--bg-card-hover); }
+
+.map-row .name { font-size: 1.02rem; }
+.map-row .note {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+
+.map-row.soon { opacity: 0.55; }
+.map-row.soon .chev { display: none; }
+.map-row .soon-tag {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  margin-top: 40px;
+}
+
+/* Slightly wider screens */
+@media (min-width: 480px) {
+  .site-header h1 { font-size: 2rem; }
+}
+
+/* ---- Installed-app (home screen) fit ----
+   Keeps content clear of the rounded corners, the notch and the home indicator. */
+.wrap {
+  padding-left: max(14px, env(safe-area-inset-left));
+  padding-right: max(14px, env(safe-area-inset-right));
+  padding-bottom: calc(48px + env(safe-area-inset-bottom));
+}
+
+/* Launched from the home screen there's no browser back button, so the in-page back
+   link is the only way out — give it a bigger thumb target without changing its look. */
+@media (display-mode: standalone) {
+  .back-bar a { padding: 11px 16px 11px 12px; }
+}
+
+/* ---- "Save for offline" button (added by js/pwa.js on map pages) ---- */
+.offline-btn {
+  margin-left: auto;
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.76rem;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.offline-btn:active { background: var(--bg-card-hover); }
+.offline-btn.done {
+  border-color: var(--map-accent2, var(--accent2));
+  color: var(--map-accent2, var(--accent2));
+}
+.offline-btn[disabled] { opacity: 0.7; cursor: default; }
+
+/* ---- "Add to home screen" prompt (Chrome/Android only) ---- */
+.install-bar {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+.install-bar span { flex: 1; min-width: 0; }
+.install-bar button {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+.install-bar .install-yes {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+.install-bar .install-no {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 4px 6px;
+}

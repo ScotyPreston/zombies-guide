@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#120a1a">
+<title>Zombies in Spaceland – Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<link rel="stylesheet" href="../css/simon.css">
+<style>
+  /* Spaceland theme: neon 80s arcade */
+  :root {
+    --map-bg: #120a1a;
+    --map-bg2: #1d1128;
+    --bg: #120a1a;
+    --bg-card: #1d1128;
+    --bg-card-hover: #271838;
+    --line: #33224a;
+    --map-accent: #d43af0;
+    --map-accent2: #3af0c8;
+    --map-glow: rgba(212, 58, 240, 0.35);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="spaceland">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=iw">&#8249; Infinite Warfare</a></nav>
+
+  <header class="map-header">
+    <h1>Zombies in Spaceland</h1>
+    <div class="sub">Infinite Warfare &middot; 1980s theme park</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main">Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+    <button class="tab-btn" data-tab="coins">Souvenir Coins</button>
+    <button class="tab-btn" data-tab="simon">Simon Says</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4 &mdash; fully soloable.</b> Solo or 2 players is easiest: the boss fight spawns one Alien per player.</li>
+        <li><b>You must build one of the following: Head Cutter, Shredder, Face Melter, or Dischord</b> &mdash; you will need it for the final step. <button class="xref" data-goto="wonder">See Wonder Weapons tab</button></li>
+      </ul>
+    </div>
+
+    <figure class="shot"><img src="../img/spaceland/overview-tacmap.webp" alt="Spaceland top-down layout map" loading="lazy"><figcaption>Park layout &mdash; central hub with the four districts around it</figcaption></figure>
+
+    <h2>"Sooooul Key" &mdash; full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1a"><b>Open Pack-a-Punch.</b> Turn on all five power switches, ride all four district portals, then ride the central portal to the Projector Room. While you're in there, tap the mini-UFO table in the back-left corner &mdash; it gates the later quests. You will NOT get the Seti-Com pickup cue until you have been through the PaP portal.
+        <span class="xref">Full walkthrough with screenshots &mdash; see Pack-a-Punch tab</span></li>
+      <li data-num="1b"><b>Collect the 3 Seti-Com parts:</b> the Umbrella, the Calculator, and the Boom Box. Each has 3 possible spawns.
+        <span class="xref">All 9 spawn locations with screenshots &mdash; see Buildables tab, Seti-Com card</span></li>
+      <li data-num="2"><b>Get the built Seti-Com from the Hoff.</b> With the parts collected, the PaP portal visited, and the next round started, the UFO on top of Polar Peak makes sounds and changes colors &mdash; that's the cue. Hand the parts to David Hasselhoff at his DJ booth and he gives back the assembled Seti-Com (it appears in your sticker pack). He must not be active as your summoned ally.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-hoff1.jpg" alt="Booth 1 &mdash; Journey Into Space, near Mule Munchies" loading="lazy"><figcaption>Booth 1 &mdash; Journey Into Space, near Mule Munchies</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-hoff2.jpg" alt="Booth 2 &mdash; Kepler, left of the Octonian Hunter game" loading="lazy"><figcaption>Booth 2 &mdash; Kepler, left of the Octonian Hunter game</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-hoff3.jpg" alt="Booth 3 &mdash; Polar Peak, outside the gift shop" loading="lazy"><figcaption>Booth 3 &mdash; Polar Peak, outside the gift shop</figcaption></figure>
+        </div></li>
+      <li data-num="3"><b>Complete the 3 Seti-Com defenses</b> &mdash; 60, then 90, then 120 seconds. Only one SUCCESSFUL defense counts per round. Walk the map until the screen shakes, place the Seti-Com on the marked spot, and keep every zombie off it. If you fail, a Brute spawns &mdash; kill it and you can attempt another defense the same round.
+        <span class="loc">3 random sites per match from these 7 possible locations:</span>
+        <span class="loc">1. Journey Into Space &mdash; next to the Escape Velocity trap (look for the red blood stain)</span>
+        <span class="loc">2. Journey Into Space &mdash; outside Rover Rampage near the Magic Wheel</span>
+        <span class="loc">3. Underground &mdash; directly in front of the Racin' Stripes perk</span>
+        <span class="loc">4. Kepler &mdash; across from Bombstoppers, in the corner closest to the Space Croc Chomp</span>
+        <span class="loc">5. Polar Peak &mdash; directly in front of the entrance coming from Cosmic Way</span>
+        <span class="loc">6. Polar Peak &mdash; in the middle of the gift shop</span>
+        <span class="loc">7. Polar Peak &mdash; across from Bang Bangs in the Spaceship Splash area</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-def1.jpg" alt="Journey Into Space &mdash; by the Escape Velocity trap (red blood stain)" loading="lazy"><figcaption>Journey Into Space &mdash; by the Escape Velocity trap (red blood stain)</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-def2.jpg" alt="Journey Into Space &mdash; outside Rover Rampage by the Magic Wheel" loading="lazy"><figcaption>Journey Into Space &mdash; outside Rover Rampage by the Magic Wheel</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-def3.jpg" alt="Underground &mdash; in front of Racin' Stripes" loading="lazy"><figcaption>Underground &mdash; in front of Racin' Stripes</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-def4.jpg" alt="Kepler &mdash; across from Bombstoppers by the Space Croc Chomp" loading="lazy"><figcaption>Kepler &mdash; across from Bombstoppers by the Space Croc Chomp</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-def5.jpg" alt="Polar Peak &mdash; in front of the entrance from Cosmic Way" loading="lazy"><figcaption>Polar Peak &mdash; in front of the entrance from Cosmic Way</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-def6.jpg" alt="Polar Peak &mdash; middle of the gift shop" loading="lazy"><figcaption>Polar Peak &mdash; middle of the gift shop</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-def7.jpg" alt="Polar Peak &mdash; across from Bang Bangs at Spaceship Splash" loading="lazy"><figcaption>Polar Peak &mdash; across from Bang Bangs at Spaceship Splash</figcaption></figure>
+        </div></li>
+      <li data-num="4"><b>Wait two full rounds, then collect the Hoff's radios</b> (he won't hand them over earlier &mdash; hard timer, not a bug). Return to the PaP portal and place the four radios: one on each of the 3 symbols around the portal's perimeter, plus one directly in front of it.
+        <div class="callout"><b>Set up BEFORE activating the radios</b> &mdash; activating them starts the boss fight.</div>
+        <figure class="shot"><img src="../img/spaceland/st-speakers.jpg" alt="Radio placement symbols around the PaP portal" loading="lazy"><figcaption>The placement symbols around the central portal</figcaption></figure></li>
+      <li data-num="5"><b>Simon Says.</b> Activate one radio and they all light up, each showing a color (set by your placement order &mdash; note which is which). The UFO flashes a color sequence; repeat it on the radios, three times, each sequence longer. In co-op it takes multiple players to hit the radios inside the timer. Fail = the UFO turns white and a Brute spawns &mdash; kill it and try again.
+        <button type="button" class="sound-btn" id="tones-demo">&#9654; Hear example: 4 tones, lowest &rarr; highest</button>
+        <span class="loc">Use the in-app tracker &mdash;</span> <button class="xref" data-goto="simon">open Simon Says tracker</button>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-simon-speakers.jpg" alt="The radios lit up, each showing its color" loading="lazy"><figcaption>The radios lit up, each showing its color</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/simon-ufo.jpg" alt="The UFO's underside flashing the sequence" loading="lazy"><figcaption>The UFO's underside flashing the sequence</figcaption></figure>
+        </div></li>
+      <li data-num="6"><b>Clown wave.</b> Pure survival &mdash; kill all the exploding clowns until the Alien spawns. Tip from the guide: hold the Polar Peak entrance so clowns and zombies only come from in front of you.
+        <figure class="shot"><img src="../img/spaceland/st-clowns.jpg" alt="Clown zombies" loading="lazy"><figcaption>The clowns rush in after the third sequence</figcaption></figure></li>
+      <li data-num="7"><b>Alien boss fight</b> (one per player). Damage it with a Weapon of Rock &mdash; the collar on its neck turns red when it's close to a down. When it drops and puts up its yellow shield, sprint behind it and <b>melee its backpack to break a fuse</b> (you only get a few seconds; it can also spawn zombies while down). Break both fuses across two downs; the third down kills it. Each Alien drops an Auto-Nuke, Max Ammo and 1,000 XP.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-alien-collar.jpg" alt="Watch the collar &mdash; red means it's close to dropping" loading="lazy"><figcaption>Watch the collar &mdash; red means it's close to dropping</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-alien-shield.jpg" alt="Downed in its yellow shield &mdash; melee the backpack" loading="lazy"><figcaption>Downed in its yellow shield &mdash; melee the backpack</figcaption></figure>
+        </div></li>
+      <li data-num="8"><b>Upgrade your Weapon of Rock.</b> The Alien Fuses appear in front of the PaP portal. Take them, insert them into the Pack-a-Punch machine, and upgrade your Weapon of Rock for 5,000 points.
+        <figure class="shot"><img src="../img/spaceland/pap-alien-fuses.png" alt="Alien Fuses installed in Pack-a-Punch" loading="lazy"><figcaption>The fuses installed in the machine</figcaption></figure></li>
+      <li data-num="9"><b>Shoot down the UFO.</b> It now chases you, firing electricity balls. From Cosmic Way, look at the back of the big circular SPACELAND sign above the twin bridges &mdash; it has 5 blue glowing lights. Shoot all five when the UFO is directly above the PaP portal: the sign fires a vertical beam that destroys anything above it.
+        <figure class="shot"><img src="../img/spaceland/st-sign-lights.jpg" alt="The five blue lights on the back of the Spaceland sign" loading="lazy"><figcaption>The 5 blue lights on the back of the SPACELAND sign</figcaption></figure></li>
+      <li data-num="10"><b>Pick up the Soul Key piece</b> &mdash; it spawns in front of the PaP portal. Collecting it completes the Easter egg.
+        <figure class="shot"><img src="../img/spaceland/st-soulkey.jpg" alt="The Soul Key piece" loading="lazy"><figcaption>The Soul Key piece at the portal</figcaption></figure></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+<!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <p class="blurb">Tap an easter egg to open its guide.</p>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/st-n31l-portrait.jpg" alt="" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Summon David Hasselhoff</b><small>Complete N31L's challenge sets &middot; callable for 5,000 after all three</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li>Players: any (works solo) &mdash; challenge goals scale with player count</li>
+        <li>N31L built &mdash; <button class="xref" data-goto="build">see Buildables tab</button></li>
+      </ul>
+    </div>
+    <ol class="steps">
+      <li>Build N31L. <span class="xref">Requirement: build N31L &mdash; see Buildables tab</span></li>
+      <li>Complete his first set of 5 challenges (goals scale with player count):
+        <table class="data-table">
+      <tr><th>Challenge</th><th>1 Player</th><th>2 Player</th><th>3 Player</th><th>4 Player</th></tr>
+      <tr><td>Kill zombies with melee</td><td>5 / 90s</td><td>7 / 90s</td><td>10 / 90s</td><td>10 / 90s</td></tr>
+      <tr><td>Get multikills</td><td>2 / 120s</td><td>4 / 90s</td><td>5 / 90s</td><td>5 / 60s</td></tr>
+      <tr><td>Kill zombies from a distance</td><td>5 / 120s</td><td>8 / 90s</td><td>10 / 90s</td><td>12 / 60s</td></tr>
+      <tr><td>Kill zombies while jumping</td><td>5 / 120s</td><td>8 / 90s</td><td>10 / 90s</td><td>10 / 60s</td></tr>
+      <tr><td>Do not go into last stand</td><td>120s</td><td>90s</td><td>90s</td><td>60s</td></tr>
+    </table></li>
+      <li>Interact with N31L &mdash; he flies off and brings down a David Hasselhoff hologram who fights for you. When the Hoff leaves, N31L asks for the <b>Auxiliary Battery</b> &mdash; find and install it (6 possible spots, all pictured in the Buildables tab), then complete set 2:
+        <table class="data-table">
+      <tr><th>Challenge</th><th>1 Player</th><th>2 Player</th><th>3 Player</th><th>4 Player</th></tr>
+      <tr><td>Kill zombies without taking damage</td><td>5 / 90s</td><td>7 / 90s</td><td>10 / 90s</td><td>10 / 90s</td></tr>
+      <tr><td>Kill crawling zombies</td><td>5 / 120s</td><td>7 / 90s</td><td>10 / 90s</td><td>10 / 60s</td></tr>
+      <tr><td>Rebuild barriers</td><td>15 / 90s</td><td>30 / 90s</td><td>45 / 90s</td><td>60 / 120s</td></tr>
+      <tr><td>Kill zombies within a distance</td><td>5 / 120s</td><td>8 / 90s</td><td>10 / 90s</td><td>12 / 60s</td></tr>
+      <tr><td>Dismember zombies' legs</td><td>5 / 120s</td><td>7 / 90s</td><td>10 / 90s</td><td>10 / 60s</td></tr>
+      <tr><td>Defend a player (co-op only)</td><td>N/A</td><td>90s</td><td>90s</td><td>60s</td></tr>
+    </table></li>
+      <li>After the next summon, N31L asks for the <b>Floppy Disk</b> (5 possible spots, all Underground &mdash; pictured in the Buildables tab). Install it and complete the final set:
+        <table class="data-table">
+      <tr><th>Challenge</th><th>1 Player</th><th>2 Player</th><th>3 Player</th><th>4 Player</th></tr>
+      <tr><td>Kill zombies from a marked point</td><td>5 / 120s</td><td>7 / 90s</td><td>10 / 90s</td><td>12 / 60s</td></tr>
+      <tr><td>Kill zombies that damaged you</td><td>5 / 120s</td><td>8 / 90s</td><td>10 / 90s</td><td>10 / 60s</td></tr>
+      <tr><td>Kill marked zombies before any others</td><td>3 / 120s</td><td>5 / 90s</td><td>5 / 90s</td><td>8 / 60s</td></tr>
+      <tr><td>Kill zombies with headshots</td><td>5 / 120s</td><td>8 / 90s</td><td>10 / 90s</td><td>10 / 60s</td></tr>
+      <tr><td>Dismember zombies' arms</td><td>5 / 120s</td><td>7 / 90s</td><td>10 / 90s</td><td>10 / 60s</td></tr>
+      <tr><td>Do not bleed out (co-op only)</td><td>N/A</td><td>120s</td><td>150s</td><td>180s</td></tr>
+    </table></li>
+      <li><b>Rewards:</b> tickets for every challenge completed, progress toward the Sticker Pack, and after the final set the Hoff can be summoned any time for 5,000 points.</li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/st-code-hoff.jpg" alt="" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Play AS David Hasselhoff</b><small>Post-EE character codes &middot; incl. Willard Wyler bonus</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <ol class="steps">
+      <li><b>Play as David Hasselhoff:</b> complete the main Easter egg once, then enter this code on the main menu before launching Zombies in Spaceland.
+        <figure class="shot"><img src="../img/spaceland/st-code-hoff.jpg" alt="David Hasselhoff character code" loading="lazy"><figcaption>The Hasselhoff code</figcaption></figure></li>
+      <li><b>Bonus &mdash; play as Willard Wyler:</b> after beating the Mephistopheles super Easter egg, enter this code in the pre-game lobby of a Director's Cut match.
+        <figure class="shot"><img src="../img/spaceland/st-code-wyler.jpg" alt="Willard Wyler character code" loading="lazy"><figcaption>The Wyler code</figcaption></figure></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/st-board9.jpg" alt="" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Secret songs &mdash; &quot;I Love the 80's&quot;</b><small>MW1 + MW2 themes &middot; teddy-bear hunts</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li>Players: any (works solo)</li>
+        <li>Unlock BOTH songs in the same match for the "I Love the 80's" achievement</li>
+      </ul>
+    </div>
+    <ol class="steps">
+      <li><b>MW1 theme:</b> shoot the teddy-bear photo on 3 "Employee of the Month" boards. There are 9 boards; each match, 3 of them show the bear photo (the August employee). Aim down sights to check them. All 9 board locations:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-board1.jpg" alt="Board 1 &mdash; window between the Astrocade and Rover Rampage" loading="lazy"><figcaption>Board 1 &mdash; window between the Astrocade and Rover Rampage</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board2.jpg" alt="Board 2 &mdash; Astrocade upstairs, window closest to the Devil Teeth game" loading="lazy"><figcaption>Board 2 &mdash; Astrocade upstairs, window closest to the Devil Teeth game</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board3.jpg" alt="Board 3 &mdash; behind the desk at the Polar Peak roller-coaster entrance" loading="lazy"><figcaption>Board 3 &mdash; behind the desk at the Polar Peak roller-coaster entrance</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board4.jpg" alt="Board 4 &mdash; window at the top of the Hyper Slopes" loading="lazy"><figcaption>Board 4 &mdash; window at the top of the Hyper Slopes</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board5.jpg" alt="Board 5 &mdash; window up the stairs from Bombstoppers" loading="lazy"><figcaption>Board 5 &mdash; window up the stairs from Bombstoppers</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board6.jpg" alt="Board 6 &mdash; Underground, across from the Shredder build spot" loading="lazy"><figcaption>Board 6 &mdash; Underground, across from the Shredder build spot</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board7.jpg" alt="Board 7 &mdash; window at the end of the hallway right of board 6" loading="lazy"><figcaption>Board 7 &mdash; window at the end of the hallway right of board 6</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board8.jpg" alt="Board 8 &mdash; employee break room, across from Racin' Stripes" loading="lazy"><figcaption>Board 8 &mdash; employee break room, across from Racin' Stripes</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-board9.jpg" alt="Board 9 &mdash; in the room next to Up N' Atoms" loading="lazy"><figcaption>Board 9 &mdash; in the room next to Up N' Atoms</figcaption></figure>
+        </div></li>
+      <li><b>MW2 theme:</b> find and shoot 5 physical teddy bears. All 5 spawn at the start of the match, drawn from 54 fixed spots around the map &mdash; sweep railings, shelves and corners as you loop until you've got all five.</li>
+      <li>Unlock both in the same match and the achievement pops.</li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/gs-minigame.jpg" alt="" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Ghosts 'n Skulls quest</b><small>6 skulls + minigame &rarr; all perks permanently</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Main Easter Egg completed first</b> &mdash; skull 5 is impossible without it</li>
+        <li>For skull 5: a Shutter Shades drop + your Weapon of Rock</li>
+      </ul>
+    </div>
+    <ol class="steps">
+      <li><b>Skull 1 &mdash; pop the balloons.</b> Shoot every balloon in the spawn area; a completion sound plays when you got them all.
+        <span class="loc">Spawn plaza, directly across from Up N' Atoms</span>
+        <figure class="shot"><img src="../img/spaceland/gs-balloons.jpg" alt="Balloons in the spawn area" loading="lazy"><figcaption>The balloons across from Up N' Atoms</figcaption></figure></li>
+      <li><b>Skull 2 &mdash; spell G-H-O-S-T.</b> Five skulls hide behind letters on signs and must be collected <b>in order</b>. To collect one, aim down sights at it until it disappears. Each letter has two possible signs &mdash; completion sound plays after the T:
+        <span class="loc">G &mdash; the G on the Galaxy Journey sign above Mule Munchies, or the G on the Rover Rampage (bumper cars) sign</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-g1.jpg" alt="Galaxy Journey sign" loading="lazy"><figcaption>G &mdash; Galaxy Journey sign</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-g2.jpg" alt="Rover Rampage sign" loading="lazy"><figcaption>G &mdash; Rover Rampage sign</figcaption></figure>
+        </div>
+        <span class="loc">H &mdash; the H on the Hyper Slopes sign at the top of the slides, or the H on the Chromosphere sign</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-h1.jpg" alt="Hyper Slopes sign" loading="lazy"><figcaption>H &mdash; Hyper Slopes sign</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-h2.jpg" alt="Chromosphere sign" loading="lazy"><figcaption>H &mdash; Chromosphere sign</figcaption></figure>
+        </div>
+        <span class="loc">O &mdash; the O in the Journey Into Space sign, or the O on the Cosmic Tunes booth outside the Polar Peak gift shop</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-o1.jpg" alt="Journey Into Space sign" loading="lazy"><figcaption>O &mdash; Journey Into Space sign</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-o2.jpg" alt="Cosmic Tunes booth" loading="lazy"><figcaption>O &mdash; Cosmic Tunes booth</figcaption></figure>
+        </div>
+        <span class="loc">S &mdash; the S on the Star Mission sign near Tuff 'Nuff, or the S on the Astrocade sign above the coin machine</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-s1.jpg" alt="Star Mission sign" loading="lazy"><figcaption>S &mdash; Star Mission sign</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-s2.jpg" alt="Astrocade sign" loading="lazy"><figcaption>S &mdash; Astrocade sign</figcaption></figure>
+        </div>
+        <span class="loc">T &mdash; the T in "Hunter" on the Octonian Hunter sign, or the T on the Moonlight Cafe sign</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-t1.jpg" alt="Octonian Hunter sign" loading="lazy"><figcaption>T &mdash; Octonian Hunter sign</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-t2.jpg" alt="Moonlight Cafe sign" loading="lazy"><figcaption>T &mdash; Moonlight Cafe sign</figcaption></figure>
+        </div></li>
+      <li><b>Skull 3 &mdash; dance floor code.</b> The Ghosts 'n Skulls cabinet screen shows <b>1984</b> in colors &mdash; always green 1, blue 9, pink 8, gray 4. On the Astrocade dance floor, stand on a green square and get exactly 1 kill, then a blue square for exactly 9, then pink for 8, then gray for 4 &mdash; in that order. Check the cabinet after: if the 3rd skull lit up, it worked.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-1984.jpg" alt="1984 in colors on the cabinet screen" loading="lazy"><figcaption>The 1984 color code on the cabinet</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-dancefloor.jpg" alt="Colored dance floor squares" loading="lazy"><figcaption>The colored squares on the dance floor</figcaption></figure>
+        </div></li>
+      <li><b>Skull 4 &mdash; arcade games.</b> Play all five arcade games; a skull appears in each and is collected differently:
+        <span class="loc">Rings of Saturn basketball &mdash; score while the skull is above the hoop &middot; Cryptid Attack &mdash; hit the tooth the skull appears over &middot; Black Hole &mdash; shoot the ball into the 50 slot &middot; Zombie Zoom &mdash; reach the skull before the other zombies &middot; Bowling for Planets (skee-ball) &mdash; score in the hole where the skull appears</span>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-arcade-basketball.jpg" alt="Rings of Saturn basketball" loading="lazy"><figcaption>Rings of Saturn &mdash; skull over the hoop</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-arcade-cryptid.jpg" alt="Cryptid Attack" loading="lazy"><figcaption>Cryptid Attack &mdash; hit the skull tooth</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-arcade-blackhole.jpg" alt="Black Hole" loading="lazy"><figcaption>Black Hole &mdash; land the 50 slot</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-arcade-zoom.jpg" alt="Zombie Zoom" loading="lazy"><figcaption>Zombie Zoom &mdash; race to the skull</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-arcade-bowling.jpg" alt="Bowling for Planets skee-ball" loading="lazy"><figcaption>Bowling for Planets &mdash; skull hole</figcaption></figure>
+        </div></li>
+      <li><b>Skull 5 &mdash; beam the skull over the PaP portal.</b> Put on the Shutter Shades: a small skull floats back and forth above the central portal (like the quest UFO, but smaller). Wait until it's over the center, then shoot the SPACELAND sign nodes with your Weapon of Rock to fire the beam &mdash; exactly like the main quest finale &mdash; so the beam zaps the skull.
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/gs-pap-skull.jpg" alt="Skull floating above the PaP portal" loading="lazy"><figcaption>With shades on &mdash; the skull over the portal</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/gs-pap-beam.jpg" alt="Beam hitting the skull" loading="lazy"><figcaption>Time the beam to hit it</figcaption></figure>
+        </div></li>
+      <li><b>Skull 6 &mdash; Brute power.</b> Bait a Brute into firing its laser at the Ghosts 'n Skulls cabinet &mdash; that collects the last skull and powers the machine on.
+        <figure class="shot"><img src="../img/spaceland/gs-brute.jpg" alt="Brute firing at the cabinet" loading="lazy"><figcaption>Let the Brute's beam hit the cabinet</figcaption></figure></li>
+      <li><b>Play the minigame.</b> You're given the Entangler: fire to grab a flying ghost, release to fling it at the skulls. Prioritize skulls that turn <b>red</b> &mdash; if 3 skulls escape you're ejected and must redo skull 6 to get back in. Multiple waves, so it takes a while.
+        <figure class="shot"><img src="../img/spaceland/gs-minigame.jpg" alt="Inside the Ghosts n Skulls minigame" loading="lazy"><figcaption>Fling ghosts into the skulls &mdash; red ones first</figcaption></figure></li>
+      <li><b>Reward:</b> every perk on the map permanently for the rest of the match (solo: Up N' Atoms excluded) + 1,000 XP.</li>
+    </ol>
+      </div>
+    </details>
+  </section>
+
+<!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <p class="blurb">Tap a weapon to open its guide. Do the <b>shared setup</b> first &mdash; all four Weapons of Rock need it.</p>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/st-ww-croc-device.jpg" alt="" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>Shared setup &mdash; do this first</b><small>Gold Teeth &middot; croc shard device &middot; Arcane Core &middot; UFO table</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <p class="blurb">Each weapon needs 3 parts: a <b>Battery</b>, a <b>Souvenir Toy</b>, and an <b>Elemental Shard</b>. The batteries differ per weapon; toys and shards follow the same pattern.</p>
+    <ol class="steps">
+      <li>Open Pack-a-Punch first &mdash; the UFO table and shard steps need it. <button class="xref" data-goto="pap">See Pack-a-Punch tab</button></li>
+      <li>Buy the <b>Gold Teeth</b> for 300 tickets at the Astrocade prize counter.
+        <figure class="shot"><img src="../img/spaceland/st-ww-goldteeth.jpg" alt="Gold Teeth at the prize counter" loading="lazy"><figcaption>Gold Teeth at the prize counter</figcaption></figure></li>
+      <li>Bait a <b>Brute</b> into the Space Croc Chomp so the jaws slam down on him &mdash; this smashes the croc's teeth.
+        <figure class="shot"><img src="../img/spaceland/st-ww-croc-brute.jpg" alt="Brute in the croc trap" loading="lazy"><figcaption>Get the croc to chomp while the Brute is in its mouth</figcaption></figure></li>
+      <li>Place the Gold Teeth on the croc &mdash; a device holding all four elemental shards is revealed in its throat.
+        <figure class="shot"><img src="../img/spaceland/st-ww-croc-device.jpg" alt="Shard device in the croc's throat" loading="lazy"><figcaption>The shard device. Slots left&rarr;right: Head Cutter (yellow) | Face Melter (blue) | Dischord (green) | Shredder (red)</figcaption></figure></li>
+      <li>Buy an <b>Arcane Core</b> for 300 tickets at any prize cart &mdash; it attaches to your current gun (the guide recommends putting it on the Kendall 44).</li>
+      <li>In the PaP room's back-left corner, interact with the <b>UFO table</b> to send the four mini-UFOs out to the traps.
+        <figure class="shot"><img src="../img/spaceland/st-ww-ufotable.jpg" alt="The UFO table in the PaP room" loading="lazy"><figcaption>The UFO table in the Projector Room</figcaption></figure></li>
+      <li><b>Shard loop</b> (done per weapon): get 15 kills with that weapon's trap &rarr; its UFO changes course &rarr; get 25 kills near the UFO using ONLY the Arcane Core gun &rarr; the colored orb drops &rarr; grab it &rarr; shoot that weapon's slot on the croc device &rarr; take the shard.</li>
+      <li>Souvenir coins for the Toy parts: <button class="xref" data-goto="coins">see Souvenir Coins tab</button></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/wpn-dischord.png" alt="">
+        <span class="acc-title"><b>Dischord</b><small>Laser &middot; zombies breakdance-kill each other &middot; upgrades to M.C. Pop Locker</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <div class="callout"><b>Needs the Shutter Shades</b> &mdash; a random pickup from zombie backpack drops. Wearing them reveals the hidden targets.</div>
+    <ol class="steps">
+      <li><b>Battery:</b> with the Shutter Shades on, shoot any 5 of the 13 hidden targets. All 13 locations:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-dis-t01.jpg" alt="1 &mdash; Spawn, near the Lost and Found" loading="lazy"><figcaption>1 &mdash; Spawn, near the Lost and Found</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t02.jpg" alt="2 &mdash; near the PaP portal, above the ATM" loading="lazy"><figcaption>2 &mdash; near the PaP portal, above the ATM</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t03.jpg" alt="3 &mdash; under the bridge to the Polar Peak entrance" loading="lazy"><figcaption>3 &mdash; under the bridge to the Polar Peak entrance</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t04.jpg" alt="4 &mdash; near the dragon mouth on Polar Peak, above the Astrocade entrance" loading="lazy"><figcaption>4 &mdash; near the dragon mouth on Polar Peak, above the Astrocade entrance</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t05.jpg" alt="5 &mdash; above the power switch in the Astrocade" loading="lazy"><figcaption>5 &mdash; above the power switch in the Astrocade</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t06.jpg" alt="6 &mdash; upstairs by the Devil Teeth game, outside the window" loading="lazy"><figcaption>6 &mdash; upstairs by the Devil Teeth game, outside the window</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t07.jpg" alt="7 &mdash; in a machine between the disco floor and the prize counter" loading="lazy"><figcaption>7 &mdash; in a machine between the disco floor and the prize counter</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t08.jpg" alt="8 &mdash; behind the prize counter" loading="lazy"><figcaption>8 &mdash; behind the prize counter</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t09.jpg" alt="9 &mdash; behind the Dischord build spot" loading="lazy"><figcaption>9 &mdash; behind the Dischord build spot</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t10.jpg" alt="10 &mdash; in a trash can upstairs near the Black Hole game" loading="lazy"><figcaption>10 &mdash; in a trash can upstairs near the Black Hole game</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t11.jpg" alt="11 &mdash; outside the Astrocade, near Blue Bolts" loading="lazy"><figcaption>11 &mdash; outside the Astrocade, near Blue Bolts</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t12.jpg" alt="12 &mdash; in a corner of the Rover Rampage area" loading="lazy"><figcaption>12 &mdash; in a corner of the Rover Rampage area</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-dis-t13.jpg" alt="13 &mdash; on the coaster track between the coaster entrance and the Astrocade" loading="lazy"><figcaption>13 &mdash; on the coaster track between the coaster entrance and the Astrocade</figcaption></figure>
+        </div></li>
+      <li>Grab the battery where it spawns.
+        <figure class="shot"><img src="../img/spaceland/st-dis-battery.jpg" alt="Battery on the disco floor" loading="lazy"><figcaption>The battery appears in the middle of the disco floor</figcaption></figure></li>
+      <li><b>Toy (Disco Ball):</b> insert one coin of each color (Red + Blue + Green) into the machine outside the Astrocade by Blue Bolts.
+        <figure class="shot"><img src="../img/spaceland/st-dis-toy.jpg" alt="Disco Ball toy at the machine" loading="lazy"><figcaption>The Disco Ball floats out to the right of the machine</figcaption></figure></li>
+      <li><b>Shard (green):</b> 15 kills with the disco-floor trap, 25 near its UFO with the Arcane Core gun, grab the green orb, then shoot the right-middle slot on the croc device.
+        <figure class="shot"><img src="../img/spaceland/st-dis-shard.jpg" alt="Green shard slot" loading="lazy"><figcaption>The green shard revealed</figcaption></figure></li>
+      <li><b>Build:</b> the board in the corner opposite the Astrocade prize counter.
+        <figure class="shot"><img src="../img/spaceland/st-dis-build.jpg" alt="Dischord build board" loading="lazy"><figcaption>The Dischord build board</figcaption></figure></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/wpn-shredder.png" alt="">
+        <span class="acc-title"><b>Shredder</b><small>Fire &middot; freezes then disintegrates crowds &middot; best vs. Aliens &middot; upgrades to Meat Grinder</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <ol class="steps">
+      <li><b>Battery:</b> at the bottom of Spaceship Splash, wait for the wooden raft and shoot the battery off its back (it's hidden &mdash; wear the Shutter Shades if you can't see it). Then go to the top of the ride and catch the battery when a sprayer shoots it out.</li>
+      <li><b>Toy:</b> insert 3 Red coins into the machine near the portal in Kepler &mdash; a tiny Chromosphere replica floats out.
+        <figure class="shot"><img src="../img/spaceland/st-shr-toy.jpg" alt="Chromosphere toy at the Kepler machine" loading="lazy"><figcaption>The toy at the Kepler machine</figcaption></figure></li>
+      <li><b>Shard (red):</b> 15 kills with the Chromosphere trap, 25 near its UFO with the Arcane Core gun, grab the red orb, then shoot the right-most slot on the croc device.
+        <figure class="shot"><img src="../img/spaceland/st-shr-shard.jpg" alt="Red shard slot" loading="lazy"><figcaption>The red shard revealed</figcaption></figure></li>
+      <li><b>Build:</b> Underground &mdash; easiest way down is the stairway in Journey Into Space.
+        <figure class="shot"><img src="../img/spaceland/st-shr-build.jpg" alt="Shredder build board" loading="lazy"><figcaption>The Shredder build board</figcaption></figure></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/wpn-facemelter.png" alt="">
+        <span class="acc-title"><b>Face Melter</b><small>Electric &middot; victims rocket up and rain fire &middot; upgrades to 4th of July</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <ol class="steps">
+      <li><b>Battery (grenade hot potato):</b> activate the portal in Journey Into Space and throw a grenade in &mdash; it gets spat back out. Pick it up and throw it again, relaying it portal to portal until it reaches the central Pack-a-Punch portal. The battery then appears.</li>
+      <li><b>Toy (Rocket):</b> insert 3 Blue coins into the machine in Journey Into Space near the Cosmic Tunes booth and Escape Velocity trap.
+        <figure class="shot"><img src="../img/spaceland/st-fm-toy.jpg" alt="Rocket toy at the machine" loading="lazy"><figcaption>The Rocket toy floats out to the right</figcaption></figure></li>
+      <li><b>Shard (blue):</b> 15 kills with the Star Mission trap (by Tuff 'Nuff), 25 near its UFO with the Arcane Core gun, grab the blue orb, then shoot the left-middle slot on the croc device.
+        <figure class="shot"><img src="../img/spaceland/st-fm-shard.jpg" alt="Blue shard slot" loading="lazy"><figcaption>The blue shard revealed</figcaption></figure></li>
+      <li><b>Build:</b> the board next to the Mule Munchies perk machine.
+        <figure class="shot"><img src="../img/spaceland/st-fm-build.jpg" alt="Face Melter build board" loading="lazy"><figcaption>The Face Melter build board</figcaption></figure></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/wpn-headcutter.png" alt="">
+        <span class="acc-title"><b>Head Cutter</b><small>Wind &middot; head-pop chain damage &middot; upgrades to Guillotine</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <ol class="steps">
+      <li><b>Battery:</b> buy Cryo Grenades for 350 tickets at the Astrocade prize counter.
+        <figure class="shot"><img src="../img/spaceland/st-hc-cryo.jpg" alt="Cryo Grenades at the prize counter" loading="lazy"><figcaption>Cryo Grenades &mdash; 350 tickets</figcaption></figure></li>
+      <li>Train 15-20 zombies to the Yeti outside the Polar Peak entrance, throw a Cryo Grenade at its head so it breathes frost, then headshot 10 frost-covered zombies. The battery spawns in the gift shop. (This step can be buggy and miss kills &mdash; it may take a couple of tries.)</li>
+      <li><b>Toy (Yeti):</b> insert 3 Green coins into the machine in the Polar Peak gift shop.
+        <figure class="shot"><img src="../img/spaceland/st-hc-toy.jpg" alt="Yeti toy at the gift shop machine" loading="lazy"><figcaption>The Yeti toy floats out to the right</figcaption></figure></li>
+      <li><b>Shard (yellow):</b> 15 kills with the Steel Dragon trap outside the gift shop, 25 near its UFO with the Arcane Core gun, grab the yellow orb, then shoot the left-most slot on the croc device.
+        <figure class="shot"><img src="../img/spaceland/st-hc-shard.jpg" alt="Yellow shard slot" loading="lazy"><figcaption>The yellow shard revealed</figcaption></figure></li>
+      <li><b>Build:</b> the board in the corner of the Polar Peak gift shop.
+        <figure class="shot"><img src="../img/spaceland/st-hc-build.jpg" alt="Head Cutter build board" loading="lazy"><figcaption>The Head Cutter build board</figcaption></figure></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/wpn-forgefreeze.png" alt="">
+        <span class="acc-title"><b>Forge Freeze</b><small>Freeze ray &middot; bought with tickets, no quest</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <ol class="steps">
+      <li>Buy it outright for <b>500 tickets</b> at the Astrocade prize booth.</li>
+      <li>One-time purchase &mdash; it's gone forever if you drop it. Frozen zombies die to a single melee at any round.</li>
+    </ol>
+      </div>
+    </details>
+  </section>
+
+<!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <p class="blurb">Spaceland has no workbench buildables (no shield). Its buildables are the four Weapons of Rock (<button class="xref" data-goto="wonder">Wonder Weapons tab</button>), plus the two quest builds below. Tap one to open its guide.</p>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/seticom-device.png" alt="">
+        <span class="acc-title"><b>Seti-Com</b><small>Main quest device &middot; Umbrella + Calculator + Boom Box, 3 spawns each</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <p class="blurb">Parts only appear after Pack-a-Punch is open. Each part has 3 possible spawns.</p>
+    <ol class="steps">
+      <li><b>Umbrella</b> &mdash; check all three:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-seti-umb1.jpg" alt="Cosmic Way &mdash; on the bench near the bottom of the Hyper Slopes" loading="lazy"><figcaption>Cosmic Way &mdash; on the bench near the bottom of the Hyper Slopes</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-seti-umb2.jpg" alt="Journey Into Space &mdash; on the ground by the Star Mission trap panel" loading="lazy"><figcaption>Journey Into Space &mdash; on the ground by the Star Mission trap panel</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-seti-umb3.jpg" alt="Polar Peak &mdash; on a counter in the gift shop" loading="lazy"><figcaption>Polar Peak &mdash; on a counter in the gift shop</figcaption></figure>
+        </div></li>
+      <li><b>Calculator</b> &mdash; check all three:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-seti-calc1.jpg" alt="Cosmic Way &mdash; on the yellow bench directly in front of the PaP portal" loading="lazy"><figcaption>Cosmic Way &mdash; on the yellow bench directly in front of the PaP portal</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-seti-calc2.jpg" alt="Kepler &mdash; on a table seat opposite the Chromosphere trap" loading="lazy"><figcaption>Kepler &mdash; on a table seat opposite the Chromosphere trap</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-seti-calc3.jpg" alt="Astrocade &mdash; on a blue-topped trash can upstairs" loading="lazy"><figcaption>Astrocade &mdash; on a blue-topped trash can upstairs</figcaption></figure>
+        </div></li>
+      <li><b>Boom Box</b> &mdash; check all three:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-seti-bb1.jpg" alt="Cosmic Way &mdash; bottom bridge out of spawn, next to a food stand and trash can" loading="lazy"><figcaption>Cosmic Way &mdash; bottom bridge out of spawn, next to a food stand and trash can</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-seti-bb2.jpg" alt="Underground &mdash; on the counter in the employee break room (Racin' Stripes room)" loading="lazy"><figcaption>Underground &mdash; on the counter in the employee break room (Racin' Stripes room)</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-seti-bb3.jpg" alt="Kepler &mdash; on a counter at the Moonlight Cafe, next to the power switch" loading="lazy"><figcaption>Kepler &mdash; on a counter at the Moonlight Cafe, next to the power switch</figcaption></figure>
+        </div></li>
+      <li>Hand all three parts to David Hasselhoff at his DJ booth to receive the built Seti-Com. Using it is the main quest &mdash; <button class="xref" data-goto="main">see Main Easter Egg tab</button></li>
+    </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/spaceland/st-n31l-head.jpg" alt="" style="object-fit:cover;border-radius:8px;">
+        <span class="acc-title"><b>N31L (the robot)</b><small>Head + Battery + Floppy Disk &middot; unlocks Hasselhoff summons</small></span>
+        <span class="acc-chev">&#8250;</span>
+      </summary>
+      <div class="acc-body">
+    <figure class="shot"><img src="../img/spaceland/st-n31l-portrait.jpg" alt="N31L fully assembled" loading="lazy"><figcaption>N31L &mdash; build him for tickets, stickers and Hasselhoff summons</figcaption></figure>
+    <ol class="steps">
+      <li><b>Head</b> &mdash; fixed spawn. Attach it to his headless body at the central hub.
+        <figure class="shot"><img src="../img/spaceland/st-n31l-head.jpg" alt="N31L head on a cart" loading="lazy"><figcaption>On the cart to the right of the bridge leading to the Polar Peak entrance</figcaption></figure></li>
+      <li><b>Auxiliary Battery</b> &mdash; asked for after his first challenge set. 6 possible spawns (3 Kepler, 3 Polar Peak):
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-n31l-bat1.jpg" alt="Kepler &mdash; yellow bench next to the Cosmic Tunes booth" loading="lazy"><figcaption>Kepler &mdash; yellow bench next to the Cosmic Tunes booth</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-bat2.jpg" alt="Kepler &mdash; red trash can near the Chromosphere, overlooking the croc trap" loading="lazy"><figcaption>Kepler &mdash; red trash can near the Chromosphere, overlooking the croc trap</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-bat3.jpg" alt="Kepler &mdash; ice cream cart directly opposite the Chromosphere" loading="lazy"><figcaption>Kepler &mdash; ice cream cart directly opposite the Chromosphere</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-bat4.jpg" alt="Polar Peak &mdash; on the blue trash can next to the Steel Dragon trap" loading="lazy"><figcaption>Polar Peak &mdash; on the blue trash can next to the Steel Dragon trap</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-bat5.jpg" alt="Polar Peak &mdash; in a cubby in the roller-coaster area" loading="lazy"><figcaption>Polar Peak &mdash; in a cubby in the roller-coaster area</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-bat6.jpg" alt="Polar Peak &mdash; lying on the gift shop counter" loading="lazy"><figcaption>Polar Peak &mdash; lying on the gift shop counter</figcaption></figure>
+        </div></li>
+      <li><b>Floppy Disk</b> &mdash; asked for after set 2. 5 possible spawns, all Underground:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-n31l-fd1.jpg" alt="On the red workbench at the bottom of the Journey Into Space stairs" loading="lazy"><figcaption>On the red workbench at the bottom of the Journey Into Space stairs</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-fd2.jpg" alt="On a bench outside the employee break room" loading="lazy"><figcaption>On a bench outside the employee break room</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-fd3.jpg" alt="On a white foldable table in the room before the Shredder build spot" loading="lazy"><figcaption>On a white foldable table in the room before the Shredder build spot</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-fd4.jpg" alt="On a table right of the Shredder build spot" loading="lazy"><figcaption>On a table right of the Shredder build spot</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-n31l-fd5.jpg" alt="On the red workbench left of the Shredder build spot" loading="lazy"><figcaption>On the red workbench left of the Shredder build spot</figcaption></figure>
+        </div></li>
+      <li>That's the full build. His challenge sets (with all goals per player count) are how you summon David Hasselhoff &mdash; <button class="xref" data-goto="side">see Side Easter Eggs tab</button></li>
+    </ol>
+      </div>
+    </details>
+  </section>
+
+<!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Opening Pack-a-Punch</h2>
+    <p class="blurb">Upgrades cost 5,000 points. Tip from the guide: do power and portals together &mdash; right after flipping a switch, ride the portal next to it.</p>
+    <ol class="steps">
+      <li>Flip all <b>five power switches</b>, one per district:
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-pap-sw-spawn.jpg" alt="Spawn &mdash; in the small room to the right of Lost and Found" loading="lazy"><figcaption>Spawn &mdash; in the small room to the right of Lost and Found</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-sw-journey.jpg" alt="Journey Into Space &mdash; hallway between Rover Rampage and the Star Mission trap" loading="lazy"><figcaption>Journey Into Space &mdash; hallway between Rover Rampage and the Star Mission trap</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-sw-kepler.jpg" alt="Kepler &mdash; at the Moonlight Cafe" loading="lazy"><figcaption>Kepler &mdash; at the Moonlight Cafe</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-sw-polar.jpg" alt="Polar Peak &mdash; opposite Quickies, near the roller-coaster entrance" loading="lazy"><figcaption>Polar Peak &mdash; opposite Quickies, near the roller-coaster entrance</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-sw-astro.jpg" alt="Astrocade &mdash; directly next to its portal, bottom floor" loading="lazy"><figcaption>Astrocade &mdash; directly next to its portal, bottom floor</figcaption></figure>
+        </div></li>
+      <li>Activate and <b>ride each of the four district portals</b> (each drops you back at the central junction):
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/spaceland/st-pap-portal-journey.jpg" alt="Journey Into Space &mdash; behind the Cosmic Tunes booth, near the Volk wall-buy" loading="lazy"><figcaption>Journey Into Space &mdash; behind the Cosmic Tunes booth, near the Volk wall-buy</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-portal-kepler.jpg" alt="Kepler &mdash; down the stairs from the Moonlight Cafe power switch" loading="lazy"><figcaption>Kepler &mdash; down the stairs from the Moonlight Cafe power switch</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-portal-polar.jpg" alt="Polar Peak &mdash; in a corner of the gift shop" loading="lazy"><figcaption>Polar Peak &mdash; in a corner of the gift shop</figcaption></figure>
+          <figure class="shot"><img src="../img/spaceland/st-pap-portal-astro.jpg" alt="Astrocade &mdash; directly next to the power switch" loading="lazy"><figcaption>Astrocade &mdash; directly next to the power switch</figcaption></figure>
+        </div></li>
+      <li>Check the light bar above the big central portal frame at Cosmic Way: yellow bulb = portal not ridden yet, blue = done. All four blue = the main portal opens.
+        <figure class="shot"><img src="../img/spaceland/pap-central-portal.jpg" alt="Central portal structure in the hub" loading="lazy"><figcaption>The central portal at Cosmic Way &mdash; check its light bar for progress</figcaption></figure></li>
+      <li>Ride the central portal through the alien tunnel to the <b>Projector Room</b> &mdash; the Pack-a-Punch projector is there. While inside, also tap the mini-UFO table when you're ready for the wonder weapon quests.
+        <figure class="shot"><img src="../img/spaceland/pap-projector-room.jpg" alt="Projector room" loading="lazy"><figcaption>The Projector Room &mdash; Pack-a-Punch lives here</figcaption></figure></li>
+      <li><b>Note:</b> double Pack-a-Punch is locked until you either complete the main quest (Alien Fuses) or play Director's Cut. <button class="xref" data-goto="main">See Main Easter Egg tab</button></li>
+    </ol>
+  </section>
+
+<!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">All locations are <b>fixed</b> on this map &mdash; nothing moves between matches.</p>
+    <div class="callout">Bombstoppers is listed at 2000 on some sources; the perk's own wiki page and the Steam guide both say 1500.</div>
+    <table class="data-table">
+      <tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr>
+      <tr><td><b>Up N' Atoms</b></td><td>500 solo<br>1500 co-op</td><td>Revive yourself when you go down (up to 3 buys solo); in co-op it just speeds up reviving teammates.</td><td>Spawn area, left of the main gate, tucked behind the Hailstorm wall-buy.</td></tr>
+      <tr><td><b>Tuff 'Nuff</b></td><td>2500</td><td>Take five hits before you go down instead of three. The Jugger-Nog of this map.</td><td>Journey Into Space, second section, right beside the Star Mission trap.</td></tr>
+      <tr><td><b>Quickies</b></td><td>3000</td><td>Reload, swap weapons and board up windows at roughly double speed.</td><td>Polar Peak upstairs, just outside the roller-coaster room next to the power switch.</td></tr>
+      <tr><td><b>Bang Bangs</b></td><td>2000</td><td>Higher fire rate, and every bullet counts twice for damage.</td><td>The spaceship-fountain plaza between Polar Peak and Kepler, near the Volk wall-buy.</td></tr>
+      <tr><td><b>Blue Bolts</b></td><td>1500</td><td>Reloading zaps nearby zombies &mdash; the emptier your mag, the bigger the shock.</td><td>The bumper-cars section past the Dodgems, near the Astrocade back entrance.</td></tr>
+      <tr><td><b>Mule Munchies</b></td><td>2000</td><td>Carry a third weapon.</td><td>Journey Into Space, beside the Escape Velocity ride.</td></tr>
+      <tr><td><b>Racin' Stripes</b></td><td>2000</td><td>Sprint faster and for longer, and shoot or use equipment while sprinting. Works even with the power off.</td><td>The employee break room in the Underground tunnels.</td></tr>
+      <tr><td><b>Bombstoppers</b></td><td>1500</td><td>You take no damage from your own explosives.</td><td>Kepler System, just past the croc head near the Erad wall-buy.</td></tr>
+      <tr><td><b>Slappy Taffy</b></td><td>2000</td><td>Melee hits do far more damage and stun what they hit.</td><td>Kepler System near the Chromosphere, by the ticket vendor and Fortune Teller.</td></tr>
+      <tr><td><b>Trail Blazers</b></td><td>1500</td><td>Sliding leaves a trail of fire that burns whatever follows you through it.</td><td>The catwalk behind the Astrocade toward Polar Peak, under the roller coaster.</td></tr>
+    </table>
+
+    <h2>What each machine looks like</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/spaceland/sl-perk-upnatoms.jpg" alt="Up N' Atoms &mdash; spawn, behind the Hailstorm wall-buy" loading="lazy"><figcaption>Up N' Atoms &mdash; spawn, behind the Hailstorm wall-buy</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-tuffnuff.jpg" alt="Tuff 'Nuff &mdash; Journey Into Space, by the Star Mission trap" loading="lazy"><figcaption>Tuff 'Nuff &mdash; Journey Into Space, by the Star Mission trap</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-quickies.jpg" alt="Quickies &mdash; Polar Peak upstairs, by the roller-coaster room" loading="lazy"><figcaption>Quickies &mdash; Polar Peak upstairs, by the roller-coaster room</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-bangbangs.jpg" alt="Bang Bangs &mdash; the fountain plaza between Polar Peak and Kepler" loading="lazy"><figcaption>Bang Bangs &mdash; the fountain plaza between Polar Peak and Kepler</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-bluebolts.jpg" alt="Blue Bolts &mdash; the bumper-cars section by the Astrocade back entrance" loading="lazy"><figcaption>Blue Bolts &mdash; the bumper-cars section by the Astrocade back entrance</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-mulemunchies.jpg" alt="Mule Munchies &mdash; Journey Into Space, beside Escape Velocity" loading="lazy"><figcaption>Mule Munchies &mdash; Journey Into Space, beside Escape Velocity</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-racinstripes.jpg" alt="Racin' Stripes &mdash; the Underground employee break room" loading="lazy"><figcaption>Racin' Stripes &mdash; the Underground employee break room</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-bombstoppers.jpg" alt="Bombstoppers &mdash; Kepler, just past the croc head" loading="lazy"><figcaption>Bombstoppers &mdash; Kepler, just past the croc head</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-slappytaffy.jpg" alt="Slappy Taffy &mdash; Kepler, near the Chromosphere" loading="lazy"><figcaption>Slappy Taffy &mdash; Kepler, near the Chromosphere</figcaption></figure>
+      <figure class="shot"><img src="../img/spaceland/sl-perk-trailblazers.jpg" alt="Trail Blazers &mdash; the catwalk behind the Astrocade" loading="lazy"><figcaption>Trail Blazers &mdash; the catwalk behind the Astrocade</figcaption></figure>
+    </div>
+    <p class="blurb">Machine photos courtesy of Glitching Queen.</p>
+  </section>
+
+  <!-- ============ SOUVENIR COINS ============ -->
+  <section class="tab-panel" id="tab-coins">
+    <h2>Souvenir Machine Combinations</h2>
+    <table class="data-table">
+      <tr><th>1st Coin</th><th>2nd Coin</th><th>3rd Coin</th><th>Result</th><th>Special Item*</th></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><b>Sentry Gun</b></td><td>Space Shuttle Toy</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><b>Electric Trap</b></td><td>---</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><b>Boom Box</b></td><td>---</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><b>Repocrator</b></td><td>Yeti Toy</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><b>Sentry Turret</b></td><td>---</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><b>Boom Box</b></td><td>---</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><b>Medusa Device</b></td><td>Chromosphere Toy</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><b>Fireworks</b></td><td>---</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><b>Window Laser Trap</b></td><td>---</td></tr>
+      <tr><td><img class="coin-ico" src="../img/spaceland/st-coin-red.jpg" alt="red coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-blue.jpg" alt="blue coin"></td><td><img class="coin-ico" src="../img/spaceland/st-coin-green.jpg" alt="green coin"></td><td><b>Kindle Pops</b></td><td>Disco Ball Toy</td></tr>
+    </table>
+    <p class="blurb">*The special toy is a wonder-weapon part and only appears when the combo is done at that weapon's machine &mdash; <button class="xref" data-goto="wonder">see Wonder Weapons tab</button></p>
+  </section>
+
+  <!-- ============ SIMON SAYS TRACKER ============ -->
+  <section class="tab-panel" id="tab-simon">
+    <h2>Simon Says tracker</h2>
+    <p class="blurb">Main quest, after the speakers summon the UFO: its underside flashes a color sequence you must replay on the four speakers &mdash; 3 sequences, each longer, all random per match. Tap the pads below as the UFO flashes so you don't have to memorize.</p>
+    <div class="callout"><b>Set your speaker colors first:</b> the colors follow the order YOU placed the speakers &mdash; 1st placed = yellow, 2nd = blue, 3rd = green, 4th = red. If you get an input wrong, a Brute spawns and the UFO re-flashes a NEW sequence &mdash; hit Clear and tap in the new one.</div>
+    <div id="simon-tracker"></div>
+  </section>
+
+  <footer class="site-footer">Personal guide app &middot; not affiliated with Activision</footer>
+</div>
+
+<script>
+  // Ascending-pitch demo for the speaker step (illustrates the order, not the game's real notes)
+  document.getElementById("tones-demo").addEventListener("click", (e) => {
+    e.stopPropagation();
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [220, 294, 392, 523].forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.value = freq;
+      const t = ctx.currentTime + i * 0.55;
+      gain.gain.setValueAtTime(0.001, t);
+      gain.gain.exponentialRampToValueAtTime(0.3, t + 0.03);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + 0.45);
+      osc.connect(gain).connect(ctx.destination);
+      osc.start(t);
+      osc.stop(t + 0.5);
+    });
+  });
+</script>
+<script src="../js/map.js"></script>
+<script src="../js/simon.js"></script>
+<script>
+  // Wheel positions mirror the UFO's underside: green top, red right, yellow bottom, blue left
+  SimonTracker(document.getElementById("simon-tracker"), {
+    mapId: "spaceland",
+    pads: [
+      { label: "3rd placed", color: "#3af06b", text: "Green", pos: "top" },
+      { label: "4th placed", color: "#f04d3a", text: "Red", pos: "right" },
+      { label: "1st placed", color: "#f5d90a", text: "Yellow", pos: "bottom" },
+      { label: "2nd placed", color: "#3aa0f0", text: "Blue", pos: "left" }
+    ]
+  });
+</script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>

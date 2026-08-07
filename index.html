@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0d10">
+<title>Zombies Guides</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- pwa:begin -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site-header">
+    <h1>Zombies Guides</h1>
+    <div class="sub">Easter eggs &middot; Wonder weapons &middot; Buildables &middot; Pack-a-Punch</div>
+  </header>
+
+  <main class="game-list" id="gameList"></main>
+
+  <footer class="site-footer">Personal guide app &middot; not affiliated with Activision</footer>
+</div>
+
+<script src="js/data.js"></script>
+<script>
+  const list = document.getElementById("gameList");
+  GAMES.forEach(g => {
+    const builtCount = g.maps.filter(m => m.built).length;
+    const a = document.createElement("a");
+    a.className = "game-card";
+    a.href = "game.html?g=" + g.id;
+    a.style.setProperty("--accent", g.accent);
+    a.innerHTML =
+      '<div class="glow"></div>' +
+      "<h2>" + g.name + "</h2>" +
+      '<div class="meta">' + g.year + " &middot; " + g.maps.length + " maps &middot; " + g.tagline + "</div>" +
+      (builtCount ? '<span class="badge">' + builtCount + " guide" + (builtCount > 1 ? "s" : "") + " ready</span>" : "") +
+      '<span class="chev">&#8250;</span>';
+    list.appendChild(a);
+  });
+</script>
+<script src="js/pwa.js" defer></script>
+</body>
+</html>
