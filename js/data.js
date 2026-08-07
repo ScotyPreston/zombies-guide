@@ -9,16 +9,10 @@ const GAMES = [
     accent2: "#c4d69a",
     tagline: "Where the Aether story took off",
     maps: [
-      { id: "kino", name: "Kino der Toten" },
-      { id: "five", name: "\"Five\"" },
       { id: "ascension", name: "Ascension" },
       { id: "cotd", name: "Call of the Dead", built: true },
       { id: "shangrila", name: "Shangri-La" },
-      { id: "moon", name: "Moon", note: "Samantha Says tracker", built: true },
-      { id: "nacht-bo1", name: "Nacht der Untoten", note: "Classic (Rezurrection)" },
-      { id: "verruckt-bo1", name: "Verrückt", note: "Classic (Rezurrection)" },
-      { id: "shino-bo1", name: "Shi No Numa", note: "Classic (Rezurrection)" },
-      { id: "derriese-bo1", name: "Der Riese", note: "Classic (Rezurrection)" }
+      { id: "moon", name: "Moon", note: "Samantha Says tracker", built: true }
     ]
   },
   {
@@ -30,7 +24,6 @@ const GAMES = [
     tagline: "Victis, Mob of the Dead & Origins",
     maps: [
       { id: "tranzit", name: "TranZit", note: "2 main EEs: Richtofen / Maxis" },
-      { id: "nuketown", name: "Nuketown Zombies" },
       { id: "dierise", name: "Die Rise", note: "2 main EEs: Richtofen / Maxis" },
       { id: "motd", name: "Mob of the Dead", note: "Pop Goes the Weasel", built: true },
       { id: "buried", name: "Buried", note: "2 main EEs: Richtofen / Maxis" },
@@ -45,13 +38,11 @@ const GAMES = [
     accent2: "#ff7b6b",
     tagline: "The end of the Aether saga",
     maps: [
-      { id: "soe", name: "Shadows of Evil" },
-      { id: "giant", name: "The Giant" },
+      { id: "soe", name: "Shadows of Evil", note: "4 rituals + Shadow Man", built: true },
       { id: "der-eisendrache", name: "Der Eisendrache" },
       { id: "zetsubou", name: "Zetsubou No Shima", note: "Plants tab" },
       { id: "gorod", name: "Gorod Krovi", note: "Valve solver" },
-      { id: "revelations", name: "Revelations" },
-      { id: "chronicles", name: "Zombies Chronicles", note: "8 remastered classics" }
+      { id: "revelations", name: "Revelations" }
     ]
   },
   {
