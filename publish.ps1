@@ -1,4 +1,4 @@
-<#
+﻿<#
   Publishes the Zombies Guides app to the phone.
 
   Usage:

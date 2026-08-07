@@ -303,3 +303,90 @@ figure.shot figcaption {
   border-radius: 999px;
   cursor: pointer;
 }
+
+/* ---- Map tab: the in-game park/camp map, tap to open full screen ---- */
+.map-figure { margin: 0 0 14px; }
+.map-figure button.map-open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.map-figure button.map-open img { display: block; width: 100%; height: auto; }
+.map-figure .tap-hint {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  background: rgba(0, 0, 0, 0.72);
+  color: var(--map-accent);
+  border: 1px solid var(--map-accent);
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 0.74rem;
+  pointer-events: none;
+}
+.map-figure figcaption {
+  padding: 8px 2px 0;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+/* Full-screen viewer */
+.map-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #05060a;
+  display: none;
+  flex-direction: column;
+}
+.map-viewer.open { display: flex; }
+.map-viewer .mv-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  padding-top: calc(10px + env(safe-area-inset-top));
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-card);
+  flex: 0 0 auto;
+}
+.map-viewer .mv-title {
+  flex: 1 1 auto;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-viewer button {
+  background: var(--bg-card-hover);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-width: 44px;
+  min-height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.map-viewer button:active { background: var(--map-accent); color: #000; }
+.map-viewer .mv-close { color: var(--map-accent); font-weight: 700; }
+.map-viewer .mv-scroll {
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px;
+}
+.map-viewer .mv-scroll img {
+  display: block;
+  width: var(--mv-width, 100%);
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+}

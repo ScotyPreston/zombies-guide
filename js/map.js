@@ -49,8 +49,10 @@
 
   let startTab = null;
   try { startTab = sessionStorage.getItem("zg-tab-" + mapId); } catch (e) {}
+  // A page can mark which tab to land on with data-default; otherwise it's the first pill.
+  const defaultBtn = document.querySelector(".tab-btn[data-default]") || btns[0];
   if (startTab && document.getElementById("tab-" + startTab)) showTab(startTab);
-  else if (btns.length) showTab(btns[0].dataset.tab);
+  else if (defaultBtn) showTab(defaultBtn.dataset.tab);
 
   // ---- Checkable steps ----
   let progress = {};
@@ -69,6 +71,70 @@
       try { localStorage.setItem(storeKey, JSON.stringify(progress)); } catch (e) {}
     });
   });
+
+  // ---- Full-screen map viewer ----
+  // <button class="map-open" data-full="../img/x/map.jpg" data-title="…"><img …></button>
+  const openers = document.querySelectorAll(".map-open");
+  if (openers.length) {
+    const ZOOMS = [100, 150, 220, 320, 450];
+    let zi = 0;
+
+    const viewer = document.createElement("div");
+    viewer.className = "map-viewer";
+    viewer.innerHTML =
+      '<div class="mv-bar">' +
+        '<button class="mv-close" aria-label="Close map">&#10005;</button>' +
+        '<span class="mv-title"></span>' +
+        '<button class="mv-out" aria-label="Zoom out">&minus;</button>' +
+        '<button class="mv-in" aria-label="Zoom in">+</button>' +
+      "</div>" +
+      '<div class="mv-scroll"><img alt=""></div>';
+    document.body.appendChild(viewer);
+
+    const scroll = viewer.querySelector(".mv-scroll");
+    const img = viewer.querySelector("img");
+    const title = viewer.querySelector(".mv-title");
+
+    function applyZoom() {
+      img.style.setProperty("--mv-width", ZOOMS[zi] + "%");
+      viewer.querySelector(".mv-out").disabled = zi === 0;
+      viewer.querySelector(".mv-in").disabled = zi === ZOOMS.length - 1;
+    }
+    function zoom(dir) {
+      // keep whatever is in the middle of the screen roughly in the middle
+      const cx = (scroll.scrollLeft + scroll.clientWidth / 2) / Math.max(scroll.scrollWidth, 1);
+      const cy = (scroll.scrollTop + scroll.clientHeight / 2) / Math.max(scroll.scrollHeight, 1);
+      zi = Math.min(ZOOMS.length - 1, Math.max(0, zi + dir));
+      applyZoom();
+      requestAnimationFrame(() => {
+        scroll.scrollLeft = cx * scroll.scrollWidth - scroll.clientWidth / 2;
+        scroll.scrollTop = cy * scroll.scrollHeight - scroll.clientHeight / 2;
+      });
+    }
+    function close() {
+      viewer.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    openers.forEach(btn => btn.addEventListener("click", () => {
+      const inner = btn.querySelector("img");
+      img.src = btn.dataset.full || (inner && inner.src) || "";
+      title.textContent = btn.dataset.title || "";
+      zi = 0;
+      applyZoom();
+      scroll.scrollTop = 0;
+      scroll.scrollLeft = 0;
+      viewer.classList.add("open");
+      document.body.style.overflow = "hidden"; // don't scroll the page behind it
+    }));
+
+    viewer.querySelector(".mv-close").addEventListener("click", close);
+    viewer.querySelector(".mv-in").addEventListener("click", () => zoom(1));
+    viewer.querySelector(".mv-out").addEventListener("click", () => zoom(-1));
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && viewer.classList.contains("open")) close();
+    });
+  }
 
   const reset = document.querySelector(".reset-progress");
   if (reset) reset.addEventListener("click", () => {
