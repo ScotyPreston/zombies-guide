@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b0f12">
+<title>Call of the Dead &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Call of the Dead theme: frozen Siberian shipwreck — steel night-blue + glacial cyan */
+  :root {
+    --map-bg: #0b0f12;
+    --map-bg2: #141b20;
+    --bg: #0b0f12;
+    --bg-card: #141b20;
+    --bg-card-hover: #1c252c;
+    --line: #26333c;
+    --map-accent: #4fd6e8;
+    --map-accent2: #bfeef7;
+    --map-glow: rgba(79, 214, 232, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="cotd">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo1">&#8249; Black Ops 1</a></nav>
+
+  <header class="map-header">
+    <h1>Call of the Dead</h1>
+    <div class="sub">Black Ops 1 &middot; Siberian shipwreck</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <p class="blurb">The original crew is locked behind the vault door and you're breaking them out. There are <b>two versions of the quest</b> &mdash; solo skips four co-op-only steps. Pick yours:</p>
+
+    <div class="subtab-bar">
+      <button class="subtab-btn" data-subtab="solo">Solo &mdash; "Stand-in"</button>
+      <button class="subtab-btn" data-subtab="coop">Co-op &mdash; "Ensemble Cast"</button>
+    </div>
+
+    <div class="subtab-panel" id="subtab-solo">
+      <div class="req-box">
+        <h3>Requirements</h3>
+        <ul>
+          <li><b>Players: 1</b> &mdash; this is the shortened solo version of the quest.</li>
+          <li>The <b>V-R11</b> from the Mystery Box (needed near the end). Semtex makes the generator step much easier.</li>
+        </ul>
+      </div>
+      <h2>"Stand-in" &mdash; full quest</h2>
+      <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+      <ol class="steps">
+        <li><b>Turn on the power.</b> The switch is on the bridge, on the top level of the ship.
+<figure class="shot"><img src="../img/cotd/cd-s1-power.jpg" alt="The power switch on the ship's bridge" loading="lazy"><figcaption>The power switch on the ship's bridge</figcaption></figure></li>
+        <li><b>Fix the missing fuse.</b> Knife the vault door in the room below PhD Flopper and listen to the crew &mdash; Richtofen explains a fuse is broken. Search the room above and this floor for the fuse, place it in the slot next to the door, then <b>knife the door again</b>.
+<figure class="shot"><img src="../img/cotd/cd-s2-a.jpg" alt="Fuse spawn &mdash; on the desk with the lantern and papers" loading="lazy"><figcaption>Fuse spawn &mdash; on the desk with the lantern and papers</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s2-b.jpg" alt="Fuse spawn &mdash; on the shelves in the dark storage corner" loading="lazy"><figcaption>Fuse spawn &mdash; on the shelves in the dark storage corner</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s2-c.jpg" alt="The fuse slot on the panel next to the vault door" loading="lazy"><figcaption>The fuse slot on the panel next to the vault door</figcaption></figure></li>
+        <li><b>Knock out the 4 security generators.</b> Nikolai trips the security system; find all four generators (look for the <b>red beacon</b>) and destroy them. Easiest way: buy <b>Semtex</b> and stick one on top of each.
+<figure class="shot"><img src="../img/cotd/cd-s3-gen1.jpg" alt="Generator 1 &mdash; directly across from the vault door" loading="lazy"><figcaption>Generator 1 &mdash; directly across from the vault door</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s3-gen2.jpg" alt="Generator 2 &mdash; over the railing in the water by Double Tap" loading="lazy"><figcaption>Generator 2 &mdash; over the railing in the water by Double Tap</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s3-gen3.jpg" alt="Generator 3 &mdash; between the ice shelves in the middle of the ship" loading="lazy"><figcaption>Generator 3 &mdash; between the ice shelves in the middle of the ship</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s3-gen4.jpg" alt="Generator 4 &mdash; outside the map, next to a window by Stamin-Up" loading="lazy"><figcaption>Generator 4 &mdash; outside the map, next to a window by Stamin-Up</figcaption></figure></li>
+        <li><b>Set the ship's wheel and levers.</b> On the bridge, turn the wheel until the <b>brown peg points to the bottom right</b>. Then use the 3 levers beside it: pull the <b>left lever once</b> and the <b>right lever 3 times</b>.
+<figure class="shot"><img src="../img/cotd/cd-s6-wheel.jpg" alt="The wheel &mdash; brown peg to the bottom right" loading="lazy"><figcaption>The wheel &mdash; brown peg to the bottom right</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s6-levers.jpg" alt="The levers &mdash; left one once, right one 3 times" loading="lazy"><figcaption>The levers &mdash; left one once, right one 3 times</figcaption></figure></li>
+        <li><b>The human sacrifice.</b> Get the <b>V-R11</b> from the Mystery Box and shoot a zombie on the bottom floor of the lighthouse. It turns into a human, runs into the green light in the spiral staircase and floats up screaming &mdash; <b>kill the human before it reaches the top</b>.
+<figure class="shot"><img src="../img/cotd/cd-s9-vr11.jpg" alt="The human floating up the lighthouse staircase &mdash; kill it before the top" loading="lazy"><figcaption>The human floating up the lighthouse staircase &mdash; kill it before the top</figcaption></figure></li>
+        <li><b>Send the crew to Paradise.</b> The <b>Vril Device</b> floats down to the bottom of the lighthouse staircase. Grab it, carry it to the vault door, and put it in the <b>same tube</b> the steps used earlier. After Richtofen's dialogue, <b>knife the fuse box one last time</b> &mdash; that completes "Stand-in".
+<figure class="shot"><img src="../img/cotd/cd-s10-vrill.jpg" alt="The bottom of the lighthouse staircase &mdash; the Vril Device comes down here" loading="lazy"><figcaption>The bottom of the lighthouse staircase &mdash; the Vril Device comes down here</figcaption></figure><div class="callout"><b>Reward:</b> a <b>Wunderwaffe DG-2</b> (lasts until the ammo is gone) &mdash; and from now on George drops a Wunderwaffe instead of a Death Machine when you kill him.</div>
+<figure class="shot"><img src="../img/cotd/cd-s10-waffe.jpg" alt="The Wunderwaffe DG-2 reward" loading="lazy"><figcaption>The Wunderwaffe DG-2 reward</figcaption></figure></li>
+      </ol>
+    </div>
+
+    <div class="subtab-panel" id="subtab-coop">
+      <div class="req-box">
+        <h3>Requirements</h3>
+        <ul>
+          <li><b>Players: 2&ndash;4.</b> The vodka step needs one player knifing and one catching.</li>
+          <li>The <b>V-R11</b> from the Mystery Box (needed near the end). Semtex makes the generator step much easier.</li>
+        </ul>
+      </div>
+      <h2>"Ensemble Cast" &mdash; full quest</h2>
+      <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+      <ol class="steps">
+        <li><b>Turn on the power.</b> The switch is on the bridge, on the top level of the ship.
+<figure class="shot"><img src="../img/cotd/cd-s1-power.jpg" alt="The power switch on the ship's bridge" loading="lazy"><figcaption>The power switch on the ship's bridge</figcaption></figure></li>
+        <li><b>Fix the missing fuse.</b> Knife the vault door in the room below PhD Flopper and listen to the crew &mdash; Richtofen explains a fuse is broken. Search the room above and this floor for the fuse, place it in the slot next to the door, then <b>knife the door again</b>.
+<figure class="shot"><img src="../img/cotd/cd-s2-a.jpg" alt="Fuse spawn &mdash; on the desk with the lantern and papers" loading="lazy"><figcaption>Fuse spawn &mdash; on the desk with the lantern and papers</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s2-b.jpg" alt="Fuse spawn &mdash; on the shelves in the dark storage corner" loading="lazy"><figcaption>Fuse spawn &mdash; on the shelves in the dark storage corner</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s2-c.jpg" alt="The fuse slot on the panel next to the vault door" loading="lazy"><figcaption>The fuse slot on the panel next to the vault door</figcaption></figure></li>
+        <li><b>Knock out the 4 security generators.</b> Nikolai trips the security system; find all four generators (look for the <b>red beacon</b>) and destroy them. Easiest way: buy <b>Semtex</b> and stick one on top of each.
+<figure class="shot"><img src="../img/cotd/cd-s3-gen1.jpg" alt="Generator 1 &mdash; directly across from the vault door" loading="lazy"><figcaption>Generator 1 &mdash; directly across from the vault door</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s3-gen2.jpg" alt="Generator 2 &mdash; over the railing in the water by Double Tap" loading="lazy"><figcaption>Generator 2 &mdash; over the railing in the water by Double Tap</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s3-gen3.jpg" alt="Generator 3 &mdash; between the ice shelves in the middle of the ship" loading="lazy"><figcaption>Generator 3 &mdash; between the ice shelves in the middle of the ship</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s3-gen4.jpg" alt="Generator 4 &mdash; outside the map, next to a window by Stamin-Up" loading="lazy"><figcaption>Generator 4 &mdash; outside the map, next to a window by Stamin-Up</figcaption></figure></li>
+        <li><b>Get Nikolai his vodka.</b> The bottle hangs frozen in the ice in <b>1 of 4 spots</b>. One player knifes the ice while <b>another stands underneath to catch the bottle</b>. Then place it in the receptacle tube to the left of the vault door.
+<figure class="shot"><img src="../img/cotd/cd-s4-vodka1.jpg" alt="Vodka spot &mdash; on the ramp connecting the two halves of the ship" loading="lazy"><figcaption>Vodka spot &mdash; on the ramp connecting the two halves of the ship</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s4-vodka2.jpg" alt="Vodka spot &mdash; next to the Mystery Box above PhD Flopper" loading="lazy"><figcaption>Vodka spot &mdash; next to the Mystery Box above PhD Flopper</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s4-vodka3.jpg" alt="Vodka spot &mdash; above and to the right of the MPL wall-buy" loading="lazy"><figcaption>Vodka spot &mdash; above and to the right of the MPL wall-buy</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s4-vodka4.jpg" alt="Vodka spot &mdash; on the staircase from that Mystery Box down toward PhD Flopper" loading="lazy"><figcaption>Vodka spot &mdash; on the staircase from that Mystery Box down toward PhD Flopper</figcaption></figure></li>
+        <li><b>Press the 4 radios in order.</b> Hit them in exactly this order &mdash; done right, a light in the sky starts flashing Morse code.
+<figure class="shot"><img src="../img/cotd/cd-s5-radio1.jpg" alt="Radio 1 &mdash; underneath the power room, on the electrical cabinet on the right" loading="lazy"><figcaption>Radio 1 &mdash; underneath the power room, on the electrical cabinet on the right</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s5-radio2.jpg" alt="Radio 2 &mdash; to the right of Stamin-Up, on a barrel" loading="lazy"><figcaption>Radio 2 &mdash; to the right of Stamin-Up, on a barrel</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s5-radio3.jpg" alt="Radio 3 &mdash; right of the zip-line exit, on its side inside a shipping container" loading="lazy"><figcaption>Radio 3 &mdash; right of the zip-line exit, on its side inside a shipping container</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s5-radio4.jpg" alt="Radio 4 &mdash; on the cabinet under the stairs next to the vault" loading="lazy"><figcaption>Radio 4 &mdash; on the cabinet under the stairs next to the vault</figcaption></figure></li>
+        <li><b>Set the ship's wheel and levers.</b> On the bridge, turn the wheel until the <b>brown peg points to the bottom right</b>. Then use the 3 levers beside it: pull the <b>left lever once</b> and the <b>right lever 3 times</b>.
+<figure class="shot"><img src="../img/cotd/cd-s6-wheel.jpg" alt="The wheel &mdash; brown peg to the bottom right" loading="lazy"><figcaption>The wheel &mdash; brown peg to the bottom right</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s6-levers.jpg" alt="The levers &mdash; left one once, right one 3 times" loading="lazy"><figcaption>The levers &mdash; left one once, right one 3 times</figcaption></figure></li>
+        <li><b>Press the 4 foghorns in order.</b> Done right, a green beam shines from the submarine to the top of the lighthouse.
+<figure class="shot"><img src="../img/cotd/cd-s7-fog1.jpg" alt="Foghorn 1 &mdash; right of the AK-74u wall-buy, at the water's edge" loading="lazy"><figcaption>Foghorn 1 &mdash; right of the AK-74u wall-buy, at the water's edge</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s7-fog2.jpg" alt="Foghorn 2 &mdash; around the right corner after sliding down to Speed Cola" loading="lazy"><figcaption>Foghorn 2 &mdash; around the right corner after sliding down to Speed Cola</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s7-fog3.jpg" alt="Foghorn 3 &mdash; left of the AK-74u wall-buy, at the base of the building" loading="lazy"><figcaption>Foghorn 3 &mdash; left of the AK-74u wall-buy, at the base of the building</figcaption></figure><figure class="shot"><img src="../img/cotd/cd-s7-fog4.jpg" alt="Foghorn 4 &mdash; straight ahead after sliding down to Speed Cola" loading="lazy"><figcaption>Foghorn 4 &mdash; straight ahead after sliding down to Speed Cola</figcaption></figure></li>
+        <li><b>Set the lighthouse dials.</b> Each of the lighthouse's 4 floors has a dial &mdash; top to bottom they are <b>Yellow, Orange, Blue, Purple</b>. Turning one dial also spins others, which is what makes this the hardest step. This order sorts it out:
+<ol class="substeps"><li>Turn <b>Yellow</b> to <b>2</b></li><li>Turn <b>Blue</b> until <b>Orange</b> reads <b>7</b></li><li>Turn <b>Purple</b> to <b>6</b></li><li>Turn <b>Orange</b> until <b>Blue</b> reads <b>4</b></li><li>Turn <b>Yellow</b> back to <b>2</b></li></ol></li>
+        <li><b>The human sacrifice.</b> Get the <b>V-R11</b> from the Mystery Box and shoot a zombie on the bottom floor of the lighthouse. It turns into a human, runs into the green light in the spiral staircase and floats up screaming &mdash; <b>kill the human before it reaches the top</b>.
+<figure class="shot"><img src="../img/cotd/cd-s9-vr11.jpg" alt="The human floating up the lighthouse staircase &mdash; kill it before the top" loading="lazy"><figcaption>The human floating up the lighthouse staircase &mdash; kill it before the top</figcaption></figure></li>
+        <li><b>Send the crew to Paradise.</b> The <b>Vril Device</b> floats down to the bottom of the lighthouse staircase. Grab it, carry it to the vault door, and put it in the <b>same tube</b> the steps used earlier. After Richtofen's dialogue, <b>knife the fuse box one last time</b> &mdash; that completes "Ensemble Cast".
+<figure class="shot"><img src="../img/cotd/cd-s10-vrill.jpg" alt="The bottom of the lighthouse staircase &mdash; the Vril Device comes down here" loading="lazy"><figcaption>The bottom of the lighthouse staircase &mdash; the Vril Device comes down here</figcaption></figure><div class="callout"><b>Reward:</b> a <b>Wunderwaffe DG-2</b> (lasts until the ammo is gone) &mdash; and from now on George drops a Wunderwaffe instead of a Death Machine when you kill him.</div>
+<figure class="shot"><img src="../img/cotd/cd-s10-waffe.jpg" alt="The Wunderwaffe DG-2 reward" loading="lazy"><figcaption>The Wunderwaffe DG-2 reward</figcaption></figure></li>
+      </ol>
+    </div>
+
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+
+    <details class="acc">
+      <summary><img src="../img/cotd/cd-song-spawn.jpg" alt="" style="object-fit:cover">
+        <span><b>Music easter egg &mdash; "Not Ready to Die"</b><br><small>3 Element 115 fragments</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">No teddy bears here &mdash; like Kino, you're hunting <b>3 glowing Element 115 fragments</b>. Hold the use button on each; the third starts "Not Ready to Die" by Avenged Sevenfold.</p>
+        <div class="shot-grid">
+          <figure class="shot"><img src="../img/cotd/cd-song-spawn.jpg" alt="Fragment 1 &mdash; in spawn, on a barrel next to the water George rises out of" loading="lazy"><figcaption>Fragment 1 &mdash; in spawn, on a barrel next to the water George rises out of</figcaption></figure>
+          <figure class="shot"><img src="../img/cotd/cd-song-dining.jpg" alt="Fragment 2 &mdash; in the ship's dining area, on a bench" loading="lazy"><figcaption>Fragment 2 &mdash; in the ship's dining area, on a bench</figcaption></figure>
+          <figure class="shot"><img src="../img/cotd/cd-song-phd.jpg" alt="Fragment 3 &mdash; across from PhD Flopper, underneath a table" loading="lazy"><figcaption>Fragment 3 &mdash; across from PhD Flopper, underneath a table</figcaption></figure>
+        </div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/cotd/cd-ach-quiet.jpg" alt="">
+        <span><b>Map achievements</b><br><small>All 5, and how to get them</small></span></summary>
+      <div class="acc-body">
+        <table class="data-table">
+          <thead><tr><th></th><th>Achievement</th><th>How</th></tr></thead>
+          <tbody>
+            <tr><td><img class="coin-ico" src="../img/cotd/cd-ach-stuntman.jpg" alt=""></td><td><b>Stuntman</b><br><small>Make a zombie explode with the V-R11</small></td><td>Pack-a-Punch the V-R11, then shoot the same zombie <b>twice</b> with it.</td></tr>
+            <tr><td><img class="coin-ico" src="../img/cotd/cd-ach-quiet.jpg" alt=""></td><td><b>Quiet on the Set</b><br><small>Cut the lights on the Director</small></td><td>Kill George Romero. He has <b>250,000 health per player</b> &mdash; he drops a Death Machine (or a Wunderwaffe once the main quest is done).</td></tr>
+            <tr><td><img class="coin-ico" src="../img/cotd/cd-ach-location.jpg" alt=""></td><td><b>Shooting on Location</b><br><small>10 kills with one Scavenger shot from 100+ feet</small></td><td>Fire one Scavenger shot into a big crowd from across the map.</td></tr>
+            <tr><td><img class="coin-ico" src="../img/cotd/cd-ach-standin.jpg" alt=""></td><td><b>Stand-in</b><br><small>Send the crew to Paradise (solo or co-op)</small></td><td><button class="xref" data-goto="main">Complete the main quest</button></td></tr>
+            <tr><td><img class="coin-ico" src="../img/cotd/cd-ach-ensemble.jpg" alt=""></td><td><b>Ensemble Cast</b><br><small>Send the crew to Paradise in co-op</small></td><td><button class="xref" data-goto="main">Complete the co-op version of the main quest</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">Nothing to build on this map. The <b>V-R11</b> and the <b>Scavenger</b> both come out of the <b>Mystery Box</b> for 950 &mdash; keep spinning until one drops. The <b>Wunderwaffe DG-2</b> is the only one you can't buy: it's the main quest reward.</p>
+
+    <details class="acc">
+      <summary><img src="../img/cotd/cd-wpn-vr11.jpg" alt="">
+        <span><b>V-R11</b><br><small>Mystery Box &middot; 950</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Turns a zombie back into a human. The human runs off and <b>pulls the horde after him</b>, which makes this the best panic button on the map &mdash; and it's the weapon the main quest needs. <button class="xref" data-goto="main">Used in the human sacrifice step</button></p>
+        <figure class="shot"><img src="../img/cotd/cd-wpn-vr11.jpg" alt="The V-R11" loading="lazy"><figcaption>The V-R11</figcaption></figure>
+        <div class="callout">It does almost no damage on its own &mdash; carry it <b>alongside</b> a killing weapon, not instead of one.</div>
+        <h3>Upgraded &mdash; V-R11 Lazarus</h3>
+        <figure class="shot"><img src="../img/cotd/cd-wpn-vr11-pap.jpg" alt="V-R11 Lazarus &mdash; the Pack-a-Punched V-R11" loading="lazy"><figcaption>V-R11 Lazarus &mdash; the Pack-a-Punched V-R11</figcaption></figure>
+        <p class="blurb">Bigger magazine and a wider blast. Shoot a zombie to turn it human, then <b>shoot that human a second time and it explodes</b>, taking out everything that followed it &mdash; that's the <b>Stuntman</b> achievement. <button class="xref" data-goto="side">See achievements</button></p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/cotd/cd-wpn-scavenger.jpg" alt="">
+        <span><b>Scavenger</b><br><small>Mystery Box &middot; 950</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">A bolt-action explosive sniper. Rounds stick where they land and blow up a moment later, so it clears whole trains at once and stays useful deep into high rounds.</p>
+        <figure class="shot"><img src="../img/cotd/cd-wpn-scavenger.jpg" alt="The Scavenger" loading="lazy"><figcaption>The Scavenger</figcaption></figure>
+        <div class="callout">One shot into a big crowd from across the map is the <b>Shooting on Location</b> achievement &mdash; 10 kills with a single shot from over 100 feet.</div>
+        <h3>Upgraded &mdash; Hyena Infra-dead</h3>
+        <figure class="shot"><img src="../img/cotd/cd-wpn-hyena.jpg" alt="Hyena Infra-dead &mdash; the Pack-a-Punched Scavenger" loading="lazy"><figcaption>Hyena Infra-dead &mdash; the Pack-a-Punched Scavenger</figcaption></figure>
+        <p class="blurb">Double the magazine and reserve ammo, and a much bigger explosion.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/cotd/cd-wpn-wunderwaffe.jpg" alt="">
+        <span><b>Wunderwaffe DG-2</b><br><small>Main quest reward &mdash; not in the box</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Chains lightning between zombies and wipes an entire train in one shot. On this map you <b>can't get it from the Mystery Box</b> &mdash; there are only two ways:</p>
+        <ul>
+          <li>Finish the main quest &mdash; every player is handed one. <button class="xref" data-goto="main">See the quest</button></li>
+          <li>After the quest is done, <b>George Romero drops one</b> every time you kill him (instead of the Death Machine).</li>
+        </ul>
+        <figure class="shot"><img src="../img/cotd/cd-wpn-wunderwaffe.jpg" alt="The Wunderwaffe DG-2" loading="lazy"><figcaption>The Wunderwaffe DG-2</figcaption></figure>
+        <div class="callout">The quest-reward one <b>lasts only until the ammo runs out</b>, so save it for a round you actually need it in.</div>
+        <h3>Upgraded &mdash; Wunderwaffe DG-3 JZ</h3>
+        <figure class="shot"><img src="../img/cotd/cd-wpn-dg3.jpg" alt="Wunderwaffe DG-3 JZ &mdash; the Pack-a-Punched Wunderwaffe" loading="lazy"><figcaption>Wunderwaffe DG-3 JZ &mdash; the Pack-a-Punched Wunderwaffe</figcaption></figure>
+        <p class="blurb">More ammo and a longer chain between targets. <button class="xref" data-goto="pap">See Pack-a-Punch</button></p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">To find the Pack-a-Punch, <b>use the lighthouse</b> &mdash; wherever its beam is pointing is where the machine is.</p>
+    <figure class="shot"><img src="../img/cotd/cd-pap-lighthouse.jpg" alt="The lighthouse beam pointing the way to Pack-a-Punch" loading="lazy"><figcaption>Follow the lighthouse beam &mdash; it points straight at wherever Pack-a-Punch is right now</figcaption></figure>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Eight machines, all in fixed spots. Only Quick Revive is buyable before the power is on. <button class="xref" data-goto="pap">See Pack-a-Punch for the power switch</button></p>
+
+    <div class="callout"><b>Deadshot Daiquiri debuts on this map</b> &mdash; Call of the Dead is the first place it ever appeared. It's also the one perk with two prices: <b>1500 on console, 1000 on PC</b>.</div>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Quick Revive</b></td><td>500 solo<br>1500 co-op</td><td>Revive yourself when you go down (3 buys solo); in co-op it just speeds up reviving teammates.</td><td>Spawn area, out on the ice by the wrecked bow &mdash; buyable before the power is on.</td></tr>
+        <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Take five hits before you go down instead of two. The one you always buy first.</td><td>Below deck, in the red-lit corridor. Two ways in: the <b>top entrance</b> near the bow by the Semtex, or the <b>stairs down</b> by the cargo container after you jump off the boat from the Power Room.</td></tr>
+        <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload about twice as fast, and board up windows quicker.</td><td>At the <b>bottom of the Ice Slide</b>, across from the Sickle wall-buy.</td></tr>
+        <tr><td><b>Double Tap Root Beer</b></td><td>2000</td><td>Higher fire rate, and every bullet does double damage.</td><td>At the <b>stern of the ship</b>, in the room with the Claymores.</td></tr>
+        <tr><td><b>Stamin-Up</b></td><td>2000</td><td>Sprint faster and for much longer.</td><td>Outside by the <b>lighthouse</b>, near the Stakeout wall-buy round the back.</td></tr>
+        <tr><td><b>PhD Flopper</b></td><td>2000</td><td>No damage from your own explosives, no fall damage &mdash; and diving from a height sets off an explosion.</td><td>In the communications building, on the floor <b>above the vault door room</b>. <button class="xref" data-goto="main">The quest starts at that vault door</button></td></tr>
+        <tr><td><b>Deadshot Daiquiri</b></td><td>1500<br><small>1000 on PC</small></td><td>Aim snaps to the head instead of the chest, and it kills the idle sway.</td><td>Inside the ship, in the rusted room with the grating floor.</td></tr>
+        <tr><td><b>Mule Kick</b></td><td>4000</td><td>Carry a third weapon.</td><td>At the <b>back of the ship</b>, right across from the Mystery Box spot. Added to the map in a later update.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>What each machine looks like</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/cotd/cd-perk-quickrevive.jpg" alt="Quick Revive &mdash; out on the ice in the spawn area" loading="lazy"><figcaption>Quick Revive &mdash; out on the ice in the spawn area</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-juggernog.jpg" alt="Jugger-Nog &mdash; the red-lit corridor below deck" loading="lazy"><figcaption>Jugger-Nog &mdash; the red-lit corridor below deck</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-speedcola.jpg" alt="Speed Cola &mdash; at the bottom of the Ice Slide" loading="lazy"><figcaption>Speed Cola &mdash; at the bottom of the Ice Slide</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-doubletap.jpg" alt="Double Tap Root Beer &mdash; the room at the stern" loading="lazy"><figcaption>Double Tap Root Beer &mdash; the room at the stern</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-staminup.jpg" alt="Stamin-Up &mdash; outside by the lighthouse" loading="lazy"><figcaption>Stamin-Up &mdash; outside by the lighthouse</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-phd.jpg" alt="PhD Flopper &mdash; the communications room above the vault door" loading="lazy"><figcaption>PhD Flopper &mdash; the communications room above the vault door</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-deadshot.jpg" alt="Deadshot Daiquiri &mdash; the rusted room with the grating floor" loading="lazy"><figcaption>Deadshot Daiquiri &mdash; the rusted room with the grating floor</figcaption></figure>
+      <figure class="shot"><img src="../img/cotd/cd-perk-mulekick.jpg" alt="Mule Kick &mdash; the back of the ship, across from the Mystery Box" loading="lazy"><figcaption>Mule Kick &mdash; the back of the ship, across from the Mystery Box</figcaption></figure>
+    </div>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>

@@ -390,3 +390,39 @@ figure.shot figcaption {
   margin: 0 auto;
   border-radius: 6px;
 }
+
+/* ---- Sub-tabs inside a tab (solo vs co-op quests, Richtofen vs Maxis, ...) ---- */
+.subtab-bar {
+  display: flex;
+  gap: 0;
+  margin: 0 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.subtab-btn {
+  flex: 1 1 0;
+  padding: 11px 8px;
+  background: var(--bg-card);
+  color: var(--text-dim);
+  border: none;
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+.subtab-btn + .subtab-btn { border-left: 1px solid var(--line); }
+.subtab-btn.active {
+  background: var(--map-accent);
+  color: #000;
+  font-weight: 700;
+}
+.subtab-panel { display: none; }
+.subtab-panel.active { display: block; }
+
+/* ---- Ordered sub-steps inside a quest step (e.g. the CotD lighthouse dials) ---- */
+.substeps {
+  margin: 8px 0 0;
+  padding-left: 22px;
+  font-size: 0.9rem;
+}
+.substeps li { margin: 4px 0; }

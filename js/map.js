@@ -72,6 +72,26 @@
     });
   });
 
+  // ---- Sub-tabs inside a tab (e.g. Solo vs Co-op easter eggs) ----
+  // <div class="subtab-bar"><button class="subtab-btn" data-subtab="solo">…</button>…</div>
+  // followed by sibling <div class="subtab-panel" id="subtab-solo">…</div> panels.
+  document.querySelectorAll(".subtab-bar").forEach((bar, barIdx) => {
+    const sBtns = bar.querySelectorAll(".subtab-btn");
+    const scope = bar.parentElement;
+    const sPanels = scope.querySelectorAll(".subtab-panel");
+    const sKey = "zg-subtab-" + mapId + "-" + barIdx;
+    function showSub(id) {
+      sBtns.forEach(b => b.classList.toggle("active", b.dataset.subtab === id));
+      sPanels.forEach(p => p.classList.toggle("active", p.id === "subtab-" + id));
+      try { sessionStorage.setItem(sKey, id); } catch (e) {}
+    }
+    sBtns.forEach(b => b.addEventListener("click", () => showSub(b.dataset.subtab)));
+    let startSub = null;
+    try { startSub = sessionStorage.getItem(sKey); } catch (e) {}
+    if (startSub && scope.querySelector("#subtab-" + startSub)) showSub(startSub);
+    else if (sBtns.length) showSub(sBtns[0].dataset.subtab);
+  });
+
   // ---- Full-screen map viewer ----
   // <button class="map-open" data-full="../img/x/map.jpg" data-title="…"><img …></button>
   const openers = document.querySelectorAll(".map-open");

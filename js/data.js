@@ -12,7 +12,7 @@ const GAMES = [
       { id: "kino", name: "Kino der Toten" },
       { id: "five", name: "\"Five\"" },
       { id: "ascension", name: "Ascension" },
-      { id: "cotd", name: "Call of the Dead" },
+      { id: "cotd", name: "Call of the Dead", built: true },
       { id: "shangrila", name: "Shangri-La" },
       { id: "moon", name: "Moon", note: "Samantha Says tracker", built: true },
       { id: "nacht-bo1", name: "Nacht der Untoten", note: "Classic (Rezurrection)" },
