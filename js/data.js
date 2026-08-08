@@ -89,7 +89,7 @@ const GAMES = [
       { id: "rave", name: "Rave in the Redwoods", note: "Memory Charms + Totem Gems", built: true },
       { id: "shaolin", name: "Shaolin Shuffle", note: "Chi styles + Rat King", built: true },
       { id: "radioactive", name: "Attack of the Radioactive Thing", note: "Chemical solver", built: true },
-      { id: "beast", name: "The Beast from Beyond" }
+      { id: "beast", name: "The Beast from Beyond", note: "Venom X/Y/Z", built: true }
     ]
   }
 ];
