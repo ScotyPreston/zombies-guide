@@ -440,3 +440,16 @@ figure.shot figcaption {
   font-size: 1rem;
 }
 .gv-out { margin-top: 6px; }
+
+/* ---- AOTRT chemical solver ---- */
+.gv-label input {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--map-accent);
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+  font-size: 1rem;
+}
+.chem-step { margin-bottom: 22px; }
+.chem-step button.xref { margin: 6px 0 10px; font-size: 0.95rem; padding: 10px 16px; }

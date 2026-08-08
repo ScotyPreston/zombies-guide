@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0c120e">
+<title>Attack of the Radioactive Thing &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* AOTRT: 1950s atomic beach town — radioactive green + atomic teal */
+  :root {
+    --map-bg: #0c120e;
+    --map-bg2: #141f17;
+    --bg: #0c120e;
+    --bg-card: #141f17;
+    --bg-card-hover: #1c2a1f;
+    --line: #2b3f2f;
+    --map-accent: #6ee83c;
+    --map-accent2: #5ac8e8;
+    --map-glow: rgba(110, 232, 60, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="radioactive">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=iw">&#8249; Infinite Warfare</a></nav>
+
+  <header class="map-header">
+    <h1>Attack of the Radioactive Thing</h1>
+    <div class="sub">Infinite Warfare &middot; 1950s atomic beach town</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="chem">Chem Solver</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b></li>
+        <li>The <b>crowbar</b> (maintenance closet by the pool) and the <b>Cleaver</b> (dead shark in the market) get used constantly.</li>
+        <li><b>Pack-a-Punch open</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li>The <b>Chem Solver tab</b> handles the map's infamous math. <button class="xref" data-goto="chem">Open it</button></li>
+      </ul>
+    </div>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Collect the five zombie body parts.</b> All fixed spawns, any order:<ol class="substeps"><li><b>Arm 1</b> &mdash; the beach arm (where the power switch was). Build the <b>Seismic Wave Generator</b> and place it on the arm to force it up. <button class="xref" data-goto="build">See Buildables</button><figure class="shot"><img src="../img/radioactive/ar-s-arm1.jpg" alt="The generator raises the arm out of the sand" loading="lazy"><figcaption>The generator raises the arm out of the sand</figcaption></figure></li><li><b>Arm 2</b> &mdash; in a fire pit at the RV Camp.<figure class="shot"><img src="../img/radioactive/ar-s-arm2.jpg" alt="The fire in the RV Camp" loading="lazy"><figcaption>The fire in the RV Camp</figcaption></figure></li><li><b>Leg 1</b> &mdash; in the tree outside the TV Station toward Racin' Stripes: <b>bounce a grenade off the left branch</b> and it drops.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-s-leg1.jpg" alt="The tree &mdash; grenade the left branch" loading="lazy"><figcaption>The tree &mdash; grenade the left branch</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-leg1b.jpg" alt="The leg comes down" loading="lazy"><figcaption>The leg comes down</figcaption></figure></div></li><li><b>Leg 2</b> &mdash; round 5+: melee a <b>green mist zombie</b> with the <b>Cleaver</b> (from the dead shark in the Beachside Market).<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-s-leg2.jpg" alt="A green mist zombie" loading="lazy"><figcaption>A green mist zombie</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-leg2b.jpg" alt="The Cleaver takes its leg" loading="lazy"><figcaption>The Cleaver takes its leg</figcaption></figure></div></li><li><b>Torso</b> &mdash; repair the <b>freezer trap</b> in the Beachside Market (part on the boxes outside the gas station garage), activate it, then <b>melee the frozen meat</b>.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-s-torso1.jpg" alt="The repair part by the garage" loading="lazy"><figcaption>The repair part by the garage</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-torso2.jpg" alt="The freezer trap" loading="lazy"><figcaption>The freezer trap</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-torso3.jpg" alt="Break the frozen meat for the torso" loading="lazy"><figcaption>Break the frozen meat for the torso</figcaption></figure></div></li><li><b>Head</b> &mdash; during the Double-PaP fuse run, it's <b>on a plate right in front of you in the RV</b>. <button class="xref" data-goto="pap">See Double Pack-a-Punch</button><figure class="shot"><img src="../img/radioactive/ar-s-head.jpg" alt="The head on its plate in the RV" loading="lazy"><figcaption>The head on its plate in the RV</figcaption></figure></li></ol></li>
+      <li data-num="2"><b>Gather the other parts.</b><ol class="substeps"><li><b>Chem station (3):</b> the couch at the market's back entrance &middot; an RV Camp picnic table &middot; the table between the RV Camp and beach.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-s-chem1.jpg" alt="Chem part &mdash; the couch" loading="lazy"><figcaption>Chem part &mdash; the couch</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-chem2.jpg" alt="Chem part &mdash; picnic table" loading="lazy"><figcaption>Chem part &mdash; picnic table</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-chem3.jpg" alt="Chem part &mdash; the route table" loading="lazy"><figcaption>Chem part &mdash; the route table</figcaption></figure></div></li><li><b>Bomb (3):</b> under the wooden bridge below the big bridge &middot; under the red car's front passenger wheel &middot; behind the chain-link fence by the leg tree.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-s-bomb1.jpg" alt="Bomb part &mdash; under the wooden bridge" loading="lazy"><figcaption>Bomb part &mdash; under the wooden bridge</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-bomb2.jpg" alt="Bomb part &mdash; the red car" loading="lazy"><figcaption>Bomb part &mdash; the red car</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-bomb3.jpg" alt="Bomb part &mdash; the fence" loading="lazy"><figcaption>Bomb part &mdash; the fence</figcaption></figure></div></li><li><b>Mirrors (3):</b> knock one off the car outside the market (crowbar) &middot; smash the RV Camp bathroom mirror (crowbar) &middot; give Elvira a <b>filled green vial</b> and take the mirror behind her couch.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-s-mir1.jpg" alt="Mirror 1 &mdash; off the car" loading="lazy"><figcaption>Mirror 1 &mdash; off the car</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-mir2.jpg" alt="Mirror 2 &mdash; RV bathroom" loading="lazy"><figcaption>Mirror 2 &mdash; RV bathroom</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-s-mir3.jpg" alt="Mirror 3 &mdash; behind Elvira" loading="lazy"><figcaption>Mirror 3 &mdash; behind Elvira</figcaption></figure></div></li></ol></li>
+      <li data-num="3"><b>The bomb code safe.</b> Read the 4-digit code <b>under the desk</b> near the market's safe (changes every game). With the <b>crowbar</b>, set the <b>4 green valves</b>: each meter sweeps 0&ndash;9 &mdash; hit it on one of your digits (any order, all four digits used). The safe opens; <b>write the bomb code down</b> &mdash; you can't check Tab during the finale. <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-bc-code.jpg" alt="The 4-digit code under the desk" loading="lazy"><figcaption>The 4-digit code under the desk</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-bc-v1.jpg" alt="Valve &mdash; across from the crowbar closet" loading="lazy"><figcaption>Valve &mdash; across from the crowbar closet</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-bc-v2.jpg" alt="Valve &mdash; the Quickies building" loading="lazy"><figcaption>Valve &mdash; the Quickies building</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-bc-v3.jpg" alt="Valve &mdash; behind the gas station" loading="lazy"><figcaption>Valve &mdash; behind the gas station</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-bc-v4.jpg" alt="Valve &mdash; opposite the power building" loading="lazy"><figcaption>Valve &mdash; opposite the power building</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-bc-safe.jpg" alt="The safe, open" loading="lazy"><figcaption>The safe, open</figcaption></figure></div></li>
+      <li data-num="4"><b>Rebuild the zombie &mdash; get the garage key.</b> Body parts on the <b>spawn bed</b>, the three mirrors around the room, then the <b>punchcard</b> from the spellbook room into the machine across from the bed. Guess the machine's 5-digit code: the sweeping dot marks positions <b>0&ndash;9</b>, and the code always uses <b>3, 4, 5, 6, 8</b> &mdash; only the order changes. Right code &rarr; laser reassembles the zombie. Now enter the <b>same code backwards</b> and fire again: the body burns and drops the <b>garage key</b>. The garage (opposite the market) holds the <b>chem board, the bomb, and the chem station</b> &mdash; place your parts. <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-g-bed.jpg" alt="The parts on the bed" loading="lazy"><figcaption>The parts on the bed</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-g-mir1.jpg" alt="Mirror placement 1" loading="lazy"><figcaption>Mirror placement 1</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-g-punch.jpg" alt="The punchcard" loading="lazy"><figcaption>The punchcard</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-g-machine.jpg" alt="Code guessed right" loading="lazy"><figcaption>Code guessed right</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-g-backwards.jpg" alt="Same code, backwards" loading="lazy"><figcaption>Same code, backwards</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-g-key.jpg" alt="The garage key" loading="lazy"><figcaption>The garage key</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-g-garage.jpg" alt="Inside the garage" loading="lazy"><figcaption>Inside the garage</figcaption></figure></div></li>
+      <li data-num="5"><b>The chemical step.</b> The whole thing &mdash; O number, colours, boards, radio and the mixing math &mdash; lives on its own tab with a <b>solver that does the arithmetic for you</b>. <button class="xref" data-goto="chem">Open the Chem Solver</button> When your final compound is mixed, <b>add it to the bomb</b>; if it's the one the radio named, the teleporter sequence unlocks. <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-mx-station.jpg" alt="The chem station in the garage" loading="lazy"><figcaption>The chem station in the garage</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-mx-bomb.jpg" alt="The finished compound goes on the bomb" loading="lazy"><figcaption>The finished compound goes on the bomb</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-mx-tele.jpg" alt="Teleportation unlocked" loading="lazy"><figcaption>Teleportation unlocked</figcaption></figure></div></li>
+      <li data-num="6"><b>Crogzilla.</b><div class="req-box"><h3>Before you teleport</h3><ul><li><b>The bomb code memorised</b> &mdash; no Tab menu in there.</li><li>Full setup: PaP'd guns, perks, gums.</li></ul></div><ol class="substeps"><li><b>Escort the bomb</b> down the beach &mdash; stay close to move it, dodge the constant fireballs.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-b-escort.jpg" alt="Walking the bomb down the beach" loading="lazy"><figcaption>Walking the bomb down the beach</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-b-escort2.jpg" alt="Fireballs the whole way" loading="lazy"><figcaption>Fireballs the whole way</figcaption></figure></div></li><li><b>Deathrays:</b> charge a beach deathray at the <b>glowing chest spot &mdash; it only glows during his attacks</b>. Aim slightly above it as the animation starts. 3&ndash;4 hits.<figure class="shot"><img src="../img/radioactive/ar-b-deathray.jpg" alt="Deathray into the glowing chest" loading="lazy"><figcaption>Deathray into the glowing chest</figcaption></figure></li><li><b>Poisoned beach:</b> start the teleport sequence at the bomb holder, then survive as poison floods the beach in waves, each spitting <b>Crog pods</b>. Fall back as it spreads.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-b-tele.jpg" alt="Start the sequence at the bomb holder" loading="lazy"><figcaption>Start the sequence at the bomb holder</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-b-poison.jpg" alt="The beach drowning in poison" loading="lazy"><figcaption>The beach drowning in poison</figcaption></figure></div></li><li><b>Lasers and the code:</b> a timed laser field spawns &mdash; everyone navigates back to the bomb and interacts. Inside the Thing, <b>every player enters the bomb code</b> on a faster, blurrier version of the punchcard machine. Anyone fails, you redo the poison phase.<div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-b-code.jpg" alt="The laser field" loading="lazy"><figcaption>The laser field</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-b-code2.jpg" alt="Punching the code inside the Thing" loading="lazy"><figcaption>Punching the code inside the Thing</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-b-end.jpg" alt="Boom. Done." loading="lazy"><figcaption>Boom. Done.</figcaption></figure></div></li></ol></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ CHEM SOLVER ============ -->
+  <section class="tab-panel" id="tab-chem">
+    <h2>Chemical solver</h2>
+    <p class="blurb">The dreaded math step, solved. Answer three questions and it prints every mix and the exact number to punch in. Logic and data from ZombieSlaya Mr.'s own solver &mdash; credit where it's due.</p>
+    <div id="chem-solver"></div>
+
+    <h2>Where everything is</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/radioactive/ar-c-m.jpg" alt="The M number &mdash; little room by the pool" loading="lazy"><figcaption>The M number &mdash; little room by the pool</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-tv.jpg" alt="Elvira's function TV &mdash; the top-line number goes in the solver" loading="lazy"><figcaption>Elvira's function TV &mdash; the top-line number goes in the solver</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-switcher.jpg" alt="The colour switcher in the TV Station" loading="lazy"><figcaption>The colour switcher in the TV Station</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-b1.jpg" alt="The chem board outside the TV Station &mdash; read Acetaldehyde here in YOUR colour" loading="lazy"><figcaption>The chem board outside the TV Station &mdash; read Acetaldehyde here in YOUR colour</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-battery.jpg" alt="Batteries come from backpack drops, round 8+" loading="lazy"><figcaption>Batteries come from backpack drops, round 8+</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-radio1.jpg" alt="Radio spot 1 &mdash; the M-number room" loading="lazy"><figcaption>Radio spot 1 &mdash; the M-number room</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-radio2.jpg" alt="Radio spot 2 &mdash; the power corner by Blue Bolts. 50/50 which radio names your compound" loading="lazy"><figcaption>Radio spot 2 &mdash; the power corner by Blue Bolts. 50/50 which radio names your compound</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-c-board.jpg" alt="How to read a board entry: the diamond's TOP and LEFT numbers" loading="lazy"><figcaption>How to read a board entry: the diamond's TOP and LEFT numbers</figcaption></figure>
+    </div>
+
+    <h2>Chemical locations</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/radioactive/ar-ch-detergent.jpg" alt="Detergent &mdash; market shelf, Fate &amp; Fortune side" loading="lazy"><figcaption>Detergent &mdash; market shelf, Fate &amp; Fortune side</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-drain.jpg" alt="Drain Opener &mdash; campsite bathroom, first stall" loading="lazy"><figcaption>Drain Opener &mdash; campsite bathroom, first stall</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-fat.jpg" alt="Fat &mdash; Cleaver the left-most hanging meat in the freezer" loading="lazy"><figcaption>Fat &mdash; Cleaver the left-most hanging meat in the freezer</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-glass.jpg" alt="Glass Cleaner &mdash; white shelf on the last aisle" loading="lazy"><figcaption>Glass Cleaner &mdash; white shelf on the last aisle</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-ice.jpg" alt="Ice &mdash; crowbar the ice machine" loading="lazy"><figcaption>Ice &mdash; crowbar the ice machine</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-insect.jpg" alt="Insect Repellent &mdash; spawn's middle hallway table" loading="lazy"><figcaption>Insect Repellent &mdash; spawn's middle hallway table</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-nail.jpg" alt="Nail Polish Remover &mdash; pool room table" loading="lazy"><figcaption>Nail Polish Remover &mdash; pool room table</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-oil.jpg" alt="Motor Oil &mdash; garage floor, left of the distillery" loading="lazy"><figcaption>Motor Oil &mdash; garage floor, left of the distillery</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-paint.jpg" alt="Paint &mdash; left of Racin' Stripes" loading="lazy"><figcaption>Paint &mdash; left of Racin' Stripes</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-pennies.jpg" alt="Pennies &mdash; crowbar the market till" loading="lazy"><figcaption>Pennies &mdash; crowbar the market till</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-plant.jpg" alt="Plant Food &mdash; by Quickies, under the poster" loading="lazy"><figcaption>Plant Food &mdash; by Quickies, under the poster</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-quarters.jpg" alt="Quarters &mdash; crowbar the payphones by the garage" loading="lazy"><figcaption>Quarters &mdash; crowbar the payphones by the garage</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-fuel.jpg" alt="Racing Fuel &mdash; right of the garage door" loading="lazy"><figcaption>Racing Fuel &mdash; right of the garage door</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-vinegar.jpg" alt="Vinegar &mdash; table at the market's back entrance" loading="lazy"><figcaption>Vinegar &mdash; table at the market's back entrance</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-vodka.jpg" alt="Vodka &mdash; right of the Fate &amp; Fortune dispenser" loading="lazy"><figcaption>Vodka &mdash; right of the Fate &amp; Fortune dispenser</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-ch-wheel.jpg" alt="Wheel Cleaner &mdash; grocery shelf" loading="lazy"><figcaption>Wheel Cleaner &mdash; grocery shelf</figcaption></figure>
+    </div>
+    <figure class="shot"><img src="../img/radioactive/ar-mx-chart.jpg" alt="Every compound recipe" loading="lazy"><figcaption>The full recipe chart &mdash; the solver already knows all of it, this is just for reference</figcaption></figure>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+
+    <details class="acc">
+      <summary><img src="../img/radioactive/ar-b-crog.jpg" alt="" style="object-fit:cover">
+        <span><b>Skull Hop</b><br><small>Ghosts 'n Skulls &mdash; Perkaholic</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">This map's Ghosts 'n Skulls machine (in the spawn convenience store) pays a <b>Perkaholic</b>. The author covers it in his separate "SKULL HOP" guide &mdash; send me that link and I'll build the card out properly.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/radioactive/ar-elvira-code.jpg" alt="" style="object-fit:cover">
+        <span><b>Play as Elvira</b><br><small>The character code</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Finish the main quest, then enter this on the main menu with the map selected:</p>
+        <figure class="shot"><img src="../img/radioactive/ar-elvira-code.jpg" alt="Down, Right, Down, Left, Up, Right &mdash; and Elvira is playable" loading="lazy"><figcaption>Down, Right, Down, Left, Up, Right &mdash; and Elvira is playable</figcaption></figure>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons &amp; specials</h2>
+
+    <details class="acc">
+      <summary><img src="../img/radioactive/ar-mad-pod.jpg" alt="" style="object-fit:cover">
+        <span><b>M.A.D.</b><br><small>Magic Wheel &mdash; 3 upgrade boxes</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The base version just falls out of the <b>Magic Wheel</b>. The full upgrade needs the <b>crowbar</b> and three boxes:</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-mad-box1.jpg" alt="Box 1 &mdash; behind the gas station by the dumpsters" loading="lazy"><figcaption>Box 1 &mdash; behind the gas station by the dumpsters</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-mad-box2.jpg" alt="Box 2 &mdash; outside the RV Camp bathrooms" loading="lazy"><figcaption>Box 2 &mdash; outside the RV Camp bathrooms</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-mad-box3.jpg" alt="Box 3 &mdash; outside the TV Station, by the PaP portal spot" loading="lazy"><figcaption>Box 3 &mdash; outside the TV Station, by the PaP portal spot</figcaption></figure></div>
+        <p class="blurb">Fully upgraded: <b>hold right-click to crank and charge it</b>, and refill ammo at any of the <b>green pods</b> around the map.</p>
+        <figure class="shot"><img src="../img/radioactive/ar-mad-pod.jpg" alt="Refilling at a green pod" loading="lazy"><figcaption>Refilling at a green pod</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/radioactive/ar-pap-cleaver.jpg" alt="" style="object-fit:cover">
+        <span><b>The Cleaver</b><br><small>The shark's gift</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">On the <b>dead shark in the Beachside Market</b>. A strong melee in its own right &mdash; and required for the green vial, a body part and the Fat chemical.</p>
+        <figure class="shot"><img src="../img/radioactive/ar-pap-cleaver.jpg" alt="The Cleaver on the shark" loading="lazy"><figcaption>The Cleaver on the shark</figcaption></figure>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Seismic Wave Generator</h2>
+    <p class="blurb">The map's one true buildable &mdash; it forces the beach arm out of the sand for the main quest. All parts sit around the convenience store at spawn.</p>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/radioactive/ar-s-blueprint.jpg" alt="The blueprint on the ground outside the building" loading="lazy"><figcaption>The blueprint on the ground outside the building</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-s-gen1.jpg" alt="Part &mdash; by the port-a-potties" loading="lazy"><figcaption>Part &mdash; by the port-a-potties</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-s-gen2.jpg" alt="Part &mdash; the bench outside" loading="lazy"><figcaption>Part &mdash; the bench outside</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-s-gen3.jpg" alt="Part &mdash; the corner of the building" loading="lazy"><figcaption>Part &mdash; the corner of the building</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-s-gentable.jpg" alt="Build it at the table in the Skull Hop room" loading="lazy"><figcaption>Build it at the table in the Skull Hop room</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Power, Pack-a-Punch and Double Pack</h2>
+
+    <h2>Power</h2>
+    <p class="blurb">One switch &mdash; but it starts detached. Grab the <b>switch box on the beach</b> (facing the Radioactive Thing), carry it to the power area by Blue Bolts, and it flips itself.</p>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/radioactive/ar-pw-switch.jpg" alt="The switch box on the beach" loading="lazy"><figcaption>The switch box on the beach</figcaption></figure>
+      <figure class="shot"><img src="../img/radioactive/ar-pw-box.jpg" alt="Place it at the power area &mdash; done" loading="lazy"><figcaption>Place it at the power area &mdash; done</figcaption></figure>
+    </div>
+
+    <h2>Pack-a-Punch &mdash; do Elvira a favour</h2>
+    <ol class="steps">
+      <li><b>The spellbook.</b> Power on, then take the book from the now-open safe in the convenience store (the Skull Hop room).
+        <figure class="shot"><img src="../img/radioactive/ar-pap-book.jpg" alt="The spellbook in the safe" loading="lazy"><figcaption>The spellbook in the safe</figcaption></figure></li>
+      <li><b>Give it to Elvira</b> on her couch in the TV Station &mdash; she hands you a <b>green vial</b>.
+        <figure class="shot"><img src="../img/radioactive/ar-pap-elvira.jpg" alt="Elvira on her couch" loading="lazy"><figcaption>Elvira on her couch</figcaption></figure></li>
+      <li><b>Fill the vial with Cleaver kills.</b> The Cleaver is on the <b>dead shark in the Beachside Market</b>; kill until the vial reads full in the Tab menu.
+        <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-pap-cleaver.jpg" alt="The Cleaver on the shark" loading="lazy"><figcaption>The Cleaver on the shark</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-pap-vial.jpg" alt="Empty vs full &mdash; check the Tab menu" loading="lazy"><figcaption>Empty vs full &mdash; check the Tab menu</figcaption></figure></div></li>
+      <li><b>Walk her to the portal.</b> Hand over the full vial and she follows you &mdash; lead her to the portal outside the TV Station near Bang Bangs, and she opens the way to Pack-a-Punch.
+        <figure class="shot"><img src="../img/radioactive/ar-pap-portal.jpg" alt="Elvira working the portal" loading="lazy"><figcaption>Elvira working the portal</figcaption></figure></li>
+    </ol>
+
+    <h2>Double Pack-a-Punch</h2>
+    <ol class="steps">
+      <li><b>Refill the green vial</b> the same way &mdash; but <b>don't give it to Elvira</b> this time.</li>
+      <li><b>The timed fuse grab.</b> Crowbar in hand (pool maintenance closet), enter the PaP portal, hit the <b>stoplight button</b> on the left of the projector room, and leave &mdash; you spawn in a tiny RV. <b>Immediately turn around, look up-right</b>: crowbar the slightly-open cabinet and take the <b>Alien Fuses</b>. Fast &mdash; the timer is short.
+        <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-dp-crowbar.jpg" alt="The crowbar in the pool closet" loading="lazy"><figcaption>The crowbar in the pool closet</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-dp-button.jpg" alt="The stoplight button" loading="lazy"><figcaption>The stoplight button</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-dp-cabinet.jpg" alt="The cabinet in the RV" loading="lazy"><figcaption>The cabinet in the RV</figcaption></figure></div></li>
+      <li><b>Fix the electric trap.</b> The repair part is behind the bus across from the power entrance &mdash; slot it into the fuse box.
+        <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-dp-part.jpg" alt="The part behind the bus" loading="lazy"><figcaption>The part behind the bus</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-dp-fusebox.jpg" alt="The fuse box" loading="lazy"><figcaption>The fuse box</figcaption></figure></div></li>
+      <li><b>Charge the fuses.</b> With a <b>full vial + fuses</b>, stand mid-transformers until your <b>screen shakes</b> &mdash; place them there, run the electric trap, wait it out, and collect.
+        <div class="shot-grid"><figure class="shot"><img src="../img/radioactive/ar-dp-spot.jpg" alt="The shake spot among the transformers" loading="lazy"><figcaption>The shake spot among the transformers</figcaption></figure><figure class="shot"><img src="../img/radioactive/ar-dp-charged.jpg" alt="Charged &mdash; into the machine" loading="lazy"><figcaption>Charged &mdash; into the machine</figcaption></figure></div></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">The IW perk set at the standard costs. Several locations below are anchored from the guide's passing mentions &mdash; the rest need your eyes.</p>
+    <table class="data-table">
+      <thead><tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Up 'N Atoms</b></td><td>500 solo<br>1500 co-op</td><td>Self-revive solo; faster revives in co-op.</td><td>Spawn area.</td></tr>
+        <tr><td><b>Tuff 'Nuff</b></td><td>2500</td><td>Five hits instead of three.</td><td>On the map &mdash; fixed spot.</td></tr>
+        <tr><td><b>Quickies</b></td><td>3000</td><td>Double-speed reloads and boards.</td><td>Its own building (a bomb-code valve lives on its wall).</td></tr>
+        <tr><td><b>Bang Bangs</b></td><td>2000</td><td>Higher fire rate, double-counted bullets.</td><td>By the TV Station, near the PaP portal.</td></tr>
+        <tr><td><b>Blue Bolts</b></td><td>1500</td><td>Reloads zap nearby zombies.</td><td>The power area.</td></tr>
+        <tr><td><b>Mule Munchies</b></td><td>2000</td><td>A third weapon.</td><td>On the map &mdash; fixed spot.</td></tr>
+        <tr><td><b>Racin' Stripes</b></td><td>2000</td><td>Faster, longer sprint.</td><td>Near the TV Station path (Paint sits to its left).</td></tr>
+        <tr><td><b>Bombstoppers</b></td><td>1500</td><td>No self-explosive damage.</td><td>By the pool.</td></tr>
+        <tr><td><b>Slappy Taffy</b></td><td>2000</td><td>Stronger, stunning melee.</td><td>On the map &mdash; fixed spot.</td></tr>
+        <tr><td><b>Trail Blazers</b></td><td>1500</td><td>Sliding leaves fire trails.</td><td>On the map &mdash; fixed spot.</td></tr>
+        <tr><td><b>Deadeye Dewdrops</b></td><td>1500</td><td>Aim snaps to heads.</td><td>On the map &mdash; fixed spot.</td></tr>
+      </tbody>
+    </table>
+    <p class="blurb">Machine photos to follow &mdash; send a set (and correct locations) and I'll finish the tab like the other maps.</p>
+  </section>
+
+</div>
+
+<script src="../js/chemicals.js"></script>
+<script>
+  AotrtSolver(document.getElementById("chem-solver"));
+</script>
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
