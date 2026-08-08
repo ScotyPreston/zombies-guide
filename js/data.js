@@ -57,7 +57,7 @@ const GAMES = [
       { id: "ix", name: "IX", note: "The arena", built: true },
       { id: "botd", name: "Blood of the Dead" },
       { id: "classified", name: "Classified" },
-      { id: "dotn", name: "Dead of the Night" },
+      { id: "dotn", name: "Dead of the Night", note: "The haunted manor", built: true },
       { id: "ancient-evil", name: "Ancient Evil" },
       { id: "alpha-omega", name: "Alpha Omega" },
       { id: "tag", name: "Tag der Toten" }

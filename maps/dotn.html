@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0e0b10">
+<title>Dead of the Night &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Dead of the Night: gothic manor — moonlight violet + candle amber */
+  :root {
+    --map-bg: #0e0b10;
+    --map-bg2: #18131e;
+    --bg: #0e0b10;
+    --bg-card: #18131e;
+    --bg-card-hover: #221b2a;
+    --line: #372b44;
+    --map-accent: #b48ae8;
+    --map-accent2: #e8b45a;
+    --map-glow: rgba(180, 138, 232, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="dotn">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo4">&#8249; Black Ops 4</a></nav>
+
+  <header class="map-header">
+    <h1>Dead of the Night</h1>
+    <div class="sub">Black Ops 4 &middot; Alistair Rhodes' manor, 1912</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b></li>
+        <li><b>Pack-a-Punch open</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li><b>Silver bullets crafted</b>. <button class="xref" data-goto="build">See Buildables</button></li>
+        <li>An <b>Alistair's Annihilator</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+      </ul>
+    </div>
+    <p class="blurb">Three quest lines, three stone slabs, one invisible Werewolf.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Reactivate the crystals.</b> Go back to the three crystals that opened Pack-a-Punch (Wine Cellar, Library area, Bedroom area) and interact again. Each shows a vision &mdash; a <b>Knight armour</b>, a <b>Telescopic lens</b>, or a <b>Wooden effigy</b> &mdash; unlocking that quest line. The three lines are <b>independent, any order</b>; all three must be finished. Each pays out a <b>stone slab</b>.</li>
+      <li data-num="2"><b>LENS LINE &mdash; the antenna.</b> Every player shoots the <b>antenna on the Mausoleum roof at the same time, with silver bullets</b>. It vanishes and a light beam fires at the Mansion. <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-tl-antenna.jpg" alt="The antenna on the Mausoleum roof" loading="lazy"><figcaption>The antenna on the Mausoleum roof</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tl-beam.jpg" alt="The beam lances toward the Mansion" loading="lazy"><figcaption>The beam lances toward the Mansion</figcaption></figure></div></li>
+      <li data-num="3"><b>LENS LINE &mdash; the Atlas rings.</b> Three panels in the North Atrium spin the rings over the Atlas statue. The community solution: <b>middle wheel left until GREEN lights &rarr; left wheel left until BLUE &rarr; right wheel left until RED &mdash; repeat that cycle until it solves</b>. The crystal lights all three colours and bursts. <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-tl-panels.jpg" alt="The three control panels" loading="lazy"><figcaption>The three control panels</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tl-rings.jpg" alt="The rings aligning" loading="lazy"><figcaption>The rings aligning</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tl-lens.jpg" alt="The beam reflects to the Greenhouse lens" loading="lazy"><figcaption>The beam reflects to the Greenhouse lens</figcaption></figure></div></li>
+      <li data-num="4"><b>LENS LINE &mdash; zodiac and scratches.</b> Find <b>3 zodiac symbols</b> among 7 possible rooms (Billiards, Dining, Entrance Hall, Library, Main Hall, Trophy, Wine Cellar). A symbol in a room means that room also hides <b>3 scratch marks &mdash; count every scratch and add them up</b> for that symbol's number. <figure class="shot"><img src="../img/dotn/dn-tl-marks.jpg" alt="The flowchart &mdash; the guide's own cheat sheet" loading="lazy"><figcaption>The flowchart &mdash; the guide's own cheat sheet</figcaption></figure><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-z-bil.jpg" alt="Billiards &mdash; symbol under the chess table" loading="lazy"><figcaption>Billiards &mdash; symbol under the chess table</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-din.jpg" alt="Dining &mdash; right of the outside doorframe" loading="lazy"><figcaption>Dining &mdash; right of the outside doorframe</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-ent.jpg" alt="Entrance Hall &mdash; under the table left of Danu's machine" loading="lazy"><figcaption>Entrance Hall &mdash; under the table left of Danu's machine</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-lib.jpg" alt="Library &mdash; in the broken cabinet by the Folly case" loading="lazy"><figcaption>Library &mdash; in the broken cabinet by the Folly case</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-main.jpg" alt="Main Hall &mdash; between columns by the west stairs" loading="lazy"><figcaption>Main Hall &mdash; between columns by the west stairs</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-tro.jpg" alt="Trophy &mdash; behind the far-left closet" loading="lazy"><figcaption>Trophy &mdash; behind the far-left closet</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-wine.jpg" alt="Wine Cellar &mdash; bottom of the wine shelf by the perk" loading="lazy"><figcaption>Wine Cellar &mdash; bottom of the wine shelf by the perk</figcaption></figure></div><div class="callout">Enter the three symbols on the <b>circular panel upstairs in the Greenhouse Lab</b>, <b>least scratches first</b> &mdash; knife to confirm each. <b>A wrong code reshuffles every symbol and scratch on the map.</b></div><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-z-panel.jpg" alt="The circular panel in the Greenhouse" loading="lazy"><figcaption>The circular panel in the Greenhouse</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-z-input.jpg" alt="Knife to lock each symbol in" loading="lazy"><figcaption>Knife to lock each symbol in</figcaption></figure></div></li>
+      <li data-num="5"><b>LENS LINE &mdash; the telescope.</b> Shield in hand: crank the <b>Greenhouse roof</b> open and <b>bash the crank</b> to lock it (release too early and it closes). Run everyone through the <b>electric trap downstairs with shields up</b>, then <b>bash the telescope together</b> &mdash; it fires into the sky. A hatch opens below: pull the <b>stone slab</b> out, then everyone interacts &mdash; <b>survive the lockdown</b> and take slab #1 plus a Max Ammo. <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-tl-crank.jpg" alt="Crank the roof, then bash to hold it" loading="lazy"><figcaption>Crank the roof, then bash to hold it</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tl-trap.jpg" alt="Shields through the electric trap" loading="lazy"><figcaption>Shields through the electric trap</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tl-slab.jpg" alt="The hatch under the telescope" loading="lazy"><figcaption>The hatch under the telescope</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tl-slab2.jpg" alt="Slab #1" loading="lazy"><figcaption>Slab #1</figcaption></figure></div></li>
+      <li data-num="6"><b>KNIGHT LINE &mdash; blue fire runs.</b> Put an energy core in a <b>fire trap</b> (the Library doorframe is the usual pick), activate it, and <b>shoot the flames with the Alistair's Annihilator</b> &mdash; they turn blue. Shield-bash <b>4 fireplaces per run, in order, three runs total</b> &mdash; each run's last fireplace gives a crystal: <div class="callout"><b>Run 1:</b> Smoking room &rarr; Library (down the stairs) &rarr; Library (other side of the door) &rarr; Billiards.<br><b>Run 2:</b> Main Hall (by the Mozu) &rarr; East Gallery (by the Strife) &rarr; Main Hall (facing the Mozu fireplace) &rarr; West Gallery (by the Essex).<br><b>Run 3:</b> Trophy &rarr; Bedroom &rarr; Music room &rarr; Dining. Be quick from the first ignition.</div><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-kn-fire.jpg" alt="Blue flames &mdash; the run is live" loading="lazy"><figcaption>Blue flames &mdash; the run is live</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-r1a.jpg" alt="Run 1 &mdash; Smoking room fireplace" loading="lazy"><figcaption>Run 1 &mdash; Smoking room fireplace</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-r2a.jpg" alt="Run 2 &mdash; Main Hall by the Mozu" loading="lazy"><figcaption>Run 2 &mdash; Main Hall by the Mozu</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-r3a.jpg" alt="Run 3 &mdash; Trophy room" loading="lazy"><figcaption>Run 3 &mdash; Trophy room</figcaption></figure></div></li>
+      <li data-num="7"><b>KNIGHT LINE &mdash; the three knights.</b> Interact with the knight statues &mdash; Mansion (Main Hall&ndash;Dining hallway), Graveyard (foot of the Mausoleum stairs), Gardens (Greenhouse terrace corner). Each releases a crystal that <b>follows you</b> &mdash; walk each to its <b>matching colour circle in the Forest</b>. Then kill zombies near the three ghost knights to march them to Pack-a-Punch, where they form a <b>triangle: kill a Werewolf inside it</b>. Slab appears &mdash; everyone interacts, survive, take slab #2. <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-kn-st1.jpg" alt="Knight &mdash; the Mansion hallway" loading="lazy"><figcaption>Knight &mdash; the Mansion hallway</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-st2.jpg" alt="Knight &mdash; the Graveyard" loading="lazy"><figcaption>Knight &mdash; the Graveyard</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-st3.jpg" alt="Knight &mdash; the Gardens" loading="lazy"><figcaption>Knight &mdash; the Gardens</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-circ.jpg" alt="Walk each crystal to its circle" loading="lazy"><figcaption>Walk each crystal to its circle</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-ghost.jpg" alt="Feed the ghost knights kills" loading="lazy"><figcaption>Feed the ghost knights kills</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-tri.jpg" alt="Kill a Werewolf inside the triangle" loading="lazy"><figcaption>Kill a Werewolf inside the triangle</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-kn-slab.jpg" alt="Slab #2" loading="lazy"><figcaption>Slab #2</figcaption></figure></div></li>
+      <li data-num="8"><b>EFFIGY LINE.</b> In the Graveyard, <b>5 white trees</b> drop leaves &mdash; <b>shoot the lowest branch</b> of each (aim at the trunk if the branch won't register) and collect them to build the effigy. Find the tomb dated <b>1912</b> &mdash; the player whose name is on it enters spirit mode. <b>Fire-shot the ground before the effigy with the Annihilator</b>, and the spirit player interacts with the burning effigy &rarr; <b>afterlife</b> (invisible to players, not to zombies). Find the <b>ghost lady</b> hidden in the Mansion (windows and perk machines count), escort her back to the effigy, and she reveals slab #3 &mdash; everyone interacts, survive, collect. <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-ef-tree.jpg" alt="A white tree &mdash; shoot the lowest branch" loading="lazy"><figcaption>A white tree &mdash; shoot the lowest branch</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-ef-build.jpg" alt="The effigy builds up" loading="lazy"><figcaption>The effigy builds up</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-ef-1912.jpg" alt="The 1912 tomb" loading="lazy"><figcaption>The 1912 tomb</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-ef-lady.jpg" alt="The ghost lady &mdash; check everywhere" loading="lazy"><figcaption>The ghost lady &mdash; check everywhere</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-ef-slab.jpg" alt="She reveals the slab" loading="lazy"><figcaption>She reveals the slab</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-ef-slab2.jpg" alt="Slab #3" loading="lazy"><figcaption>Slab #3</figcaption></figure></div></li>
+      <li data-num="9"><b>The Werewolf boss.</b>        <div class="req-box"><h3>Before the gate</h3><ul><li>Ammo, perks, shield, <b>silver bullets</b> &mdash; there is no coming back.</li></ul></div>
+All players hold interact on the <b>stone gate in the Forest</b>. The arena holds an <b>invisible Werewolf</b>: <ol class="substeps"><li><b>Stage 1:</b> one floor tile glows green. Rotate the <b>corner statues</b> so their light beams hit the green tile, lure the boss onto it &mdash; he turns visible and vulnerable. Unload.</li><li><b>Stage 2:</b> he leaves; <b>survive everything the map owns</b> until he returns.</li><li><b>Stage 3:</b> same trap &mdash; but the green tile is <b>invisible</b> until a statue beam sweeps it. Trap him, finish him.</li></ol><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-b-gate.jpg" alt="The Forest gate" loading="lazy"><figcaption>The Forest gate</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-b-tile.jpg" alt="Aim the statue beams at the green tile" loading="lazy"><figcaption>Aim the statue beams at the green tile</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-b-vuln.jpg" alt="Visible and vulnerable &mdash; unload" loading="lazy"><figcaption>Visible and vulnerable &mdash; unload</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-b-stage3.jpg" alt="Stage 3 &mdash; the invisible tile" loading="lazy"><figcaption>Stage 3 &mdash; the invisible tile</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-b-end.jpg" alt="Done. GG." loading="lazy"><figcaption>Done. GG.</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-hr1-a.jpg" alt="" style="object-fit:cover">
+        <span><b>Hidden room 1 &mdash; the Billiards closet</b><br><small>Sink the balls 1 to 9</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Push every ball into a pocket <b>in number order, 1 through 9</b> (colours are always the same &mdash; 1 yellow, 2 blue, 3 pink...). The secret closet opens with free points, an elixir, or a weapon.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-hr1-a.jpg" alt="The table mid-puzzle" loading="lazy"><figcaption>The table mid-puzzle</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-hr1-b.jpg" alt="The closet, open" loading="lazy"><figcaption>The closet, open</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-hr2-a.jpg" alt="" style="object-fit:cover">
+        <span><b>Hidden room 2 &mdash; the Wine Cellar</b><br><small>Knife the leaks, fastest first</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb"><b>6 leaking barrels</b> drip at different speeds. Knife them <b>from fastest leak to slowest</b> &mdash; right order opens a secret room (sometimes free silver bullets); wrong order locks it for the game.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-hr2-a.jpg" alt="A leaking barrel" loading="lazy"><figcaption>A leaking barrel</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-hr2-b.jpg" alt="Compare the drip speeds" loading="lazy"><figcaption>Compare the drip speeds</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-hr2-c.jpg" alt="The hidden room" loading="lazy"><figcaption>The hidden room</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-hr3-a.jpg" alt="" style="object-fit:cover">
+        <span><b>Hidden room 3 &mdash; the galleries</b><br><small>4 marked books</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Both the East and West galleries hold bookshelves with <b>2 symbol-covered books each</b>. Interact with all four <b>in the order shown</b>:</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-hr3-a.jpg" alt="A marked book" loading="lazy"><figcaption>A marked book</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-hr3-order.jpg" alt="The order &mdash; 1, 2, 3, 4" loading="lazy"><figcaption>The order &mdash; 1, 2, 3, 4</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-js-b.jpg" alt="" style="object-fit:cover">
+        <span><b>Jump scare</b><br><small>Poke the crystal</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Interact with a Pack-a-Punch crystal <b>over and over</b>. She doesn't like it.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-js-a.jpg" alt="Keep poking..." loading="lazy"><figcaption>Keep poking...</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-js-b.jpg" alt="...she noticed" loading="lazy"><figcaption>...she noticed</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-sg-1.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; "Mystery"</b><br><small>Shoot 4 coins</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Kevin Sherwood &amp; Elena Siegman.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sg-1.jpg" alt="Main Hall &mdash; under the table by the Mozu" loading="lazy"><figcaption>Main Hall &mdash; under the table by the Mozu</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sg-2.jpg" alt="East hallway &mdash; behind the right Dining door" loading="lazy"><figcaption>East hallway &mdash; behind the right Dining door</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sg-3.jpg" alt="Wine Cellar &mdash; in the broken barrel" loading="lazy"><figcaption>Wine Cellar &mdash; in the broken barrel</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sg-4.jpg" alt="Library &mdash; atop the Egyptian statue" loading="lazy"><figcaption>Library &mdash; atop the Egyptian statue</figcaption></figure></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons &amp; secret gear</h2>
+
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-af-case.jpg" alt="" style="object-fit:cover">
+        <span><b>Alistair's Folly</b><br><small>The acid pistol &mdash; box, or the symbol code</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">From the Mystery Box &mdash; or free from its <b>case in the Library</b> by entering a 4-symbol code. Each colour has 4 possible spots and 4 possible shapes (A, D, W or Z-shaped); symbols change every game and repeats are possible.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-af-blue1.jpg" alt="BLUE symbol &mdash; Graveyard/Mausoleum area (4 spots)" loading="lazy"><figcaption>BLUE symbol &mdash; Graveyard/Mausoleum area (4 spots)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-af-green1.jpg" alt="GREEN symbol &mdash; Gardens area (4 spots)" loading="lazy"><figcaption>GREEN symbol &mdash; Gardens area (4 spots)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-af-red1.jpg" alt="RED symbol &mdash; inside the Mansion (4 spots)" loading="lazy"><figcaption>RED symbol &mdash; inside the Mansion (4 spots)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-af-yell1.jpg" alt="YELLOW symbol &mdash; around the Forest entrance (4 spots)" loading="lazy"><figcaption>YELLOW symbol &mdash; around the Forest entrance (4 spots)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-af-case.jpg" alt="Enter the code below the case &mdash; aim slightly up to confirm" loading="lazy"><figcaption>Enter the code below the case &mdash; aim slightly up to confirm</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-ct-bench.jpg" alt="" style="object-fit:cover">
+        <span><b>Chaos Theory</b><br><small>Upgrade 1 &mdash; charged acid shots</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Kill a Zombie Werewolf with silver bullets</b> &mdash; it drops the Chaos material.
+            <figure class="shot"><img src="../img/dotn/dn-ct-wolf.jpg" alt="The Chaos material drop" loading="lazy"><figcaption>The Chaos material drop</figcaption></figure></li>
+          <li><b>Run it through Alistair's machine</b> in the Greenhouse centre; take the Prima Materia from the side.
+            <figure class="shot"><img src="../img/dotn/dn-ct-machine.jpg" alt="The machine in the Greenhouse" loading="lazy"><figcaption>The machine in the Greenhouse</figcaption></figure></li>
+          <li><b>Shield-punch the odd bookshelf</b> on the Library's left side for part two.
+            <figure class="shot"><img src="../img/dotn/dn-ct-shelf.jpg" alt="The different-looking bookshelf" loading="lazy"><figcaption>The different-looking bookshelf</figcaption></figure></li>
+          <li><b>Craft at the back-right Greenhouse workbench.</b> Charged shots (3 ammo) make a stunning acid pool or a horde-clearing tornado.
+            <figure class="shot"><img src="../img/dotn/dn-ct-bench.jpg" alt="The Chaos Theory workbench" loading="lazy"><figcaption>The Chaos Theory workbench</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-an-craft.jpg" alt="" style="object-fit:cover">
+        <span><b>Alistair's Annihilator</b><br><small>Upgrade 2 &mdash; required for the main quest</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>The bat.</b> On the fence between Mausoleum and Graveyard, one lamp glows <b>orange</b> &mdash; shoot it with the Chaos Theory; the orange moves to another lamp; keep shooting until a <b>bat appears &mdash; shoot it mid-flight</b> for the Bat Chaos Materia. Missed? It retries in about a minute.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-an-lamp.jpg" alt="The orange lamp" loading="lazy"><figcaption>The orange lamp</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-an-bat.jpg" alt="The bat &mdash; Chaos Theory it" loading="lazy"><figcaption>The bat &mdash; Chaos Theory it</figcaption></figure></div></li>
+          <li><b>The Nosferatu.</b> Kill vampires with the Chaos Theory for <b>4 shots of bile</b>, then interact with the large tomb at the Graveyard's left entrance &mdash; kill the Nosferatu that answers for his Materia.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-an-bile.jpg" alt="Collecting bile" loading="lazy"><figcaption>Collecting bile</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-an-nosf.jpg" alt="The Nosferatu at the tomb" loading="lazy"><figcaption>The Nosferatu at the tomb</figcaption></figure></div></li>
+          <li><b>The digger.</b> In the Forest, blue mushrooms mark small dirt piles. <b>Green-shot a ZOMBIE standing on one</b> (shoot the zombie, not the ground) &mdash; it digs for you. One of three mounds holds the part.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-an-mush.jpg" alt="A mushroom mound" loading="lazy"><figcaption>A mushroom mound</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-an-dig.jpg" alt="Your new employee digging" loading="lazy"><figcaption>Your new employee digging</figcaption></figure></div></li>
+          <li><b>Machine both Materias, then craft</b> at the back-left Greenhouse workbench. Adds a scope, a shrinking green portal shot, and a fireball.
+            <figure class="shot"><img src="../img/dotn/dn-an-craft.jpg" alt="The Annihilator bench" loading="lazy"><figcaption>The Annihilator bench</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-sk-knife.jpg" alt="" style="object-fit:cover">
+        <span><b>Stake Knife</b><br><small>Secret melee &mdash; one-shots to round 26</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Read the tree code.</b> In the Forest (left path below PaP, by the Koshka), the lantern tree plus three background trees show <b>4 alchemical symbols &mdash; read left to right</b>. Changes every game.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sk-tree.jpg" alt="The lantern tree and its neighbours" loading="lazy"><figcaption>The lantern tree and its neighbours</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-alch.jpg" alt="The alchemical symbols &mdash; Air, Earth, Fire, Water" loading="lazy"><figcaption>The alchemical symbols &mdash; Air, Earth, Fire, Water</figcaption></figure></div></li>
+          <li><b>Shoot the Garden tiles in that order.</b> <b>One wrong tile = no Stake Knife this game.</b>
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sk-t1.jpg" alt="Tile &mdash; below the Gazebo window" loading="lazy"><figcaption>Tile &mdash; below the Gazebo window</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-t2.jpg" alt="Tile &mdash; left of the Vapr wall-buy" loading="lazy"><figcaption>Tile &mdash; left of the Vapr wall-buy</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-t3.jpg" alt="Tile &mdash; the fountain right of the perk" loading="lazy"><figcaption>Tile &mdash; the fountain right of the perk</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-t4.jpg" alt="Tile &mdash; the stone fence right of the path" loading="lazy"><figcaption>Tile &mdash; the stone fence right of the path</figcaption></figure></div></li>
+          <li><b>Bowie-knife the four symbols</b> on the second tree (slightly downhill), same order &mdash; then <b>shield-bash all four</b> in any order. A branch falls; take it.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sk-knife.jpg" alt="Knife the symbols in order" loading="lazy"><figcaption>Knife the symbols in order</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-branch.jpg" alt="The branch drops" loading="lazy"><figcaption>The branch drops</figcaption></figure></div></li>
+          <li><b>Feed it at the Mausoleum altar</b> &mdash; place the branch facing the perk machine and kill <b>10&ndash;15 Nosferatus</b> until it glows red, then craft at the workbench by the left Cemetery entrance.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sk-altar.jpg" alt="The branch on the altar" loading="lazy"><figcaption>The branch on the altar</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-glow.jpg" alt="Glowing red &mdash; fed" loading="lazy"><figcaption>Glowing red &mdash; fed</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sk-craft.jpg" alt="Craft the Stake Knife" loading="lazy"><figcaption>Craft the Stake Knife</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-si-weapon.jpg" alt="" style="object-fit:cover">
+        <span><b>Savage Impaler</b><br><small>Secret twin crossbows</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Blow out 6 candles</b> by knifing the flame tips: East Gallery table &middot; Music room table &middot; East hallway desk &middot; Alistair's bedside &middot; Basement bench &middot; Study table. Audio cue per candle.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-si-c1.jpg" alt="East Gallery" loading="lazy"><figcaption>East Gallery</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-c2.jpg" alt="Music room" loading="lazy"><figcaption>Music room</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-c3.jpg" alt="East hallway" loading="lazy"><figcaption>East hallway</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-c4.jpg" alt="The bedside" loading="lazy"><figcaption>The bedside</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-c5.jpg" alt="Basement" loading="lazy"><figcaption>Basement</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-c6.jpg" alt="Study" loading="lazy"><figcaption>Study</figcaption></figure></div></li>
+          <li><b>The red tombstone.</b> Right of PaP in the Forest, a clouded tombstone puts you in an <b>all-zombies-chase-you state</b> (once per round each). While in it, find the <b>ghost lady</b> outside the Mansion windows and <b>escort her to the Mausoleum</b> &mdash; may take several activations.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-si-tomb.jpg" alt="The tombstone by PaP" loading="lazy"><figcaption>The tombstone by PaP</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-lady.jpg" alt="She waits outside the map" loading="lazy"><figcaption>She waits outside the map</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-maus.jpg" alt="Escorted home" loading="lazy"><figcaption>Escorted home</figcaption></figure></div></li>
+          <li><b>Kill her possessed zombies the right way, in order:</b> regular weapon &rarr; fire &rarr; specialist weapon &rarr; ballistic shield. Pick up each dropped item.
+            <figure class="shot"><img src="../img/dotn/dn-si-poss.jpg" alt="A possessed zombie &mdash; misty blue glow" loading="lazy"><figcaption>A possessed zombie &mdash; misty blue glow</figcaption></figure></li>
+          <li><b>Place the 4 items in the Mausoleum circles</b>, kill <b>~8 Nosferatus inside the big circle</b> until it turns blue, then sprint down the right stairs and open the <b>tomb on your right</b> &mdash; the crypt opens.
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-si-items.jpg" alt="The four items placed" loading="lazy"><figcaption>The four items placed</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-circle.jpg" alt="Feed the circle Nosferatus" loading="lazy"><figcaption>Feed the circle Nosferatus</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-si-crypt.jpg" alt="The crypt opens" loading="lazy"><figcaption>The crypt opens</figcaption></figure></div></li>
+          <li><b>Take the Impaler</b> &mdash; and survive the Nosferatu lock-in. One free pickup per game; everyone else gets it in the box.
+            <figure class="shot"><img src="../img/dotn/dn-si-weapon.jpg" alt="The Savage Impaler" loading="lazy"><figcaption>The Savage Impaler</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables &amp; crafting</h2>
+
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-sh-built.jpg" alt="" style="object-fit:cover">
+        <span><b>Ballistic shield</b><br><small>3 parts &mdash; it has a gun in it</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Blocks like the classics but <b>fires a mounted gun</b>. First build is free; replacements cost more each time. Table: <b>Smoking room</b>, upstairs by the Billiards room.</p>
+        <ol class="steps">
+          <li><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sh-p1a.jpg" alt="Part 1 &mdash; west balcony under the stained glass, by the RK7" loading="lazy"><figcaption>Part 1 &mdash; west balcony under the stained glass, by the RK7</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sh-p1b.jpg" alt="...or east balcony by the Saug" loading="lazy"><figcaption>...or east balcony by the Saug</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sh-p1c.jpg" alt="...or top of the Grand Staircase" loading="lazy"><figcaption>...or top of the Grand Staircase</figcaption></figure></div></li>
+          <li><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sh-p2a.jpg" alt="Part 2 &mdash; Study table by the stairs" loading="lazy"><figcaption>Part 2 &mdash; Study table by the stairs</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sh-p2b.jpg" alt="...or the Library's broken shelf by the dragon statue" loading="lazy"><figcaption>...or the Library's broken shelf by the dragon statue</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sh-p2c.jpg" alt="...or the couch right of the Library entrance" loading="lazy"><figcaption>...or the couch right of the Library entrance</figcaption></figure></div></li>
+          <li><div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sh-p3a.jpg" alt="Part 3 &mdash; the hallway chair toward Dining" loading="lazy"><figcaption>Part 3 &mdash; the hallway chair toward Dining</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sh-p3b.jpg" alt="...or the Dining floor by the Swordfish" loading="lazy"><figcaption>...or the Dining floor by the Swordfish</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sh-p3c.jpg" alt="...or the Dining shelf by the Bedroom stairs" loading="lazy"><figcaption>...or the Dining shelf by the Bedroom stairs</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-sb-melt.jpg" alt="" style="object-fit:cover">
+        <span><b>Silver bullets</b><br><small>6 items, 2 workbenches &mdash; needed for the quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Extra damage &mdash; brutal on Zombie Werewolves &mdash; and a main-quest requirement. Three silver items to melt, three powder parts.</p>
+        <ol class="steps">
+          <li><b>The silver:</b>
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sb-cand1.jpg" alt="Candelabra &mdash; Entrance Hall / Billiards / Main Hall" loading="lazy"><figcaption>Candelabra &mdash; Entrance Hall / Billiards / Main Hall</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sb-tro1.jpg" alt="Trophy &mdash; hallway / Dining (2 spots)" loading="lazy"><figcaption>Trophy &mdash; hallway / Dining (2 spots)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sb-pl1.jpg" alt="Plate &mdash; three Wine Cellar spots" loading="lazy"><figcaption>Plate &mdash; three Wine Cellar spots</figcaption></figure></div>
+            <p class="blurb">Melt all three at the <b>Wine Cellar workbench</b> left of the stairs &mdash; and remember to pick the silver back up.</p>
+            <figure class="shot"><img src="../img/dotn/dn-sb-melt.jpg" alt="The melting bench" loading="lazy"><figcaption>The melting bench</figcaption></figure></li>
+          <li><b>The powder:</b>
+            <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-sb-char1.jpg" alt="Charcoal &mdash; a fireplace (Main Hall / Bedroom / Billiards)" loading="lazy"><figcaption>Charcoal &mdash; a fireplace (Main Hall / Bedroom / Billiards)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sb-gua1.jpg" alt="Guano &mdash; the Graveyard/Mausoleum area (3 spots)" loading="lazy"><figcaption>Guano &mdash; the Graveyard/Mausoleum area (3 spots)</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-sb-sul1.jpg" alt="Sulphur &mdash; inside the Greenhouse Lab (3 spots)" loading="lazy"><figcaption>Sulphur &mdash; inside the Greenhouse Lab (3 spots)</figcaption></figure></div></li>
+          <li><b>Craft in the Library.</b> Your first silver-loaded weapon is free.</li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/dotn/dn-tr-elec.jpg" alt="" style="object-fit:cover">
+        <span><b>Traps &amp; fire cores</b><br><small>The fire traps need feeding</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The <b>electric trap</b> in the Greenhouse works from the start. The <b>fire traps</b> on the doorframes each need a <b>Fire Core</b> before they'll take your points &mdash; cores lie all over the map (benches, couches, the Mausoleum stairs, the piano bench, the Gardens...).</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-tr-elec.jpg" alt="The electric trap" loading="lazy"><figcaption>The electric trap</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tr-fc1.jpg" alt="A fire core on the Cemetery Path bench" loading="lazy"><figcaption>A fire core on the Cemetery Path bench</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tr-fc2.jpg" alt="Another on the Dining couch" loading="lazy"><figcaption>Another on the Dining couch</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-tr-fc3.jpg" alt="The Gardens has several" loading="lazy"><figcaption>The Gardens has several</figcaption></figure></div>
+        <div class="callout">The Knight quest line eats one core &mdash; keep a spare in mind. <button class="xref" data-goto="main">See the main quest</button></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <figure class="shot"><img src="../img/dotn/dn-pap-crystal.jpg" alt="The mansion layout &mdash; crystal areas marked (the guide's own map)" loading="lazy"><figcaption>The mansion layout &mdash; crystal areas marked (the guide's own map)</figcaption></figure>
+    <ol class="steps">
+      <li><b>Reach the Sentinel Artifact</b> &mdash; open the two doors from spawn to the main hall balcony. It acts as this map's power.
+        <figure class="shot"><img src="../img/dotn/dn-pap-sentinel.jpg" alt="The Sentinel Artifact" loading="lazy"><figcaption>The Sentinel Artifact</figcaption></figure></li>
+      <li><b>Find and feed the three crystals.</b> Each hides in a jar (knife jars with glowing particles), then <b>feed it a few zombie kills</b> nearby:
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-pap-blue1.jpg" alt="BLUE &mdash; Wine Cellar, table by the right stairs" loading="lazy"><figcaption>BLUE &mdash; Wine Cellar, table by the right stairs</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-blue2.jpg" alt="...or the crate by the big barrel" loading="lazy"><figcaption>...or the crate by the big barrel</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-green1.jpg" alt="GREEN &mdash; table above the Library" loading="lazy"><figcaption>GREEN &mdash; table above the Library</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-green2.jpg" alt="...or the desk by the white statue" loading="lazy"><figcaption>...or the desk by the white statue</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-purp1.jpg" alt="PURPLE &mdash; table toward the Bedroom" loading="lazy"><figcaption>PURPLE &mdash; table toward the Bedroom</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-purp2.jpg" alt="...or the chest facing the bed" loading="lazy"><figcaption>...or the chest facing the bed</figcaption></figure></div></li>
+      <li><b>Do each crystal's mini-quest for a Tuning Fork.</b> Interact with the fed crystal for a vision, then:
+        <ul>
+          <li><b>Grandfather clock:</b> find the interactive one (Main Hall / Dining / Billiards), stand in its circle ~1 minute, take the fork.</li>
+          <li><b>Doll:</b> Entrance room by Danu's machine &mdash; follow the ghost.</li>
+          <li><b>Painting:</b> find the painting from the vision (East Gallery / Music / Lounge / Smoking), follow the ghost.</li>
+          <li><b>Perk machine:</b> approach the one from the vision, kill the <b>5 vampires</b> in the mist.</li>
+          <li><b>Rope:</b> the Wine Cellar chair &mdash; follow the ghost.</li>
+          <li><b>Alistair's testament:</b> the container above the Library &mdash; follow the ghost.</li>
+        </ul>
+        <div class="shot-grid"><figure class="shot"><img src="../img/dotn/dn-pap-clock1.jpg" alt="The Main Hall clock" loading="lazy"><figcaption>The Main Hall clock</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-fork.jpg" alt="A Tuning Fork emerging" loading="lazy"><figcaption>A Tuning Fork emerging</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-doll.jpg" alt="The doll" loading="lazy"><figcaption>The doll</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-rope.jpg" alt="The rope" loading="lazy"><figcaption>The rope</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-perk.jpg" alt="The perk-machine vampires" loading="lazy"><figcaption>The perk-machine vampires</figcaption></figure><figure class="shot"><img src="../img/dotn/dn-pap-test.jpg" alt="The testament" loading="lazy"><figcaption>The testament</figcaption></figure></div></li>
+      <li><b>Open the Forest.</b> With all 3 forks, interact with the <b>Dark Matter mass on the Forest terrace</b> (door below spawn). Pack-a-Punch waits at the Forest's far end &mdash; and a <b>Zombie Werewolf comes with it</b>.
+        <figure class="shot"><img src="../img/dotn/dn-pap-forest.jpg" alt="The dark matter breaks &mdash; the Forest opens" loading="lazy"><figcaption>The dark matter breaks &mdash; the Forest opens</figcaption></figure></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perks &mdash; the Black Ops 4 way</h2>
+    <p class="blurb">Same system as IX: no fixed machines &mdash; your four <b>loadout perks</b> fill the altar slots you buy in order at <b>2500 / 3000 / 3500 / 4000</b>.</p>
+    <table class="data-table">
+      <thead><tr><th>Slot</th><th>Cost</th><th>Altar locations</th></tr></thead>
+      <tbody>
+        <tr><td><b>1st perk</b></td><td>2500</td><td rowspan="4">Altars are spread through the Mansion and grounds &mdash; the Entrance Hall (Danu), the Wine Cellar, the Graveyard, and the Gardens all hold one.</td></tr>
+        <tr><td><b>2nd perk</b></td><td>3000</td></tr>
+        <tr><td><b>3rd perk</b></td><td>3500</td></tr>
+        <tr><td><b>4th perk</b></td><td>4000</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">One PaP mini-quest spawns vampires at a perk machine &mdash; if your vision shows an altar, that's the one to visit. <button class="xref" data-goto="pap">See Pack-a-Punch</button></div>
+    <p class="blurb">Send altar photos and corrections and I'll finish this tab properly.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
