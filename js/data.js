@@ -1,4 +1,4 @@
-// All games and their zombies maps.
+﻿// All games and their zombies maps.
 // Each map: id (used for its page file at maps/<id>.html when built), name, note (optional), built (page exists yet?)
 const GAMES = [
   {
@@ -23,7 +23,7 @@ const GAMES = [
     accent2: "#ffb36b",
     tagline: "Victis, Mob of the Dead & Origins",
     maps: [
-      { id: "tranzit", name: "TranZit", note: "2 main EEs: Richtofen / Maxis" },
+      { id: "tranzit", name: "TranZit", note: "2 main EEs: Richtofen / Maxis", built: true },
       { id: "dierise", name: "Die Rise", note: "2 main EEs: Richtofen / Maxis" },
       { id: "motd", name: "Mob of the Dead", note: "Pop Goes the Weasel", built: true },
       { id: "buried", name: "Buried", note: "2 main EEs: Richtofen / Maxis" },
