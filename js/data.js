@@ -42,7 +42,7 @@ const GAMES = [
       { id: "de", name: "Der Eisendrache", note: "4 bow upgrades", built: true },
       { id: "zetsubou", name: "Zetsubou No Shima", note: "Plants tab", built: true },
       { id: "gorod", name: "Gorod Krovi", note: "Valve solver", built: true },
-      { id: "revelations", name: "Revelations" }
+      { id: "revelations", name: "Revelations", note: "The Aether finale", built: true }
     ]
   },
   {

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0e0a14">
+<title>Revelations &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Revelations: shattered Aether islands — void indigo + keeper gold */
+  :root {
+    --map-bg: #0e0a14;
+    --map-bg2: #191223;
+    --bg: #0e0a14;
+    --bg-card: #191223;
+    --bg-card-hover: #221a2f;
+    --line: #362a47;
+    --map-accent: #8a7df0;
+    --map-accent2: #f0c86a;
+    --map-glow: rgba(138, 125, 240, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="revelations">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo3">&#8249; Black Ops 3</a></nav>
+
+  <header class="map-header">
+    <h1>Revelations</h1>
+    <div class="sub">Black Ops 3 &middot; The end of the Aether story</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4</b> &middot; 2&ndash;2&frac12; hours.</li>
+        <li>The <b>upgraded Apothicon Servant</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+        <li>The <b>Keeper Protector altar</b> + ~5500 points. <button class="xref" data-goto="build">See Buildables</button></li>
+        <li><b>Lil' Arnies</b> from the box, and ideally a <b>Max Ammo gobblegum</b>.</li>
+        <li><b>Pack-a-Punch open</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+      </ul>
+    </div>
+    <p class="blurb">"For The Good Of All" &mdash; the last stand of the Aether story: put the Shadow Man away for good.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Shoot the graves in death order.</b> Doable from the very start: four graves by spawn (two in spawn, two near the Origins bumper &mdash; shootable through the door). Shoot them in the order the characters died: <b>Richtofen, Dempsey, Takeo, Nikolai &mdash; left to right that's 2, 3, 1, 4</b>. Red flames confirm. <figure class="shot"><img src="../img/revelations/rv2-q-graves.jpg" alt="The graves burning red &mdash; order was right" loading="lazy"><figcaption>The graves burning red &mdash; order was right</figcaption></figure></li>
+      <li data-num="2"><b>The Keeper ritual &mdash; audio reel 1.</b> A small <b>pyramidal stone</b> hides on one of the bumper pads (random). Use a pad, and while it recharges stand on it and look for the stone &mdash; it's easy to miss. Then summon the <b>Keeper Protector</b> from the OPPOSITE pad's side, bounce over, lure him onto the pad &mdash; close enough to the stone and he starts chanting. <b>Every enemy on the map now hunts him &mdash; protect him</b> until he finishes and drops the reel. Play it on the reader in <b>Nacht, beside Jugger-Nog</b>. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-q-stone.jpg" alt="The pyramidal stone on a bumper pad" loading="lazy"><figcaption>The pyramidal stone on a bumper pad</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-ritual.jpg" alt="The Keeper mid-ritual &mdash; keep him alive" loading="lazy"><figcaption>The Keeper mid-ritual &mdash; keep him alive</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-reel1.jpg" alt="The audio reel he drops" loading="lazy"><figcaption>The audio reel he drops</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-reader1.jpg" alt="The reader in Nacht, next to Jugger-Nog" loading="lazy"><figcaption>The reader in Nacht, next to Jugger-Nog</figcaption></figure></div><div class="callout">You'll need the Keeper altar built and ~5500 points. <button class="xref" data-goto="build">See Buildables</button></div></li>
+      <li data-num="3"><b>Nine Arnies in the Apothicon &mdash; audio reel 2.</b> Inside the beast, throw <b>Lil' Arnies into 9 holes without leaving</b> &mdash; leave, and every hole resets. Each set of 3 spawns <b>3 Margwas</b>; kill them before the next set (they usually drop Max Ammos). Solo: throw 3, pop a <b>Max Ammo gobblegum</b>, throw 3, wait for a Margwa Max Ammo for the last 3. Then take the reel and play it in <b>Kino</b> &mdash; the reader is on a box by the main desk, opposite the teleporter. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-q-margwa.jpg" alt="The hand-drawn map of all 9 holes &mdash; bless this artist" loading="lazy"><figcaption>The hand-drawn map of all 9 holes &mdash; bless this artist</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-holes.jpg" alt="One of the holes, Arnie going in" loading="lazy"><figcaption>One of the holes, Arnie going in</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-reel2.jpg" alt="Reel 2" loading="lazy"><figcaption>Reel 2</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-reader2.jpg" alt="The Kino reader by the main desk" loading="lazy"><figcaption>The Kino reader by the main desk</figcaption></figure></div></li>
+      <li data-num="4"><b>Catch the 6 bones.</b> Each starts as a <b>brick you shoot down with a PaP'd weapon</b> &mdash; a flying bone pops out, and you <b>catch it by firing the upgraded Apothicon Servant near it</b>. <button class="xref" data-goto="wonder">See the Servant upgrade</button> <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-q-bone1.jpg" alt="Nacht &mdash; above the gateway to Der Eisendrache" loading="lazy"><figcaption>Nacht &mdash; above the gateway to Der Eisendrache</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-bone1b.jpg" alt="...the bone pops out; Servant-suck it in" loading="lazy"><figcaption>...the bone pops out; Servant-suck it in</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-bone2.jpg" alt="By the waterfall near Verr&uuml;ckt" loading="lazy"><figcaption>By the waterfall near Verr&uuml;ckt</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-bone3.jpg" alt="Near the giant robot footprint in Origins" loading="lazy"><figcaption>Near the giant robot footprint in Origins</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-bone4.jpg" alt="Above Stamin-Up in Shangri-La" loading="lazy"><figcaption>Above Stamin-Up in Shangri-La</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-bone5.jpg" alt="In the broken church at spawn" loading="lazy"><figcaption>In the broken church at spawn</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-bone6.jpg" alt="Part of the free-perk wall (third wall)" loading="lazy"><figcaption>Part of the free-perk wall (third wall)</figcaption></figure></div></li>
+      <li data-num="5"><b>Sophia's remains &mdash; audio reel 3.</b> The bones pile up in Nacht between the reel reader and Jugger-Nog. <b>Shoot them with the upgraded Servant</b>, then shoot the corpse that appears &mdash; reel 3 drops. Play it on the table at the <b>Origins Excavation Site</b>. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-q-sophia.jpg" alt="The bones in Nacht" loading="lazy"><figcaption>The bones in Nacht</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-sophia2.jpg" alt="Sophia's remains &mdash; shoot again" loading="lazy"><figcaption>Sophia's remains &mdash; shoot again</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-reader3.jpg" alt="The reader at the Excavation Site" loading="lazy"><figcaption>The reader at the Excavation Site</figcaption></figure></div></li>
+      <li data-num="6"><b>Reflect the turret beams.</b> S.O.P.H.I.A. hovers above Nacht. Use all <b>4 corruption turrets</b> &mdash; but you can't hit her directly: <b>aim at the blue crystal left of each portal</b> to bank the beam into her. The turret kicks you out once the beam locks. Then interact with her in Nacht. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-q-turret.jpg" alt="A corruption turret" loading="lazy"><figcaption>A corruption turret</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-crystal.jpg" alt="Aim the blue crystal, not S.O.P.H.I.A." loading="lazy"><figcaption>Aim the blue crystal, not S.O.P.H.I.A.</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-beams.jpg" alt="All four beams locked on" loading="lazy"><figcaption>All four beams locked on</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-sophia4.jpg" alt="She materialises and flies to Kino's teleporter" loading="lazy"><figcaption>She materialises and flies to Kino's teleporter</figcaption></figure></div></li>
+      <li data-num="7"><b>Samantha's room &mdash; the Kronorium.</b> All players in the Kino teleporter. Grab the <b>Kronorium from her bed</b>, wait for the return trip, and set it on the <b>Kino desk</b>. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-q-samroom.jpg" alt="Samantha's room" loading="lazy"><figcaption>Samantha's room</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-kron.jpg" alt="The Kronorium on the bed" loading="lazy"><figcaption>The Kronorium on the bed</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-q-krondesk.jpg" alt="Place it on the desk in Kino" loading="lazy"><figcaption>Place it on the desk in Kino</figcaption></figure></div><div class="callout"><b>Doing the wisp?</b> Pick it up right before this teleport and place it on the toy chest while you're in the room. <button class="xref" data-goto="side">See Side Easter Eggs</button></div></li>
+      <li data-num="8"><b>Four eggs, four runes.</b> One egg exists at a time, at semi-random spots (spawn by Quick Revive &middot; Origins by Gen 3 / Wunderfizz / Keeper altar corner / Buried KN-44 &middot; MotD by the turret &middot; Shangri-La broken pillar / fire square &middot; DE Wunderfizz bucket / Primis statues &middot; Kino blackboard / broken floor &middot; Verr&uuml;ckt green tanks / Speed Cola / plants / chair). Put each egg in one of the <b>4 holes in the Apothicon</b>, kill zombies nearby to hatch it into a <b>worm</b>, then carry the worm to its area (spawn, DE, Verr&uuml;ckt, MotD) and find the <b>invisible rune spot</b> &mdash; a beep speeds up as you get close. Place, wait, take the rune. Repeat &times;4. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-e-orig.jpg" alt="An egg spawn (Origins, by the Wunderfizz)" loading="lazy"><figcaption>An egg spawn (Origins, by the Wunderfizz)</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-e-hole.jpg" alt="The holes in the Apothicon" loading="lazy"><figcaption>The holes in the Apothicon</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-e-worm.jpg" alt="Kill nearby to hatch the worm" loading="lazy"><figcaption>Kill nearby to hatch the worm</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-e-rune1.jpg" alt="Rune spot &mdash; spawn" loading="lazy"><figcaption>Rune spot &mdash; spawn</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-e-rune2.jpg" alt="Rune spot &mdash; Der Eisendrache" loading="lazy"><figcaption>Rune spot &mdash; Der Eisendrache</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-e-rune3.jpg" alt="Rune spot &mdash; Verr&uuml;ckt" loading="lazy"><figcaption>Rune spot &mdash; Verr&uuml;ckt</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-e-rune4.jpg" alt="Rune spot &mdash; Mob of the Dead" loading="lazy"><figcaption>Rune spot &mdash; Mob of the Dead</figcaption></figure></div></li>
+      <li data-num="9"><b>The rune code and the gauntlet.</b> Everyone on the circle in Kino's projection room &rarr; teleported to the empty boss room. Interact with the <b>Kronorium on its stand</b> &mdash; the pages show your <b>4 runes in a specific order</b> (remember it by scoreboard positions). Across the room, a purple symbol cycles &mdash; <b>interact each time YOUR next rune shows</b>. Then survive <b>4 arena phases</b>: Margwa packs plus lava, Furies and tornados; in the anti-gravity phase, <b>stand on the light circles or die</b>. Take the <b>Summoning Key</b>. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-b-circle.jpg" alt="The circle in the projection room" loading="lazy"><figcaption>The circle in the projection room</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-b-runes.jpg" alt="The Kronorium shows your rune order" loading="lazy"><figcaption>The Kronorium shows your rune order</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-b-symbol.jpg" alt="Interact when your rune appears" loading="lazy"><figcaption>Interact when your rune appears</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-b-phases.jpg" alt="The phases &mdash; dodge everything" loading="lazy"><figcaption>The phases &mdash; dodge everything</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-b-antigrav.jpg" alt="Anti-gravity: stay on the light circles" loading="lazy"><figcaption>Anti-gravity: stay on the light circles</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-b-key.jpg" alt="The Summoning Key" loading="lazy"><figcaption>The Summoning Key</figcaption></figure></div></li>
+      <li data-num="10"><b>Throw the Key at 7 relics</b> outside the map: <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-k-radio.jpg" alt="The radio on Kino's chandelier" loading="lazy"><figcaption>The radio on Kino's chandelier</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-k-clock.jpg" alt="The clock above Der Eisendrache" loading="lazy"><figcaption>The clock above Der Eisendrache</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-k-stone.jpg" alt="The convergence stone in a Shangri-La palm" loading="lazy"><figcaption>The convergence stone in a Shangri-La palm</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-k-grave.jpg" alt="A grave by the Origins excavation" loading="lazy"><figcaption>A grave by the Origins excavation</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-k-poster.jpg" alt="A poster in a MotD cell" loading="lazy"><figcaption>A poster in a MotD cell</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-k-mg42.jpg" alt="The MG-42 on the Verr&uuml;ckt fountain" loading="lazy"><figcaption>The MG-42 on the Verr&uuml;ckt fountain</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-k-barrel.jpg" alt="A red barrel by the truck in Nacht" loading="lazy"><figcaption>A red barrel by the truck in Nacht</figcaption></figure></div><div class="callout"><b>Lost the Key?</b> A miss drops it near where you threw. If it glitches in a portal, the carrier <b>downs himself</b> and it reappears &mdash; or grab a Death Machine and swap back.</div></li>
+      <li data-num="11"><b>The finale.</b> Gear up &mdash; then take Kino's teleporter to the boss room. <b>Key on the pedestal, kill zombies to charge it, throw it at S.O.P.H.I.A.</b> &mdash; she strips the Shadow Man's shield. Shoot him until he's driven into the <b>Apothicon statue's mouth</b>, then interact with the Kronorium. Enjoy the XP &mdash; and if you've done every quest before this one, the <b>RK5 starts every game with you</b> from now on. <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-f-pedestal.jpg" alt="Charge the Key on the pedestal" loading="lazy"><figcaption>Charge the Key on the pedestal</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-f-shadow.jpg" alt="Drive the Shadow Man into the statue's mouth" loading="lazy"><figcaption>Drive the Shadow Man into the statue's mouth</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-f-end.jpg" alt="For the good of all" loading="lazy"><figcaption>For the good of all</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+    <p class="blurb">Seven of them &mdash; including the wisp, the best reward in the game.</p>
+
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-perk1.jpg" alt="" style="object-fit:cover">
+        <span><b>Free perk for everyone</b><br><small>An anti-gravity parkour</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Activate anti-gravity and the corruption generator in <b>Der Eisendrache</b>, look above the portal: a <b>perk bottle</b> floats out there. Wall-run out along the walls to grab it &mdash; it gives a <b>random perk to every player</b>. Falling into space just respawns you on the map.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-se-perk1.jpg" alt="The bottle above the portal" loading="lazy"><figcaption>The bottle above the portal</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-perk2.jpg" alt="The wall-run route out" loading="lazy"><figcaption>The wall-run route out</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-ted1.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; "The Gift"</b><br><small>3 teddy bears</small></span></summary>
+      <div class="acc-body">
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-se-ted1.jpg" alt="Kino &mdash; chair facing the stage" loading="lazy"><figcaption>Kino &mdash; chair facing the stage</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-ted2.jpg" alt="Verr&uuml;ckt &mdash; chair by the green tanks" loading="lazy"><figcaption>Verr&uuml;ckt &mdash; chair by the green tanks</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-ted3.jpg" alt="MotD &mdash; stool after the Buried tunnel" loading="lazy"><figcaption>MotD &mdash; stool after the Buried tunnel</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-radio.jpg" alt="" style="object-fit:cover">
+        <span><b>The jukebox radio</b><br><small>4 buttons, any zombies song</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Press <b>4 buttons in Nacht quickly</b> (less time with more players) and a radio spawns by the box &mdash; <b>shoot it to play any zombies song, knife to stop</b>.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-se-btn1.jpg" alt="Right of the DE portal" loading="lazy"><figcaption>Right of the DE portal</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-btn2.jpg" alt="Corner by the Tesla coil interface" loading="lazy"><figcaption>Corner by the Tesla coil interface</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-btn3.jpg" alt="Up the stairs by the Dragon shield bench" loading="lazy"><figcaption>Up the stairs by the Dragon shield bench</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-btn4.jpg" alt="Left of the L-CAR 9" loading="lazy"><figcaption>Left of the L-CAR 9</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-radio.jpg" alt="The radio, spawned by the box" loading="lazy"><figcaption>The radio, spawned by the box</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-wisp.jpg" alt="" style="object-fit:cover">
+        <span><b>The wisp</b><br><small>Every box weapon comes out PaP'd</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li><b>At least one player has completed ALL the other main easter eggs.</b></li></ul></div>
+        <p class="blurb">A shining wisp sits on the spawn truck. <b>One enemy hit while carrying it loses it for the whole game</b> &mdash; so leave it until main quest step 7, grab it right before the Samantha's-room teleport, and <b>place it on her toy chest</b>.</p>
+        <p class="blurb">Reward: <b>every Mystery Box weapon comes out already Pack-a-Punched</b>, and Takeo's katana becomes buyable in Shangri-La.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-se-wisp.jpg" alt="The wisp on the spawn truck" loading="lazy"><figcaption>The wisp on the spawn truck</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-katana.jpg" alt="The katana wall-buy" loading="lazy"><figcaption>The katana wall-buy</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-well.jpg" alt="" style="object-fit:cover">
+        <span><b>Time trials</b><br><small>4 melee weapons from the wishing well</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Beat the clock and buy the weapons from the <b>well between Shangri-La's stairs and the DE Primis altar</b>. Same tricks as Gorod: keep the map small early, gum your way to PaP wall guns.</p>
+        <table class="data-table">
+          <thead><tr><th>Weapon</th><th>Requirement</th><th>One-shots until</th></tr></thead>
+          <tbody>
+            <tr><td><b>Nunchucks</b></td><td>Round 5 under 5:00</td><td>Round 10</td></tr>
+            <tr><td><b>Skull Splitter</b></td><td>Round 10 under 12:00</td><td>Round 15</td></tr>
+            <tr><td><b>Buzzcut</b></td><td>Round 15 under 19:00</td><td>Round 25</td></tr>
+            <tr><td><b>Nightbreaker</b></td><td>Round 20 under 32:00</td><td>Round 35</td></tr>
+          </tbody>
+        </table>
+        <figure class="shot"><img src="../img/revelations/rv2-se-well.jpg" alt="The wishing well" loading="lazy"><figcaption>The wishing well</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-table.jpg" alt="" style="object-fit:cover">
+        <span><b>Trading table + M1927 wall-buy</b><br><small>The chalk quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Unlocks a table in Nacht where players can <b>leave a weapon for each other</b> &mdash; and an M1927 wall-buy in DE.</p>
+        <ol class="steps">
+          <li><b>Grab the pink chalk</b> in Der Eisendrache (needs anti-gravity) &mdash; on the small upper platform.
+            <figure class="shot"><img src="../img/revelations/rv2-se-chalk.jpg" alt="The chalk platform in DE" loading="lazy"><figcaption>The chalk platform in DE</figcaption></figure></li>
+          <li><b>Move the wall sentences:</b> take <b>"Wish Too Often..."</b> from DE &rarr; place it in <b>Verr&uuml;ckt</b> on the "Ascend from Darkness" floor spot by the power &rarr; place <b>"Ascend from Darkness"</b> in Nacht's spiral staircase &rarr; place <b>"Salvation Lies Above"</b> on Nacht's empty wall by the back staircase.
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-se-txt1.jpg" alt="The DE sentence" loading="lazy"><figcaption>The DE sentence</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-txt2.jpg" alt="Into Verr&uuml;ckt by the power" loading="lazy"><figcaption>Into Verr&uuml;ckt by the power</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-txt3.jpg" alt="The spiral staircase in Nacht" loading="lazy"><figcaption>The spiral staircase in Nacht</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-txt4.jpg" alt="The back-staircase wall in Nacht" loading="lazy"><figcaption>The back-staircase wall in Nacht</figcaption></figure></div></li>
+          <li><b>The Kino swap:</b> take <b>"Knowledge Itself Is For The Taking"</b> from MotD's infirmary entrance &rarr; place it in <b>Kino behind the teleporter</b> (where the lever was) &rarr; carry the <b>"A Soul Alone..."</b> you got in exchange back to the MotD spot.
+            <figure class="shot"><img src="../img/revelations/rv2-se-txt5.jpg" alt="The Kino wall behind the teleporter" loading="lazy"><figcaption>The Kino wall behind the teleporter</figcaption></figure></li>
+          <li>A sound plays; the table in Nacht glimmers. Weapons in, weapons out.
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-se-table.jpg" alt="The trading table" loading="lazy"><figcaption>The trading table</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-se-m1927.jpg" alt="Bonus: the M1927 wall-buy in DE" loading="lazy"><figcaption>Bonus: the M1927 wall-buy in DE</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-se-arnie.jpg" alt="" style="object-fit:cover">
+        <span><b>Upgraded Lil' Arnies</b><br><small>150 kills + one good throw</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The lobby collectively kills <b>150 zombies with Arnies</b>, then throw one <b>into the window above the church at spawn</b>. Everyone holding Arnies gets them upgraded, ammo refunded.</p>
+        <figure class="shot"><img src="../img/revelations/rv2-se-arnie.jpg" alt="The church window at spawn" loading="lazy"><figcaption>The church window at spawn</figcaption></figure>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">The <b>Apothicon Servant</b>, the <b>Thundergun</b> and <b>Lil' Arnies</b> all come from the Mystery Box on this map. The one with a quest is the Servant's upgrade:</p>
+
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-sv-pap.jpg" alt="" style="object-fit:cover">
+        <span><b>Estulla Astoth &mdash; upgraded Apothicon Servant</b><br><small>5 flying 115 stones, then PaP</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The Servant comes from the <b>Mystery Box</b>. The upgrade Shadows of Evil never let you have: shoot <b>5 element-115 stones flying in the sky</b>, then Pack-a-Punch it inside the Apothicon. <b>Required for the main quest</b> (catching bones, freeing Sophia).</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-sv-stone1.jpg" alt="Stone 1 &mdash; Shangri-La, above the pyramid" loading="lazy"><figcaption>Stone 1 &mdash; Shangri-La, above the pyramid</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sv-stone2.jpg" alt="Stone 2 &mdash; spawn, up right of the portal" loading="lazy"><figcaption>Stone 2 &mdash; spawn, up right of the portal</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sv-stone3.jpg" alt="Stone 3 &mdash; MotD, left of the portal" loading="lazy"><figcaption>Stone 3 &mdash; MotD, left of the portal</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sv-stone4.jpg" alt="Stone 4 &mdash; Verr&uuml;ckt, by the MotD jump pad (the dot in front of the star)" loading="lazy"><figcaption>Stone 4 &mdash; Verr&uuml;ckt, by the MotD jump pad (the dot in front of the star)</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sv-stone5.jpg" alt="Stone 5 &mdash; Verr&uuml;ckt, near the portal" loading="lazy"><figcaption>Stone 5 &mdash; Verr&uuml;ckt, near the portal</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sv-pap.jpg" alt="Then upgrade at the Pack-a-Punch in the stomach" loading="lazy"><figcaption>Then upgrade at the Pack-a-Punch in the stomach</figcaption></figure></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables &amp; gear</h2>
+
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-sh-table.jpg" alt="" style="object-fit:cover">
+        <span><b>Dragon shield</b><br><small>3 parts across three areas</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Part 1</b> &mdash; the Origins trench area just past spawn:
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-sh-p1a.jpg" alt="Immediately left entering Origins from spawn" loading="lazy"><figcaption>Immediately left entering Origins from spawn</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sh-p1b.jpg" alt="On the right, near the Wunderfizz" loading="lazy"><figcaption>On the right, near the Wunderfizz</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sh-p1c.jpg" alt="In front of the glowing radio truck" loading="lazy"><figcaption>In front of the glowing radio truck</figcaption></figure></div></li>
+          <li><b>Part 2</b> &mdash; Der Eisendrache, on a wall you can <b>only reach during anti-gravity</b>:
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-sh-p2.jpg" alt="The wall in Der Eisendrache" loading="lazy"><figcaption>The wall in Der Eisendrache</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sh-p2b.jpg" alt="Anti-gravity run to grab it" loading="lazy"><figcaption>Anti-gravity run to grab it</figcaption></figure></div></li>
+          <li><b>Part 3</b> &mdash; Verr&uuml;ckt:
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-sh-p3a.jpg" alt="On a pillar near Speed Cola" loading="lazy"><figcaption>On a pillar near Speed Cola</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sh-p3b.jpg" alt="On the kitchen table" loading="lazy"><figcaption>On the kitchen table</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-sh-p3c.jpg" alt="In the corner of the small room past the stairs" loading="lazy"><figcaption>In the corner of the small room past the stairs</figcaption></figure></div></li>
+          <li><b>Build it behind Jugger-Nog in Nacht.</b>
+            <figure class="shot"><img src="../img/revelations/rv2-sh-table.jpg" alt="The bench behind Jugger-Nog" loading="lazy"><figcaption>The bench behind Jugger-Nog</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-m-keeper.jpg" alt="" style="object-fit:cover">
+        <span><b>Keeper Protector</b><br><small>3 parts + a wall altar &middot; 5500 to summon</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">A guardian Keeper who fights beside you &mdash; and performs the ritual in <b>main quest step 2</b>. The 5500 can be <b>pooled between players</b>.</p>
+        <ol class="steps">
+          <li><b>The flag</b> &mdash; Origins / MotD area:
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-kp-flag1.jpg" alt="By the giant robot footprint" loading="lazy"><figcaption>By the giant robot footprint</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-kp-flag2.jpg" alt="Top of the excavation site" loading="lazy"><figcaption>Top of the excavation site</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-kp-flag3.jpg" alt="MotD cafeteria, beside Mule Kick" loading="lazy"><figcaption>MotD cafeteria, beside Mule Kick</figcaption></figure></div></li>
+          <li><b>The Skull of Nan Sapwe</b> &mdash; Verr&uuml;ckt:
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-kp-skull1.jpg" alt="On a chair, left coming from MotD" loading="lazy"><figcaption>On a chair, left coming from MotD</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-kp-skull2.jpg" alt="On a shelf beside Speed Cola" loading="lazy"><figcaption>On a shelf beside Speed Cola</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-kp-skull3.jpg" alt="On a chair near the power lever" loading="lazy"><figcaption>On a chair near the power lever</figcaption></figure></div></li>
+          <li><b>The purple gem</b> &mdash; Der Eisendrache / Kino:
+            <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-kp-gem1.jpg" alt="Kino, on a table where you land from Verr&uuml;ckt" loading="lazy"><figcaption>Kino, on a table where you land from Verr&uuml;ckt</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-kp-gem2.jpg" alt="DE, by the pyramid on the altar-facing side" loading="lazy"><figcaption>DE, by the pyramid on the altar-facing side</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-kp-gem3.jpg" alt="DE, in the Primis statue room" loading="lazy"><figcaption>DE, in the Primis statue room</figcaption></figure></div></li>
+          <li><b>Build the altar</b> at a wall spot: Kino's mannequin area (left of the stage) &middot; DE's Primis statue cave &middot; the robot footprint in Origins &middot; right of Verr&uuml;ckt's green-tank room.</li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/revelations/rv2-m-apoth.jpg" alt="" style="object-fit:cover">
+        <span><b>The masks</b><br><small>8 wearable buffs &mdash; claim them in Kino's theater</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Secret challenges unlock masks on the mannequins in Kino's theater. One worn at a time.</p>
+        <table class="data-table">
+          <thead><tr><th>Mask</th><th>Buffs</th><th>How</th></tr></thead>
+          <tbody>
+            <tr><td><b>Dire Wolf</b></td><td>Purple Stamin-Up</td><td>DE anti-gravity: grenade the Wolf-bow skeleton hole, then kill zombies around the fallen skull during anti-gravity.</td></tr>
+            <tr><td><b>Helmet of Siegfried</b></td><td>Purple Jugger-Nog (+1 hit)</td><td>Shoot <b>9-3-5 (IX III V)</b> on the clock above DE's pyramid room, then 6 headshots at each of 4 jars (DE Primis statues / Kino projection room / Verr&uuml;ckt kitchen / Origins pre-Gen-3 room).</td></tr>
+            <tr><td><b>Al's hat</b></td><td><b>Nothing.</b> Wearing it removes other masks</td><td>In the isolated MotD cell near the Origins trench door.</td></tr>
+            <tr><td><b>Keeper skull</b></td><td>Purple Jugg, &plusmn;Keeper damage, longer Protector</td><td>Protector kills ~30 zombies; then either have the Wolf mask, or kill ~7 enslaved Keepers with corruption turrets.</td></tr>
+            <tr><td><b>Helmet of the King</b></td><td>Purple Stamin-Up, boss resist/damage, immune to electric &amp; burning zombies</td><td>~30 trap kills + destroy a Panzer's helmet and chest core.</td></tr>
+            <tr><td><b>Margwa head</b></td><td>Margwa buffs</td><td>Kill each Margwa type (blue, red, yellow) by shooting all 3 heads.</td></tr>
+            <tr><td><b>Fury head</b></td><td>Purple Jugg, &plusmn;Fury damage</td><td>Headshot ~15 Furies.</td></tr>
+            <tr><td><b>Apothicon mask</b></td><td><b>The god-tier one:</b> purple Jugg + Stamin-Up, +50% damage dealt, &minus;33% taken</td><td>Kill in the Apothicon stomach's green bile while the mist is up: 5 parasites, 5 spiders, 5 corrupted Keepers, 10 Furies, 50 zombies, 3 Margwas.</td></tr>
+          </tbody>
+        </table>
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-m-wolf3.jpg" alt="Dire Wolf mask" loading="lazy"><figcaption>Dire Wolf mask</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-m-clock.jpg" alt="The 935 clock for Siegfried" loading="lazy"><figcaption>The 935 clock for Siegfried</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-m-viking.jpg" alt="Helmet of Siegfried" loading="lazy"><figcaption>Helmet of Siegfried</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-m-hat.jpg" alt="Al's hat in its cell" loading="lazy"><figcaption>Al's hat in its cell</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-m-apoth.jpg" alt="The Apothicon mask" loading="lazy"><figcaption>The Apothicon mask</figcaption></figure></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">An Apothicon ate it. You're going in after it.</p>
+    <ol class="steps">
+      <li><b>Activate the 4 ritual altars</b> &mdash; pay 500 and hold the area until the ritual ends (the points come back). Each opens a portal toward Nacht.
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-pap-alt1.jpg" alt="Altar &mdash; spawn" loading="lazy"><figcaption>Altar &mdash; spawn</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-pap-alt2.jpg" alt="Altar &mdash; Der Eisendrache" loading="lazy"><figcaption>Altar &mdash; Der Eisendrache</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-pap-alt3.jpg" alt="Altar &mdash; Mob of the Dead" loading="lazy"><figcaption>Altar &mdash; Mob of the Dead</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-pap-alt4.jpg" alt="Altar &mdash; Verr&uuml;ckt" loading="lazy"><figcaption>Altar &mdash; Verr&uuml;ckt</figcaption></figure></div></li>
+      <li><b>Use the console in Nacht upstairs when it flashes</b> &mdash; roughly when the Apothicon swings in front &mdash; then <b>jump into its mouth</b> through the opened door.
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-pap-console.jpg" alt="The flashing console upstairs in Nacht" loading="lazy"><figcaption>The flashing console upstairs in Nacht</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-pap-jump.jpg" alt="Into the mouth" loading="lazy"><figcaption>Into the mouth</figcaption></figure></div></li>
+      <li><b>Free the machine:</b> inside the stomach, shoot the <b>three glowing balls</b> on its side.
+        <div class="shot-grid"><figure class="shot"><img src="../img/revelations/rv2-pap-balls.jpg" alt="One of the three glowing balls" loading="lazy"><figcaption>One of the three glowing balls</figcaption></figure><figure class="shot"><img src="../img/revelations/rv2-pap-freed.jpg" alt="Pack-a-Punch, freed" loading="lazy"><figcaption>Pack-a-Punch, freed</figcaption></figure></div></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Seven machines spread across the stitched-together map pieces, plus Der Wunderfizz.</p>
+    <table class="data-table">
+      <thead><tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Five hits instead of two.</td><td>Nacht der Untoten.</td></tr>
+        <tr><td><b>Quick Revive</b></td><td>500 solo<br>1500 co-op</td><td>Self-revive solo; faster revives in co-op.</td><td>Spawn area.</td></tr>
+        <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload about twice as fast.</td><td>Verr&uuml;ckt.</td></tr>
+        <tr><td><b>Double Tap Root Beer II</b></td><td>2000</td><td>More fire rate, double bullet damage.</td><td>Mob of the Dead.</td></tr>
+        <tr><td><b>Stamin-Up</b></td><td>2000</td><td>Faster, longer sprint.</td><td>Shangri-La.</td></tr>
+        <tr><td><b>Mule Kick</b></td><td>4000</td><td>A third weapon.</td><td>Mob of the Dead cafeteria.</td></tr>
+        <tr><td><b>Widow's Wine</b></td><td>4000</td><td>Web grenades, webbed melee.</td><td>Origins area.</td></tr>
+        <tr><td><b>Der Wunderfizz</b></td><td>1500 a spin</td><td>Random bottle &mdash; the only source of <b>Deadshot Daiquiri</b> and <b>Electric Cherry</b> here.</td><td>Orb spots around the map.</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><b>Purple perks:</b> several masks grant upgraded purple versions of Jugger-Nog and Stamin-Up on top of your normal four. <button class="xref" data-goto="build">See the masks</button></div>
+    <p class="blurb">Machine photos to follow &mdash; send a set and I'll add the grid like the other maps.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
