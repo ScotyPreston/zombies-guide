@@ -87,7 +87,7 @@ const GAMES = [
     maps: [
       { id: "spaceland", name: "Zombies in Spaceland", note: "Simon Says + Souvenir Coins", built: true},
       { id: "rave", name: "Rave in the Redwoods", note: "Memory Charms + Totem Gems", built: true },
-      { id: "shaolin", name: "Shaolin Shuffle" },
+      { id: "shaolin", name: "Shaolin Shuffle", note: "Chi styles + Rat King", built: true },
       { id: "radioactive", name: "Attack of the Radioactive Thing", note: "Chemical solver" },
       { id: "beast", name: "The Beast from Beyond" }
     ]
