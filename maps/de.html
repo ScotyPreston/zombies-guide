@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0e14">
+<title>Der Eisendrache &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Der Eisendrache: snowbound Austrian castle — ice blue + castle gold */
+  :root {
+    --map-bg: #0a0e14;
+    --map-bg2: #141b25;
+    --bg: #0a0e14;
+    --bg-card: #141b25;
+    --bg-card-hover: #1d2634;
+    --line: #27323f;
+    --map-accent: #6fb9f0;
+    --map-accent2: #e8c46a;
+    --map-glow: rgba(111, 185, 240, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="de">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo3">&#8249; Black Ops 3</a></nav>
+
+  <header class="map-header">
+    <h1>Der Eisendrache</h1>
+    <div class="sub">Black Ops 3 &middot; Griffin Castle, Austria</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b> Fully soloable, but the four soul circles are much easier with two bows.</li>
+        <li>An <b>upgraded bow</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+        <li>A <b>Ragnarok DG-4</b> each for the boss fight. <button class="xref" data-goto="build">See Buildables</button></li>
+        <li><b>Set aside 2&ndash;2&frac12; hours.</b> This is a long one.</li>
+      </ul>
+    </div>
+
+    <p class="blurb">The goal: kill the original Dempsey, who's frozen in a rocket pointed at the Moon base.</p>
+    <div class="callout"><b>Read a couple of steps ahead before you start.</b> Several steps have to be set up before the one you're on.</div>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Charge the teleporter.</b> Take the <b>basic bow</b> &mdash; if you already upgraded yours, stand at its altar and interact to drop it, then pick the plain Wrath of the Ancients back up where you originally got it. In the teleporter room, hit each of the <b>6 blue glowing balls</b> on the teleporter with a <b>charged arrow</b>. They turn gold when it works. <button class="xref" data-goto="wonder">See the bow</button><figure class="shot"><img src="../img/de/de-s1-teleporter.jpg" alt="The blue balls on the teleporter &mdash; charged arrow into each one" loading="lazy"><figcaption>The blue balls on the teleporter &mdash; charged arrow into each one</figcaption></figure></li>
+      <li data-num="2"><b>Shoot 4 electrified objects.</b> You'll hear a roar &mdash; that means an object somewhere on the map is electrified. Find it and shoot it with an <b>upgraded bow</b>. Another roar follows, and so on: <b>4 objects</b>, drawn from these <b>8 possible spots</b>. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-item-wheel.jpg" alt="A car wheel near Double Tap" loading="lazy"><figcaption>A car wheel near Double Tap</figcaption></figure><figure class="shot"><img src="../img/de/de-item-phone-qr.jpg" alt="A phone near Quick Revive" loading="lazy"><figcaption>A phone near Quick Revive</figcaption></figure><figure class="shot"><img src="../img/de/de-item-box.jpg" alt="A box in the room above Double Tap" loading="lazy"><figcaption>A box in the room above Double Tap</figcaption></figure><figure class="shot"><img src="../img/de/de-item-globe.jpg" alt="A globe near Samantha's bedroom &mdash; not the one in the fireplace room" loading="lazy"><figcaption>A globe near Samantha's bedroom &mdash; not the one in the fireplace room</figcaption></figure><figure class="shot"><img src="../img/de/de-item-phone-pw.jpg" alt="A phone on the wall near the power lever" loading="lazy"><figcaption>A phone on the wall near the power lever</figcaption></figure><figure class="shot"><img src="../img/de/de-item-clock-lq.jpg" alt="A clock in the living quarters, near the clock tower" loading="lazy"><figcaption>A clock in the living quarters, near the clock tower</figcaption></figure><figure class="shot"><img src="../img/de/de-item-clock-ch.jpg" alt="A clock in the church, above the dragon" loading="lazy"><figcaption>A clock in the church, above the dragon</figcaption></figure><figure class="shot"><img src="../img/de/de-item-radio.jpg" alt="A radio in the church, opposite Speed Cola" loading="lazy"><figcaption>A radio in the church, opposite Speed Cola</figcaption></figure></div><div class="callout"><b>You redo this every time the round flips</b>, right up until about step 10. It's what lets the teleporter send you back in time, which you need in steps 3 and 9.</div></li>
+      <li data-num="3"><b>Travel back in time.</b> The teleporter pad now glows purple. <b>Every player has to stand on it.</b> You arrive in the same room in the past &mdash; no zombies, no weapons. Do three things before it sends you back automatically: <ol class="substeps"><li>Grab the <b>soul canister</b> on your left</li><li>Grab the <b>two fuses</b> on your right, on a box</li><li><b>Watch Dr. Groph type the safe code</b> and remember it</li></ol><div class="shot-grid"><figure class="shot"><img src="../img/de/de-s3-pad.jpg" alt="The charged teleporter pad &mdash; everyone on it" loading="lazy"><figcaption>The charged teleporter pad &mdash; everyone on it</figcaption></figure><figure class="shot"><img src="../img/de/de-s3-canister.jpg" alt="The soul canister, on your left" loading="lazy"><figcaption>The soul canister, on your left</figcaption></figure><figure class="shot"><img src="../img/de/de-s3-fuses.jpg" alt="The two fuses, on the box to your right" loading="lazy"><figcaption>The two fuses, on the box to your right</figcaption></figure><figure class="shot"><img src="../img/de/de-s3-code.jpg" alt="Dr. Groph entering the code &mdash; watch the screen" loading="lazy"><figcaption>Dr. Groph entering the code &mdash; watch the screen</figcaption></figure></div><div class="callout"><b>The code is 3 symbols long</b>, drawn from four possible symbols &mdash; <b>arrow, circle, card, lightning</b> &mdash; and symbols <b>can repeat</b>.</div></li>
+      <li data-num="4"><b>Set the Death Ray to Protect.</b> Go up to the castle roof and put <b>one of your fuses</b> into the central machine, then go round the other side and set the display to <b>"Protect"</b>. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s4-fuse.jpg" alt="Insert a fuse into the central machine" loading="lazy"><figcaption>Insert a fuse into the central machine</figcaption></figure><figure class="shot"><img src="../img/de/de-s4-protect.jpg" alt="Set the display to Protect" loading="lazy"><figcaption>Set the display to Protect</figcaption></figure></div></li>
+      <li data-num="5"><b>Enter the code.</b> Hellhounds show up and a console near the <b>clock tower</b> switches on. Enter the code you memorised, <b>top to bottom</b>. <figure class="shot"><img src="../img/de/de-s5-console.jpg" alt="The symbol console near the clock tower" loading="lazy"><figcaption>The symbol console near the clock tower</figcaption></figure><div class="callout">If the console is dead, you haven't <b>fired the Death Ray at least once</b> this game &mdash; do that first. <b>Get the code wrong and you have to time travel again</b> to watch it.</div></li>
+      <li data-num="6"><b>Empty the safe and load the coils.</b> Back down in the teleporter room the safe is now open &mdash; take the <b>two fuses and the card</b> inside. Carry the fuses up to the roof and put one in <b>each of the two Tesla coils</b>: look at the sides, each has three fuse slots with one empty. Then set the Death Ray back to <b>"Destroy"</b>. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s6-safe.jpg" alt="The open safe &mdash; two fuses and a card" loading="lazy"><figcaption>The open safe &mdash; two fuses and a card</figcaption></figure><figure class="shot"><img src="../img/de/de-s6-coil.jpg" alt="The empty fuse slot on the side of a Tesla coil" loading="lazy"><figcaption>The empty fuse slot on the side of a Tesla coil</figcaption></figure></div></li>
+      <li data-num="7"><b>Two memory games.</b> Each console shows the four symbols &mdash; <b>arrow, circle, card, lightning</b> &mdash; then goes dark and flashes one symbol on the main screen. You have a couple of seconds to hit the screen that showed it. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s7-console1.jpg" alt="Console 1 &mdash; near the clock tower" loading="lazy"><figcaption>Console 1 &mdash; near the clock tower</figcaption></figure><figure class="shot"><img src="../img/de/de-s7-console2.jpg" alt="Console 2 &mdash; on the landing pad" loading="lazy"><figcaption>Console 2 &mdash; on the landing pad</figcaption></figure><figure class="shot"><img src="../img/de/de-s7-coil-white.jpg" alt="A coil glowing white &mdash; that game is done" loading="lazy"><figcaption>A coil glowing white &mdash; that game is done</figcaption></figure></div><div class="callout"><b>Hellhounds spawn without limit</b> from the moment you start a game until you finish it, and <b>failing the second one means redoing the first</b>. Keep a crawler alive, and repeat the four symbols' order in your head as soon as they appear.</div></li>
+      <li data-num="8"><b>Shoot down the rocket.</b> Back to the roof: set the Death Ray to <b>"Protect"</b> again, then hit the <b>green button behind the machine</b> &mdash; and get well clear of the second courtyard. The coils bring the rocket down there, cracking open Dempsey's cryo cell. Pick up the <b>Vril generator</b> by the wreck. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s8-button.jpg" alt="The green button behind the machine" loading="lazy"><figcaption>The green button behind the machine</figcaption></figure><figure class="shot"><img src="../img/de/de-s8-crash.jpg" alt="The rocket comes down in the second courtyard" loading="lazy"><figcaption>The rocket comes down in the second courtyard</figcaption></figure><figure class="shot"><img src="../img/de/de-s8-vrill.jpg" alt="Pick up the Vril generator by the crash" loading="lazy"><figcaption>Pick up the Vril generator by the crash</figcaption></figure></div></li>
+      <li data-num="9"><b>Time travel again.</b> Use the teleporter a second time. <b>If it isn't glowing, flip the round and redo step 2.</b> In the past, use the <b>book on your right</b> &mdash; it opens a crate by the exit. Take the <b>ornamented stone</b> from it. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s9-book.jpg" alt="The book on your right &mdash; interact with it" loading="lazy"><figcaption>The book on your right &mdash; interact with it</figcaption></figure><figure class="shot"><img src="../img/de/de-s9-crate.jpg" alt="The crate it opens, by the exit" loading="lazy"><figcaption>The crate it opens, by the exit</figcaption></figure><figure class="shot"><img src="../img/de/de-s9-stone.jpg" alt="Take the ornamented stone" loading="lazy"><figcaption>Take the ornamented stone</figcaption></figure></div></li>
+      <li data-num="10"><b>Follow the ghost &mdash; four soul circles.</b> Go underground to where you picked up the bow and put the <b>rod into the grave</b>. A ghost appears and moves around the map, stopping at <b>4 spots</b>. Stand in the circle at each stop and kill zombies &mdash; <b>your screen glows the colour of the bow you have to use</b>, and a soul leaves the body when it's the right one. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s10-rod.jpg" alt="Put the rod into the grave underground" loading="lazy"><figcaption>Put the rod into the grave underground</figcaption></figure><figure class="shot"><img src="../img/de/de-s10-ghost.jpg" alt="The ghost &mdash; follow it to each stop" loading="lazy"><figcaption>The ghost &mdash; follow it to each stop</figcaption></figure><figure class="shot"><img src="../img/de/de-s10-circle.jpg" alt="Stand in the circle and kill with the right bow" loading="lazy"><figcaption>Stand in the circle and kill with the right bow</figcaption></figure><figure class="shot"><img src="../img/de/de-s10-colours.jpg" alt="The screen tint tells you which bow the circle wants" loading="lazy"><figcaption>The screen tint tells you which bow the circle wants</figcaption></figure></div><div class="callout"><b>Infinite hellhounds</b> the whole time, and Panzers turn up too. Spam charged shots until the ghost moves. <b>With two players you can cover all four circles with two bows</b> &mdash; take the lightning bow if you can, its charged shot is by far the strongest.</div><p class="blurb">When the circles are done, <b>put the stone in the slot near Double Tap</b>, then follow the ghost underground and place the <b>blue soul canister</b> by the pyramid.</p><div class="shot-grid"><figure class="shot"><img src="../img/de/de-s10-slot.jpg" alt="The stone slot near Double Tap" loading="lazy"><figcaption>The stone slot near Double Tap</figcaption></figure><figure class="shot"><img src="../img/de/de-s10-pyramid.jpg" alt="Place the canister at the pyramid" loading="lazy"><figcaption>Place the canister at the pyramid</figcaption></figure></div></li>
+      <li data-num="11"><b>The boss fight.</b><div class="req-box"><h3>Gear up before this step</h3><ul><li>Jugger-Nog and Quick Revive, a full shield, a good gun and your bow.</li><li>Everyone needs a <b>Ragnarok DG-4</b>. <button class="xref" data-goto="build">See Buildables</button></li></ul></div>Every player drops their <b>Ragnarok on the glowing blue tiles</b> (the anti-gravity ones) to get teleported into a dark red circular room. Skeletons spawn &mdash; ignore them and keep moving. Now and then the boss teleports to the middle and charges a <b>lethal electric attack that kills everyone in the room</b>. Two ways to survive it: <b>hide behind a pillar</b>, or <b>drop a Ragnarok on the glowing ball</b> that appears in the little hole in the centre. Doing that weakens him and the <b>symbol on his chest lights up</b> &mdash; that's when you damage him. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s11-attack.jpg" alt="The electric attack charging &mdash; pillar or Ragnarok, now" loading="lazy"><figcaption>The electric attack charging &mdash; pillar or Ragnarok, now</figcaption></figure><figure class="shot"><img src="../img/de/de-s11-ragnarok.jpg" alt="Drop a Ragnarok on the glowing ball in the centre" loading="lazy"><figcaption>Drop a Ragnarok on the glowing ball in the centre</figcaption></figure><figure class="shot"><img src="../img/de/de-s11-chest.jpg" alt="Chest symbol lit &mdash; shoot him" loading="lazy"><figcaption>Chest symbol lit &mdash; shoot him</figcaption></figure></div><div class="callout"><b>Use uncharged arrows, not charged ones</b> &mdash; they do more damage here. Each time you take him down far enough he vanishes and sends Panzers at you; kill them and he returns. Repeat until he goes out in a white flash.</div></li>
+      <li data-num="12"><b>Finish it.</b> Put the <b>summoning key</b> in the pyramid, then pick it straight back up. Take it up the stairs by the clock tower and place it in the <b>console where you entered the code</b>. That rains hell down on the Moon base &mdash; sit back for the cutscene. <div class="shot-grid"><figure class="shot"><img src="../img/de/de-s12-key.jpg" alt="The key goes in the pyramid, then back in your hands" loading="lazy"><figcaption>The key goes in the pyramid, then back in your hands</figcaption></figure><figure class="shot"><img src="../img/de/de-s12-console.jpg" alt="Place it in the console by the clock tower" loading="lazy"><figcaption>Place it in the console by the clock tower</figcaption></figure><figure class="shot"><img src="../img/de/de-s12-end.jpg" alt="Goodbye, Dr. Groph" loading="lazy"><figcaption>Goodbye, Dr. Groph</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+    <p class="blurb">Eleven of them, songs included &mdash; sorted quickest first.</p>
+
+    <details class="acc">
+      <summary><img src="../img/de/de-song1-teddy1.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; "Dead Again"</b><br><small>3 teddy bears</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Kevin Sherwood / Elena Siegman. Interact with all three teddies.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/de/de-song1-teddy1.jpg" alt="Teddy 1 &mdash; on a chair in Samantha's room" loading="lazy"><figcaption>Teddy 1 &mdash; on a chair in Samantha's room</figcaption></figure><figure class="shot"><img src="../img/de/de-song1-teddy2.jpg" alt="Teddy 2 &mdash; inside the truck by the Wundersphere at the rocket site" loading="lazy"><figcaption>Teddy 2 &mdash; inside the truck by the Wundersphere at the rocket site</figcaption></figure><figure class="shot"><img src="../img/de/de-song1-teddy3.jpg" alt="Teddy 3 &mdash; above spawn next to Jugger-Nog, in the connector toward the pyramid" loading="lazy"><figcaption>Teddy 3 &mdash; above spawn next to Jugger-Nog, in the connector toward the pyramid</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-song2-gram1.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; the requiem</b><br><small>3 gramophones</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">A piece of an Anton Reicha requiem. Interact with the three gramophones.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/de/de-song2-gram1.jpg" alt="By the stairs between the pyramid and the grave room" loading="lazy"><figcaption>By the stairs between the pyramid and the grave room</figcaption></figure><figure class="shot"><img src="../img/de/de-song2-gram2.jpg" alt="Beside Speed Cola in the church" loading="lazy"><figcaption>Beside Speed Cola in the church</figcaption></figure><figure class="shot"><img src="../img/de/de-song2-gram3.jpg" alt="On a shelf in Samantha's room, left as you come from the first dragon" loading="lazy"><figcaption>On a shelf in Samantha's room, left as you come from the first dragon</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-song3-box.jpg" alt="" style="object-fit:cover">
+        <span><b>Samantha's Lullaby</b><br><small>1 music box</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">A reworked Samantha's Lullaby plays from the <b>music box on the table next to her bed</b>.</p>
+        <figure class="shot"><img src="../img/de/de-song3-box.jpg" alt="The music box in Samantha's room" loading="lazy"><figcaption>The music box in Samantha's room</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-disco.jpg" alt="" style="object-fit:cover">
+        <span><b>Disco ball</b><br><small>Shoot the moon, then the rocket</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">In the church's command room there's a globe on the ceiling with a <b>moon and a rocket orbiting it</b>. Shoot the <b>moon</b> to stop it, then shoot the <b>rocket when it's right beside the moon</b>. Disco lights, disco music.</p>
+        <figure class="shot"><img src="../img/de/de-disco.jpg" alt="The orbiting globe in the command room" loading="lazy"><figcaption>The orbiting globe in the command room</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-dm-square.jpg" alt="" style="object-fit:cover">
+        <span><b>Free Death Machine</b><br><small>One wall-run</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">In the pyramid room, <b>wall-run the blue square facing the Pack-a-Punch machine</b>. A Death Machine power-up appears above the crafting table in the same room.</p>
+        <figure class="shot"><img src="../img/de/de-dm-square.jpg" alt="The blue square facing Pack-a-Punch" loading="lazy"><figcaption>The blue square facing Pack-a-Punch</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-gum-grown.jpg" alt="" style="object-fit:cover">
+        <span><b>Free Mega Gobblegum</b><br><small>A plant and a time trip</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Take the plant</b> off the shelf in the teleporter room (through the pyramid underground).
+            <figure class="shot"><img src="../img/de/de-gum-plant.jpg" alt="The plant on the shelf in the teleporter room" loading="lazy"><figcaption>The plant on the shelf in the teleporter room</figcaption></figure></li>
+          <li><b>Travel to the past</b> &mdash; either main quest steps 1&ndash;2, or the Plunger method below &mdash; and <b>put the plant back on the same shelf</b> there.</li>
+          <li><b>Back in the present</b>, the plant has grown: interact with it for a random Mega Gobblegum.
+            <figure class="shot"><img src="../img/de/de-gum-grown.jpg" alt="The grown plant, gum inside" loading="lazy"><figcaption>The grown plant, gum inside</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-helm-done.jpg" alt="" style="object-fit:cover">
+        <span><b>Panzer Soldat helmet</b><br><small>3 claw kills</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Wear a Panzer's helmet and take <b>less damage from Panzers</b>. Kill three of them with the hidden ceiling claws: <b>shoot a claw down</b>, then shoot it again as a Panzer walks in front &mdash; it launches forward and kills him.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/de/de-helm-claw1.jpg" alt="Claw 1 &mdash; the wooden balcony near the first dragon" loading="lazy"><figcaption>Claw 1 &mdash; the wooden balcony near the first dragon</figcaption></figure><figure class="shot"><img src="../img/de/de-helm-claw2.jpg" alt="Claw 2 &mdash; the armour corridor, right corner" loading="lazy"><figcaption>Claw 2 &mdash; the armour corridor, right corner</figcaption></figure><figure class="shot"><img src="../img/de/de-helm-claw3.jpg" alt="Claw 3 &mdash; the stone tunnel beside Quick Revive" loading="lazy"><figcaption>Claw 3 &mdash; the stone tunnel beside Quick Revive</figcaption></figure><figure class="shot"><img src="../img/de/de-helm-done.jpg" alt="The reward &mdash; yes, you look ridiculous" loading="lazy"><figcaption>The reward &mdash; yes, you look ridiculous</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-plunger-get.jpg" alt="" style="object-fit:cover">
+        <span><b>The Plunger</b><br><small>Melee weapon &mdash; and a Panzer one-shot</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The fire-quest wall in the clock tower already broken open. <button class="xref" data-goto="wonder">See the Fire Bow</button></li><li>A <b>Ragnarok DG-4</b>. <button class="xref" data-goto="build">See Buildables</button></li></ul></div>
+        <ol class="steps">
+          <li><b>Place the Ragnarok</b> in the broken wall opening in the clock tower.
+            <figure class="shot"><img src="../img/de/de-plunger-rag.jpg" alt="The Ragnarok goes in the broken wall" loading="lazy"><figcaption>The Ragnarok goes in the broken wall</figcaption></figure></li>
+          <li><b>Stop the clock at 9:35.</b> Downstairs, the little lever by the Wundersphere-landing door starts the clock ticking; interacting stops or restarts it. Stop it so it lands on 9:35 &mdash; done right it reads 9:36.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-plunger-lever.jpg" alt="The lever that starts and stops the clock" loading="lazy"><figcaption>The lever that starts and stops the clock</figcaption></figure><figure class="shot"><img src="../img/de/de-plunger-clock.jpg" alt="The target: 9:35 on the dial" loading="lazy"><figcaption>The target: 9:35 on the dial</figcaption></figure></div>
+            <div class="callout"><b>Solo trick:</b> stop it around 9:00&ndash;9:15 first, restart, then count the seconds in your head and stop as you're saying "9:34". A crawler or a slow-zombies gum makes this far less stressful.</div></li>
+          <li><b>Wall-run to the past.</b> In the pyramid room a glowing ball now floats above the pyramid. Wall-run the symbol on your right coming down the stairs &mdash; after a few runs you're teleported. The plunger is on the table left of the teleporter.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-plunger-ball.jpg" alt="The energy ball above the pyramid" loading="lazy"><figcaption>The energy ball above the pyramid</figcaption></figure><figure class="shot"><img src="../img/de/de-plunger-wallrun.jpg" alt="Wall-run the symbol on the right of the stairs" loading="lazy"><figcaption>Wall-run the symbol on the right of the stairs</figcaption></figure><figure class="shot"><img src="../img/de/de-plunger-get.jpg" alt="The plunger on the table by the teleporter" loading="lazy"><figcaption>The plunger on the table by the teleporter</figcaption></figure></div></li>
+        </ol>
+        <div class="callout"><b>Upgrade:</b> kill a Panzer &mdash; with anything &mdash; and the plunger catches fire for 4 minutes, during which it <b>one-shots Panzers</b>.</div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-rg-lights.jpg" alt="" style="object-fit:cover">
+        <span><b>Second gondola supplies</b><br><small>Grenades in, 5 fuses later</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Putting a fuse in the spawn panel calls the cable car with a small supply drop. There's a better one: <b>at the very start of the game, throw all your grenades into the gondola before it leaves</b>. Keep feeding fuses as normal &mdash; the <b>fifth fuse</b> summons a second gondola with much better supplies.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-skel-done.jpg" alt="" style="object-fit:cover">
+        <span><b>Skeleton zombies</b><br><small>In Plain Sight + 3 hidden skulls</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>Wrath of the Ancients</b> (base bow). <button class="xref" data-goto="wonder">See Wonder Weapons</button></li><li>The <b>&ldquo;In Plain Sight&rdquo; Gobblegum</b> &mdash; the skulls are invisible without it.</li></ul></div>
+        <p class="blurb">Pop the gum and shoot the three floating skulls with the bow &mdash; from then on every zombie spawns as a skeleton with new sounds. Completely useless, very funny.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/de/de-skel-gum.jpg" alt="In Plain Sight &mdash; the gum that reveals the skulls" loading="lazy"><figcaption>In Plain Sight &mdash; the gum that reveals the skulls</figcaption></figure><figure class="shot"><img src="../img/de/de-skel-skull1.jpg" alt="Skull 1 &mdash; right next to Mule Kick" loading="lazy"><figcaption>Skull 1 &mdash; right next to Mule Kick</figcaption></figure><figure class="shot"><img src="../img/de/de-skel-skull2.jpg" alt="Skull 2 &mdash; in front of the church's central stained glass" loading="lazy"><figcaption>Skull 2 &mdash; in front of the church's central stained glass</figcaption></figure><figure class="shot"><img src="../img/de/de-skel-skull3.jpg" alt="Skull 3 &mdash; on the wall next to Double Tap" loading="lazy"><figcaption>Skull 3 &mdash; on the wall next to Double Tap</figcaption></figure><figure class="shot"><img src="../img/de/de-skel-done.jpg" alt="The result" loading="lazy"><figcaption>The result</figcaption></figure></div>
+        <div class="callout"><b>Turning it off:</b> the three skulls sit on a chair in the church in front of the dragon &mdash; interact with them to get normal zombies back.</div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-brm.jpg" alt="" style="object-fit:cover">
+        <span><b>Unlock the BRM wall-buy</b><br><small>Wall-run every blue square</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">During anti-gravity in the underground, <b>wall-run across every blue square on the walls</b> &mdash; touching the ground between them is fine here. The BRM light machine gun then becomes a <b>1800-point wall-buy</b> next to the crafting table in the same room.</p>
+        <figure class="shot"><img src="../img/de/de-brm.jpg" alt="The BRM wall-buy, unlocked" loading="lazy"><figcaption>The BRM wall-buy, unlocked</figcaption></figure>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons &mdash; the bows</h2>
+    <p class="blurb">One base bow, four elemental upgrades. Build the base bow first, then pick an element &mdash; <b>each player can carry a different one</b>, and the main quest needs at least one upgraded bow in the game. <button class="xref" data-goto="main">Back to the main quest</button></p>
+    <div class="callout"><b>Which to build?</b> The <b>Storm bow</b> is the strongest and the fastest to build. The <b>Wolf bow</b> makes crawlers on demand, which is handy for holding rounds. Fire stuns crowds; Void is strong but takes the longest.</div>
+
+    <details class="acc">
+      <summary><img src="../img/de/de-wpn-wrath.jpg" alt="">
+        <span><b>Wrath of the Ancients</b><br><small>The base bow &mdash; feed 3 dragons</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Explosive arrows, chargeable for more damage. Easy to get &mdash; doable before round 6 &mdash; and it <b>replaces one of your weapons</b>. You need it to build any of the upgrades, and an upgraded bow is required for the main quest.</p>
+        <ol class="steps">
+          <li><b>Feed the three dragons &mdash; 8 zombies each.</b> Kill zombies close to a dragon and it snatches the bodies.
+            <div class="callout"><b>Wait for the eating animation to finish before killing the next zombie</b> &mdash; kills during the animation don't count.</div>
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-bow-dragon-feed.jpg" alt="A dragon feeding &mdash; it turns back to stone when full" loading="lazy"><figcaption>A dragon feeding &mdash; it turns back to stone when full</figcaption></figure><figure class="shot"><img src="../img/de/de-bow-dragon1.jpg" alt="Dragon 1 &mdash; the courtyard past Double Tap, by the stairs, Wundersphere and box spot" loading="lazy"><figcaption>Dragon 1 &mdash; the courtyard past Double Tap, by the stairs, Wundersphere and box spot</figcaption></figure><figure class="shot"><img src="../img/de/de-bow-dragon2.jpg" alt="Dragon 2 &mdash; in the church, above the fireplace" loading="lazy"><figcaption>Dragon 2 &mdash; in the church, above the fireplace</figcaption></figure><figure class="shot"><img src="../img/de/de-bow-dragon3.jpg" alt="Dragon 3 &mdash; underground, near the pyramid and the four altars" loading="lazy"><figcaption>Dragon 3 &mdash; underground, near the pyramid and the four altars</figcaption></figure></div></li>
+          <li><b>Collect the bow.</b> Head up toward the church, into the room with the armoured grave. The bow is waiting on it.
+            <figure class="shot"><img src="../img/de/de-bow-grave.jpg" alt="The bow on the grave near the church" loading="lazy"><figcaption>The bow on the grave near the church</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-wpn-fire.jpg" alt="">
+        <span><b>Fire Bow &mdash; Rune Prison</b><br><small>Charged shots stun in an area</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Break the wall at the clock tower.</b> Upstairs in the clock tower, shoot a <b>charged arrow</b> at the marked wall &mdash; it crumbles and drops the quest item.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-fire-wall.jpg" alt="The marked wall upstairs in the clock tower" loading="lazy"><figcaption>The marked wall upstairs in the clock tower</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-item.jpg" alt="The wall breaks and releases the item" loading="lazy"><figcaption>The wall breaks and releases the item</figcaption></figure></div></li>
+          <li><b>Catch the fireball at the rocket test.</b> Go down to the landing pad (underground, past the pyramid). When a rocket test starts, the doors seal &mdash; <b>wait inside the teleporter area</b> or the thrusters kill you. The moment the test ends, run out while the doors open, look right, and <b>shoot the glowing ball just above the concrete building</b>. You have about 10 seconds.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-fire-shelter.jpg" alt="Wait out the test inside the teleporter area" loading="lazy"><figcaption>Wait out the test inside the teleporter area</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-ball.jpg" alt="The glowing ball above the concrete building &mdash; shoot it fast" loading="lazy"><figcaption>The glowing ball above the concrete building &mdash; shoot it fast</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-sun.jpg" alt="Hit it and a burning sun appears above the map" loading="lazy"><figcaption>Hit it and a burning sun appears above the map</figcaption></figure></div>
+            <div class="callout">Miss the shot? It comes back at the next rocket test.</div></li>
+          <li><b>Shoot 3 red circles &mdash; from the air.</b> Launch yourself with the <b>Wunderspheres</b> and shoot each circle with a charged arrow mid-flight; they only glow while you're airborne. A hit stays lit and plays a sound.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-fire-sphere.jpg" alt="A Wundersphere launch pad" loading="lazy"><figcaption>A Wundersphere launch pad</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-circle-hit.jpg" alt="Circle 1 &mdash; top of the castle by the Death Ray" loading="lazy"><figcaption>Circle 1 &mdash; top of the castle by the Death Ray</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-circle2.jpg" alt="Circle 2 &mdash; near the Death Ray, beside a Wunderfizz spot" loading="lazy"><figcaption>Circle 2 &mdash; near the Death Ray, beside a Wunderfizz spot</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-circle3.jpg" alt="Circle 3 &mdash; the uphill alley with the car, near Double Tap" loading="lazy"><figcaption>Circle 3 &mdash; the uphill alley with the car, near Double Tap</figcaption></figure></div>
+            <div class="callout"><b>Which launch for which circle:</b> the courtyard sphere for the Death Ray circle &middot; the room-above-Double-Tap sphere for the clock tower circle &middot; the Death Ray or landing pad sphere for the last one.</div></li>
+          <li><b>Stand in each circle and kill.</b> Kills count anywhere as long as you're standing in the circle &mdash; a ray of fire reaches up to the sun when a circle is done. Do all three.
+            <figure class="shot"><img src="../img/de/de-fire-ray.jpg" alt="A finished circle firing its ray up at the sun" loading="lazy"><figcaption>A finished circle firing its ray up at the sun</figcaption></figure></li>
+          <li><b>The clock and the fireplaces.</b> Use the <b>clock in the clock tower</b> &mdash; one of three ground circles lights up. From that circle, shoot a <b>charged arrow at the ground</b> to spawn a blazing rock, then stand on the rock and shoot again &mdash; <b>3 shots total</b> to walk it into its fireplace. Shoot as far as you can each time.
+            <div class="callout"><b>Which circle feeds which fireplace:</b> the Double Tap circle &rarr; Samantha's room &middot; the top-of-castle circle &rarr; the church fireplace (second dragon) &middot; the clock tower circle &rarr; the fireplace upstairs by the first dragon, near the Wunderfizz.</div>
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-fire-clock.jpg" alt="Use the clock in the clock tower first" loading="lazy"><figcaption>Use the clock in the clock tower first</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-rock1.jpg" alt="Shoot from the circle &mdash; the blazing rock appears" loading="lazy"><figcaption>Shoot from the circle &mdash; the blazing rock appears</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-rock2.jpg" alt="Stand on the rock, shoot again to move it" loading="lazy"><figcaption>Stand on the rock, shoot again to move it</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-arrow.jpg" alt="At the fireplace, interact with the fire to take the arrow" loading="lazy"><figcaption>At the fireplace, interact with the fire to take the arrow</figcaption></figure></div></li>
+          <li><b>Pop the sun.</b> Back on top of the castle, the sun now floats at your height &mdash; interact with it. It rises, explodes, and leaves the <b>reforged arrow</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-fire-sun2.jpg" alt="The sun at head height &mdash; interact" loading="lazy"><figcaption>The sun at head height &mdash; interact</figcaption></figure><figure class="shot"><img src="../img/de/de-fire-reforged.jpg" alt="Pick up the reforged arrow" loading="lazy"><figcaption>Pick up the reforged arrow</figcaption></figure></div></li>
+          <li><b>Charge it at the altar.</b> Take the arrow to the altar room under the pyramid and place it on the matching altar. Kill zombies right next to it until the souls stop flowing in and a sound plays, then interact with the arrow, let the animation finish, and pick up your upgraded bow.</li><figure class="shot"><img src="../img/de/de-fire-done.jpg" alt="The fire altar doing its work" loading="lazy"><figcaption>The fire altar doing its work</figcaption></figure>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-wpn-wolf.jpg" alt="">
+        <span><b>Wolf Bow &mdash; Wolf Howl</b><br><small>Uncharged shots turn a zombie into a crawler</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Activate the 4 paintings in story order.</b> Interact with a painting: right one, the green symbol stays and your character speaks; wrong one, it fades. <b>A wrong pick resets the chain</b> &mdash; you must redo the ones before it. The order is always the story of the Wolf King:
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-wolf-kings1.jpg" alt="1st &mdash; the king on his throne, wolf at his side" loading="lazy"><figcaption>1st &mdash; the king on his throne, wolf at his side</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-kings2.jpg" alt="2nd &mdash; the king on his horse, in armour" loading="lazy"><figcaption>2nd &mdash; the king on his horse, in armour</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-kings3.jpg" alt="3rd &mdash; the castle burning, a dark creature in the sky" loading="lazy"><figcaption>3rd &mdash; the castle burning, a dark creature in the sky</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-kings4.jpg" alt="4th &mdash; the king's skeleton" loading="lazy"><figcaption>4th &mdash; the king's skeleton</figcaption></figure></div>
+            <div class="callout"><b>Where the paintings hang:</b> past Samantha's room near the 1500 door &middot; on the church balcony &middot; in the clock tower by the stairs &middot; in the room beneath the clock tower, near Mule Kick.</div>
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-wolf-paint1.jpg" alt="Painting spot &mdash; past Samantha's room" loading="lazy"><figcaption>Painting spot &mdash; past Samantha's room</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-paint2.jpg" alt="Painting spot &mdash; church balcony" loading="lazy"><figcaption>Painting spot &mdash; church balcony</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-paint3.jpg" alt="Painting spot &mdash; clock tower stairs" loading="lazy"><figcaption>Painting spot &mdash; clock tower stairs</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-paint4.jpg" alt="Painting spot &mdash; beneath the clock tower, near Mule Kick" loading="lazy"><figcaption>Painting spot &mdash; beneath the clock tower, near Mule Kick</figcaption></figure></div></li>
+          <li><b>Collect the item underground.</b> The wall on the left after the underground stairs is now broken open &mdash; the item is on the floor.
+            <figure class="shot"><img src="../img/de/de-wolf-wallitem.jpg" alt="The broken wall on the left after the stairs" loading="lazy"><figcaption>The broken wall on the left after the stairs</figcaption></figure></li>
+          <li><b>Shoot the flag, take the skull.</b> From the landing pad, look back above the entrance: a flag stands on the mountain. <b>Charge-shoot its base</b>, then pick the glowing skull up off the ground. Place it on the <b>headless wolf skeleton</b> by the spirit altar.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-wolf-flag.jpg" alt="The flag on the mountain above the landing pad entrance" loading="lazy"><figcaption>The flag on the mountain above the landing pad entrance</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-skull.jpg" alt="The skull comes down &mdash; grab it" loading="lazy"><figcaption>The skull comes down &mdash; grab it</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-skeleton.jpg" alt="Place it on the headless wolf skeleton by the altar" loading="lazy"><figcaption>Place it on the headless wolf skeleton by the altar</figcaption></figure></div></li>
+          <li><b>Follow the spectral wolf.</b> He stops at <b>three bone piles</b> &mdash; kill zombies around each pile until he scratches it open, and <b>pick up the piece before moving on</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-wolf-ghost.jpg" alt="The wolf appears &mdash; follow him" loading="lazy"><figcaption>The wolf appears &mdash; follow him</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-bones.jpg" alt="Kill zombies around each bone pile" loading="lazy"><figcaption>Kill zombies around each bone pile</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-piece.jpg" alt="Take the piece he uncovers every time" loading="lazy"><figcaption>Take the piece he uncovers every time</figcaption></figure></div></li>
+          <li><b>The wall in the basement.</b> He finally sits against a basement wall. Above him is a hole with a <b>wolf symbol that only appears while you're wall-running</b> on the anti-gravity &mdash; shoot the symbol while it's lit. A platform rises: stand on it, interact with the hole, then interact again for the arrow.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-wolf-wall.jpg" alt="The wolf against the basement wall" loading="lazy"><figcaption>The wolf against the basement wall</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-symbol.jpg" alt="The symbol above &mdash; visible mid-wall-run" loading="lazy"><figcaption>The symbol above &mdash; visible mid-wall-run</figcaption></figure><figure class="shot"><img src="../img/de/de-wolf-platform.jpg" alt="Ride the platform up and take the arrow" loading="lazy"><figcaption>Ride the platform up and take the arrow</figcaption></figure></div></li>
+          <li><b>Charge it at the altar.</b> Take the arrow to the altar room under the pyramid and place it on the matching altar. Kill zombies right next to it until the souls stop flowing in and a sound plays, then interact with the arrow, let the animation finish, and pick up your upgraded bow.</li><figure class="shot"><img src="../img/de/de-wolf-done.jpg" alt="The finished Wolf Bow" loading="lazy"><figcaption>The finished Wolf Bow</figcaption></figure>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-wpn-storm.jpg" alt="">
+        <span><b>Storm Bow</b><br><small>The strongest bow &mdash; and the easiest to build</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Shoot the weathervane</b> on top of the castle, then collect the broken arrow it drops.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-storm-cock.jpg" alt="The weathervane on the castle top" loading="lazy"><figcaption>The weathervane on the castle top</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-item.jpg" alt="The broken arrow lands nearby" loading="lazy"><figcaption>The broken arrow lands nearby</figcaption></figure></div></li>
+          <li><b>Ignite 3 woodsheds with charged arrows.</b>
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-storm-shed1.jpg" alt="Shed 1 &mdash; on a hill in the town below the castle" loading="lazy"><figcaption>Shed 1 &mdash; on a hill in the town below the castle</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-shed2.jpg" alt="Shed 2 &mdash; on the rampart outside the map, seen right of the clock tower exit" loading="lazy"><figcaption>Shed 2 &mdash; on the rampart outside the map, seen right of the clock tower exit</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-shed3.jpg" alt="Shed 3 &mdash; on the hill to your right at the landing pad" loading="lazy"><figcaption>Shed 3 &mdash; on the hill to your right at the landing pad</figcaption></figure></div></li>
+          <li><b>Wall-run the 5 blue symbols.</b> The underground cavern walls hold five blue symbols. Wait for an <b>anti-gravity sequence</b>, then run across <b>all five without touching the ground</b>. Done right, they stay lit when gravity returns.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-storm-symbols.jpg" alt="The blue symbols on the cavern walls" loading="lazy"><figcaption>The blue symbols on the cavern walls</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-wallrun.jpg" alt="All five in one run, feet never down" loading="lazy"><figcaption>All five in one run, feet never down</figcaption></figure></div></li>
+          <li><b>Kill 6 zombies at each of 3 electric jars.</b>
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-storm-jar1.jpg" alt="Jar 1 &mdash; in the clock tower" loading="lazy"><figcaption>Jar 1 &mdash; in the clock tower</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-jar2.jpg" alt="Jar 2 &mdash; the room above Double Tap" loading="lazy"><figcaption>Jar 2 &mdash; the room above Double Tap</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-jar3.jpg" alt="Jar 3 &mdash; the rocket tunnel to the landing pad" loading="lazy"><figcaption>Jar 3 &mdash; the rocket tunnel to the landing pad</figcaption></figure></div></li>
+          <li><b>Electrify the burning sheds.</b> Aim at a charged jar until your arrow crackles, then &mdash; <b>without lowering the bow</b> &mdash; shoot a burning woodshed. <b>Each jar works once</b>, so it's one jar per shed.
+            <figure class="shot"><img src="../img/de/de-storm-electrify.jpg" alt="Arrow charged off a jar &mdash; don't un-aim before the shot" loading="lazy"><figcaption>Arrow charged off a jar &mdash; don't un-aim before the shot</figcaption></figure></li>
+          <li><b>Take the arrow from the storm.</b> The weathervane is now spinning in its own thunderstorm &mdash; press action on the <b>blue cloud at the bottom of that tower</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-storm-cloud.jpg" alt="The blue cloud at the tower's base" loading="lazy"><figcaption>The blue cloud at the tower's base</figcaption></figure><figure class="shot"><img src="../img/de/de-storm-cloud2.jpg" alt="Grab the arrow from it" loading="lazy"><figcaption>Grab the arrow from it</figcaption></figure></div></li>
+          <li><b>Charge it at the altar.</b> Take the arrow to the altar room under the pyramid and place it on the matching altar. Kill zombies right next to it until the souls stop flowing in and a sound plays, then interact with the arrow, let the animation finish, and pick up your upgraded bow.</li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-wpn-void.jpg" alt="">
+        <span><b>Void Bow &mdash; Demon Gate</b><br><small>Powerful area damage &mdash; the longest build</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Start it:</b> charge-shoot the <b>void symbol on the tunnel roof near Double Tap</b>, just above the 1000-point gate.
+            <figure class="shot"><img src="../img/de/de-void-symbol.jpg" alt="The void symbol on the tunnel roof" loading="lazy"><figcaption>The void symbol on the tunnel roof</figcaption></figure></li>
+          <li><b>The purple square.</b> In the trophy room beneath the clock tower, <b>melee-kill a zombie on the glowing purple square</b>, then interact with the broken tile to release a floating jar.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-void-square.jpg" alt="Melee kill on the purple square" loading="lazy"><figcaption>Melee kill on the purple square</figcaption></figure><figure class="shot"><img src="../img/de/de-void-jar.jpg" alt="The jar comes out of the broken tile" loading="lazy"><figcaption>The jar comes out of the broken tile</figcaption></figure></div></li>
+          <li><b>Touch the 6 skulls</b> around the map:
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-void-skull1.jpg" alt="On a broken wall near Mule Kick" loading="lazy"><figcaption>On a broken wall near Mule Kick</figcaption></figure><figure class="shot"><img src="../img/de/de-void-skull2.jpg" alt="On a window outside the church, right of the entrance" loading="lazy"><figcaption>On a window outside the church, right of the entrance</figcaption></figure><figure class="shot"><img src="../img/de/de-void-skull3.jpg" alt="In the toy chest in Samantha's room" loading="lazy"><figcaption>In the toy chest in Samantha's room</figcaption></figure><figure class="shot"><img src="../img/de/de-void-skull4.jpg" alt="On a wall near Double Tap" loading="lazy"><figcaption>On a wall near Double Tap</figcaption></figure><figure class="shot"><img src="../img/de/de-void-skull5.jpg" alt="In a sink in the teleporter room" loading="lazy"><figcaption>In a sink in the teleporter room</figcaption></figure><figure class="shot"><img src="../img/de/de-void-skull6.jpg" alt="On the truck left of the landing pad" loading="lazy"><figcaption>On the truck left of the landing pad</figcaption></figure></div></li>
+          <li><b>Feed 6 crawlers to the circle.</b> Lead six crawlers into the circle in the trophy room &mdash; the skulls eat them. Then <b>charge-shoot the flying jar</b>. A demonic voice says <b>three words</b> &mdash; write them down <b>in order</b>. They come from: door, stag, horn, heart, crown, griffin.
+            <figure class="shot"><img src="../img/de/de-void-crawler.jpg" alt="A crawler being taken by the circle" loading="lazy"><figcaption>A crawler being taken by the circle</figcaption></figure></li>
+          <li><b>Farm the 6 purple symbols.</b> Zombies anywhere randomly drop purple symbols &mdash; but a dropped symbol <b>vanishes after 5 seconds</b>, so grab them fast. The circle shows how many you have.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-void-symbols.jpg" alt="A dropped symbol &mdash; 5 seconds to take it" loading="lazy"><figcaption>A dropped symbol &mdash; 5 seconds to take it</figcaption></figure><figure class="shot"><img src="../img/de/de-void-collected.jpg" alt="The circle tracks your count" loading="lazy"><figcaption>The circle tracks your count</figcaption></figure></div></li>
+          <li><b>The armour corridor.</b> Between the power lever and Samantha's quarters stand <b>6 suits of armour</b>, each with a sigil. Using the chart below, interact with the three armours matching your three words, <b>in the order the voice said them</b>. Each shows a purple symbol &mdash; remember those too, in order.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-void-sigils.jpg" alt="Sigil cheat sheet &mdash; which carving is which word" loading="lazy"><figcaption>Sigil cheat sheet &mdash; which carving is which word</figcaption></figure><figure class="shot"><img src="../img/de/de-void-corridor.jpg" alt="The armour corridor" loading="lazy"><figcaption>The armour corridor</figcaption></figure><figure class="shot"><img src="../img/de/de-void-armor.jpg" alt="An armour showing its purple symbol" loading="lazy"><figcaption>An armour showing its purple symbol</figcaption></figure></div></li>
+          <li><b>Enter the name.</b> Back at the circle, shoot the glowing symbols <b>in that same order</b>. Wrong code and the skulls attack &mdash; leave the room and try again. Right code, and the voice says it is his name. Interact with the tile for the arrow.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-void-shoot.jpg" alt="Shoot the symbols in order" loading="lazy"><figcaption>Shoot the symbols in order</figcaption></figure><figure class="shot"><img src="../img/de/de-void-name.jpg" alt="&ldquo;It is my name&rdquo; &mdash; done" loading="lazy"><figcaption>&ldquo;It is my name&rdquo; &mdash; done</figcaption></figure></div></li>
+          <li><b>Charge it at the altar.</b> Take the arrow to the altar room under the pyramid and place it on the matching altar. Kill zombies right next to it until the souls stop flowing in and a sound plays, then interact with the arrow, let the animation finish, and pick up your upgraded bow.</li><figure class="shot"><img src="../img/de/de-void-done.jpg" alt="The finished Void Bow" loading="lazy"><figcaption>The finished Void Bow</figcaption></figure>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables</h2>
+    <p class="blurb">Two builds, both worth it: the shield for staying alive, the Ragnarok because the main quest requires one per player.</p>
+
+    <details class="acc">
+      <summary><img src="../img/de/de-rs-plate1.jpg" alt="" style="object-fit:cover">
+        <span><b>Rocket Shield</b><br><small>3 parts &middot; 3 spawns each</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Blocks from behind like every shield &mdash; plus a rocket boost that blasts zombies out of your way. Three parts, each with three possible spots.</p>
+        <ol class="steps">
+          <li><b>The double pipe</b> &mdash; around the first courtyard:
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-rs-pipe1.jpg" alt="On the crates right after the entrance, on your right" loading="lazy"><figcaption>On the crates right after the entrance, on your right</figcaption></figure><figure class="shot"><img src="../img/de/de-rs-pipe2.jpg" alt="Near the stairs, left after the entrance" loading="lazy"><figcaption>Near the stairs, left after the entrance</figcaption></figure><figure class="shot"><img src="../img/de/de-rs-pipe3.jpg" alt="Next to the fence that opens with the power" loading="lazy"><figcaption>Next to the fence that opens with the power</figcaption></figure></div></li>
+          <li><b>The griffin plate</b> &mdash; the second courtyard, in front of the church:
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-rs-plate1.jpg" alt="By the stairs coming from the clock tower" loading="lazy"><figcaption>By the stairs coming from the clock tower</figcaption></figure><figure class="shot"><img src="../img/de/de-rs-plate2.jpg" alt="Near the church entrance" loading="lazy"><figcaption>Near the church entrance</figcaption></figure><figure class="shot"><img src="../img/de/de-rs-plate3.jpg" alt="In the clock tower, near a dead zombie" loading="lazy"><figcaption>In the clock tower, near a dead zombie</figcaption></figure></div></li>
+          <li><b>The frame</b> &mdash; underground, and you can <b>only grab it during anti-gravity</b>:
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-rs-frame1.jpg" alt="On the decoration near the crafting table" loading="lazy"><figcaption>On the decoration near the crafting table</figcaption></figure><figure class="shot"><img src="../img/de/de-rs-frame2.jpg" alt="Above the teleporter door" loading="lazy"><figcaption>Above the teleporter door</figcaption></figure><figure class="shot"><img src="../img/de/de-rs-frame3.jpg" alt="Above the Pack-a-Punch teleporter pad" loading="lazy"><figcaption>Above the Pack-a-Punch teleporter pad</figcaption></figure></div></li>
+          <li><b>Build it</b> at a crafting table &mdash; underground near the pyramid, or above Double Tap.</li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/de/de-rg-pickup.jpg" alt="" style="object-fit:cover">
+        <span><b>Ragnarok DG-4</b><br><small>3 parts &mdash; needed for the main quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The map's specialist weapon: slams the ground with gravity, and <b>planted on the ground it projects a force field</b> &mdash; perfect for safe revives. Just remember to pick it back up. <b>Everyone needs one for the boss fight.</b> <button class="xref" data-goto="main">See the main quest</button></p>
+        <ol class="steps">
+          <li><b>Part 1 &mdash; kill the first Panzer.</b> He arrives around <b>round 12</b> and drops the part instead of a power-up.
+            <figure class="shot"><img src="../img/de/de-rg-panzer.jpg" alt="The Panzer's drop &mdash; the first Ragnarok part" loading="lazy"><figcaption>The Panzer's drop &mdash; the first Ragnarok part</figcaption></figure></li>
+          <li><b>Part 2 &mdash; fire the Death Ray</b>, then look up: the part is floating in the air. Launch yourself at it with a <b>Wundersphere</b> &mdash; the one above Double Tap if it floats over spawn, the second-courtyard one if it floats over the Death Ray. <b>It despawns if you're slow.</b>
+            <figure class="shot"><img src="../img/de/de-rg-air.jpg" alt="The part floating &mdash; catch it mid-flight off a Wundersphere" loading="lazy"><figcaption>The part floating &mdash; catch it mid-flight off a Wundersphere</figcaption></figure></li>
+          <li><b>Part 3 &mdash; the rocket test.</b> At the launch site, when the voice announces a test, <b>pull the lever by the left staircase</b>, then shelter in the safe area. After the test, watch the <b>box with 3 lights by the teleporter</b>: they go red to green. When all three are green, pull its lever &mdash; the part is waiting inside the teleporter.
+            <div class="shot-grid"><figure class="shot"><img src="../img/de/de-rg-lever.jpg" alt="The lever by the left staircase &mdash; flip it as the test starts" loading="lazy"><figcaption>The lever by the left staircase &mdash; flip it as the test starts</figcaption></figure><figure class="shot"><img src="../img/de/de-rg-lights.jpg" alt="The box by the teleporter &mdash; wait for 3 green lights" loading="lazy"><figcaption>The box by the teleporter &mdash; wait for 3 green lights</figcaption></figure><figure class="shot"><img src="../img/de/de-rg-pickup.jpg" alt="The part inside the teleporter" loading="lazy"><figcaption>The part inside the teleporter</figcaption></figure></div></li>
+          <li><b>Build it</b> at a crafting table and pick your Ragnaroks up.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <ol class="steps">
+      <li><b>Turn on the power</b> &mdash; the switch is in the Armory.</li>
+      <li><b>Stand on all three teleporter pads</b>, in any order. Each one beams a piece of the machine away:
+        <ul>
+          <li>Opposite the power switch, just outside in the <b>Bastion</b></li>
+          <li>Up on the catwalks of the <b>rocket pad</b></li>
+          <li>In the <b>Undercroft</b> &mdash; the underground pyramid room</li>
+        </ul></li>
+      <li><b>The machine assembles at the Undercroft pad.</b> Normal 5000 to upgrade.</li>
+    </ol>
+    <div class="callout">The Undercroft pad is also where the Rocket Shield's third part can float above during anti-gravity &mdash; two birds, one visit. <button class="xref" data-goto="build">See Buildables</button></div>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Six regular machines plus <b>Der Wunderfizz</b> &mdash; and three perks that <b>only</b> exist inside the Wunderfizz on this map.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Take five hits before you go down instead of two. First buy, always.</td><td>Upstairs from spawn &mdash; the Jugger-Nog room by the connector toward the undercroft.</td></tr>
+        <tr><td><b>Quick Revive</b></td><td>500 solo<br>1500 co-op</td><td>Revive yourself when you go down (3 buys solo); in co-op it speeds up reviving teammates.</td><td>By the stone tunnel on the way up from spawn.</td></tr>
+        <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload about twice as fast.</td><td>In the <b>church</b>.</td></tr>
+        <tr><td><b>Double Tap Root Beer II</b></td><td>2000</td><td>Higher fire rate, every bullet counts double.</td><td>The lower courtyard, by the tunnel with the 1000-point gate.</td></tr>
+        <tr><td><b>Stamin-Up</b></td><td>2000</td><td>Sprint faster and longer.</td><td>Out at the <b>rocket launch site</b>.</td></tr>
+        <tr><td><b>Mule Kick</b></td><td>4000</td><td>Carry a third weapon.</td><td>The room <b>beneath the clock tower</b>.</td></tr>
+        <tr><td><b>Der Wunderfizz</b></td><td>1500 a spin</td><td>A slot machine of perks &mdash; spit out a random bottle. This is the <b>only</b> way to get Deadshot Daiquiri, Electric Cherry or Widow's Wine on this map.</td><td>Orbs at several fixed spots around the map (courtyard, near the Death Ray, and more).</td></tr>
+      </tbody>
+    </table>
+
+    <p class="blurb">Machine photos to follow &mdash; send a set and I'll add the grid like the other maps.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>

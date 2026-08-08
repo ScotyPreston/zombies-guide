@@ -39,7 +39,7 @@ const GAMES = [
     tagline: "The end of the Aether saga",
     maps: [
       { id: "soe", name: "Shadows of Evil", note: "4 rituals + Shadow Man", built: true },
-      { id: "der-eisendrache", name: "Der Eisendrache" },
+      { id: "de", name: "Der Eisendrache", note: "4 bow upgrades", built: true },
       { id: "zetsubou", name: "Zetsubou No Shima", note: "Plants tab" },
       { id: "gorod", name: "Gorod Krovi", note: "Valve solver" },
       { id: "revelations", name: "Revelations" }
