@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0c1109">
+<title>Zetsubou No Shima &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Zetsubou No Shima: overgrown island lab — bio green + 115 purple */
+  :root {
+    --map-bg: #0c1109;
+    --map-bg2: #151e10;
+    --bg: #0c1109;
+    --bg-card: #151e10;
+    --bg-card-hover: #1d2916;
+    --line: #2b3a22;
+    --map-accent: #9fe044;
+    --map-accent2: #c9a2f0;
+    --map-glow: rgba(159, 224, 68, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="zetsubou">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo3">&#8249; Black Ops 3</a></nav>
+
+  <header class="map-header">
+    <h1>Zetsubou No Shima</h1>
+    <div class="sub">Black Ops 3 &middot; Division 9 island facility</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="plants">Plants</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4</b> &middot; about 2 hours &middot; one of the easier quests.</li>
+        <li><b>The "Anywhere But Here!" Gobblegum, EQUIPPED BEFORE YOU LAUNCH THE GAME.</b> Without it the quest cannot be finished.</li>
+        <li>The <b>Masamune</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+        <li>The <b>Skull of Nan Sapwe</b>. <button class="xref" data-goto="wonder">Also under Wonder Weapons</button></li>
+        <li><b>Power on</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li><b>Gas mask, shield</b> <button class="xref" data-goto="build">(Buildables)</button> and a <b>bucket</b> <button class="xref" data-goto="plants">(Plants)</button>.</li>
+        <li><b>All players' trials completed</b> &mdash; see the card below.</li>
+      </ul>
+    </div>
+
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-trial-pillar.jpg" alt="" style="object-fit:cover">
+        <span><b>The Trials</b><br><small>3 per player &mdash; required for the quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The four pillars by the main altar each show <b>3 glowing symbols</b> &mdash; three challenges per player. <b>Yellow symbols are yours, blue are your teammates'.</b> Look at one to read the challenge and track progress; they change every game, but the bottom one is always easy, the middle medium, the top hard. Rewards, bottom to top: <b>Max Ammo</b>, an <b>SVG sniper or Brecci shotgun</b>, and an <b>extra perk slot</b> &mdash; interact with a finished challenge to claim.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-trial-pillar.jpg" alt="Your pillar &mdash; yellow symbols are your three challenges" loading="lazy"><figcaption>Your pillar &mdash; yellow symbols are your three challenges</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-trial-thunder.jpg" alt="All trials done: lightning strikes near the altar, electrifying an equipped shield" loading="lazy"><figcaption>All trials done: lightning strikes near the altar, electrifying an equipped shield</figcaption></figure></div>
+        <p class="blurb"><b>Easy pool:</b> breathe from a spore underwater &middot; destroy 5 spores &middot; cut 5 spider webs &middot; water 5 plants &middot; water one plant three times.</p>
+        <p class="blurb"><b>Medium pool:</b> 20 underwater kills &middot; 15 kills on zombies lured by a carnivorous plant &middot; 10 headshots on spore-infected zombies &middot; get a power-up from a plant &middot; 20 kills with the fan trap &middot; kill a Thrasher before it enrages.</p>
+        <p class="blurb"><b>Hard pool:</b> kill 8 spiders with spore gas &middot; headshot 5 Thrashers &middot; eat a fruit from a plant &middot; 30 kills with the plane trap &middot; kill 3 zombies mid-mutation (burst them before the roots drag them under).</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-trial-web.jpg" alt="Spider webs on doors and machines &mdash; cut or blow them up" loading="lazy"><figcaption>Spider webs on doors and machines &mdash; cut or blow them up</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-trial-fan.jpg" alt="The fan trap, right of the bunker's first door" loading="lazy"><figcaption>The fan trap, right of the bunker's first door</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-trial-plane.jpg" alt="The plane trap engine, left out of spawn" loading="lazy"><figcaption>The plane trap engine, left out of spawn</figcaption></figure></div>
+      </div>
+    </details>
+
+    <h2>"Seeds of Doubt" &mdash; the quest: 3 gears, 1 elevator</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li><b>Grow a shell and load the AA gun.</b> Start early: plant seeds, water them <b>three times with blue water</b>, and <b>shoot the seed with the KT-4/Masamune after each watering</b> to fertilise (green particles = it took). You want a <b>bonus plant holding an artillery shell</b> &mdash; the more seeds you run, the sooner it comes. Take the shell to the <b>AA gun on the bunker roof</b> (first door right of the entrance) and load it &mdash; listen for the clunk, and don't spam the button. When the <b>massive plane</b> flies into the gun's sights, fire. It drops a <b>smoking gear</b> near the green water, in front of the bunker, or by Lab A's zipline &mdash; depends where you hit it. <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-q-shell1.jpg" alt="A fertilised bonus plant &mdash; this one grew the shell" loading="lazy"><figcaption>A fertilised bonus plant &mdash; this one grew the shell</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-shell2.jpg" alt="The shell" loading="lazy"><figcaption>The shell</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-aa.jpg" alt="Load it into the AA gun on the bunker roof" loading="lazy"><figcaption>Load it into the AA gun on the bunker roof</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-plane1.jpg" alt="Wait for the plane to cross the sights" loading="lazy"><figcaption>Wait for the plane to cross the sights</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-plane2.jpg" alt="Down it goes" loading="lazy"><figcaption>Down it goes</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-gear1.jpg" alt="Collect the smoking gear where it fell" loading="lazy"><figcaption>Collect the smoking gear where it fell</figcaption></figure></div></li>
+      <li><b>The zipline drop &mdash; gear 2.</b> Electrify your shield (all trials done, stand by the altar), then head to <b>Lab A's zipline</b>. The gear sits on a <b>deck you can only reach by falling off the zipline mid-ride</b>.<div class="callout"><b>Solo:</b> melee the zipline console with the electrified shield, ride, and <b>press melee over the deck</b> &mdash; you drop dead-vertical, no drift.<br><b>Co-op:</b> player A rides, player B melees the console with the electrified shield <b>while A is over the deck</b> &mdash; hit it early and A lands in the water, out of the map, game over for him. Don't pre-shoot it.</div><div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-q-zip1.jpg" alt="The zipline console &mdash; hit it with the electrified shield" loading="lazy"><figcaption>The zipline console &mdash; hit it with the electrified shield</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-zip2.jpg" alt="Riding out over the deck" loading="lazy"><figcaption>Riding out over the deck</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-deck.jpg" alt="The drop &mdash; straight down like a piano" loading="lazy"><figcaption>The drop &mdash; straight down like a piano</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-gear2.jpg" alt="Gear 2 on the deck" loading="lazy"><figcaption>Gear 2 on the deck</figcaption></figure></div><div class="callout">Grow <b>cloning plants</b> before attempting this (3 colours + KT-4 fertilise) &mdash; a saved state takes the sting out of a missed drop.</div></li>
+      <li><b>"Anywhere But Here!" &mdash; gear 3.</b> Chew the gum: it teleports you into an <b>unreachable room above Lab A</b> where the third gear is just lying on the floor by some large eggs. Works any time. <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-q-gum.jpg" alt="The gum that gets you there" loading="lazy"><figcaption>The gum that gets you there</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-gear3.jpg" alt="Gear 3 on the floor by the eggs" loading="lazy"><figcaption>Gear 3 on the floor by the eggs</figcaption></figure></div></li>
+      <li><b>Fix the elevator.</b> Take all three gears to the <b>elevator left of the bunker entrance</b> (the path your skull opened) and place them. <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-q-elevator.jpg" alt="The elevator machine" loading="lazy"><figcaption>The elevator machine</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-gears.jpg" alt="All three gears in place" loading="lazy"><figcaption>All three gears in place</figcaption></figure></div></li>
+      <li><b>The boss &mdash; swampy Takeo.</b><div class="callout"><b>No way back once you ride down</b> &mdash; go in with Pack-a-Punched guns, perks, Masamune, the gas mask and your gums.</div>Everyone in the elevator, press the button. At the bottom, <b>shoot the roots with the Masamune</b> to clear the way, pass the final door, and there he is: a giant rooted Takeo with <b>4 roots, each carrying spores</b>. Shoot each spore once with the Masamune, survive while they hide, repeat when they reopen &mdash; zombies, Thrashers and spiders pour in the whole time, but <b>Max Ammos drop constantly</b>, so lean on the Masamune. Cut all four roots and enjoy the scream, the cutscene, and <b>all perks</b>. <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-q-down.jpg" alt="Going down" loading="lazy"><figcaption>Going down</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-roots.jpg" alt="Clear the roots with the Masamune" loading="lazy"><figcaption>Clear the roots with the Masamune</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-boss1.jpg" alt="The boss and his four spore roots" loading="lazy"><figcaption>The boss and his four spore roots</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-boss2.jpg" alt="Shoot a spore while it's open" loading="lazy"><figcaption>Shoot a spore while it's open</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-boss4.jpg" alt="Survive the waves between spores" loading="lazy"><figcaption>Survive the waves between spores</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-q-end1.jpg" alt="Done &mdash; cutscene time" loading="lazy"><figcaption>Done &mdash; cutscene time</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+    <p class="blurb">Eight of them, from ten-second songs to becoming an actual spider.</p>
+
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-song1-a.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; "Dead Flowers"</b><br><small>3 puppets</small></span></summary>
+      <div class="acc-body">
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-song1-a.jpg" alt="Puppet 1 &mdash; beside the perk and the blue water" loading="lazy"><figcaption>Puppet 1 &mdash; beside the perk and the blue water</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-song1-b.jpg" alt="Puppet 2 &mdash; on a table on the upper floor" loading="lazy"><figcaption>Puppet 2 &mdash; on a table on the upper floor</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-song1-c.jpg" alt="Puppet 3 &mdash; on a table by the KT-4 underground" loading="lazy"><figcaption>Puppet 3 &mdash; on a table by the KT-4 underground</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-song2-pockets.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; Samantha's Lullaby</b><br><small>Water pockets: 1-3-5-6-7-5</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">In the wall near the purple water source are several <b>pockets you fill with bucket water</b>. From the left, pour <b>1, 3, 5, 6, 7, 5 thirds</b> of a bucket, then interact with the 7th pocket to start the song. Overfilled one? Knife it to drain.</p>
+        <figure class="shot"><img src="../img/zetsubou/zn-song2-pockets.jpg" alt="The pockets in the wall" loading="lazy"><figcaption>The pockets in the wall</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-se-monster.jpg" alt="" style="object-fit:cover">
+        <span><b>The distant monster</b><br><small>Round 50+</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Hit <b>round 50</b> and a feral roar sounds in the distance. Near Lab B, look far outside the map &mdash; a <b>giant shadow</b> moves between the trees.</p>
+        <figure class="shot"><img src="../img/zetsubou/zn-se-monster.jpg" alt="Something big out there" loading="lazy"><figcaption>Something big out there</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-se-tank1.jpg" alt="" style="object-fit:cover">
+        <span><b>Doppelganger jumpscare</b><br><small>Scope the tank</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Get a <b>sniper rifle</b> (box, or the medium trial reward), go to the green-tank room in the bunker, and <b>scope the test subject inside a tank for 20&ndash;30 seconds</b>. If it takes, one of the four characters appears in the room with no name over his head. Walk up to him. Regret it.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-se-tank1.jpg" alt="Scope the subject in the tank" loading="lazy"><figcaption>Scope the subject in the tank</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-se-tank2.jpg" alt="Keep scoping..." loading="lazy"><figcaption>Keep scoping...</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-se-friendly.jpg" alt="" style="object-fit:cover">
+        <span><b>A friendly Thrasher</b><br><small>Blue eyes, your side</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Needs the <b>Masamune</b>, the <b>skull</b>, and the hypnotised walls from the Masamune build. Shoot the roots on the green-tank wall with the Masamune to reveal a spore, then <b>pop the spore while a zombie stands in it</b> &mdash; he mutates with <b>friendly blue eyes</b> and fights for you until his battery runs out.</p>
+        <figure class="shot"><img src="../img/zetsubou/zn-se-friendly.jpg" alt="Your new best friend" loading="lazy"><figcaption>Your new best friend</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-se-gold2.jpg" alt="" style="object-fit:cover">
+        <span><b>The golden bucket</b><br><small>Never runs dry</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Needs <b>one of every plant type grown</b> and the purple-water poster hypnotised. Under Lab B, use the skull on the <b>roots blocking a growing spot</b>, then <b>place your bucket on the spot</b>. Three growing spots appear &mdash; seed them; carnivorous plants hatch on their own. <b>Feed them zombies</b> until a plant grows where your bucket sits: inside is the golden bucket, which <b>never empties</b>.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-se-gold1.jpg" alt="The bucket on the freed growing spot" loading="lazy"><figcaption>The bucket on the freed growing spot</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-se-gold2.jpg" alt="The golden bucket" loading="lazy"><figcaption>The golden bucket</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-se-hall.jpg" alt="" style="object-fit:cover">
+        <span><b>Hallucinations</b><br><small>Too much spore gas</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Breathe spore gas long enough and certain spots start showing you things: the green tanks, both lab crafting tables, and the catwalk above Lab B.</p>
+        <figure class="shot"><img src="../img/zetsubou/zn-se-hall.jpg" alt="Seeing things" loading="lazy"><figcaption>Seeing things</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-se-sp2.jpg" alt="" style="object-fit:cover">
+        <span><b>Become the spider</b><br><small>The strangest one</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>skull</b>, the <b>KT-4</b>, an <b>electrified shield</b> and <b>all trials done</b>.</li></ul></div>
+        <ol class="steps">
+          <li>During a spider round, use the skull's <b>hypnosis</b> &mdash; one spider glows red. <b>Keep her alive</b>, kill the rest.</li>
+          <li>Walk her to <b>all three water sources</b> and let her drink.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-se-sp1.jpg" alt="The chosen spider" loading="lazy"><figcaption>The chosen spider</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-se-sp2.jpg" alt="Drinking at a source" loading="lazy"><figcaption>Drinking at a source</figcaption></figure></div></li>
+          <li>Lower the Lab A cage, bring her in, raise it. <b>Hit the panel with the electrified shield</b>, lower it again.
+            <figure class="shot"><img src="../img/zetsubou/zn-se-sp3.jpg" alt="The cage, electrified this time" loading="lazy"><figcaption>The cage, electrified this time</figcaption></figure></li>
+          <li>Finish the round. A <b>special spider round</b> starts &mdash; these ones only die to the KT-4, electrified shield or skull. Survive it, raise the cage, take the venom.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-se-sp4.jpg" alt="The special spider round" loading="lazy"><figcaption>The special spider round</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-se-sp5.jpg" alt="Raise the cage" loading="lazy"><figcaption>Raise the cage</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-se-sp6.jpg" alt="The venom" loading="lazy"><figcaption>The venom</figcaption></figure></div></li>
+        </ol>
+        <p class="blurb">From now on, once per round (or per Max Ammo), you can <b>transform into an undying spider for a minute</b>.</p>
+        <div class="callout">It's buggy: get cornered by too many enemies and you can clip through the floor and die under the map.</div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">The KT-4 and its upgrade are built, not boxed &mdash; and the skull is its own beast. All three matter for the main quest.</p>
+
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-wpn-kt4.jpg" alt="" style="object-fit:cover">
+        <span><b>KT-4</b><br><small>3 parts &mdash; free at its own table</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">A plant-goo sprayer that melts groups &mdash; charge the shot for more. Its other job: <b>fertilising seeds</b>. <button class="xref" data-goto="plants">See Plants</button></p>
+        <ol class="steps">
+          <li><b>Spider venom.</b> Power on, then use Lab A's control panel to <b>lower the cage</b>. Lead a spider to it &mdash; it walks in on its own &mdash; raise the cage, wait for the bang, take the venom.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-kt4-cage.jpg" alt="The cage at Lab A" loading="lazy"><figcaption>The cage at Lab A</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-kt4-spider.jpg" alt="Spider in, cage up, venom out" loading="lazy"><figcaption>Spider in, cage up, venom out</figcaption></figure></div>
+            <div class="callout">Set this up before the first <b>spider round</b> (~round 6, fog rolls in, spiders only, ends in a Max Ammo).</div></li>
+          <li><b>The green flask.</b> With power on, play around Lab B until a zombie spawns <b>glowing green</b> &mdash; kill it, take the flask.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-kt4-green1.jpg" alt="The green glowing zombie" loading="lazy"><figcaption>The green glowing zombie</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-kt4-green2.jpg" alt="The flask it drops" loading="lazy"><figcaption>The flask it drops</figcaption></figure></div></li>
+          <li><b>The flower.</b> In the bunker: door straight ahead, all the way down, open the door facing Mule Kick, and swim the caverns until you find the <b>blue tunnel going deeper</b>. The flower is at the bottom.
+            <figure class="shot"><img src="../img/zetsubou/zn-kt4-flower.jpg" alt="The flower at the bottom of the blue tunnel" loading="lazy"><figcaption>The flower at the bottom of the blue tunnel</figcaption></figure>
+            <div class="callout"><b>Take Jugger-Nog or you'll drown.</b> Shooting the spore at the bottom of the tunnel refills your breath.</div></li>
+          <li><b>Craft it free</b> at the special table in the flooded room near one of the ritual altars.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-kt4-table.jpg" alt="The KT-4 table" loading="lazy"><figcaption>The KT-4 table</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-kt4-built.jpg" alt="Built" loading="lazy"><figcaption>Built</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-wpn-masamune.jpg" alt="" style="object-fit:cover">
+        <span><b>Masamune</b><br><small>The upgraded KT-4 &mdash; required for the quest</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>KT-4</b>, the <b>Skull of Nan Sapwe</b> and the <b>shield</b>.</li><li><b>All players' trials done</b> (for the electrified shield step).</li></ul></div>
+
+        <ol class="steps">
+          <li><b>The spider's tooth &mdash; a mini-boss.</b> Behind the blue water source is a big web: shoot it with the <b>KT-4</b> and drop in. You're locked in an arena with a <b>giant spider</b> &mdash; dodge, and shoot her <b>mouth while it glows yellow</b>. She spawns spiderlings throughout. Kill her, and <b>take a tooth before you leave</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-ms-web.jpg" alt="The web behind the blue water &mdash; KT-4 it" loading="lazy"><figcaption>The web behind the blue water &mdash; KT-4 it</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-spider.jpg" alt="Aim for the glowing mouth" loading="lazy"><figcaption>Aim for the glowing mouth</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-tooth.jpg" alt="Grab a tooth off the floor" loading="lazy"><figcaption>Grab a tooth off the floor</figcaption></figure></div>
+            <div class="callout">On the way out there's a <b>purple pool &mdash; wade in for free Widow's Wine</b>.</div></li>
+          <li><b>The rainbow flower.</b> Take an <b>empty bucket</b> into the sewer pipe next to the KT-4 table (500 points). <b>Spam interact while flying past the 115 meteorite</b> to scoop rainbow water. Then use the skull's <b>hypnosis (right-click)</b> on the poster near the purple water, the wall left of the bunker entrance, and the wall by the green tanks. Finally, hypnotise the wall <b>facing the spore in the underwater flower tunnel</b> &mdash; it reveals a growing spot. Plant a seed there and water it <b>three times with rainbow water</b>. Yes, you're watering a plant underwater. It's magic. Grab what grows.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-ms-sewer.jpg" alt="The sewer pipe by the KT-4 table" loading="lazy"><figcaption>The sewer pipe by the KT-4 table</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-meteor.jpg" alt="Spam interact at the meteorite for rainbow water" loading="lazy"><figcaption>Spam interact at the meteorite for rainbow water</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-poster.jpg" alt="Hypnotise the poster near the purple water" loading="lazy"><figcaption>Hypnotise the poster near the purple water</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-wall1.jpg" alt="...the wall by the bunker entrance" loading="lazy"><figcaption>...the wall by the bunker entrance</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-wall2.jpg" alt="...and the wall by the green tanks" loading="lazy"><figcaption>...and the wall by the green tanks</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-spot.jpg" alt="The hidden growing spot in the flower tunnel" loading="lazy"><figcaption>The hidden growing spot in the flower tunnel</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-rainbow2.jpg" alt="The rainbow-watered plant, ready" loading="lazy"><figcaption>The rainbow-watered plant, ready</figcaption></figure></div>
+            <div class="callout">The skull won't stretch to all three items on one charge &mdash; <b>swap weapons after each use</b> to save its ammo and recharge faster.</div></li>
+          <li><b>The 115 flask.</b> With your shield electrified (stand by the altar after all trials), <b>hit Lab B's console with the shield</b> and get in the cage. Solo it moves itself; in co-op someone works the console. At the bottom, <b>press interact in the dark</b> until your character confirms the grab.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-ms-console.jpg" alt="Hit the console with the electrified shield" loading="lazy"><figcaption>Hit the console with the electrified shield</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-cage.jpg" alt="Ride the cage down" loading="lazy"><figcaption>Ride the cage down</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-ms-flask.jpg" alt="Feel around for the flask &mdash; it's dark down there" loading="lazy"><figcaption>Feel around for the flask &mdash; it's dark down there</figcaption></figure></div></li>
+          <li><b>Upgrade it</b> at the second table in the KT-4 room.
+            <figure class="shot"><img src="../img/zetsubou/zn-ms-upgrade.jpg" alt="The Masamune" loading="lazy"><figcaption>The Masamune</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-wpn-skull.jpg" alt="" style="object-fit:cover">
+        <span><b>Skull of Nan Sapwe</b><br><small>4 rituals &mdash; the map's special weapon</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Left-click <b>obliterates zombies</b>; right-click <b>hypnotises</b> them still. Several quest steps need the hypnosis. It recharges over time when stowed.</p>
+        <ol class="steps">
+          <li><b>Find the ritual court.</b> Right from spawn, two doors: a main altar holding <b>4 bloodied skulls</b>, ringed by 4 pillars. Each skull has <b>2, 3, 5 or 6 arrows</b> marked on it.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-skull-court.jpg" alt="The ritual court and main altar" loading="lazy"><figcaption>The ritual court and main altar</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-bloody.jpg" alt="A bloodied skull &mdash; note its arrow count" loading="lazy"><figcaption>A bloodied skull &mdash; note its arrow count</figcaption></figure></div></li>
+          <li><b>Clean each skull on its matching altar.</b> The symbols move between games, but the four altars are fixed: <b>spawn</b> &middot; <b>the crashed gunship</b> &middot; <b>the bunker underground by the KT-4/sewer room</b> &middot; <b>outside the bunker past the power, near the zipline</b>. Place the right skull and <b>green zombies swarm it</b> &mdash; they ignore you; keep them off the skull. Succeed and carry the white skull back to the main altar. Fail, and it's back on the main altar next round.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-skull-altar1.jpg" alt="Altar &mdash; spawn" loading="lazy"><figcaption>Altar &mdash; spawn</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-altar2.jpg" alt="Altar &mdash; by the crashed gunship" loading="lazy"><figcaption>Altar &mdash; by the crashed gunship</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-altar3.jpg" alt="Altar &mdash; bunker underground" loading="lazy"><figcaption>Altar &mdash; bunker underground</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-altar4.jpg" alt="Altar &mdash; outside the bunker, near the zipline" loading="lazy"><figcaption>Altar &mdash; outside the bunker, near the zipline</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-ritual.jpg" alt="Defend the skull from the green zombies" loading="lazy"><figcaption>Defend the skull from the green zombies</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-clean.jpg" alt="Cleaned &mdash; back to the main altar" loading="lazy"><figcaption>Cleaned &mdash; back to the main altar</figcaption></figure></div>
+            <div class="callout">Ritual 2 adds <b>spiders</b>; ritual 3 adds a <b>Thrasher</b>. It escalates &mdash; do the early ones early.</div></li>
+          <li><b>The cave.</b> All four cleaned skulls back on the main altar opens a <b>cave below</b>. Interact with the skull inside: you're locked in with waves of <b>Keepers</b> &mdash; kill enough and the Skull of Nan Sapwe is yours.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-skull-cave.jpg" alt="The cave under the court" loading="lazy"><figcaption>The cave under the court</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-keepers.jpg" alt="Keeper waves" loading="lazy"><figcaption>Keeper waves</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-skull-get.jpg" alt="The skull, earned" loading="lazy"><figcaption>The skull, earned</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables</h2>
+    <p class="blurb">Both required for the main quest. The bucket lives on its own tab. <button class="xref" data-goto="plants">See Plants</button></p>
+
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-gm-done.jpg" alt="" style="object-fit:cover">
+        <span><b>Gas mask</b><br><small>3 parts &mdash; required for the quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">No more coughing in spore clouds, and <b>longer underwater time</b>. It wears out and rebuilds &mdash; the bar shows durability.</p>
+        <ol class="steps">
+          <li><b>The cable</b> &mdash; at the crash site: on a rock beside the box spot, or right outside the plane on either side.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-gm-cable1.jpg" alt="Cable spot &mdash; rock by the box" loading="lazy"><figcaption>Cable spot &mdash; rock by the box</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-gm-cable2.jpg" alt="Cable spot &mdash; outside the plane" loading="lazy"><figcaption>Cable spot &mdash; outside the plane</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-gm-cable3.jpg" alt="Cable spot &mdash; the other side" loading="lazy"><figcaption>Cable spot &mdash; the other side</figcaption></figure></div></li>
+          <li><b>The mask</b> &mdash; green water area: upstairs by the perk machine, beside the water on a box, or between the growing spot and Lab B.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-gm-mask1.jpg" alt="Mask spot &mdash; upstairs by the perk" loading="lazy"><figcaption>Mask spot &mdash; upstairs by the perk</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-gm-mask2.jpg" alt="Mask spot &mdash; box by the water" loading="lazy"><figcaption>Mask spot &mdash; box by the water</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-gm-mask3.jpg" alt="Mask spot &mdash; toward Lab B" loading="lazy"><figcaption>Mask spot &mdash; toward Lab B</figcaption></figure></div></li>
+          <li><b>The filter</b> &mdash; the outdoor room left of the power: near the zipline or on the rocks by the Mystery Box.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-gm-filter1.jpg" alt="Filter spot &mdash; near the zipline" loading="lazy"><figcaption>Filter spot &mdash; near the zipline</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-gm-filter2.jpg" alt="Filter spot &mdash; the rocks" loading="lazy"><figcaption>Filter spot &mdash; the rocks</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-gm-filter3.jpg" alt="Filter spot &mdash; by the box" loading="lazy"><figcaption>Filter spot &mdash; by the box</figcaption></figure></div></li>
+          <li><b>Craft at Lab A or B.</b>
+            <figure class="shot"><img src="../img/zetsubou/zn-gm-done.jpg" alt="Built &mdash; watch the durability bar" loading="lazy"><figcaption>Built &mdash; watch the durability bar</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/zetsubou/zn-sh-built.jpg" alt="" style="object-fit:cover">
+        <span><b>Shield</b><br><small>3 parts &mdash; and it can be electrified</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Part 1</b> &mdash; under Lab A, on the pillars: beside the Kuda or the neighbouring windows.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-sh-p1a.jpg" alt="Under Lab A &mdash; by the Kuda" loading="lazy"><figcaption>Under Lab A &mdash; by the Kuda</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-sh-p1b.jpg" alt="Under Lab A &mdash; window pillar" loading="lazy"><figcaption>Under Lab A &mdash; window pillar</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-sh-p1c.jpg" alt="Under Lab A &mdash; the other window" loading="lazy"><figcaption>Under Lab A &mdash; the other window</figcaption></figure></div></li>
+          <li><b>Part 2</b> &mdash; on a tree in the Lab B area: near a spore on the upward path by a growing spot, or near the land mines.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-sh-p2a.jpg" alt="Tree near the spore path" loading="lazy"><figcaption>Tree near the spore path</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-sh-p2b.jpg" alt="Tree by the growing spot" loading="lazy"><figcaption>Tree by the growing spot</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-sh-p2c.jpg" alt="Tree near the mines" loading="lazy"><figcaption>Tree near the mines</figcaption></figure></div></li>
+          <li><b>Part 3</b> &mdash; the AA-gun balcony (first door right inside the bunker): broken stones, near the window, or the box spot.
+            <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-sh-p3a.jpg" alt="The balcony &mdash; broken stones" loading="lazy"><figcaption>The balcony &mdash; broken stones</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-sh-p3b.jpg" alt="The balcony &mdash; by the window" loading="lazy"><figcaption>The balcony &mdash; by the window</figcaption></figure></div></li>
+          <li><b>Craft at Lab A or B.</b>
+            <figure class="shot"><img src="../img/zetsubou/zn-sh-built.jpg" alt="Built" loading="lazy"><figcaption>Built</figcaption></figure></li>
+        </ol>
+        <div class="callout"><b>Electrify it:</b> after every player finishes their trials, hold the shield near the main altar and wait for the lightning. An electrified shield <b>kills zombies that touch it</b>, <b>knocks perk prices down when you hit the machines</b>, and drives several quest steps.</div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PLANTS ============ -->
+  <section class="tab-panel" id="tab-plants">
+    <h2>Buckets, water &amp; plants</h2>
+    <p class="blurb">This map's whole ecosystem. Zombies drop <b>seeds</b>; you plant them at growing spots, water them with a <b>bucket</b>, and what grows depends entirely on <b>which water you used</b>.</p>
+
+    <h2>The bucket</h2>
+    <p class="blurb">Four buckets on the map &mdash; spawn room, Lab A, Lab B and the main bunker (one per player). The three spawn-area spots:</p>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/zetsubou/zn-bucket1.jpg" alt="Bucket spot &mdash; spawn area" loading="lazy"><figcaption>Bucket spot &mdash; spawn area</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-bucket2.jpg" alt="Bucket spot &mdash; spawn area" loading="lazy"><figcaption>Bucket spot &mdash; spawn area</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-bucket3.jpg" alt="Bucket spot &mdash; spawn area" loading="lazy"><figcaption>Bucket spot &mdash; spawn area</figcaption></figure>
+    </div>
+    <div class="callout">A full bucket holds <b>three waterings</b>. A seed left unwatered for a whole round hatches on its own as something ordinary.</div>
+
+    <h2>The three waters</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/zetsubou/zn-water-blue.jpg" alt="Blue water &mdash; near Lab A" loading="lazy"><figcaption>Blue water &mdash; near Lab A</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-water-green.jpg" alt="Green water &mdash; near Lab B" loading="lazy"><figcaption>Green water &mdash; near Lab B</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-water-purple.jpg" alt="Purple water &mdash; in the bunker, down by the cocoons" loading="lazy"><figcaption>Purple water &mdash; in the bunker, down by the cocoons</figcaption></figure>
+    </div>
+
+    <h2>Planting</h2>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/zetsubou/zn-seed-drop.jpg" alt="Zombies drop seeds &mdash; grab them" loading="lazy"><figcaption>Zombies drop seeds &mdash; grab them</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-seed-spot.jpg" alt="A growing spot" loading="lazy"><figcaption>A growing spot</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-seed-plant.jpg" alt="Seed in" loading="lazy"><figcaption>Seed in</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-water-pour.jpg" alt="One watering per round per plant" loading="lazy"><figcaption>One watering per round per plant</figcaption></figure>
+    </div>
+    <div class="callout"><b>Fertilising:</b> once you have the KT-4 or Masamune, <b>shoot the seed after each watering</b> &mdash; green particles float around a fertilised seed, and the outcome improves. <button class="xref" data-goto="wonder">See the KT-4</button></div>
+
+    <h2>What grows from what</h2>
+    <table class="data-table">
+      <thead><tr><th>Recipe</th><th>Plant</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td><b>Blue &times;3</b></td><td>Bonus plant</td><td>Opens with a prize: Ray Gun, Monkey Bombs, Max Ammo, power-ups &mdash; or the <b>artillery shell the main quest needs</b>.</td></tr>
+        <tr><td><b>Green &times;3</b></td><td>Spike plant</td><td>Impales a zombie, crawler or spider and holds it alive &mdash; 5 minutes normally, up to an hour fertilised. A pause button.</td></tr>
+        <tr><td><b>Purple &times;3</b></td><td>Carnivorous plant</td><td>Lures and eats zombies. Will also chew on you, and Thrashers destroy it.</td></tr>
+        <tr><td><b>Blue + green + purple</b></td><td>Fruit plant (25%)</td><td>A free <b>extra perk</b> if you're lucky; a random plant if not.</td></tr>
+        <tr><td><b>All 3 colours + fertilised</b></td><td>Cloning plant</td><td><b>Saves your loadout</b> &mdash; die and you respawn with the weapons, perks and gums you had when you used it.</td></tr>
+        <tr><td><b>Rainbow water &times;3</b></td><td>Quest plant</td><td>Only at the hidden underwater spot &mdash; part of the Masamune build. <button class="xref" data-goto="wonder">See Masamune</button></td></tr>
+      </tbody>
+    </table>
+    <div class="shot-grid">
+      <figure class="shot"><img src="../img/zetsubou/zn-plant-bonus.jpg" alt="Bonus plant" loading="lazy"><figcaption>Bonus plant</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-plant-spike.jpg" alt="Spike plant holding dinner" loading="lazy"><figcaption>Spike plant holding dinner</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-plant-carn.jpg" alt="Carnivorous plant" loading="lazy"><figcaption>Carnivorous plant</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-plant-fruit.jpg" alt="Fruit plant &mdash; free perk" loading="lazy"><figcaption>Fruit plant &mdash; free perk</figcaption></figure>
+      <figure class="shot"><img src="../img/zetsubou/zn-plant-clone.jpg" alt="Cloning plant &mdash; your save point" loading="lazy"><figcaption>Cloning plant &mdash; your save point</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Power and Pack-a-Punch</h2>
+
+    <h2>Turning on the power</h2>
+    <ol class="steps">
+      <li><b>Fill both generators with water.</b> One at Lab A, one at Lab B &mdash; any colour works. Once you fill the first, <b>a timer starts</b>: fill the second before it runs dry.
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-pw-gen1.jpg" alt="The Lab A generator" loading="lazy"><figcaption>The Lab A generator</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-pw-gen2.jpg" alt="The Lab B generator &mdash; beat the clock" loading="lazy"><figcaption>The Lab B generator &mdash; beat the clock</figcaption></figure></div></li>
+      <li><b>Into the bunker.</b> With both generators wet, the main bunker door opens <b>free</b>. Infected zombies wait behind it, and this guarantees a Thrasher.
+        <figure class="shot"><img src="../img/zetsubou/zn-pw-bunker.jpg" alt="The bunker door &mdash; free once the generators run" loading="lazy"><figcaption>The bunker door &mdash; free once the generators run</figcaption></figure></li>
+      <li><b>Fix the vent underwater.</b> Left door inside, go as far as you can &mdash; the lever shows one vent dead. Dive, <b>clean the web on your left</b>; the door shuts and you survive underwater until it reopens.
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-pw-lever.jpg" alt="The lever showing the dead vent" loading="lazy"><figcaption>The lever showing the dead vent</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-pw-dive.jpg" alt="Dive below" loading="lazy"><figcaption>Dive below</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-pw-web.jpg" alt="Clear the web, then hold on" loading="lazy"><figcaption>Clear the web, then hold on</figcaption></figure></div></li>
+      <li><b>Flip the switch</b> &mdash; it's right in front of you when you surface.
+        <figure class="shot"><img src="../img/zetsubou/zn-pw-switch.jpg" alt="The power switch" loading="lazy"><figcaption>The power switch</figcaption></figure></li>
+    </ol>
+
+    <h2>Freeing Pack-a-Punch</h2>
+    <ol class="steps">
+      <li><b>Part 1</b> &mdash; drops underwater when you clean the fan web during the power steps. You can grab it before power's even on.
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-pap-fan.jpg" alt="The fan" loading="lazy"><figcaption>The fan</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-pap-part1.jpg" alt="The part on the floor below" loading="lazy"><figcaption>The part on the floor below</figcaption></figure></div></li>
+      <li><b>Part 2</b> &mdash; <b>knife the cocoons</b> in the purple-water underground. They spit zombies, and eventually the part.
+        <div class="shot-grid"><figure class="shot"><img src="../img/zetsubou/zn-pap-cocoon.jpg" alt="The cocoons" loading="lazy"><figcaption>The cocoons</figcaption></figure><figure class="shot"><img src="../img/zetsubou/zn-pap-part2.jpg" alt="The drop" loading="lazy"><figcaption>The drop</figcaption></figure></div></li>
+      <li><b>Part 3</b> &mdash; a <b>valve</b> in the submerged caverns where the KT-4 flower lives. Never in the blue tunnel itself.
+        <figure class="shot"><img src="../img/zetsubou/zn-pap-valve.jpg" alt="The valve in the caverns" loading="lazy"><figcaption>The valve in the caverns</figcaption></figure></li>
+      <li><b>Drain it.</b> Back at Pack-a-Punch, work the <b>three panels around the fence</b> &mdash; the water drains and the machine is yours.
+        <figure class="shot"><img src="../img/zetsubou/zn-pap-panel.jpg" alt="One of the three panels" loading="lazy"><figcaption>One of the three panels</figcaption></figure></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Six machines, one freebie, and two perks with no machine at all.</p>
+
+    <div class="callout"><b>The fruit plant is a perk machine that grows on trees.</b> Water a seed with all three colours for a 25% chance at a fruit that grants an extra perk &mdash; and it's the only route (besides random bottles) to Deadshot or Electric Cherry here. <button class="xref" data-goto="plants">See Plants</button></div>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Five hits instead of two. Buy it before the flower dive &mdash; you'll drown without it.</td><td>Fixed machine.</td></tr>
+        <tr><td><b>Quick Revive</b></td><td>500 solo<br>1500 co-op</td><td>Self-revive solo (3 buys); faster revives in co-op.</td><td>Fixed machine.</td></tr>
+        <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload about twice as fast.</td><td>Fixed machine.</td></tr>
+        <tr><td><b>Double Tap Root Beer II</b></td><td>2000</td><td>More fire rate, double bullet damage.</td><td>Fixed machine.</td></tr>
+        <tr><td><b>Stamin-Up</b></td><td>2000</td><td>Faster, longer sprint.</td><td>Fixed machine.</td></tr>
+        <tr><td><b>Mule Kick</b></td><td>4000</td><td>A third weapon.</td><td>In the bunker underground, by the flooded cavern door.</td></tr>
+        <tr><td><b>Widow's Wine</b></td><td>FREE</td><td>Web grenades and webbed melee.</td><td>Wade into the <b>purple pool</b> after killing the giant spider. <button class="xref" data-goto="wonder">See the Masamune</button></td></tr>
+        <tr><td><b>Deadshot Daiquiri</b></td><td>&mdash;</td><td>Aim snaps to heads.</td><td><b>No machine</b> &mdash; only from a random perk bottle or a fruit plant.</td></tr>
+        <tr><td><b>Electric Cherry</b></td><td>&mdash;</td><td>Reloads zap everything around you.</td><td><b>No machine</b> &mdash; only from a random perk bottle or a fruit plant.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout"><b>Discount trick:</b> hitting a perk machine with the <b>electrified shield</b> lowers its price. <button class="xref" data-goto="build">See the shield</button></div>
+
+    <p class="blurb">Machine photos to follow &mdash; send a set and I'll add the grid like the other maps.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
