@@ -54,7 +54,7 @@ const GAMES = [
     tagline: "Chaos story & Aether finale",
     maps: [
       { id: "voyage", name: "Voyage of Despair" },
-      { id: "ix", name: "IX" },
+      { id: "ix", name: "IX", note: "The arena", built: true },
       { id: "botd", name: "Blood of the Dead" },
       { id: "classified", name: "Classified" },
       { id: "dotn", name: "Dead of the Night" },
