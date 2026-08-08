@@ -426,3 +426,17 @@ figure.shot figcaption {
   font-size: 0.9rem;
 }
 .substeps li { margin: 4px 0; }
+
+/* ---- Gorod Krovi valve solver ---- */
+.gv-form { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+.gv-label { font-size: 0.9rem; color: var(--text-dim); display: flex; flex-direction: column; gap: 6px; }
+.gv-label select {
+  background: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--map-accent);
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+  font-size: 1rem;
+}
+.gv-out { margin-top: 6px; }

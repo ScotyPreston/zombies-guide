@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#120d0d">
+<title>Gorod Krovi &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Gorod Krovi: burning Stalingrad — ember red + dragon teal */
+  :root {
+    --map-bg: #120d0d;
+    --map-bg2: #1d1414;
+    --bg: #120d0d;
+    --bg-card: #1d1414;
+    --bg-card-hover: #271b1b;
+    --line: #3a2828;
+    --map-accent: #f0764a;
+    --map-accent2: #6fd8c8;
+    --map-glow: rgba(240, 118, 74, 0.32);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="gorod">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo3">&#8249; Black Ops 3</a></nav>
+
+  <header class="map-header">
+    <h1>Gorod Krovi</h1>
+    <div class="sub">Black Ops 3 &middot; Stalingrad, dragons overhead</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="valves">Valve Solver</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b></li>
+        <li><b>Power + S.O.P.H.I.A. activated</b> &mdash; flip the switch in Dragon Command, then <b>press the green button in front of S.O.P.H.I.A.</b> (easy to miss, required for the quest). <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li>The <b>Gauntlet of Siegfried</b> and a <b>Dragon Strike controller</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+        <li>Recommended: the <b>Fafnir shield</b>, the upgraded Dragon Strike, and a <b>PaP'd NX ShadowClaw</b> for instant revives.</li>
+      </ul>
+    </div>
+    <p class="blurb">"Love and War" &mdash; the crew has to free (and then fight) Nikolai 1.0, stuck in a powerless mech.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Collect the 6 trophies.</b> They can be done in any order, any time. <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-q-troph1.jpg" alt="1 &mdash; in the sculpture's hand on the building facing the power, at Dragon Command. Shoot it down" loading="lazy"><figcaption>1 &mdash; in the sculpture's hand on the building facing the power, at Dragon Command. Shoot it down</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-troph2.jpg" alt="2 &mdash; ride the sewers out of Pack-a-Punch and shoot the red light on the tunnel roof mid-flight" loading="lazy"><figcaption>2 &mdash; ride the sewers out of Pack-a-Punch and shoot the red light on the tunnel roof mid-flight</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-troph2b.jpg" alt="...then collect it from the toilets back at Pack-a-Punch" loading="lazy"><figcaption>...then collect it from the toilets back at Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-troph3.jpg" alt="3 &mdash; smash the safe by the shield bench in the Operations Bunker with the Gauntlet" loading="lazy"><figcaption>3 &mdash; smash the safe by the shield bench in the Operations Bunker with the Gauntlet</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-troph4.jpg" alt="4 &mdash; Dragon Strike the water-filled hole outside the Supply Depot" loading="lazy"><figcaption>4 &mdash; Dragon Strike the water-filled hole outside the Supply Depot</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-troph5.jpg" alt="5 &mdash; fire the giant robot's laser in the Supply Depot; the trophy is in the scorch hole" loading="lazy"><figcaption>5 &mdash; fire the giant robot's laser in the Supply Depot; the trophy is in the scorch hole</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-troph6.jpg" alt="6 &mdash; fire the Fafnir shield into the wall pipe near Double Tap in the Tank Factory" loading="lazy"><figcaption>6 &mdash; fire the Fafnir shield into the wall pipe near Double Tap in the Tank Factory</figcaption></figure></div></li>
+      <li data-num="2"><b>Start the generator.</b> In the Pack-a-Punch area by the egg incubator: get a <b>Valkyrie drone destroyed right next to it</b> (or lure it into shooting the generator), then interact. <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-q-gen.jpg" alt="The generator by the incubator" loading="lazy"><figcaption>The generator by the incubator</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-q-gen2.jpg" alt="Air flowing = it's running" loading="lazy"><figcaption>Air flowing = it's running</figcaption></figure></div><div class="callout"><b>It runs for 5 minutes.</b> You can restart it with one press &mdash; but only once per round. Read the valve step before starting it.</div></li>
+      <li data-num="3"><b>Solve the valves.</b> Six valves around the map, each settable to 1, 2 or 3. One has a <b>green light</b> (the start), one holds a <b>code cylinder</b> (the finish). Set the other valves so the air flows from green to cylinder. <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-v-dragon.jpg" alt="Valve &mdash; Dragon Command, upstairs on the right" loading="lazy"><figcaption>Valve &mdash; Dragon Command, upstairs on the right</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-armory.jpg" alt="Valve &mdash; Armory, by the 500-point bridge" loading="lazy"><figcaption>Valve &mdash; Armory, by the 500-point bridge</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-supply.jpg" alt="Valve &mdash; Supply Depot, under the stairs by the box spot" loading="lazy"><figcaption>Valve &mdash; Supply Depot, under the stairs by the box spot</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-infirm.jpg" alt="Valve &mdash; Infirmary, by the beds on the way down" loading="lazy"><figcaption>Valve &mdash; Infirmary, by the beds on the way down</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-tank.jpg" alt="Valve &mdash; Tank Factory, facing the metal stairs" loading="lazy"><figcaption>Valve &mdash; Tank Factory, facing the metal stairs</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-dept.jpg" alt="Valve &mdash; Department Store, top floor" loading="lazy"><figcaption>Valve &mdash; Department Store, top floor</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-green.jpg" alt="The green light &mdash; your starting valve" loading="lazy"><figcaption>The green light &mdash; your starting valve</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-v-cyl.jpg" alt="The cylinder &mdash; your finish line" loading="lazy"><figcaption>The cylinder &mdash; your finish line</figcaption></figure></div><div class="callout"><b>Don't work it out by hand</b> &mdash; the <button class="xref" data-goto="valves">Valve Solver tab</button> gives you the exact settings for your game.</div><figure class="shot"><img src="../img/gorod/gk-v-done.jpg" alt="Settings right &rarr; take the cylinder from the last valve" loading="lazy"><figcaption>Settings right &rarr; take the cylinder from the last valve</figcaption></figure></li>
+      <li data-num="4"><b>KRONOS.</b> Put the cylinder into S.O.P.H.I.A.'s machine. Six lettered cylinders sit on its left &mdash; shooting one turns it to the next letter. Spell <b>K R O N O S</b>, then interact with S.O.P.H.I.A. <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-s-letters.jpg" alt="The six letter cylinders &mdash; shoot to rotate" loading="lazy"><figcaption>The six letter cylinders &mdash; shoot to rotate</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-s-kronos.jpg" alt="KRONOS entered" loading="lazy"><figcaption>KRONOS entered</figcaption></figure></div></li>
+      <li data-num="5"><b>Place the trophies &mdash; then beat the challenges.</b> The six trophies go on the desk under the green screen in front of S.O.P.H.I.A. Using the console starts <b>one random challenge at a time</b> from the list below &mdash; timer running, zombies spawning endlessly. Read them before you start: <figure class="shot"><img src="../img/gorod/gk-s-desk.jpg" alt="The trophies on the console desk" loading="lazy"><figcaption>The trophies on the console desk</figcaption></figure><ol class="substeps"><li><b>Bomb defusal</b> &mdash; defuse 6 bombs (3 solo) in 2 minutes. The order flashes ONCE on the control screen &mdash; slowly, after the fast random flashes. Split the memorising between players.<div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-c-screen.jpg" alt="The screen shows the order &mdash; you get ONE look" loading="lazy"><figcaption>The screen shows the order &mdash; you get ONE look</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-bomb1.jpg" alt="Department Store &mdash; under the stairs" loading="lazy"><figcaption>Department Store &mdash; under the stairs</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-bomb2.jpg" alt="Between Infirmary and Operations Bunker, on a pillar" loading="lazy"><figcaption>Between Infirmary and Operations Bunker, on a pillar</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-bomb3.jpg" alt="Dragon Command, upper floor" loading="lazy"><figcaption>Dragon Command, upper floor</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-bomb4.jpg" alt="Supply Depot, next to the city map" loading="lazy"><figcaption>Supply Depot, next to the city map</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-bomb5.jpg" alt="Tank Factory, by the Wunderfizz and Gobblegum machine" loading="lazy"><figcaption>Tank Factory, by the Wunderfizz and Gobblegum machine</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-bomb6.jpg" alt="Armory, on the wall by the downstairs Wunderfizz" loading="lazy"><figcaption>Armory, on the wall by the downstairs Wunderfizz</figcaption></figure></div></li><li><b>Gersh's soul</b> &mdash; a yellow orb wanders the map. Shoot it with a <b>Pack-a-Punched gun</b> until he speaks, follow, repeat, all the way to Dragon Command &mdash; then walk up to him.<div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-c-orb.jpg" alt="The orb &mdash; PaP bullets only" loading="lazy"><figcaption>The orb &mdash; PaP bullets only</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-orb3.jpg" alt="Trapped at Dragon Command" loading="lazy"><figcaption>Trapped at Dragon Command</figcaption></figure></div></li><li><b>Friendly Mangler</b> &mdash; a green-eyed Mangler follows one player. Lead him to the corner right of the trophies in Dragon Command. Shooting his arm off speeds him up &mdash; just don't kill him.<figure class="shot"><img src="../img/gorod/gk-c-mangler2.jpg" alt="Walk him home to Dragon Command" loading="lazy"><figcaption>Walk him home to Dragon Command</figcaption></figure></li><li><b>Friendly Valkyrie</b> &mdash; same, but the drone only moves while a player is near it.<figure class="shot"><img src="../img/gorod/gk-c-valk2.jpg" alt="Escort the drone to Dragon Command" loading="lazy"><figcaption>Escort the drone to Dragon Command</figcaption></figure></li><li><b>Groph pod</b> &mdash; a pod lands outside the map at a dragon platform. Defend it, then <b>send the Gauntlet's dragon to fetch the part</b>, and give it to S.O.P.H.I.A.<div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-c-pod.jpg" alt="The green beam marks the pod" loading="lazy"><figcaption>The green beam marks the pod</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-pod2.jpg" alt="The whelp fetches what you can't reach" loading="lazy"><figcaption>The whelp fetches what you can't reach</figcaption></figure></div></li></ol></li>
+      <li data-num="6"><b>The data card.</b> Always the last challenge: take the card from the console, carry it to the <b>red computer</b> in the Pack-a-Punch area, and survive the <b>2-minute Mangler lockdown</b> while it downloads. Bring the card back to S.O.P.H.I.A. and she hands over the <b>power core</b>. <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-c-card.jpg" alt="The card at the console" loading="lazy"><figcaption>The card at the console</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-red.jpg" alt="The red computer at Pack-a-Punch" loading="lazy"><figcaption>The red computer at Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-lockdown.jpg" alt="Manglers for two minutes" loading="lazy"><figcaption>Manglers for two minutes</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-c-core.jpg" alt="The power core" loading="lazy"><figcaption>The power core</figcaption></figure></div></li>
+      <li data-num="7"><b>Deliver the core.</b> Back at Belinski Square, <b>send the Gauntlet's dragon to Nikolai 1.0</b>, stuck in his mech nearby. <figure class="shot"><img src="../img/gorod/gk-c-nikolai2.jpg" alt="The whelp delivers the core to Nikolai" loading="lazy"><figcaption>The whelp delivers the core to Nikolai</figcaption></figure></li>
+      <li data-num="8"><b>The dragon fight.</b><div class="req-box"><h3>No turning back from here</h3><ul><li>PaP'd guns, full perks, fresh shields, gums.</li><li><b>A PaP'd NX ShadowClaw revives downed players instantly with one shot</b> &mdash; bring one.</li><li>The <b>GKZ-45 Mk3's Ray Gun Mk3</b> does massive boss damage.</li></ul></div>Everyone stands on the grid S.O.P.H.I.A. sat on &mdash; you're flung into a new arena. Press the middle button to start. <b>Phase 1: you fight a dragon alongside Nikolai.</b> Survive the zombie flood until Nikolai's mech shoots the dragon &mdash; a <b>weak spot glows orange</b> (wing, belly, neck). Dump everything into it. The arena edges stay clear of dragon fire &mdash; hug them. <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-b-grid.jpg" alt="Everyone on the grid" loading="lazy"><figcaption>Everyone on the grid</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-button.jpg" alt="The start button in the middle" loading="lazy"><figcaption>The start button in the middle</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-dragon1.jpg" alt="Phase 1 &mdash; the dragon" loading="lazy"><figcaption>Phase 1 &mdash; the dragon</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-weak2.jpg" alt="Shoot the orange wound" loading="lazy"><figcaption>Shoot the orange wound</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-corners.jpg" alt="The edges stay out of the fire" loading="lazy"><figcaption>The edges stay out of the fire</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-slain.jpg" alt="Dragon down" loading="lazy"><figcaption>Dragon down</figcaption></figure></div></li>
+      <li data-num="9"><b>Nikolai vs Nikolai.</b> After the cutscene, the mech turns on you: chain gun, electric harpoon, RAPS drones. Shoot the <b>glowing yellow lights</b> on the robot &mdash; the last one is under the pilot seat. <div class="callout"><b>The chain gun will shred you in seconds</b> &mdash; never stand in its line.</div><div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-b-mech.jpg" alt="The mech fight" loading="lazy"><figcaption>The mech fight</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-weak.jpg" alt="Shoot the yellow lights" loading="lazy"><figcaption>Shoot the yellow lights</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-b-end.jpg" alt="Done &mdash; enjoy Dr. Monty" loading="lazy"><figcaption>Done &mdash; enjoy Dr. Monty</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ VALVE SOLVER ============ -->
+  <section class="tab-panel" id="tab-valves">
+    <h2>Air valve solver</h2>
+    <p class="blurb">Check your six valves: one has a <b>green light</b> (the start of the circuit), one has a <b>code cylinder stuck in it</b> (the end). Pick both below and set the other valves to the numbers shown &mdash; then take the cylinder.</p>
+    <div id="valve-solver"></div>
+    <div class="callout">Wrong readout? A valve only shows its cylinder or green light when the <b>generator step</b> is active &mdash; and the generator runs 5 minutes at a time. <button class="xref" data-goto="main">See the main quest</button></div>
+    <figure class="shot"><img src="../img/gorod/gk-v-example.jpg" alt="How the valves connect" loading="lazy"><figcaption>How each valve's 1/2/3 settings route the air &mdash; for the curious. The solver above does this for you.</figcaption></figure>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+    <p class="blurb">Trials, monkeys, dolls, songs and speed rewards.</p>
+
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-ga-tomb.jpg" alt="" style="object-fit:cover">
+        <span><b>Grave trials</b><br><small>3 tiers per player + the egg quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Four graves near spawn, one per player &mdash; yours has the <b>green torch</b>. Three challenge tiers plus the egg quest (bottom), which is the Gauntlet. <button class="xref" data-goto="wonder">See the Gauntlet</button></p>
+        <table class="data-table">
+          <thead><tr><th>Tier</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td><b>Top</b></td><td>Max Ammo</td></tr>
+            <tr><td><b>Left</b></td><td>A Pack-a-Punched weapon (MX Garand, PPSh, Dingo, NX ShadowClaw...)</td></tr>
+            <tr><td><b>Right</b></td><td><b>An extra perk slot + a free random perk</b></td></tr>
+          </tbody>
+        </table>
+        <p class="blurb"><b>Tier 1 pool:</b> destroy 5 Mangler helmets &middot; open 3 Groph pods still in green condition &middot; ride the dragon from all 3 platforms &middot; take dragon fire and survive (no shield!) &middot; 10 napalm-zombie headshots.</p>
+        <p class="blurb"><b>Tier 2 pool:</b> 10 electrified-zombie headshots &middot; 30 shield kills &middot; absorb fire 45s (shield up, takes several dragon passes) &middot; 8 kills at once with the elevator &middot; 10 kills with the Giant's finger trap within 3s of sliding under.</p>
+        <p class="blurb"><b>Tier 3 pool:</b> survive 4 rounds in the Hatchery &middot; 100 Dragon Strike kills &middot; 3 simultaneous kills on every Flinger &middot; shoot all arms off 6 Valkyries &middot; shoot the camera off 6 Valkyries.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-dm-wub.jpg" alt="" style="object-fit:cover">
+        <span><b>Dubstep monkeys</b><br><small>Upgraded Monkey Bombs</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Each player does this alone. Wub wub.</p>
+        <ol class="steps">
+          <li><b>Pick up your flowerpot</b> &mdash; each player sees exactly one:
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-dm-pot1.jpg" alt="Dragon Command 1st floor, by the Ace of Spades card" loading="lazy"><figcaption>Dragon Command 1st floor, by the Ace of Spades card</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-pot2.jpg" alt="Supply Depot, past the crashed wagons" loading="lazy"><figcaption>Supply Depot, past the crashed wagons</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-pot3.jpg" alt="Supply Depot, by the bomb and the vodka bottle" loading="lazy"><figcaption>Supply Depot, by the bomb and the vodka bottle</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-pot4.jpg" alt="Department Store, beside the L-CAR 9" loading="lazy"><figcaption>Department Store, beside the L-CAR 9</figcaption></figure></div></li>
+          <li><b>Light your candle with the Fafnir shield</b>, then take it:
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-dm-cand1.jpg" alt="Department Store shelf" loading="lazy"><figcaption>Department Store shelf</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-cand2.jpg" alt="Supply Depot, under the flowerpot desk" loading="lazy"><figcaption>Supply Depot, under the flowerpot desk</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-cand3.jpg" alt="Tank Factory metal table" loading="lazy"><figcaption>Tank Factory metal table</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-cand4.jpg" alt="Bed by the Infirmary stairs" loading="lazy"><figcaption>Bed by the Infirmary stairs</figcaption></figure></div></li>
+          <li><b>40&ndash;50 Monkey Bomb kills</b>, then grab the blue flash bonus that drops.
+            <figure class="shot"><img src="../img/gorod/gk-dm-bonus.jpg" alt="The blue flash drop" loading="lazy"><figcaption>The blue flash drop</figcaption></figure></li>
+          <li><b>Throw a monkey on your tomb</b>, watch the green torch, press use when prompted.
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-dm-tomb.jpg" alt="Monkey on the tomb" loading="lazy"><figcaption>Monkey on the tomb</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-dm-wub.jpg" alt="Dubstep monkeys acquired" loading="lazy"><figcaption>Dubstep monkeys acquired</figcaption></figure></div></li>
+        </ol>
+        <div class="callout"><b>Lazy route:</b> chew the <b>Crate Power</b> gobblegum and pull Monkey Bombs from the box &mdash; they come out upgraded.</div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-c-screen.jpg" alt="" style="object-fit:cover">
+        <span><b>Samantha's Sorrow</b><br><small>Hide and seek with dolls</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Reward: a Max Ammo and the song. Throw <b>Monkey Bombs into three dragon-fire zones</b>, then pick up the <b>doll</b> that appears in the corner between the spawn fountain and the graveyard. Now <b>shoot 5 dolls</b> hidden around the map before the timer &mdash; they sing to help you find them. Fail, and Samantha laughs; restart at the grave.</p>
+        <p class="blurb"><b>Known spots:</b> the wooden pole by the graveyard &middot; under the Department Store's second staircase &middot; Infirmary table by the box and Stamin-Up &middot; below the Infirmary on the broken-floor table &middot; Dragon Command's unbroken pillar &middot; the tank's cannon &middot; the metal platform left of Dragon Command's entrance &middot; behind a window outside Supply Depot &middot; above the yellow console inside Supply Depot &middot; the unreachable train wagon &middot; the first lamp outside Armory/Supply &middot; the sewer pipe outside Tank Factory &middot; a beam in the Tank Factory &middot; outside the window near Mule Kick.</p>
+        <p class="blurb">After 5, go back and interact with the doll again to finish.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-song1-a.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; "Dead Ended"</b><br><small>3 vodka bottles</small></span></summary>
+      <div class="acc-body">
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-song1-a.jpg" alt="Department Store, past the first door from spawn" loading="lazy"><figcaption>Department Store, past the first door from spawn</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-song1-b.jpg" alt="The courtyard after Jugger-Nog, on the water" loading="lazy"><figcaption>The courtyard after Jugger-Nog, on the water</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-song1-c.jpg" alt="Supply Depot, shelf facing the entrance" loading="lazy"><figcaption>Supply Depot, shelf facing the entrance</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-song2-a.jpg" alt="" style="object-fit:cover">
+        <span><b>Secret song &mdash; "Ace of Spades"</b><br><small>3 cards</small></span></summary>
+      <div class="acc-body">
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-song2-a.jpg" alt="Tank Factory, blackboard beside Double Tap" loading="lazy"><figcaption>Tank Factory, blackboard beside Double Tap</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-song2-b.jpg" alt="Dragon Command 1st floor desk" loading="lazy"><figcaption>Dragon Command 1st floor desk</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-song2-c.jpg" alt="The Hatchery, desk right of Pack-a-Punch" loading="lazy"><figcaption>The Hatchery, desk right of Pack-a-Punch</figcaption></figure></div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-tt-sword.jpg" alt="" style="object-fit:cover">
+        <span><b>Time trials</b><br><small>4 secret melee weapons</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">The round timer isn't decoration. Beat these times and collect the weapon in the Operations Bunker by the sign &mdash; it <b>replaces a gun</b>, not your knife. Each trial is independent.</p>
+        <table class="data-table">
+          <thead><tr><th>Weapon</th><th>Requirement</th><th>One-shots until</th></tr></thead>
+          <tbody>
+            <tr><td><b>Wrench</b></td><td>Finish round 5 under 5:00</td><td>Round 10</td></tr>
+            <tr><td><b>Malice</b></td><td>Finish round 10 under 13:00</td><td>Round 15</td></tr>
+            <tr><td><b>Slash N' Burn</b></td><td>Finish round 15 under 24:00</td><td>Round 25</td></tr>
+            <tr><td><b>Fury's Song</b></td><td>Finish round 20 under 32:00</td><td>Round 35</td></tr>
+          </tbody>
+        </table>
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-tt-sign.jpg" alt="The pickup spot in the Operations Bunker" loading="lazy"><figcaption>The pickup spot in the Operations Bunker</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-tt-sword.jpg" alt="Fury's Song &mdash; the big one" loading="lazy"><figcaption>Fury's Song &mdash; the big one</figcaption></figure></div>
+        <div class="callout">Keep doors shut early and use gums to PaP wall guns &mdash; the first two trials are all about not wasting seconds.</div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-b-end.jpg" alt="" style="object-fit:cover">
+        <span><b>The speed run reward</b><br><small>Beat the quest in under 1h30</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Finishing "Love and War" gives all 9 perks. Finish it in <b>under 1 hour 30</b> and those perks become <b>permanent</b> &mdash; you keep them through downs. Solo you lose only Quick Revive, and your next Wunderfizz spin is guaranteed to return it.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">The GKZ-45 Mk3 comes from the Mystery Box &mdash; its Ray Gun Mk3 mode is the best boss-killer on the map. These two are the ones you earn:</p>
+
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-wpn-gauntlet.jpg" alt="" style="object-fit:cover">
+        <span><b>Gauntlet of Siegfried</b><br><small>Raise a baby dragon &mdash; needed for the quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">A dragon whelp on your arm: flamethrower up close, or send him out to hunt &mdash; and several quest steps need him as your <b>fetch-dragon</b>. Track progress on <b>your grave</b> near spawn (green torch = yours).</p>
+        <figure class="shot"><img src="../img/gorod/gk-ga-tomb.jpg" alt="Your grave tracks the egg quest" loading="lazy"><figcaption>Your grave tracks the egg quest</figcaption></figure>
+        <ol class="steps">
+          <li><b>Get the egg.</b> In the Pack-a-Punch area by the sewer exit, look up: a big green egg. Shoot it down, grab it.
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-ga-egg.jpg" alt="The egg above the sewer exit" loading="lazy"><figcaption>The egg above the sewer exit</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ga-egg2.jpg" alt="Down it comes" loading="lazy"><figcaption>Down it comes</figcaption></figure></div></li>
+          <li><b>Warm it.</b> Put it on a <b>nest</b> (infirmary, armory, in front of the power building, or by the spawn graves) and get it torched &mdash; wait for a dragon strafing run, or hit it with a Dragon Strike.
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-ga-nest.jpg" alt="The egg on a nest" loading="lazy"><figcaption>The egg on a nest</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ga-nest2.jpg" alt="Warmed by dragon fire" loading="lazy"><figcaption>Warmed by dragon fire</figcaption></figure></div>
+            <div class="callout">Then <b>stay away a full round</b> so it cools &mdash; hang around and the dragon may roast it again.</div></li>
+          <li><b>Kill ~15 napalm zombies</b> &mdash; burning zombies in any dragon-fire zone. No fanfare when it's done; check the ring around the egg icon (Tab).
+            <figure class="shot"><img src="../img/gorod/gk-ga-progress.jpg" alt="The ring around the egg = progress" loading="lazy"><figcaption>The ring around the egg = progress</figcaption></figure></li>
+          <li><b>Collateral kills</b> &mdash; kill multiple zombies with single bullets a few times. A Drakon or SVG works; an Insta-Kill counts too.</li>
+          <li><b>~15 melee kills</b> &mdash; shield, Bowie or plain knife.</li>
+          <li><b>Incubate.</b> Back at Pack-a-Punch, place the egg in the <b>incubator</b> underground &mdash; lockdown, kill zombies to charge it, finish the round, take the egg, and <b>claim the Gauntlet at your grave</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-ga-incub.jpg" alt="The incubator" loading="lazy"><figcaption>The incubator</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ga-reward.jpg" alt="Claim it at your grave" loading="lazy"><figcaption>Claim it at your grave</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-wpn-strike.jpg" alt="" style="object-fit:cover">
+        <span><b>Dragon Strike controller</b><br><small>Call in dragon fire &mdash; needed for the quest</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">An airstrike that attracts every zombie to the target before the fire lands &mdash; Origins' napalm strike with wings.</p>
+        <ol class="steps">
+          <li><b>Everyone to the console.</b> In the Pack-a-Punch house, all players interact with the upstairs console <b>within 10 seconds</b>.
+            <figure class="shot"><img src="../img/gorod/gk-ds-console.jpg" alt="The console upstairs at Pack-a-Punch" loading="lazy"><figcaption>The console upstairs at Pack-a-Punch</figcaption></figure></li>
+          <li><b>Survive 4 lockdown waves</b> of zombies, Manglers and Valkyries. First three waves open one window at a time; the last opens everything.
+            <figure class="shot"><img src="../img/gorod/gk-ds-lockdown.jpg" alt="The lockdown &mdash; camp the upstairs corner" loading="lazy"><figcaption>The lockdown &mdash; camp the upstairs corner</figcaption></figure><div class="callout">With a Ray Gun Mk3, camp upstairs in the corner or by the Gobblegum machine &mdash; it trivialises this.</div></li>
+          <li><b>Take the controller</b> from the console.
+            <figure class="shot"><img src="../img/gorod/gk-ds-pickup.jpg" alt="The Dragon Strike controller" loading="lazy"><figcaption>The Dragon Strike controller</figcaption></figure></li>
+        </ol>
+        <h3>Upgrading it</h3>
+        <p class="blurb">More damage and <b>2 charges</b> (Max Ammo / new round refills one).</p>
+        <ol class="steps">
+          <li><b>40 Dragon Strike kills</b> &mdash; a loud roar confirms.</li>
+          <li><b>Hit the flags outside the map</b> with strikes &mdash; as many flags as there are players (1 solo).
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-ds-flag1.jpg" alt="Flag &mdash; spawn, near Quick Revive" loading="lazy"><figcaption>Flag &mdash; spawn, near Quick Revive</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ds-flag2.jpg" alt="Flag &mdash; Tank Factory" loading="lazy"><figcaption>Flag &mdash; Tank Factory</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ds-flag3.jpg" alt="Flag &mdash; Dragon Command" loading="lazy"><figcaption>Flag &mdash; Dragon Command</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ds-flag4.jpg" alt="Flag &mdash; Supply Depot" loading="lazy"><figcaption>Flag &mdash; Supply Depot</figcaption></figure></div></li>
+          <li><b>Run the lockdown again</b> &mdash; but this time <b>use a Dragon Strike during every wave</b> or you start over. Then collect the upgraded controller.
+            <figure class="shot"><img src="../img/gorod/gk-ds-upgraded.jpg" alt="The upgraded controller" loading="lazy"><figcaption>The upgraded controller</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables &amp; gear</h2>
+
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-wpn-fafnir.jpg" alt="" style="object-fit:cover">
+        <span><b>Fafnir shield</b><br><small>3 parts &mdash; and it breathes fire</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Blocks from behind, <b>shoots green dragon fire</b> instead of a boost &mdash; and holding it up <b>negates all dragon-fire damage</b>.</p>
+        <ol class="steps">
+          <li><b>Part 1</b> &mdash; between the Department Store and Operations Bunker:
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-sh-p1a.jpg" alt="On a chair beside Jugger-Nog" loading="lazy"><figcaption>On a chair beside Jugger-Nog</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-sh-p1b.jpg" alt="On a truck door, down the stairs past Jugger-Nog" loading="lazy"><figcaption>On a truck door, down the stairs past Jugger-Nog</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-sh-p1c.jpg" alt="On the beds left of the bunker entrance" loading="lazy"><figcaption>On the beds left of the bunker entrance</figcaption></figure></div></li>
+          <li><b>Part 2</b> &mdash; between the Operations Bunker and Infirmary:
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-sh-p2a.jpg" alt="On the ground, right side of the climb after the bunker" loading="lazy"><figcaption>On the ground, right side of the climb after the bunker</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-sh-p2b.jpg" alt="On the beds facing you upstairs" loading="lazy"><figcaption>On the beds facing you upstairs</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-sh-p2c.jpg" alt="On the wall near Stamin-Up, upstairs" loading="lazy"><figcaption>On the wall near Stamin-Up, upstairs</figcaption></figure></div></li>
+          <li><b>Part 3</b> &mdash; around the Armory:
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-sh-p3a.jpg" alt="On the wall by the downstairs Wunderfizz spot" loading="lazy"><figcaption>On the wall by the downstairs Wunderfizz spot</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-sh-p3b.jpg" alt="On the wall right of the crashed metro entrance" loading="lazy"><figcaption>On the wall right of the crashed metro entrance</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-sh-p3c.jpg" alt="On the right wall upstairs" loading="lazy"><figcaption>On the right wall upstairs</figcaption></figure></div></li>
+          <li><b>Build it</b> at the table in the Operations Bunker underground.
+            <figure class="shot"><img src="../img/gorod/gk-sh-table.jpg" alt="The crafting table" loading="lazy"><figcaption>The crafting table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-wpn-tiamat.jpg" alt="" style="object-fit:cover">
+        <span><b>Tiamat's Maw</b><br><small>The upgraded shield &mdash; red fire</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Tougher, and the fire turns <b>red and stronger</b>. Once unlocked, <b>every shield from the table comes upgraded</b>.</p>
+        <ol class="steps">
+          <li><b>50 kills</b> with the shield's fire blast or bash &mdash; a sound confirms.</li>
+          <li><b>Tank a dragon's flame</b> &mdash; shield up, stand in the fire until the sound plays.</li>
+          <li><b>Fire-blast the 3 purple symbols</b>, one at each dragon platform:
+            <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-tm-sym1.jpg" alt="Dragon Command &mdash; on the building to the left of the platform" loading="lazy"><figcaption>Dragon Command &mdash; on the building to the left of the platform</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-tm-sym2.jpg" alt="Supply Depot &mdash; up on the roof" loading="lazy"><figcaption>Supply Depot &mdash; up on the roof</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-tm-sym3.jpg" alt="Tank Factory &mdash; on the giant robot's shoulder" loading="lazy"><figcaption>Tank Factory &mdash; on the giant robot's shoulder</figcaption></figure></div></li>
+          <li><b>Feed the dead dragon.</b> By the spawn graves lies a dragon corpse &mdash; put your shield in its belly, wait, take it back out. Upgraded.
+            <figure class="shot"><img src="../img/gorod/gk-tm-dragon.jpg" alt="The shield goes in the belly" loading="lazy"><figcaption>The shield goes in the belly</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/gorod/gk-ge-wings.jpg" alt="" style="object-fit:cover">
+        <span><b>Special gear &mdash; pick one</b><br><small>Wings, Mangler helmet or Valkyrie helmet</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Three unlockable wearables &mdash; you can only wear <b>one</b> at a time. All three live on mannequins in the Department Store once unlocked.</p>
+        <table class="data-table">
+          <thead><tr><th>Gear</th><th>What it gives</th><th>How to unlock</th></tr></thead>
+          <tbody>
+            <tr><td><b>Dragon Wings</b></td><td>&minus;30% fire and explosive damage, and <b>free instant travel to the Hatchery</b></td><td>With the Gauntlet done, use the little wings at all three dragon platforms to fly to the Hatchery. Then claim on the top-floor mannequin.</td></tr>
+            <tr><td><b>Mangler helmet</b></td><td>+30% damage to Manglers, &minus;50% from them</td><td>Shoot off 5 Mangler helmets and 5 arm cannons.</td></tr>
+            <tr><td><b>Valkyrie helmet</b></td><td>+30% to drones, &minus;50% from them and from electricity</td><td>Destroy 6 drone cameras (the red light) and all 3 tentacles on 6 drones.</td></tr>
+          </tbody>
+        </table>
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-ge-wings2.jpg" alt="Dragon Wings &mdash; top-floor mannequin" loading="lazy"><figcaption>Dragon Wings &mdash; top-floor mannequin</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ge-mangler.jpg" alt="Mangler helmet &mdash; first floor, left of the spawn stairs" loading="lazy"><figcaption>Mangler helmet &mdash; first floor, left of the spawn stairs</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-ge-valk.jpg" alt="Valkyrie helmet &mdash; by Jugger-Nog, on the German-jacket mannequin" loading="lazy"><figcaption>Valkyrie helmet &mdash; by Jugger-Nog, on the German-jacket mannequin</figcaption></figure></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Power and Pack-a-Punch</h2>
+    <ol class="steps">
+      <li><b>Turn on the power.</b> The switch is in the <b>Dragon Command room</b> &mdash; it also wakes S.O.P.H.I.A.
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-pap-switch.jpg" alt="The power switch in Dragon Command" loading="lazy"><figcaption>The power switch in Dragon Command</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-sophia.jpg" alt="S.O.P.H.I.A. &mdash; hit her green button too if you're doing the quest" loading="lazy"><figcaption>S.O.P.H.I.A. &mdash; hit her green button too if you're doing the quest</figcaption></figure></div></li>
+      <li><b>Collect code cylinders.</b> Zombies drop them (like seeds on Zetsubou) in <b>blue, yellow and red</b>. Each colour has its own decoder: <b>blue = Dragon Command</b>, <b>yellow = Supply Depot</b>, <b>red = Tank Factory</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-pap-cylinder.jpg" alt="A dropped code cylinder" loading="lazy"><figcaption>A dropped code cylinder</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-mach-blue.jpg" alt="Blue decoder &mdash; Dragon Command" loading="lazy"><figcaption>Blue decoder &mdash; Dragon Command</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-mach-yel.jpg" alt="Yellow decoder &mdash; Supply Depot" loading="lazy"><figcaption>Yellow decoder &mdash; Supply Depot</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-mach-red.jpg" alt="Red decoder &mdash; Tank Factory" loading="lazy"><figcaption>Red decoder &mdash; Tank Factory</figcaption></figure></div></li>
+      <li><b>Chase the Groph pods.</b> Each decoded cylinder launches a pod &mdash; find it under the <b>green beam in the sky</b>, kill ~20 zombies around it, and take the <b>network circuit</b> inside. You need <b>three</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-pap-ray.jpg" alt="Follow the green beam" loading="lazy"><figcaption>Follow the green beam</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-circuit.jpg" alt="The network circuit inside the pod" loading="lazy"><figcaption>The network circuit inside the pod</figcaption></figure></div></li>
+      <li><b>Install the circuits</b> in the bunker underground, then <b>pay 500 to ride a dragon</b> from any of the three platforms &mdash; it flies you to the Pack-a-Punch area.
+        <div class="shot-grid"><figure class="shot"><img src="../img/gorod/gk-pap-place.jpg" alt="The circuits go in the bunker underground" loading="lazy"><figcaption>The circuits go in the bunker underground</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-network.jpg" alt="A dragon call station" loading="lazy"><figcaption>A dragon call station</figcaption></figure><figure class="shot"><img src="../img/gorod/gk-pap-machine.jpg" alt="Pack-a-Punch in the Hatchery" loading="lazy"><figcaption>Pack-a-Punch in the Hatchery</figcaption></figure></div>
+        <div class="callout"><b>Getting back:</b> jump down the sewers below the Pack-a-Punch house.</div></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Six machines plus Der Wunderfizz &mdash; and three perks that only come out of the Wunderfizz.</p>
+    <table class="data-table">
+      <thead><tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Five hits instead of two.</td><td>Department Store.</td></tr>
+        <tr><td><b>Quick Revive</b></td><td>500 solo<br>1500 co-op</td><td>Self-revive solo; faster revives in co-op.</td><td>Spawn &mdash; Belinski Square.</td></tr>
+        <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload about twice as fast.</td><td>Infirmary side of the map.</td></tr>
+        <tr><td><b>Double Tap Root Beer II</b></td><td>2000</td><td>More fire rate, double bullet damage.</td><td>Tank Factory.</td></tr>
+        <tr><td><b>Stamin-Up</b></td><td>2000</td><td>Faster, longer sprint.</td><td>Near the Infirmary.</td></tr>
+        <tr><td><b>Mule Kick</b></td><td>4000</td><td>A third weapon.</td><td>Operations Bunker.</td></tr>
+        <tr><td><b>Der Wunderfizz</b></td><td>1500 a spin</td><td>Random perk bottle &mdash; and the <b>only</b> source of Deadshot Daiquiri, Electric Cherry and Widow's Wine here.</td><td>Orb spots around the map (Armory, Tank Factory and more).</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><b>Permaperks trick:</b> finish the main quest in <b>under 1h30</b> and the 9-perk reward survives going down. Solo you lose only Quick Revive &mdash; and the first Wunderfizz spin after gives it right back. <button class="xref" data-goto="side">See Side Easter Eggs</button></div>
+    <p class="blurb">Machine photos to follow &mdash; send a set and I'll add the grid like the other maps.</p>
+  </section>
+
+</div>
+
+<script src="../js/valves.js"></script>
+<script>
+  GorodValves(document.getElementById("valve-solver"));
+</script>
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
