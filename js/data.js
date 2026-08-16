@@ -26,7 +26,7 @@ const GAMES = [
       { id: "tranzit", name: "TranZit", note: "2 main EEs: Richtofen / Maxis", built: true },
       { id: "dierise", name: "Die Rise", note: "2 main EEs: Richtofen / Maxis" },
       { id: "motd", name: "Mob of the Dead", note: "Pop Goes the Weasel", built: true },
-      { id: "buried", name: "Buried", note: "2 main EEs: Richtofen / Maxis" },
+      { id: "buried", name: "Buried", note: "2 main EEs: Richtofen / Maxis", built: true },
       { id: "origins", name: "Origins", note: "4 staffs + red dig sites", built: true }
     ]
   },

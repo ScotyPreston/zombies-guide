@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#141008">
+<title>Buried &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Buried theme: lantern gold & witch purple */
+  :root {
+    --map-bg: #141008;
+    --map-bg2: #1e180c;
+    --bg: #141008;
+    --bg-card: #1e180c;
+    --bg-card-hover: #2a2112;
+    --line: #3d3320;
+    --map-accent: #e0b050;
+    --map-accent2: #b07ae0;
+    --map-glow: rgba(224, 176, 80, 0.35);
+  }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="buried">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo2">&#8249; Black Ops 2</a></nav>
+
+  <header class="map-header">
+    <h1>Buried</h1>
+    <div class="sub">Black Ops 2 &middot; an underground western town &mdash; and a very big friend</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main">Main Easter Egg</button>
+    <button class="tab-btn" data-tab="leroy">Leroy the Giant</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <p class="blurb">&ldquo;Mined Games&rdquo; has <b>two versions</b> &mdash; you help <b>Richtofen</b> or <b>Maxis</b>, one per game. Your side should match what you did on TranZit and Die Rise: finishing all three on ONE side unlocks the Victis endgame &mdash; <button class="xref" data-goto="side">see The Endgame card</button>. Either side rewards <b>all perks for the rest of the game</b>.</p>
+
+    <div class="subtab-bar">
+      <button class="subtab-btn" data-subtab="richtofen">Richtofen Side</button>
+      <button class="subtab-btn" data-subtab="maxis">Maxis Side</button>
+    </div>
+
+    <div class="subtab-panel" id="subtab-richtofen">
+      <figure class="shot"><img src="../img/buried/bu-inf1.jpg" alt="Round Infinity" loading="lazy"><figcaption>Round &infin; &mdash; Richtofen&rsquo;s side sends you to the future</figcaption></figure>
+      <div class="req-box">
+        <h3>Requirements</h3>
+        <ul>
+          <li><b>4 players</b>, game on <b>Original mode</b>.</li>
+          <li><b>Paralyzer + Time Bomb</b> from the Mystery Box &mdash; <button class="xref" data-goto="wonder">Wonder Weapons tab</button>. Tip: feed Leroy <b>candy at the box</b> to lock it in place for the whole game &mdash; <button class="xref" data-goto="leroy">Leroy tab</button>.</li>
+          <li><b>Galvaknuckles or Bowie Knife</b> for the sign step.</li>
+          <li><b>Vulture Aid</b> (church, 3000) &mdash; you literally cannot see the wisp without it.</li>
+          <li>Open all doors and clear the debris early &mdash; you&rsquo;ll be crossing the map constantly. A full bank helps.</li>
+        </ul>
+      </div>
+      <h2>Richtofen&rsquo;s steps</h2>
+      <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+      <ol class="steps">
+        <li><b>Build the Guillotine.</b> The bench is between the Saloon and the gunsmith building (the Mule Kick house). <b>Careful: some parts fit BOTH the guillotine and Maxis&rsquo;s gallows</b> &mdash; build at the right bench.
+<ul>
+  <li><b>Satellite Dish</b> &mdash; upstairs in the Saloon, on the side nearest the guillotine bench, by the fence.</li>
+  <li><b>Spool of Wire</b> &mdash; the gunsmith room downstairs (the chalk room), in the corner near the catacombs entrance.</li>
+  <li><b>Crystal</b> &mdash; in the catacombs: go up the railing from the Saloon, turn left, take the next left, jump over the hole &mdash; it&rsquo;s in the debris directly ahead.</li>
+  <li><b>Antenna</b> &mdash; the barn downstairs, heading toward the catacombs, behind a hanging lantern.</li>
+</ul>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-gp-dish.jpg" alt="The Satellite Dish on the Saloon's top-floor balcony" loading="lazy"><figcaption>Satellite Dish &mdash; Saloon top floor, by the balcony</figcaption></figure><figure class="shot"><img src="../img/buried/bu-gp-spool.jpg" alt="The Spool of Wire in the gunsmith's corner" loading="lazy"><figcaption>Spool of Wire &mdash; gunsmith chalk room, corner by the catacombs entrance</figcaption></figure><figure class="shot"><img src="../img/buried/bu-gp-crystal.jpg" alt="The Crystal in the mineshafts" loading="lazy"><figcaption>Crystal &mdash; in the mineshafts, back-right wall</figcaption></figure><figure class="shot"><img src="../img/buried/bu-gp-antenna.jpg" alt="The Antenna in the barn behind a hanging lantern" loading="lazy"><figcaption>Antenna &mdash; barn lower floor, behind the hanging lantern</figcaption></figure></div></li>
+        <li><b>Charge the four red orbs with the Paralyzer.</b> Shoot each dark red orb with the Paralyzer until it turns <b>white</b> (it keeps the red glow). They&rsquo;re at:
+<ul>
+  <li>The alleyway between the Saloon and the candy shop.</li>
+  <li>Left of the church entrance, behind a rock.</li>
+  <li>In the tunnel system above the town.</li>
+  <li>In the foliage by the mansion entrance, just off the maze.</li>
+</ul>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-orb-saloon.jpg" alt="The orb in the corner outside the Saloon" loading="lazy"><figcaption>The Saloon orb &mdash; outside in the corner, right of the candy shop</figcaption></figure><figure class="shot"><img src="../img/buried/bu-orb-church.jpg" alt="The orb left of the church entrance" loading="lazy"><figcaption>The church orb &mdash; left of the entrance, behind the rock</figcaption></figure><figure class="shot"><img src="../img/buried/bu-orb-mine.jpg" alt="The orb in the mineshafts" loading="lazy"><figcaption>The mineshafts orb</figcaption></figure><figure class="shot"><img src="../img/buried/bu-orb-maze.jpg" alt="The orb by the maze entrance" loading="lazy"><figcaption>The maze orb &mdash; immediately left as you enter the hedge maze from the mansion</figcaption></figure></div></li>
+        <li><b>Knock down the lantern with a grenade.</b> A purple lantern floats out of the courthouse window (toward the church or the jail). <b>Cook a grenade 2&ndash;3 seconds</b>, then throw it at the lantern &mdash; the blast drops it so you can pick it up. It fades if you leave it on the ground too long.
+<figure class="shot"><img src="../img/buried/bu-lantern.jpg" alt="The floating purple lantern" loading="lazy"><figcaption>The purple lantern floating over the street</figcaption></figure></li>
+        <li><b>Charge the lantern on the witches.</b> <b>Only the player carrying the lantern</b> can charge it: kill about <b>10 witches</b> in the haunted mansion. Every kill plays a rising pitch &mdash; a new, different sound means it&rsquo;s full. Then place the lantern on the glowing symbol on the <b>gunsmith roof</b> (outside the Mule Kick room).
+<figure class="shot"><img src="../img/buried/bu-roofsign.jpg" alt="The chalk lantern outline on the gunsmith roof" loading="lazy"><figcaption>The chalk lantern outline on the gunsmith roof &mdash; place the charged lantern here</figcaption></figure></li>
+        <li><b>Decode the wall puzzle.</b> A three-line code appears on the wall right by the roof symbol. It&rsquo;s a <b>tic-tac-toe (pigpen) cipher</b> spelling <b>three of the five tunnel sign names</b>. Match your wall lines against the chart and <b>write the three names down in order</b>.
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-puzzle.jpg" alt="The cipher on the wall above the lantern" loading="lazy"><figcaption>The wall code above your placed lantern</figcaption></figure><figure class="shot"><img src="../img/buried/bu-cipher.jpg" alt="The decode chart" loading="lazy"><figcaption>The decode chart &mdash; every sign name in cipher (credit: gamerant)</figcaption></figure></div></li>
+        <li><b>Melee the three signs, in order.</b> The five named signs are posted around the tunnels. Hit YOUR three &mdash; in the order the wall gave them &mdash; with the <b>Galvaknuckles or Bowie Knife</b>.
+<figure class="shot"><img src="../img/buried/bu-sign-melee.jpg" alt="One of the named signs in the tunnels" loading="lazy"><figcaption>One of the named signs in the tunnels &mdash; punch your three in order</figcaption></figure>
+<p>Each name written in the cipher, for matching against your wall:</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-sign1.jpg" alt="Dry Gulcher Shaft in cipher" loading="lazy"><figcaption>DRY GULCHER SHAFT</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign2.jpg" alt="Lunger Undermines in cipher" loading="lazy"><figcaption>LUNGER UNDERMINES</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign3.jpg" alt="Consumption Cross in cipher" loading="lazy"><figcaption>CONSUMPTION CROSS</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign4.jpg" alt="Ground Biter Pits in cipher" loading="lazy"><figcaption>GROUND BITER PITS</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign5.jpg" alt="Bone Orchard Vein in cipher" loading="lazy"><figcaption>BONE ORCHARD VEIN</figcaption></figure></div></li>
+        <li><b>Walk the wisp home.</b> Hitting the last sign correctly spawns a <b>wisp</b> next to it &mdash; visible <b>only with Vulture Aid</b>. Run into it and it jumps ahead; keep chasing it along its route: last sign &rarr; barn second level &rarr; jail second floor (past the wall-buy) &rarr; general store second floor &rarr; candy store &rarr; the <b>guillotine</b>. If nobody touches a wisp it fades and you redo the signs.
+<figure class="shot"><img src="../img/buried/bu-wisp.jpg" alt="The wisp in the tunnels" loading="lazy"><figcaption>The wisp appears by the final sign</figcaption></figure></li>
+        <li><b>Kill 5 charged zombies at the guillotine.</b> With the wisp sitting at the guillotine, nearby zombies absorb it and glow <b>blue</b>. Kill five of them &mdash; each death sends an orb into the guillotine&rsquo;s crystal. Richtofen then asks for a Time Bomb.
+<figure class="shot"><img src="../img/buried/bu-charged.jpg" alt="A wisp-charged zombie" loading="lazy"><figcaption>A charged zombie &mdash; blue glow, easy to spot</figcaption></figure></li>
+        <li><b>Round &infin; &mdash; find the switch in the future.</b> Place a <b>Time Bomb ON the guillotine bench</b>, gather <b>all four players crouched</b> around it, and detonate. You&rsquo;re thrown into <b>Round Infinity</b>: black-and-white, ~90 seconds, and the zombies are <b>unkillable &mdash; don&rsquo;t waste ammo, just dodge</b>. Search the crew&rsquo;s dead bodies for the <b>switch</b> &mdash; it&rsquo;s on a random one. Bodies can lie: in front of the guillotine &middot; by the Saloon stairs &middot; left of the gunsmith entrance &middot; the crevice behind the barn/gunsmith &middot; the jail entrance &middot; between the general store and the box &middot; right of the candy store &middot; between the big rock at the gallows and the candy store awning &middot; behind the church rock &middot; past the church entrance by the workbench &middot; the alley between the bank and the barn.
+<div class="callout"><b>Empty your hands first.</b> Carrying a buildable part when you grab the switch can glitch it so it won&rsquo;t place. And if time runs out without finding it: get another Time Bomb (Max Ammo re-arms it, or trade the box for Monkeys and back) and retry.</div>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-tb-guillotine.jpg" alt="The Time Bomb placed on the guillotine bench" loading="lazy"><figcaption>The Time Bomb goes ON the guillotine bench</figcaption></figure><figure class="shot"><img src="../img/buried/bu-switch.jpg" alt="Found a switch on a corpse in Round Infinity" loading="lazy"><figcaption>&ldquo;Found a switch&rdquo; &mdash; that&rsquo;s the one, head back</figcaption></figure></div>
+<p>Found it? Back in the present, <b>place the switch on the guillotine</b>.</p></li>
+        <li><b>Pull the maze levers in the right order.</b> In the hedge maze (behind the mansion) four gates carry colored switches: <b>Red, Blue, Green, Yellow</b>. Find the correct order by trial and error: pull all four, and the ones pulled in a correct position <b>spark</b> after the fourth. To reset for another try, everyone returns to town and runs back through the mansion together.
+<div class="callout"><b>Hints:</b> the four jars behind the candy shop counter show a color order &mdash; a decent first guess, not guaranteed. If the <b>yellow switch is missing</b> (a known glitch), reset the maze the same way; it can also hide on a hedge in the maze center or near the fountain. Track which orders you&rsquo;ve tried!</div>
+<figure class="shot"><img src="../img/buried/bu-maze.jpg" alt="A colored switch on a maze gate" loading="lazy"><figcaption>One of the four colored switches on the maze gates</figcaption></figure></li>
+        <li><b>Make a wish and shoot the targets.</b> Have Leroy <b>break the fountain</b> in front of the church (send him at it with booze &mdash; <button class="xref" data-goto="leroy">Leroy tab</button>), then press the button on it to &ldquo;make a wish&rdquo;. Metal targets start spawning at <b>four stations, one per player</b> &mdash; each player must shoot <b>every</b> target at their station before it vanishes (~2 seconds; a lightning flash marks where the next appears &mdash; shoot the flash if you can&rsquo;t see the target). Ranked easiest to hardest:
+<figure class="shot"><img src="../img/buried/bu-wish.jpg" alt="The make-a-wish prompt at the broken fountain" loading="lazy"><figcaption>The wish prompt on the broken fountain &mdash; this starts the sharpshooter finale</figcaption></figure>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-tgt-bar.jpg" alt="Targets in the Saloon" loading="lazy"><figcaption>1 &mdash; inside the Saloon (easiest)</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tgt-jugg.jpg" alt="Targets around the jailhouse, between Jugger-Nog and the box" loading="lazy"><figcaption>2 &mdash; around the jailhouse, between Jugger-Nog and the Mystery Box</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tgt-mansion.jpg" alt="Targets in the mansion windows" loading="lazy"><figcaption>3 &mdash; left side of the mansion, in the windows</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tgt-church.jpg" alt="Targets by the candy store and general store" loading="lazy"><figcaption>4 &mdash; by the candy store, opposite the church (hardest)</figcaption></figure></div>
+<p>All four stations cleared = <b>&ldquo;Mined Games&rdquo; done</b> &mdash; everyone gets all perks for the rest of the game, and the Buried icon on the lobby screen glows <b>blue</b>. One more step remains to finish the story: <button class="xref" data-goto="side">The Endgame</button>.</p>
+<figure class="shot"><img src="../img/buried/bu-icon-blue.jpg" alt="The Buried lobby icon glowing blue" loading="lazy"><figcaption>Confirmation &mdash; the Buried icon glows blue in the lobby</figcaption></figure></li>
+      </ol>
+    </div>
+
+    <div class="subtab-panel" id="subtab-maxis">
+      <div class="req-box">
+        <h3>Requirements</h3>
+        <ul>
+          <li><b>4 players</b>, game on <b>Original mode</b>.</li>
+          <li><b>Time Bomb</b> from the Mystery Box &mdash; <button class="xref" data-goto="wonder">Wonder Weapons tab</button>. <b>No Paralyzer needed on this side.</b></li>
+          <li><b>Turbine + Subsurface Resonator</b> built &mdash; <button class="xref" data-goto="build">Buildables tab</button>.</li>
+          <li><b>Galvaknuckles or Bowie Knife</b> for the sign step (and the knuckles make the mansion witch a one-hit kill &mdash; big for the bells step).</li>
+          <li><b>Leroy freed</b>, with candy and booze handy &mdash; <button class="xref" data-goto="leroy">Leroy tab</button>.</li>
+        </ul>
+      </div>
+      <h2>Maxis&rsquo;s steps</h2>
+      <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+      <ol class="steps">
+        <li><b>Build the Gallows.</b> The bench is next to the courthouse entrance. <b>Careful: some parts fit BOTH the gallows and Richtofen&rsquo;s guillotine</b> &mdash; build at the right bench.
+<ul>
+  <li><b>Battery</b> &mdash; behind the altar in the church.</li>
+  <li><b>Spool of Wire</b> &mdash; the room below Mule Kick (the gunsmith chalk room), corner near the catacombs entrance.</li>
+  <li><b>Antenna</b> &mdash; the barn downstairs toward the catacombs, in one of the stables on the right.</li>
+  <li><b>Bulbs</b> &mdash; the room above Leroy&rsquo;s cell, on the boxes near the Mystery Box spawn.</li>
+</ul>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-gap-battery.jpg" alt="The Battery behind the church altar" loading="lazy"><figcaption>Battery &mdash; behind the altar in the church</figcaption></figure><figure class="shot"><img src="../img/buried/bu-gap-bulbs.jpg" alt="The Bulbs above Leroy's cell" loading="lazy"><figcaption>Bulbs &mdash; top floor of the jailhouse, by the box spawn</figcaption></figure><figure class="shot"><img src="../img/buried/bu-gp-spool.jpg" alt="The Spool of Wire in the gunsmith corner" loading="lazy"><figcaption>Spool of Wire &mdash; the chalk room below Mule Kick, corner by the catacombs</figcaption></figure><figure class="shot"><img src="../img/buried/bu-gp-antenna.jpg" alt="The Antenna in the barn" loading="lazy"><figcaption>Antenna &mdash; barn lower floor, behind the hanging lantern</figcaption></figure></div>
+<figure class="shot"><img src="../img/buried/bu-gallows.jpg" alt="The gallows next to the courthouse" loading="lazy"><figcaption>The gallows, right beside the courthouse entrance</figcaption></figure></li>
+        <li><b>Break the four red orbs with the Subsurface Resonator.</b> Place the Resonator (powered by a Turbine) at each orb and destroy it. Same four spots as Richtofen&rsquo;s side:
+<ul>
+  <li>The alleyway between the Saloon and the candy shop.</li>
+  <li>Left of the church entrance, behind a rock.</li>
+  <li>In the tunnel system above the town.</li>
+  <li>In the foliage by the mansion entrance, just off the maze.</li>
+</ul>
+<div class="callout">Give Leroy <b>candy next to the Resonator</b> and he&rsquo;ll fetch the Turbine to it himself &mdash; <button class="xref" data-goto="leroy">Leroy tab</button>.</div>
+<figure class="shot"><img src="../img/buried/bu-res-built.jpg" alt="The Subsurface Resonator built on its bench" loading="lazy"><figcaption>The Resonator built &mdash; carry it to each orb with its Turbine</figcaption></figure>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-orb-saloon.jpg" alt="The orb outside the Saloon" loading="lazy"><figcaption>The Saloon orb &mdash; outside in the corner, right of the candy shop</figcaption></figure><figure class="shot"><img src="../img/buried/bu-orb-church.jpg" alt="The orb left of the church" loading="lazy"><figcaption>The church orb &mdash; left of the entrance, behind the rock</figcaption></figure><figure class="shot"><img src="../img/buried/bu-orb-mine.jpg" alt="The orb in the mineshafts" loading="lazy"><figcaption>The mineshafts orb</figcaption></figure><figure class="shot"><img src="../img/buried/bu-orb-maze.jpg" alt="The orb by the maze entrance" loading="lazy"><figcaption>The maze orb &mdash; just inside the hedge maze from the mansion</figcaption></figure></div></li>
+        <li><b>Knock down the lantern with a grenade.</b> Same as the other side: the purple lantern floats from the courthouse; cook a grenade 2&ndash;3 seconds and drop it with the blast, then pick it up before it fades.
+<figure class="shot"><img src="../img/buried/bu-lantern.jpg" alt="The floating purple lantern" loading="lazy"><figcaption>The purple lantern floating over the street</figcaption></figure></li>
+        <li><b>Sugar Rush &mdash; charge the lantern the Maxis way.</b> No witches this time: the lantern charges on zombies killed by <b>Leroy (after candy), the Trample Steam, the Subsurface Resonator, the Head Chopper, or a Nuke</b> &mdash; and the lantern carrier must stand <b>close</b> to the kills. When it&rsquo;s full, place it on the chalk symbol on the <b>gunsmith roof</b>.
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-sugar.jpg" alt="Trap kills charging the lantern" loading="lazy"><figcaption>Stay close while the traps (or Leroy) do the killing</figcaption></figure><figure class="shot"><img src="../img/buried/bu-roofsign.jpg" alt="The chalk lantern outline on the gunsmith roof" loading="lazy"><figcaption>The chalk lantern outline on the gunsmith roof</figcaption></figure></div></li>
+        <li><b>Decode the wall puzzle.</b> The three-line <b>tic-tac-toe cipher</b> appears by the roof symbol &mdash; it spells three of the five tunnel sign names. Write them down in order.
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-puzzle.jpg" alt="The cipher on the wall" loading="lazy"><figcaption>The wall code above the lantern</figcaption></figure><figure class="shot"><img src="../img/buried/bu-cipher.jpg" alt="The decode chart" loading="lazy"><figcaption>The decode chart &mdash; all five sign names in cipher (credit: MrDalekJD)</figcaption></figure></div></li>
+        <li><b>Melee the three signs, in order</b> with the Galvaknuckles or Bowie Knife.
+<figure class="shot"><img src="../img/buried/bu-sign-melee.jpg" alt="One of the named signs in the tunnels" loading="lazy"><figcaption>One of the named signs in the tunnels</figcaption></figure>
+<p>The five signs, each written in the cipher:</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-sign1.jpg" alt="Dry Gulcher Shaft in cipher" loading="lazy"><figcaption>DRY GULCHER SHAFT</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign2.jpg" alt="Lunger Undermines in cipher" loading="lazy"><figcaption>LUNGER UNDERMINES</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign3.jpg" alt="Consumption Cross in cipher" loading="lazy"><figcaption>CONSUMPTION CROSS</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign4.jpg" alt="Ground Biter Pits in cipher" loading="lazy"><figcaption>GROUND BITER PITS</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sign5.jpg" alt="Bone Orchard Vein in cipher" loading="lazy"><figcaption>BONE ORCHARD VEIN</figcaption></figure></div></li>
+        <li><b>Escort the wisp to the gallows &mdash; twice.</b> Prep first: <b>place a Time Bomb</b>, open the <b>1250-point couch</b> between the tunnels and the gunsmith upper level, and have Leroy <b>break the barrier between the general store and the candy shop</b>. Then the sign-hitter follows the wisp its whole route &mdash; tunnels &rarr; courtroom &rarr; past Speed Cola toward the jail &rarr; loop up the jail's top floor toward the barn &rarr; down through the tunnels &rarr; out the gunsmith upper level &rarr; Saloon &rarr; candy shop &rarr; courthouse &rarr; the <b>gallows</b>, powering one container. The catch: <b>the wisp only survives while zombies are near it</b> &mdash; stage zombie &ldquo;checkpoints&rdquo; at the jail, the gunsmith and the Saloon (or start a fresh round as it moves so spawns follow you).
+<div class="callout">One run powers <b>one</b> container &mdash; now <b>detonate the Time Bomb</b> to travel back and <b>do the whole escort again</b> for the second one.</div>
+<figure class="shot"><img src="../img/buried/bu-wisp.jpg" alt="The wisp" loading="lazy"><figcaption>Keep zombies near the wisp or it fades</figcaption></figure></li>
+        <li><b>Ring the bells.</b> Nine bells in three buildings, three each:
+<ul>
+  <li><b>Courthouse, ground floor</b> &mdash; left of the judge&rsquo;s podium &middot; on the table right of the podium &middot; in the corner immediately left as you enter.</li>
+  <li><b>Candy shop, second floor</b> (not the power switch room) &mdash; corner of the square table by the wall &middot; the table with two pots near the couch blockade &middot; the chair right of the stairway door.</li>
+  <li><b>Barn, top level</b> &mdash; hay bale before the jail drop-down &middot; hay bale right of the wall hole near the gunsmith &middot; hay bale right of the railing gap.</li>
+</ul>
+<p>Behind the <b>secret bookcase in the mansion</b> sits a switchboard with a <b>3&times;3 light grid</b> &mdash; columns left to right = <b>candy shop / barn / courthouse</b>. One player works the board and calls out which light glows; the other three stand ready at the bells. Ring the called bell in time and the light turns green and the next lights up; too slow and the board resets. Work through all nine.</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-switchboard.jpg" alt="The switchboard on the sofa behind the bookcase" loading="lazy"><figcaption>The switchboard, on the sofa behind the mansion&rsquo;s secret bookcase</figcaption></figure><figure class="shot"><img src="../img/buried/bu-bell-court.jpg" alt="A bell in the courthouse" loading="lazy"><figcaption>A courthouse bell, by the judge&rsquo;s podium</figcaption></figure><figure class="shot"><img src="../img/buried/bu-bell-candy.jpg" alt="A bell in the candy shop" loading="lazy"><figcaption>A candy shop bell, on the table upstairs</figcaption></figure><figure class="shot"><img src="../img/buried/bu-bell-barn.jpg" alt="A bell in the barn" loading="lazy"><figcaption>A barn bell, on the hay bales up top</figcaption></figure></div>
+<div class="callout">The board operator is stuck in the mansion with the witch spawning nonstop &mdash; <b>Galvaknuckles</b> drop her in one hit.</div></li>
+        <li><b>Make a wish and shoot the targets.</b> Same finale as Richtofen&rsquo;s side: Leroy breaks the fountain by the church, wish on it, and each player clears <b>every</b> target at their station &mdash; Saloon &middot; Jugger-Nog/box &middot; mansion windows &middot; candy store opposite the church.
+<figure class="shot"><img src="../img/buried/bu-wish.jpg" alt="The make-a-wish prompt at the broken fountain" loading="lazy"><figcaption>The wish prompt on the broken fountain</figcaption></figure>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-tgt-bar.jpg" alt="Targets in the Saloon" loading="lazy"><figcaption>1 &mdash; inside the Saloon (easiest)</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tgt-jugg.jpg" alt="Targets around the jailhouse, between Jugger-Nog and the box" loading="lazy"><figcaption>2 &mdash; around the jailhouse, between Jugger-Nog and the Mystery Box</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tgt-mansion.jpg" alt="Targets in the mansion windows" loading="lazy"><figcaption>3 &mdash; left side of the mansion, in the windows</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tgt-church.jpg" alt="Targets by the candy store" loading="lazy"><figcaption>4 &mdash; by the candy store, opposite the church (hardest)</figcaption></figure></div>
+<p>Done = <b>&ldquo;Mined Games&rdquo;</b> complete, all perks for the rest of the game &mdash; and the lobby&rsquo;s Buried icon glows <b>orange</b>. The story finale lives in <button class="xref" data-goto="side">The Endgame</button>.</p>
+<figure class="shot"><img src="../img/buried/bu-icon-orange.jpg" alt="The Buried lobby icon glowing orange" loading="lazy"><figcaption>Confirmation &mdash; the Buried icon glows orange in the lobby</figcaption></figure></li>
+      </ol>
+    </div>
+
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ LEROY THE GIANT ============ -->
+  <section class="tab-panel" id="tab-leroy">
+    <h2>Leroy &mdash; the friendly Giant</h2>
+    <p class="blurb">Buried&rsquo;s signature mechanic: a huge friendly prisoner who smashes debris, fights zombies, and even builds for you &mdash; if you keep him in booze and candy.</p>
+    <figure class="shot"><img src="../img/buried/bu-leroy-box.jpg" alt="Leroy with the Mystery Box on his back" loading="lazy"><figcaption>Candy at the box: Leroy smashes it into the ground &mdash; locked in place all game</figcaption></figure>
+
+    <h2>Freeing him</h2>
+    <p>Leroy is in a <b>jail cell near the first Mystery Box spawn</b> (head up the stairs to the Sheriff&rsquo;s House, jump across to the Jailhouse, and drop through the floor). Grab the <b>key from the wall by the cell</b> and open it. He ignores you until you hand him <b>booze</b> (there&rsquo;s a bottle right by his cell) &mdash; then he smashes the debris off his cell and starts pacing between his cell and the Saloon.</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-leroy-route.jpg" alt="The stairs up to the Sheriff's House" loading="lazy"><figcaption>Up these stairs, across to the Jailhouse, then drop through the floor</figcaption></figure><figure class="shot"><img src="../img/buried/bu-leroy-cell.jpg" alt="Leroy in his cell" loading="lazy"><figcaption>Leroy in his cell &mdash; the key hangs on the wall outside</figcaption></figure><figure class="shot"><img src="../img/buried/bu-leroy-booze.jpg" alt="Giving Leroy the booze" loading="lazy"><figcaption>Hand him the booze and he smashes his own way out</figcaption></figure></div>
+    <div class="callout"><b>Don&rsquo;t shoot him.</b> Wounding him sends him back to his cell, locked in &mdash; you&rsquo;ll need the key again. It respawns on one of four hangers: left of his cell &middot; the judge&rsquo;s bench in the courthouse &middot; the middle room upstairs in the Saloon &middot; behind the deposit box in the bank. (Melee is fine &mdash; a whack just makes him sprint for a bit, handy for steering him.)</div>
+    <div class="callout">The key, booze and candy share the <b>chalk slot</b> &mdash; you can&rsquo;t hold them and a wall-gun chalk at the same time.</div>
+
+    <h2>Booze</h2>
+    <p>Give him booze and he <b>charges off in the opposite direction</b>, smashing any debris in his path &mdash; this is how you open the blocked passages (including the church). The further he runs, the more bonus points you get. He flattens zombies <b>and players</b> on the way. Booze spawns in his cell and in the Saloon once per round; after you&rsquo;ve used one, buy another for <b>1000 at the Saloon counter</b>.</p>
+
+    <h2>Candy</h2>
+    <p>Candy is in the <b>candy store</b> (again: one free per round, then <b>1000 at the counter</b>). What he does depends on where you feed him:</p>
+    <figure class="shot"><img src="../img/buried/bu-candy-shop.jpg" alt="Buying candy at the candy store counter" loading="lazy"><figcaption>The candy store counter &mdash; 1000 a pop once the free one&rsquo;s used</figcaption></figure>
+    <table class="data-table">
+      <tr><th>Candy given&hellip;</th><th>What Leroy does</th></tr>
+      <tr><td>On its own</td><td>Follows you around attacking zombies until it wears off.</td></tr>
+      <tr><td>Next to a workbench</td><td><b>Gathers the parts and builds a buildable for you</b> (random one if the bench is empty). Don&rsquo;t shoot him mid-errand.</td></tr>
+      <tr><td>At the Mystery Box</td><td>Punches it into the ground &mdash; <b>locked in place all game</b>, and it can never roll a teddy.</td></tr>
+      <tr><td>At a rolled box you haven&rsquo;t taken</td><td>Forces a re-spin.</td></tr>
+      <tr><td>At an empty box spawn</td><td>Fetches the box and puts it there (unless it&rsquo;s been locked).</td></tr>
+      <tr><td>Near a Subsurface Resonator with no Turbine</td><td>Fetches the Turbine to power it.</td></tr>
+      <tr><td>Near a Power-Up</td><td>Rerolls it into a different one.</td></tr>
+      <tr><td>Near the gunsmith chalk</td><td>Takes three chalks and draws them at random wall spots.</td></tr>
+      <tr><td>Near the bank deposit box</td><td>Fetches you a power-up for 2000 points.</td></tr>
+      <tr><td>Next to a crawler</td><td>Picks it up and carries it around for you.</td></tr>
+    </table>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <p class="blurb">Tap a card to open it.</p>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>The Endgame &mdash; Easter Egg Tracker</b><small>The Victis story finale &mdash; TranZit + Die Rise + Buried</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>At the back of the courthouse ground floor is a box with a <b>3&times;4 light grid</b> &mdash; the Easter Egg Tracker. Each row is a player; the columns are <b>Tower of Babble (TranZit) &middot; High Maintenance (Die Rise) &middot; Mined Games (Buried)</b>. <b>Blue = done for Richtofen, orange = done for Maxis.</b></p>
+        <div class="req-box">
+          <h3>Requirements</h3>
+          <ul>
+            <li>All four players have finished <b>all three easter eggs on the same side</b>.</li>
+            <li>All Nav Card tables built with the <b>correct Nav Cards</b> inserted.</li>
+          </ul>
+        </div>
+        <p>With twelve lights in one color: <b>shoot the tracker</b> and press the button it reveals.</p>
+        <ul>
+          <li><b>Richtofen&rsquo;s ending:</b> Maxis is erased; Richtofen rides along in Stuhlinger&rsquo;s head. Reward: <b>permanent Fire Sale</b> + a Mule Kick variant that carries <b>four weapons</b>.</li>
+          <li><b>Maxis&rsquo;s ending:</b> Maxis takes the Aether and stuffs Richtofen into a random zombie &mdash; all eyes turn <b>orange</b>. The one blue-eyed &ldquo;Richtofen zombie&rdquo; <b>drops a power-up every time it&rsquo;s killed</b>.</li>
+        </ul>
+        <div class="callout"><b>Warning:</b> pressing it erases everyone&rsquo;s easter egg progress. With all three done and the cards placed, you can also press &ldquo;use&rdquo; near the tracker to play the hidden song <b>Samantha&rsquo;s Lullaby</b>.</div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Song &mdash; &ldquo;Always Running&rdquo;</b><small>Three teddy bears</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Activate all three teddy bears to play &ldquo;Always Running&rdquo; by Malukah:</p>
+        <ul>
+          <li>At the mine entrance, sitting by the hay near <b>Quick Revive</b>.</li>
+          <li>In the <b>candy store</b>, inside one of the candy barrels.</li>
+          <li>In the <b>mansion</b>, in the right-hand room with Double Tap, near a corner.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>The ghost pianist</b><small>Dartboard bullseye &rarr; free perk</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Hit a <b>bullseye on the Saloon dartboard with a Ballistic Knife</b> and the piano behind you starts playing itself. Leave the maze through the back of the mansion and you&rsquo;ll find a <b>ghost at the piano</b> &mdash; tip him <b>10 points</b> and he hands you a <b>free perk</b>. (You can also just play the Saloon piano yourself by tapping Use.)</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>The Haunted Mansion</b><small>She takes 2000 a swipe</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Inside the mansion a ghostly woman spawns relentlessly and <b>steals 2000 points per hit</b> &mdash; fast, but fragile (Galvaknuckles one-shot her). Fight all the way through the mansion and kill every ghost on the run and a <b>random perk bottle</b> drops at the end.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>The LSAT catwalk</b><small>One jump, one chance</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>An <b>LSAT</b> sits on a catwalk above the starting area &mdash; a precisely timed jump gets you up for the <b>2000-point</b> buy, and the catwalk <b>collapses right after</b>, so it&rsquo;s once per game for one player. Pack-a-Punch it into the FSIRT and hold it for the <b>&ldquo;FSIRT Against the Wall&rdquo;</b> achievement.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Chalk wall-buys</b><small>Draw your own guns &mdash; get paid for it</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Chalk outlines in the <b>gunsmith shop</b> can be carried to blank wall spots around the map and drawn there, creating a wall-buy of that gun for everyone &mdash; and paying YOU <b>1000 points per chalk</b> (2000 for the final one, doubled during Double Points). Feed Leroy candy near the chalk and he&rsquo;ll draw three of them at random spots himself.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Bank &amp; Weapon Locker</b><small>Shared across all three Victis maps</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>The <b>bank</b> (deposit/withdraw points) and the <b>weapon locker</b> (store a gun) work across TranZit, Die Rise and Buried &mdash; whatever you stashed there is waiting here. If a stored gun doesn&rsquo;t exist on this map, you get its closest equivalent.</p>
+        <div class="callout">Time Bomb trick: place a bomb, <b>withdraw your savings</b>, spend everything opening the map &mdash; then detonate. Doors stay open, and the money is back in the bank.</div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Persistent upgrades (perma-perks)</b><small>Hidden upgrades that follow your account</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Earned through specific actions, kept between games (Green Run / Die Rise / Buried only, not in Grief). A <b>green flash</b> means you earned one; a faint eerie sound means you lost one. The Buried headliner: <b>PhD Flopper isn&rsquo;t on the map, but the perma-perk version is</b>.</p>
+        <table class="data-table">
+          <tr><th>Upgrade</th><th>How to earn it</th><th>How you lose it</th></tr>
+          <tr><td><b>PhD Flopper</b> (Buried only)</td><td>Take screen-reddening fall damage 5&ndash;10 times.</td><td>Take heavy fall damage without dolphin-diving.</td></tr>
+          <tr><td>Faster Revive</td><td>Revive teammates 17 times in one game.</td><td>Fail a revive attempt &mdash; even accidentally.</td></tr>
+          <tr><td>More Headshot Damage</td><td>A number of collateral headshots (two kills, one bullet).</td><td>25&ndash;75 kills in a row without a headshot.</td></tr>
+          <tr><td>Stronger Barriers</td><td>Repair 75 barriers in one game (active from round 10).</td><td>A full round without building a single board.</td></tr>
+          <tr><td>Stronger Carpenter Barriers</td><td>Kill a zombie climbing out of a window during a Carpenter.</td><td>Miss doing that during a later Carpenter.</td></tr>
+          <tr><td>200% Health</td><td>On Buried: finish round 1 in processing, then get downed there.</td><td>Lost automatically at round 15.</td></tr>
+          <tr><td>Red Insta-Kill</td><td>Kill nothing during an Insta-Kill, twice in a row.</td><td>Take a zombie hit during an Insta-Kill.</td></tr>
+          <tr><td>Refund on Perks</td><td>Go prone right after buying a perk, ~65 times &mdash; then it pays 1000 back each time.</td><td>Buy a perk without going prone after.</td></tr>
+          <tr><td>Better Mystery Box</td><td>Keep whatever the box gives you, several spins running (before round 10).</td><td>Lost automatically at round 10.</td></tr>
+          <tr><td>Half-off</td><td>Spend 3000+ during one Double Points.</td><td>Spend under 1000 during the next Double Points.</td></tr>
+          <tr><td>Double Points</td><td>Only headshot/melee kills during a Double Points.</td><td>Any melee or headshot kill afterwards can drop it.</td></tr>
+          <tr><td>Tombstone</td><td>Buy four perks before round 4 &mdash; keep your perks through a down.</td><td>Go down three times in a row with no perks.</td></tr>
+          <tr><td>Extra Sniping Points</td><td>5&ndash;15 long-range sniper kills (+300/kill after).</td><td>Miss three sniper shots in a row.</td></tr>
+          <tr><td>Double Pistol Points</td><td>Empty a pistol hitting nothing, then melee 1&ndash;3 zombies.</td><td>Melee or pistol kills afterwards can drop it.</td></tr>
+          <tr><td>Ray Gun off the Wall</td><td>Buy the Olympia / its ammo a few times (rank 3 or lower) &mdash; Ray Gun replaces it at 500.</td><td>Lost automatically around rounds 12&ndash;14.</td></tr>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <p class="blurb">All three come from the Mystery Box &mdash; lock the box in place with Leroy and candy before you start fishing.</p>
+
+    <details class="acc" open>
+      <summary>
+        <img src="../img/buried/bu-wpn-paralyzer.png" alt="The Paralyzer">
+        <span class="acc-title"><b>Paralyzer</b><small>Mystery Box &mdash; infinite ammo, and it flies</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Fires a beam that <b>slows, freezes and then kills</b> everything in a cone. <b>Infinite ammo</b> &mdash; the catch is an overheat gauge on the gun: hit <b>115</b> and it locks up until it cools back to 100 (about six seconds of continuous fire per burst).</p>
+        <div class="callout"><b>It flies.</b> Point it at the ground, fire, and press jump &mdash; you ride the beam upward as long as you hold the trigger. That&rsquo;s how you reach rooftops and skip debris (including into the blocked church). Watch the landing: fall damage still applies &mdash; a quick blast at the ground just before touchdown breaks the fall.</div>
+        <ul>
+          <li>You can lift a teammate: they jump into your beam. It cuts out if they cross your crosshair.</li>
+          <li>With Vulture Aid, ammo drops <b>cool it faster</b>.</li>
+          <li>Pack-a-Punched it becomes the <b>Petrifier</b> &mdash; roughly ten seconds of fire before overheating.</li>
+          <li><b>Required for Richtofen&rsquo;s easter egg</b> (the orbs) <button class="xref" data-goto="main">Main Easter Egg tab</button>.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/buried/bu-wpn-raygun2.png" alt="Ray Gun Mark II">
+        <span class="acc-title"><b>Ray Gun Mark II</b><small>Mystery Box &mdash; the Ray Gun, evolved</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Debuted on Buried (and available on every BO2 map). Fires <b>three-round bursts</b> with <b>no splash damage</b> &mdash; so no more blowing yourself up in a corner &mdash; and it punches straight <b>through whole trains</b> of zombies.</p>
+        <ul>
+          <li>Pack-a-Punched: <b>Porter&rsquo;s Mark II Ray Gun</b> &mdash; double magazine, more ammo, red rays.</li>
+          <li>You can&rsquo;t hold it and the original Ray Gun at the same time &mdash; the box will never offer you the second one.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <img src="../img/buried/bu-wpn-timebomb.png" alt="The Time Bomb">
+        <span class="acc-title"><b>Time Bomb</b><small>Mystery Box &mdash; a save point in your pocket</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>Throw it down like C4 and a golden watch appears in your inventory. Detonate the watch and <b>everyone rewinds to the moment and place the bomb was planted</b> &mdash; same round, same weapons, perks and points. An icon above the round counter shows which round you&rsquo;ll return to.</p>
+        <ul>
+          <li>One use per bomb. A <b>Max Ammo</b> lets you place a fresh one.</li>
+          <li>It rewinds bank/locker deposits &mdash; but <b>NOT</b> opened doors, Leroy&rsquo;s demolition, buildables, or easter egg progress. (That&rsquo;s the free-money trick <button class="xref" data-goto="side">in the Bank card</button>.)</li>
+          <li><b>Both easter egg sides need it</b> &mdash; Richtofen&rsquo;s Round &infin; and Maxis&rsquo;s double wisp run <button class="xref" data-goto="main">Main Easter Egg tab</button>.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <p class="blurb">Four buildables &mdash; and <b>every single part spawns inside the General Store</b>, so one building stocks them all. Build each at any workbench. <b>The lazy way: feed Leroy candy next to a bench and he gathers the parts and builds it himself</b> &mdash; <button class="xref" data-goto="leroy">Leroy tab</button>.</p>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Turbine</b><small>Portable power &mdash; the Resonator needs it</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>The same wind-turbine from TranZit: place it to power things locally. On Buried its main job is <b>powering the Subsurface Resonator</b> (Maxis&rsquo;s easter egg side). Leroy will even carry it to a placed Resonator if you candy him next to one. Three parts, all in the General Store:</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-tb-tail.jpg" alt="The Tail on the shelves" loading="lazy"><figcaption>Tail &mdash; ground floor, on the shelves to the far left</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tb-fan.jpg" alt="The Fan in the upstairs cabinet" loading="lazy"><figcaption>Fan &mdash; second floor, in the cabinet in the right room</figcaption></figure><figure class="shot"><img src="../img/buried/bu-tb-mann.jpg" alt="The Mannequin in the back room" loading="lazy"><figcaption>Mannequin &mdash; back-right corner of the back room, ground floor</figcaption></figure></div>
+        <p>A good bench for it: the Saloon &mdash; a short sprint from the Jugger-Nog camp spot.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Subsurface Resonator</b><small>Sonic blaster &mdash; Maxis&rsquo;s orb-breaker</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>A dish that blasts zombies with a shockwave when powered by a Turbine. <b>Required on Maxis&rsquo;s side</b> to destroy the four red orbs, and its kills charge the lantern <button class="xref" data-goto="main">Main Easter Egg tab</button>. Four parts, all in the General Store:</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-sr-wheel.jpg" alt="The Wheel on the front counter" loading="lazy"><figcaption>Wheel &mdash; on the front counter as you walk in</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sr-speaker.jpg" alt="The Speaker behind the counter" loading="lazy"><figcaption>Speaker &mdash; behind the front counter, under the small painting</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sr-mount.jpg" alt="The Mount by the back door" loading="lazy"><figcaption>Mount &mdash; leaning on the wall by the back door</figcaption></figure><figure class="shot"><img src="../img/buried/bu-sr-motor.jpg" alt="The Motor at the top of the stairs" loading="lazy"><figcaption>Motor &mdash; top of the stairs, in the right corner</figcaption></figure></div>
+        <figure class="shot"><img src="../img/buried/bu-res-built.jpg" alt="The built Subsurface Resonator" loading="lazy"><figcaption>Built and ready &mdash; remember it only fires with a Turbine beside it</figcaption></figure>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Head Chopper</b><small>Set-and-forget decapitator</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>A spinning blade trap: plant it and it lops the heads off anything walking past. Its kills count for charging Maxis&rsquo;s lantern. Four parts, all in the General Store &mdash; the <b>Saw</b> (in a barrel behind the counter), the <b>Hinge</b> (on the front counter), the <b>Stand</b> (back room, behind the counter) and the <b>Crank</b> (on the center shelf). The marked spots:</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-hc-saw.jpg" alt="Part in the barrels behind the counter" loading="lazy"><figcaption>In the barrels behind the front counter</figcaption></figure><figure class="shot"><img src="../img/buried/bu-hc-counter.jpg" alt="Part on the front counter" loading="lazy"><figcaption>On the front counter</figcaption></figure><figure class="shot"><img src="../img/buried/bu-hc-back.jpg" alt="Part in the back room" loading="lazy"><figcaption>In the back room, behind the counter</figcaption></figure><figure class="shot"><img src="../img/buried/bu-hc-shelf.jpg" alt="Part on the shelf" loading="lazy"><figcaption>On the shelf in the middle of the store</figcaption></figure></div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary>
+        <span class="acc-title"><b>Trample Steam</b><small>The Die Rise launcher, back again</small></span>
+      </summary>
+      <div class="acc-body">
+        <p>A spring pad that flings zombies (or you) across the map. Its kills also charge Maxis&rsquo;s lantern. Four parts, all in the General Store &mdash; the <b>Flag</b> (in a barrel under the stairs), the <b>Motor</b> (on the center-left shelves), the <b>Chicken Wire</b> (against the upstairs banister) and the <b>Bellows</b> (upstairs, first room on the right by the desk). The marked spots:</p>
+<div class="shot-grid"><figure class="shot"><img src="../img/buried/bu-ts-1.jpg" alt="Part by the stairs" loading="lazy"><figcaption>In the barrel under the stairs</figcaption></figure><figure class="shot"><img src="../img/buried/bu-ts-2.jpg" alt="Part on the shelves" loading="lazy"><figcaption>On the shelves in the main room</figcaption></figure><figure class="shot"><img src="../img/buried/bu-ts-3.jpg" alt="Part by the upstairs banister" loading="lazy"><figcaption>Upstairs, against the banister</figcaption></figure><figure class="shot"><img src="../img/buried/bu-ts-4.jpg" alt="Part in the upstairs room" loading="lazy"><figcaption>Upstairs, first room on the right</figcaption></figure></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">5000 points per upgrade. The machine lives past the <b>haunted mansion</b>, through the <b>hedge maze</b> behind it &mdash; the same maze as the easter egg levers, with the fountain courtyard at its heart.</p>
+    <ol class="steps">
+      <li><b>Get into the mansion</b> &mdash; it&rsquo;s the big house beyond the church side of town. The ghost woman spawns nonstop inside and <b>steals 2000 points per swipe</b>; run through or one-shot her with Galvaknuckles.</li>
+      <li><b>Out the back and into the maze.</b> The hedge walls shift between games; keep pushing inward.</li>
+      <li><b>The machine is at the maze&rsquo;s center</b>, by the fountain courtyard.</li>
+    </ol>
+    <div class="callout"><b>Shortcut:</b> with the Paralyzer you can point it down, fire, and simply <b>fly over</b> debris and fences on the way &mdash; the fastest PaP commute on the map. Clearing every ghost on a full mansion run also pays out a <b>random perk bottle</b>.</div>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Seven perks &mdash; including <b>Vulture Aid</b>, which debuts here and never appears again. Power switch is upstairs in the candy shop.</p>
+    <div class="callout"><b>The church is sealed</b> when the game starts &mdash; Vulture Aid sits inside. Either send Leroy through the debris with booze, or fly over it with the Paralyzer.</div>
+
+    <table class="data-table">
+      <tr><th>Perk</th><th>Cost</th><th>What it does</th><th>Where</th></tr>
+      <tr><td><b>Quick Revive</b></td><td>1500<br>(500 solo)</td><td>Faster revives; solo it self-revives you, three buys max.</td><td>Processing, by the mine entrance where you first drop in.</td></tr>
+      <tr><td><b>Jugger-Nog</b></td><td>2500</td><td>Take far more hits &mdash; always the first buy.</td><td>In town near the general store, by the Mystery Box&rsquo;s starting spot.</td></tr>
+      <tr><td><b>Speed Cola</b></td><td>3000</td><td>Reload much faster.</td><td>On the path between the courthouse and the jail.</td></tr>
+      <tr><td><b>Double Tap 2.0</b></td><td>2000</td><td>Faster fire rate, double damage per bullet.</td><td>In the mansion &mdash; the right-hand room.</td></tr>
+      <tr><td><b>Stamin-Up</b></td><td>2000</td><td>Run faster, sprint longer.</td><td><i>Location not in the reference &mdash; send a photo and I&rsquo;ll pin it.</i></td></tr>
+      <tr><td><b>Mule Kick</b></td><td>4000</td><td>Carry a third weapon.</td><td>Upstairs in the gunsmith building, above the chalk room.</td></tr>
+      <tr><td><b>Vulture Aid</b></td><td>3000</td><td>See perks, wall-buys, the box and PaP through walls; zombies drop mini ammo/point packets; some zombies leak a green stink cloud that makes the horde ignore you while you stand in it.</td><td>In the church, left of the altar.</td></tr>
+    </table>
+
+    <div class="callout"><b>No PhD Flopper machine</b> &mdash; but the perma-perk version exists on this map <button class="xref" data-goto="side">Side Easter Eggs tab</button>. Vulture Aid&rsquo;s ammo drops also cool the Paralyzer faster.</div>
+
+    <p class="blurb">Some locations above are approximate (the references only mention them in passing) &mdash; send machine photos whenever you like and I&rsquo;ll build the usual gallery and pin the spots.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
