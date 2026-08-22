@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#12110d">
+<title>Ancient Evil &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Ancient Evil: Delphi — Olympian gold + marble sky-blue */
+  :root {
+    --map-bg: #12110d;
+    --map-bg2: #1c1a14;
+    --bg: #12110d;
+    --bg-card: #1c1a14;
+    --bg-card-hover: #26231b;
+    --line: #3c3727;
+    --map-accent: #e8c36a;
+    --map-accent2: #7fc8f0;
+    --map-glow: rgba(232, 195, 106, 0.30);
+  }
+  .shot-grid.icon-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .shot-grid.icon-grid .shot img { max-width: 110px; margin: 0 auto; display: block; aspect-ratio: 1 / 1; height: auto; }
+  .shot-grid.icon-grid .shot figcaption { text-align: center; }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="ancient-evil">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo4">&#8249; Black Ops 4</a></nav>
+
+  <header class="map-header">
+    <h1>Ancient Evil</h1>
+    <div class="sub">Black Ops 4 &middot; Delphi &mdash; the Chaos finale</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">God Hands</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="tributes">Tributes</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b> <b>Normal difficulty, no modifiers.</b></li>
+        <li><b>Sentinel Artifact and Pack-a-Punch</b> done. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li>The <b>Eternal Flame reignited</b>. <button class="xref" data-goto="tributes">See Tributes</button></li>
+        <li><b>Apollo's Will</b> (the shield) and the <b>Pegasus Strike</b>. <button class="xref" data-goto="build">See Buildables</button></li>
+        <li>All four <b>Redeemed</b> God Hands &mdash; used in the order <b>Charon &rarr; Gaia &rarr; Hemera &rarr; Ouranos</b>. Exalted not needed. <button class="xref" data-goto="wonder">See God Hands</button></li>
+      </ul>
+    </div>
+    <p class="blurb">"Greek Tragedy" &mdash; wake the gods, put on a show, and kill Perseus. Several steps are video-only in the reference; they're marked.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Light the three oil spills.</b> With the Eternal Flame burning blue, shield out, <b>melee the flame</b> so the spear tip catches it, then <b>melee an oil spill</b>. Back to the bowl for a fresh flame before each one. Your screen <b>shakes</b> when all three are lit.
+        <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-q-flame.jpg" alt="The flame must look like this &mdash; fully blue" loading="lazy"><figcaption>The flame must look like this &mdash; fully blue</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-q-oil-upper.jpg" alt="Upper Road &mdash; jagged rock on the path under the bridge" loading="lazy"><figcaption>Upper Road &mdash; jagged rock on the path under the bridge</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-q-oil-inter.jpg" alt="Intersection of Treasuries &mdash; wall before the stairs down to the Stoa" loading="lazy"><figcaption>Intersection of Treasuries &mdash; wall before the stairs down to the Stoa</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-q-oil-stoa.jpg" alt="Stoa of the Athenians &mdash; wall before the stairs to the Spartan Monument" loading="lazy"><figcaption>Stoa of the Athenians &mdash; wall before the stairs to the Spartan Monument</figcaption></figure></div></li>
+
+      <li data-num="2"><b>Death vision &mdash; four statues.</b> At the <b>Spartan Monument</b>, stand where Pegasus first picks you up. Fire a <b>Redeemed Charon charged shot at the floor and stand in it</b> for "death vision". Look along both rows of statues for one with <b>glowing blue eyes</b> and hit it with a <b>normal</b> Charon shot &mdash; it crumbles. <b>Four statues</b>; re-shoot the floor if the vision fades. Screen shake = done.
+        <figure class="shot"><img src="../img/ancient-evil/ae-q-statue-eyes.jpg" alt="A statue with blue eyes in death vision" loading="lazy"><figcaption>A statue with blue eyes in death vision</figcaption></figure></li>
+
+      <li data-num="3"><b>The gears.</b> Shoot open <b>three walls</b> with a normal gun; each hides a big fixed gear and a small moving one. Shield out, and <b>throw a spear into the hole the moment the small gear touches the big one</b> &mdash; it sticks there.
+        <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-q-gear-stoa.jpg" alt="Stoa of the Athenians &mdash; left of the oil spill (gears shown locked)" loading="lazy"><figcaption>Stoa of the Athenians &mdash; left of the oil spill (gears shown locked)</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-q-gear-inter1.jpg" alt="Intersection of Treasuries &mdash; left of the Auger, behind the Gaia plant" loading="lazy"><figcaption>Intersection of Treasuries &mdash; left of the Auger, behind the Gaia plant</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-q-gear-inter2.jpg" alt="Intersection of Treasuries &mdash; just down the stairs from the oil spill" loading="lazy"><figcaption>Intersection of Treasuries &mdash; just down the stairs from the oil spill</figcaption></figure></div></li>
+
+      <li data-num="4"><b>Stop the rotating statues.</b> Upstairs in the <b>Stoa of the Athenians</b>: three turning statues round a crystal. <b>Throw a spear at the gear in the back building when all three face the gem</b> &mdash; time it for when the statue nearest you faces right, toward the Intersection. Screen shake = done.
+        <figure class="shot"><img src="../img/ancient-evil/ae-q-statues-throw.jpg" alt="The throw window &mdash; nearest statue facing right" loading="lazy"><figcaption>The throw window &mdash; nearest statue facing right</figcaption></figure></li>
+
+      <li data-num="5"><b>Gaia's roots.</b> With the <b>Redeemed Hand of Gaia</b> in the <b>Offering of the Attalids</b>, three root sets need <b>uncharged shots in quick succession</b> &mdash; move until <b>green flashes</b> appear in front of you, then shoot; you're on a timer. <i>(Video-only in the reference.)</i> A <b>Gegenees spawns &mdash; don't kill him yet.</b></li>
+
+      <li data-num="6"><b>The ankh and the spear.</b> Lead the Gegenees to the <b>Intersection of Treasuries</b>, where an <b>ankh</b> sits in a crystal. Make him <b>shield-blast the crystal</b> (a shot or two in his weak spot provokes it), grab the ankh, <b>then kill him and take the spear he drops</b>.
+        <figure class="shot"><img src="../img/ancient-evil/ae-q-ankh.jpg" alt="The ankh in the crystal" loading="lazy"><figcaption>The ankh in the crystal</figcaption></figure></li>
+
+      <li data-num="7"><b>The sundial.</b> Back in the <b>Offering of the Attalids</b>, hold use on the <b>golden sundial</b> to plant the spear. Lure an <b>electric catalyst</b> onto the dial and kill it there: the dial starts, a slot opens, and a <b>faint line</b> appears. <b>Count the gold slots from the open slot to the line, in the direction the symbols turn.</b> Wait for a <b>blue symbol</b> to appear in the slot and pass out of view, count that many rotations, and hold use &mdash; the blue symbol stops on the line. <b>Three rings</b>, each faster; hold a touch early on the last. The spear sinks when all three line up.
+        <figure class="shot"><img src="../img/ancient-evil/ae-q-sundial.jpg" alt="Counting the slots &mdash; five here (Glitch)" loading="lazy"><figcaption>Counting the slots &mdash; five here (Glitch)</figcaption></figure></li>
+
+      <li data-num="8"><b>Defend the Ra statue.</b> Go in with the <b>Redeemed Hand of Hemera</b>, shield, all perks, a PaP'd gun, the Pegasus Strike and a full specialist. In the <b>Gymnasium Bathhouse</b>, give the Ra statue the <b>ankh</b>, drop the <b>Pegasus Strike at the entrance from the Intersection</b>, then give the statue the <b>Hand of Hemera</b>. A beam fires into the opposite wall: <b>skeletons try to block it at both ends</b> &mdash; keep both clear (co-op: one player per end), don't step in the beam, and survive the zombies. Failed = the wall doesn't melt; re-take the Hand from the Hemera altar and try again. Success = the wall melts, revealing a <b>scepter</b>: give it to the statue and a <b>mirror rises from the pool</b>.</li>
+
+      <li data-num="9"><b>Put on a show &mdash; three times.</b> Everyone takes a Hand and goes to the <b>Amphitheater</b>. Stand in the <b>circle matching your Hand's colour</b> (red Charon, yellow Hemera, blue Ouranos, green Gaia) &mdash; white flash, the show starts. <b>Run into the spotlight of your colour</b>; glowing zombies spawn: <b>in the stands = uncharged shots, on the ground = your charged attack</b>. Screen turns grey = sprint back to the entrance. <b>Five fails per round</b> allowed; about five spotlight sets per show, <b>three shows</b>. A Max Ammo and points drop at the end.</li>
+
+      <li data-num="10"><b>The secret door.</b> Dark side, right-hand path before the perk: a door with symbols. Shoot <b>six symbols in this order with a Pack-a-Punched gun</b>. Then whoever plays <b>Shaw</b> and <b>Bruno</b> interacts with it (skip if nobody is) &mdash; cutscene.
+        <figure class="shot"><img src="../img/ancient-evil/ae-q-door.jpg" alt="The shooting order (r/codzombies via the reference)" loading="lazy"><figcaption>The shooting order (r/codzombies via the reference)</figcaption></figure></li>
+
+      <li data-num="11"><b>Raise and fire the crossbow.</b> On the <b>River of Sorrow</b> stairs a small <b>blue lightning symbol</b> appears: <b>place the Pegasus Strike on it</b> and Pegasus raises a giant crossbow from the river. <b>Redeemed Ouranos charged shots</b> turn it &mdash; about four, until it stops. Now light the spear at the Eternal Flame, come back with the shield out, pay <b>1,000 at the green bowl</b> where the Center of the World meets Python Pass to start the <b>venom trap</b>, run through it so the flame turns <b>green</b>, and <b>melee the top of the crossbow</b>. It fires at Pack-a-Punch.
+        <figure class="shot"><img src="../img/ancient-evil/ae-q-lightning.jpg" alt="The lightning symbol on the River of Sorrow stairs" loading="lazy"><figcaption>The lightning symbol on the River of Sorrow stairs</figcaption></figure></li>
+
+      <li data-num="12"><b>Pegasus, then Perseus.</b> Full perks, PaP'd guns, your favourite Hand, shield, full specialist. <b>The Pegasus Strike doesn't work in here</b> &mdash; bring Homunculi from the box. Everyone holds use on the <b>gold portal up the ramp behind Pack-a-Punch</b>.
+        <ul>
+          <li><b>Pegasus:</b> three floating islands joined by jump pads. Shoot him while he flies (Hands, or a launcher); when he glows lava-orange he <b>falls to an island</b> &mdash; jump over and <b>specialist him</b>. When he starts to rise, <b>jump off</b> &mdash; he leaves fire and electricity, and a damaged island becomes unreachable. Perseus throws flaming spears the whole time: they hurt but <b>refill your specialist</b>, so pace your exposure.</li>
+          <li>Pegasus eventually flies up to Perseus and is killed. <b>Be on "Mount Olympus: Columns"</b> &mdash; it's the only island left, anywhere else is instant death.</li>
+          <li><b>Perseus:</b> survive waves on that island; when he hops down, hurt him until he <b>kneels glowing</b>, then <b>specialist him</b>. Repeat until he dies and drops the <b>Oracle Key</b>. Grab it &mdash; cutscene.</li>
+        </ul>
+        <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-q-portal.jpg" alt="The gold portal behind Pack-a-Punch" loading="lazy"><figcaption>The gold portal behind Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-pegasus.jpg" alt="Pegasus (CoD wiki)" loading="lazy"><figcaption>Pegasus (CoD wiki)</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs &amp; achievements</h2>
+    <p class="blurb">The reference is an achievement walkthrough &mdash; these are its map achievements. The "Stormbound" song isn't covered; send a reference and I'll add it.</p>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-tr-flame.jpg" alt="" style="object-fit:cover">
+        <span><b>Eternal Flame by round 15</b><br><small>Everyone turns in an Epic + a Legendary</small></span></summary>
+      <div class="acc-body"><p>Reignite the flame fully before round 15. Fastest: each player banks one <b>Epic</b> and one <b>Legendary</b> tribute. <button class="xref" data-goto="tributes">See Tributes</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-pap-cage-pp2.jpg" alt="" style="object-fit:cover">
+        <span><b>Free the eagles without switching weapons</b><br><small>One specialist charge, two cages</small></span></summary>
+      <div class="acc-body"><p>Leave both cages alone until <b>both doors out of the Center of the World</b> are open. With a full specialist, open one cage's gate, <b>sprint to the other and open it before the specialist runs out</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-hemera.png" alt="">
+        <span><b>Hemera: 20 in one channel attack</b><br><small>Redeemed Hand of Hemera</small></span></summary>
+      <div class="acc-body"><p>Group 20+ zombies (Amphitheater or the PaP area work well) and hold the charged shot through the whole pack.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-gaia.png" alt="">
+        <span><b>Gaia: impale 8 in one charged attack</b><br><small>Redeemed Hand of Gaia</small></span></summary>
+      <div class="acc-body"><p>Line 15&ndash;20 zombies up in a row and fire the spike line down it. Only the <b>initial impale</b> counts, not the explosion when the spikes vanish.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-charon.png" alt="">
+        <span><b>Charon: drag 15 to the underworld</b><br><small>Redeemed Hand of Charon</small></span></summary>
+      <div class="acc-body"><p>Shoot the charged shot into the ground and walk ~20 zombies over it &mdash; 15 kills from one shot. Gegenees don't count.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-ouranos.png" alt="">
+        <span><b>Ouranos: fling 20 in one channel attack</b><br><small>Redeemed Hand of Ouranos</small></span></summary>
+      <div class="acc-body"><p>15&ndash;20 zombies in front of you, hold the channel attack and keep holding as the next ones spawn in.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-ex-symbol.jpg" alt="" style="object-fit:cover">
+        <span><b>All four Primordial God Trials</b><br><small>The Exalted upgrade</small></span></summary>
+      <div class="acc-body"><p>Pops when you finish the four trials at Pack-a-Punch. <button class="xref" data-goto="wonder">See God Hands</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-tr-bowl.jpg" alt="" style="object-fit:cover">
+        <span><b>Round 20 inside the Temple of Apollo</b><br><small>Never buy a door</small></span></summary>
+      <div class="acc-body"><p>You may step outside the temple as long as no doors are bought. Spawn with a <b>MOG 12 with Dragon's Breath</b>, buy the <b>Strife with the Stiletto</b> off the wall, use wraith fires and the Scepter of Ra for hordes and Blightfathers, save the specialist for emergencies. Unlocks when round 21 starts.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-aw-throw.jpg" alt="" style="object-fit:cover">
+        <span><b>Kill a Gegenees with only Apollo's Will</b><br><small>Spears until he drops</small></span></summary>
+      <div class="acc-body"><p>Shield out, keep throwing spears at the four-armed Gegenees until he dies; out of spears = buy more at the shield table.</p></div>
+    </details>
+  </section>
+
+  <!-- ============ GOD HANDS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>The God Hands</h2>
+    <p class="blurb">Four wonder weapons, each upgraded twice: <b>Fallen &rarr; Redeemed &rarr; Exalted</b>. You can only carry <b>one Hand at a time</b> &mdash; hold use at its altar to deposit it and go get another.</p>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-hands.png" alt="">
+        <span><b>Dormant Hands &mdash; do this first</b><br><small>Find a hand in a vase, take it to an altar</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Find a dormant hand.</b> They hide in vases &mdash; <b>20 possible spots</b> &mdash; marked by a <b>purple glow</b>. The <b>Oracle</b> calls out clues ("seek the primordial weapon&hellip;"); the reference's video maps each phrase to a spot. <i>(Video-only.)</i></li>
+          <li><b>Place it on an altar</b> and survive the lockdown: kill <b>10 glowing zombies</b> inside the circle (specialist recommended). Pick up the Hand.</li>
+        </ol>
+        <div class="callout">Each altar gives a different Hand: <b>Monument of Craterus = Hemera</b> &middot; <b>Spartan Monument = Gaia</b> &middot; <b>Python Pass = Charon</b> &middot; <b>Center of the World = Ouranos</b>.</div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-hemera.png" alt="">
+        <span><b>Hand of Hemera</b><br><small>Light &mdash; altar at the Monument of Craterus</small></span></summary>
+      <div class="acc-body">
+        <figure class="shot"><img src="../img/ancient-evil/ae-hm-altar.jpg" alt="The Hemera altar, just before the Amphitheater stairs" loading="lazy"><figcaption>The Hemera altar, just before the Amphitheater stairs</figcaption></figure>
+        <h3>Redeemed</h3>
+        <ol class="steps">
+          <li>Three <b>mirrors</b>: shoot each with a normal gun to <b>rotate it as close to vertical as you can</b>, then hit it with the Hand of Hemera to <b>light the bowl</b> beside it.</li>
+          <li><b>Melee the bowl</b> to take the light and <b>run straight back to the altar</b> and melee it to deposit. Three runs: <b>Temple Terrace</b>, <b>Upper Road</b>, <b>Gymnasium Bathhouse</b>.
+            <figure class="shot"><img src="../img/ancient-evil/ae-hm-mirror-terrace.jpg" alt="The Temple Terrace mirror" loading="lazy"><figcaption>The Temple Terrace mirror</figcaption></figure></li>
+          <li>Start the ritual at the altar, enter the portal, clear the arena, leave by the portal. <b>Charged shot = a held incineration beam.</b></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-gaia.png" alt="">
+        <span><b>Hand of Gaia</b><br><small>Earth &mdash; altar at the Spartan Monument</small></span></summary>
+      <div class="acc-body">
+        <figure class="shot"><img src="../img/ancient-evil/ae-ga-altar.jpg" alt="The Gaia altar at the Spartan Monument" loading="lazy"><figcaption>The Gaia altar at the Spartan Monument</figcaption></figure>
+        <h3>Redeemed</h3>
+        <ol class="steps">
+          <li>Three plants carry <b>red crystals</b>: shoot every crystal off with the Hand of Gaia, a new plant sprouts &mdash; <b>carry it to the altar</b> and plant it. Three times.
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-ga-plant-terrace.jpg" alt="Temple Terrace &mdash; left of the stairs down to Danu" loading="lazy"><figcaption>Temple Terrace &mdash; left of the stairs down to Danu</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ga-plant-stoa.jpg" alt="Stoa of the Athenians &mdash; side of the path" loading="lazy"><figcaption>Stoa of the Athenians &mdash; side of the path</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ga-plant-inter.jpg" alt="Intersection of Treasuries &mdash; left of the Auger wall-buy" loading="lazy"><figcaption>Intersection of Treasuries &mdash; left of the Auger wall-buy</figcaption></figure></div></li>
+          <li>Portal, arena, portal out. <b>Charged shot = a line of spiked earth.</b></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-charon.png" alt="">
+        <span><b>Hand of Charon</b><br><small>Death &mdash; altar in Python Pass (dark side)</small></span></summary>
+      <div class="acc-body">
+        <figure class="shot"><img src="../img/ancient-evil/ae-ch-altar.jpg" alt="The Charon altar in Python Pass" loading="lazy"><figcaption>The Charon altar in Python Pass</figcaption></figure>
+        <h3>Redeemed</h3>
+        <ol class="steps">
+          <li>Stand in the <b>river in front of the Odin perk</b> and kill zombies there with the Hand until the water <b>turns red</b>, then <b>drink it</b>.
+            <figure class="shot"><img src="../img/ancient-evil/ae-ch-river.jpg" alt="The river turning red by Odin" loading="lazy"><figcaption>The river turning red by Odin</figcaption></figure></li>
+          <li>Find <b>three coins</b> (13 possible spots &mdash; <i>video-only in the reference</i>). <b>You can't regenerate health until they're all returned</b>, so be careful. Place them at the Charon altar.</li>
+          <li>Portal, arena, portal out. <b>Charged shot = a pit on the ground that devours anything that walks over it</b> (not Gegenees).</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-ouranos.png" alt="">
+        <span><b>Hand of Ouranos</b><br><small>Sky &mdash; altar at the Center of the World (dark side)</small></span></summary>
+      <div class="acc-body">
+        <figure class="shot"><img src="../img/ancient-evil/ae-ou-altar.jpg" alt="The Ouranos altar at the Center of the World" loading="lazy"><figcaption>The Ouranos altar at the Center of the World</figcaption></figure>
+        <h3>Redeemed</h3>
+        <ol class="steps">
+          <li><b>Blast zombies into three giant arrowheads</b> with the Hand; a <b>feather</b> pops out. <b>Shoot the floating feather</b> a few times to steer it to the altar (miss it and hit the arrow with another zombie). <i>The reference has a video of the technique.</i>
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-ou-arrow-cow.jpg" alt="Center of the World &mdash; left of Pack-a-Punch" loading="lazy"><figcaption>Center of the World &mdash; left of Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ou-arrow-pp.jpg" alt="Python Pass &mdash; right above the Charon altar" loading="lazy"><figcaption>Python Pass &mdash; right above the Charon altar</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ou-arrow-cliff.jpg" alt="Cliff Ruins &mdash; down the path left of the perk statue" loading="lazy"><figcaption>Cliff Ruins &mdash; down the path left of the perk statue</figcaption></figure></div></li>
+          <li>Portal, arena, portal out. <b>Channel attack = a Thundergun-style gust</b> that flings everything in front of you.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-ex-symbol.jpg" alt="" style="object-fit:cover">
+        <span><b>Exalted upgrade &mdash; all four at once</b><br><small>Light the pillar, charge the altars, four trials</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>All four Hands <b>Redeemed</b>.</li><li>The <b>Eternal Flame</b> reignited. <button class="xref" data-goto="tributes">See Tributes</button></li><li><b>Apollo's Will</b> built. <button class="xref" data-goto="build">See Buildables</button></li></ul></div>
+        <ol class="steps">
+          <li>Shield out, <b>melee the blue flame</b> in the Temple of Apollo, go outside and find the <b>pillar bowl making a gas-leak hiss</b>. <b>Throw the spear just above the bowl</b> &mdash; it ignites.
+            <figure class="shot"><img src="../img/ancient-evil/ae-ex-pillar.jpg" alt="The pillar bowl outside the temple" loading="lazy"><figcaption>The pillar bowl outside the temple</figcaption></figure></li>
+          <li>At each altar, <b>kill its catalyst inside the circle</b>, then kill <b>10 zombies in the circle</b> to fill it. Any order.
+            <table class="data-table">
+              <thead><tr><th>Altar</th><th>Catalyst</th><th>PaP symbol</th></tr></thead>
+              <tbody>
+                <tr><td><b>Hemera</b></td><td>Electric</td><td>Yellow</td></tr>
+                <tr><td><b>Charon</b></td><td>Gas</td><td>Red</td></tr>
+                <tr><td><b>Gaia</b></td><td>Fire</td><td>Green</td></tr>
+                <tr><td><b>Ouranos</b></td><td>Water</td><td>Blue</td></tr>
+              </tbody>
+            </table>
+            <figure class="shot"><img src="../img/ancient-evil/ae-ex-symbol.jpg" alt="A charged altar lights its symbol above Pack-a-Punch" loading="lazy"><figcaption>A charged altar lights its symbol above Pack-a-Punch</figcaption></figure></li>
+          <li>With any Hand, hold use at <b>Pack-a-Punch</b> to start the <b>four God Trials</b>: all <b>catalysts</b> (PaP'd gun) &rarr; all <b>skeletons</b> (spend the Hand) &rarr; several <b>Gegenees</b> (specialist + PaP'd guns) &rarr; <b>Blightfathers</b> (PaP'd guns; Hands barely scratch them).</li>
+          <li>All four done: walk up to Pack-a-Punch with each Hand &mdash; <b>free Exalted upgrades</b> for all of them.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables</h2>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-apollo.jpg" alt="" style="object-fit:cover">
+        <span><b>Apollo's Will</b><br><small>The shield &mdash; throws spears, lights the flame</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>Sentinel Artifact</b> activated. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li></ul></div>
+        <div class="shot-grid icon-grid"><figure class="shot"><img src="../img/ancient-evil/ae-ic-strap.png" alt="Strap" loading="lazy"><figcaption>Strap</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ic-cover.png" alt="Shield" loading="lazy"><figcaption>Shield</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ic-spear.png" alt="Spear" loading="lazy"><figcaption>Spear</figcaption></figure></div>
+        <ol class="steps">
+          <li><b>Strap</b> &mdash; Upper Road, one of three:
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-aw-strap1.jpg" alt="Base of the stone on the bridge" loading="lazy"><figcaption>Base of the stone on the bridge</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-aw-strap2.jpg" alt="The rock just before the bridge" loading="lazy"><figcaption>The rock just before the bridge</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-aw-strap3.jpg" alt="Below the bridge, the rock by the river" loading="lazy"><figcaption>Below the bridge, the rock by the river</figcaption></figure></div></li>
+          <li><b>Shield</b> &mdash; always dropped by the <b>first Gegenees</b> you kill (one spawns when you take the golden bridle).
+            <figure class="shot"><img src="../img/ancient-evil/ae-aw-shield.jpg" alt="The shield piece where the Gegenees fell" loading="lazy"><figcaption>The shield piece where the Gegenees fell</figcaption></figure></li>
+          <li><b>Spear</b> &mdash; one of three:
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-aw-spear1.jpg" alt="Stoa of the Athenians &mdash; leaning on a small pillar" loading="lazy"><figcaption>Stoa of the Athenians &mdash; leaning on a small pillar</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-aw-spear2.jpg" alt="Intersection of Treasuries &mdash; sticking out of stones" loading="lazy"><figcaption>Intersection of Treasuries &mdash; sticking out of stones</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-aw-spear3.jpg" alt="Intersection &mdash; across from the Auger, base of a statue" loading="lazy"><figcaption>Intersection &mdash; across from the Auger, base of a statue</figcaption></figure></div></li>
+          <li><b>Build at the Marketplace table.</b> Spears are thrown with the fire button; <b>buy more spears at this table</b> when you run out.
+            <figure class="shot"><img src="../img/ancient-evil/ae-aw-table.jpg" alt="The Marketplace table" loading="lazy"><figcaption>The Marketplace table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/ancient-evil/ae-wpn-pegasus.png" alt="">
+        <span><b>Pegasus Strike</b><br><small>Placeable equipment &mdash; 3 parts on the dark side, built at the Forge</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Anvil</b> &mdash; Cliff Ruins:
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-ps-anvil1.jpg" alt="Big square stone across from the bird cage" loading="lazy"><figcaption>Big square stone across from the bird cage</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ps-anvil2.jpg" alt="Path left of the Odin perk, behind a pillar" loading="lazy"><figcaption>Path left of the Odin perk, behind a pillar</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ps-anvil3.jpg" alt="Big stone on the way to the Forge" loading="lazy"><figcaption>Big stone on the way to the Forge</figcaption></figure></div></li>
+          <li><b>Tongs</b> &mdash; River of Sorrow:
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-ps-tongs1.jpg" alt="Inside a rock, left path from the Pegasus drop-off" loading="lazy"><figcaption>Inside a rock, left path from the Pegasus drop-off</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ps-tongs2.jpg" alt="On a rock, right path from the drop-off" loading="lazy"><figcaption>On a rock, right path from the drop-off</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ps-tongs3.jpg" alt="In the cauldron right of the Odin perk" loading="lazy"><figcaption>In the cauldron right of the Odin perk</figcaption></figure></div></li>
+          <li><b>Hammer</b> &mdash; Python Pass:
+            <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-ps-hammer1.jpg" alt="Against the wall right of the Charon altar" loading="lazy"><figcaption>Against the wall right of the Charon altar</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ps-hammer2.jpg" alt="Leaning on a big bone near the altar" loading="lazy"><figcaption>Leaning on a big bone near the altar</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-ps-hammer3.jpg" alt="On a stone across from the bird cage" loading="lazy"><figcaption>On a stone across from the bird cage</figcaption></figure></div></li>
+          <li><b>Craft it at the Forge.</b> Once built it also joins the <b>Mystery Box</b> rotation for everyone else. Used in the main quest for the Ra statue and the crossbow. <button class="xref" data-goto="main">See the main quest</button>
+            <figure class="shot"><img src="../img/ancient-evil/ae-ps-forge.jpg" alt="The Forge" loading="lazy"><figcaption>The Forge</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ TRIBUTES ============ -->
+  <section class="tab-panel" id="tab-tributes">
+    <h2>Tributes &amp; the Eternal Flame</h2>
+    <p class="blurb">IX-style challenges. Pay at a bowl to start one, bank rewards at the podiums, and every turn-in feeds the Eternal Flame &mdash; which the main quest and the Exalted Hands both need.</p>
+    <ol class="steps">
+      <li><b>Start a challenge</b> at a bowl &mdash; <b>Temple of Apollo</b> (spawn) or the <b>Cliff Side Ruins</b> on the dark side. Not available until the Sentinel Artifact is active.
+        <figure class="shot"><img src="../img/ancient-evil/ae-tr-bowl.jpg" alt="A challenge bowl in the Temple of Apollo" loading="lazy"><figcaption>A challenge bowl in the Temple of Apollo</figcaption></figure></li>
+      <li><b>Challenge types:</b> hold a position &middot; kills in a location &middot; kills with Apollo's Will &middot; headshots &middot; take damage and recover &middot; special-weapon kills &middot; God Hand kills &middot; take no damage &middot; equipment kills. Keep completing them to <b>rank the reward up</b> before you cash in.</li>
+      <li><b>Cash in at the podiums</b> round the big bowl in the Temple of Apollo. Rewards are random within the tier:
+        <table class="data-table">
+          <thead><tr><th>Tier</th><th>Possible rewards</th></tr></thead>
+          <tbody>
+            <tr><td><b>Common</b></td><td>Double Points, Self Revive, Insta-Kill, Bowie Knife</td></tr>
+            <tr><td><b>Rare</b></td><td>Fire Sale, Max Ammo, PaP'd Strife, PaP'd Escargot, PaP'd RK 7 Garrison</td></tr>
+            <tr><td><b>Legendary</b></td><td>Max Ammo, Full Power, Bullet Boost, PaP'd Rampage, PaP'd Switchblade X9, PaP'd Grav</td></tr>
+            <tr><td><b>Epic</b></td><td>Free extra perk, Self Revive, Pegasus Strike, PaP'd Swat RFT, PaP'd Daemon 3XB, PaP'd SDM</td></tr>
+          </tbody>
+        </table>
+        <figure class="shot"><img src="../img/ancient-evil/ae-tr-podiums.jpg" alt="The podiums" loading="lazy"><figcaption>The podiums</figcaption></figure></li>
+      <li><b>Reignite the Eternal Flame.</b> Each turn-in adds tribute points; the flame is done when the big bowl burns <b>fully blue</b>. Needed: <b>9 points solo, 18 for two, 27 for three, 36 for four</b>. Fastest = everyone banks an <b>Epic and a Legendary</b>.
+        <figure class="shot"><img src="../img/ancient-evil/ae-tr-flame.jpg" alt="Fully reignited &mdash; blue" loading="lazy"><figcaption>Fully reignited &mdash; blue</figcaption></figure></li>
+    </ol>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">The Sentinel Artifact opens the map; the golden bridle and Pegasus open the <b>dark side</b>, where Pack-a-Punch sits encased in crystal.</p>
+    <ol class="steps">
+      <li><b>Wake the Sentinel Artifact.</b> Spawn &rarr; <b>Amphitheater</b>, hold use on it: a <b>lockdown survival wave</b> until Pegasus swoops in and ends it. Every door on the main side opens.
+        <figure class="shot"><img src="../img/ancient-evil/ae-pap-artifact.jpg" alt="The Sentinel Artifact in the Amphitheater" loading="lazy"><figcaption>The Sentinel Artifact in the Amphitheater</figcaption></figure></li>
+      <li><b>Take the golden bridle</b> from one of two pedestals. <b>Grabbing it spawns a Gegenees</b> &mdash; be ready.
+        <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-pap-bridle1.jpg" alt="Stoa of the Athenians pedestal" loading="lazy"><figcaption>Stoa of the Athenians pedestal</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-pap-bridle2.jpg" alt="Intersection of Treasuries pedestal" loading="lazy"><figcaption>Intersection of Treasuries pedestal</figcaption></figure></div></li>
+      <li><b>Ride Pegasus.</b> At the <b>Spartan Monument</b> stand in the <b>lightning-bolt circle</b> and hold use &mdash; he carries you to the dark side.</li>
+      <li><b>Free the two eagles.</b> Head down behind the perk to the <b>Center of the World</b>; the two approaches each hold a caged eagle. <b>Python Pass</b>: shoot the cage down first, then open the gate with your <b>specialist weapon's attack</b>. <b>Cliff Ruins</b>: specialist straight on the gate.
+        <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-pap-cage-pp1.jpg" alt="Python Pass &mdash; shoot the cage down" loading="lazy"><figcaption>Python Pass &mdash; shoot the cage down</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-pap-cage-pp2.jpg" alt="Python Pass &mdash; then specialist the gate" loading="lazy"><figcaption>Python Pass &mdash; then specialist the gate</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-pap-cage-cliff.jpg" alt="Cliff Ruins cage" loading="lazy"><figcaption>Cliff Ruins cage</figcaption></figure></div></li>
+      <li><b>Defend the eagles.</b> Back at the Center of the World another survival wave starts: <b>kill the skeletons</b> while the eagles break the crystal. Pack-a-Punch opens, and a <b>portal behind it</b> takes you back to the main map.</li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk altars</h2>
+    <p class="blurb">Chaos-style: four god statues, fixed spots, each selling the perk you put in that loadout slot. Two are on the dark side.</p>
+    <div class="callout"><b>The reference's quest loadout:</b> Quick Revive (Danu), Stamin-Up (Ra), Dying Wish (Zeus), Deadshot Dealer (Odin). Specialist: Hammer or Chakram solo; <b>Scepter of Ra for everyone in co-op</b> &mdash; its revives keep perks.</div>
+    <table class="data-table">
+      <thead><tr><th>Altar</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Danu</b></td><td>2500</td><td>Your loadout's 1st perk</td><td>Offering of the Attalids</td></tr>
+        <tr><td><b>Ra</b></td><td>3000</td><td>Your loadout's 2nd perk</td><td>Gymnasium Bathhouse</td></tr>
+        <tr><td><b>Zeus</b></td><td>3500</td><td>Your loadout's 3rd perk</td><td>Spartan Monument, where Pegasus picks you up</td></tr>
+        <tr><td><b>Odin</b></td><td>4000</td><td>Your loadout's 4th perk</td><td>River of Sorrow &mdash; dark side, after the Pegasus ride</td></tr>
+      </tbody>
+    </table>
+    <h2>What each altar looks like</h2>
+    <div class="shot-grid"><figure class="shot"><img src="../img/ancient-evil/ae-perk-danu.jpg" alt="Danu &mdash; Offering of the Attalids" loading="lazy"><figcaption>Danu &mdash; Offering of the Attalids</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-perk-ra.jpg" alt="Ra &mdash; Gymnasium Bathhouse" loading="lazy"><figcaption>Ra &mdash; Gymnasium Bathhouse</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-perk-zeus.jpg" alt="Zeus &mdash; Spartan Monument" loading="lazy"><figcaption>Zeus &mdash; Spartan Monument</figcaption></figure><figure class="shot"><img src="../img/ancient-evil/ae-perk-odin.jpg" alt="Odin &mdash; River of Sorrow" loading="lazy"><figcaption>Odin &mdash; River of Sorrow</figcaption></figure></div>
+    <p class="blurb">Costs follow the BO4 slot ladder (first perk bought 2500, then 3000 / 3500 / 4000) &mdash; the reference doesn't quote prices, so correct me if yours differ.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
