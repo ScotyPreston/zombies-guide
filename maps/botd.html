@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0c0f14">
+<title>Blood of the Dead &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Blood of the Dead: Alcatraz — spectral shield blue + blood red */
+  :root {
+    --map-bg: #0c0f14;
+    --map-bg2: #151a22;
+    --bg: #0c0f14;
+    --bg-card: #151a22;
+    --bg-card-hover: #1d2430;
+    --line: #2c3440;
+    --map-accent: #5ab8f0;
+    --map-accent2: #d9483b;
+    --map-glow: rgba(90, 184, 240, 0.30);
+  }
+  .shot-grid.icon-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .shot-grid.icon-grid .shot img { max-width: 110px; margin: 0 auto; display: block; aspect-ratio: 1 / 1; height: auto; }
+  .shot-grid.icon-grid .shot figcaption { text-align: center; }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="botd">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo4">&#8249; Black Ops 4</a></nav>
+
+  <header class="map-header">
+    <h1>Blood of the Dead</h1>
+    <div class="sub">Black Ops 4 &middot; Alcatraz, again &mdash; the hardest one</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="map">Map</button>
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAP ============ -->
+  <section class="tab-panel" id="tab-map">
+    <h2>Map</h2>
+    <p class="blurb">The island layout. Tap it to open it full screen, then use &minus; and + to zoom in on an area.</p>
+    <figure class="map-figure">
+      <button class="map-open" data-full="../img/botd/bd-map.jpg" data-title="Blood of the Dead &mdash; island layout">
+        <img src="../img/botd/bd-map.jpg" alt="Blood of the Dead - island layout" loading="lazy">
+        <span class="tap-hint">Tap to enlarge</span>
+      </button>
+      <figcaption>Alcatraz &mdash; the West side (New Industries, Model Industries, Power House) is joined to the prison by the Catwalk; the Docks sit below the Citadel. Layout from the CoD wiki.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b> <b>Normal difficulty, no modifiers</b> &mdash; casual locks you out.</li>
+        <li><b>Both power switches on, Pack-a-Punch open.</b> <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li>The <b>Hell's Retriever</b> and the <b>Spoon</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+        <li>The <b>Spectral Shield</b> &mdash; ideally upgraded to the <b>Attuned</b> shield. <button class="xref" data-goto="build">See Buildables</button></li>
+      </ul>
+    </div>
+    <p class="blurb">"Most Escape Alive" &mdash; the reference calls this the hardest quest in Zombies history. Expect a long game.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Scratch the Warden's wall.</b> Upstairs in the <b>Warden's House</b>, melee the wall with the <b>Spoon</b> &mdash; scratch marks appear all over it.
+        <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-q-wall1.jpg" alt="The upstairs wall in the Warden's House" loading="lazy"><figcaption>The upstairs wall in the Warden's House</figcaption></figure><figure class="shot"><img src="../img/botd/bd-q-wall2.jpg" alt="Spoon it until the scratches show" loading="lazy"><figcaption>Spoon it until the scratches show</figcaption></figure></div></li>
+
+      <li data-num="2"><b>Free Monkey Bombs.</b> Down the stairs from the <b>Cell Block 2nd Floor wolf head</b>, a small monkey statue sits outside the map. Charge your <b>specialist weapon to level 2</b>, bring a big horde to the statue and use it there &mdash; red souls fly into the monkey until it flies off. The Monkey Bombs then wait on a table in <b>Richtofen's Laboratory</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-q-monkey.jpg" alt="The monkey statue outside the map" loading="lazy"><figcaption>The monkey statue outside the map</figcaption></figure><figure class="shot"><img src="../img/botd/bd-q-monkeybombs.jpg" alt="The lab table where the Monkey Bombs appear" loading="lazy"><figcaption>The lab table where the Monkey Bombs appear</figcaption></figure></div></li>
+
+      <li data-num="3"><b>Open the ritual chamber.</b> Shield-blast the <b>Citadel Tunnels code box</b> and enter <b>666</b> &mdash; a Warden spawns. Lead him upstairs, <b>throw a Monkey Bomb by the scratched wall</b>, and his slam opens a hole. Inside, hold use on the <b>electric chair</b>: the room tears itself apart, the crew talks, then <b>grab the glowing red orb</b> from the table before you leave.
+        <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-q-chamber.jpg" alt="The chamber after the chair" loading="lazy"><figcaption>The chamber after the chair</figcaption></figure><figure class="shot"><img src="../img/botd/bd-q-orb.jpg" alt="The red orb on the table &mdash; don't leave it" loading="lazy"><figcaption>The red orb on the table &mdash; don't leave it</figcaption></figure></div></li>
+
+      <li data-num="4"><b>The orb, the book, the bird.</b> Place the orb on the <b>map in Richtofen's Lab</b>. Turn around: a glowing blue book, the <b>Kronorium</b>, is on the floor. Hold use &mdash; white flash &mdash; and a ghostly <b>bird steals it</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-q-map.jpg" alt="The orb goes on the lab map" loading="lazy"><figcaption>The orb goes on the lab map</figcaption></figure><figure class="shot"><img src="../img/botd/bd-q-kronorium.jpg" alt="The Kronorium on the floor" loading="lazy"><figcaption>The Kronorium on the floor</figcaption></figure><figure class="shot"><img src="../img/botd/bd-q-bird.jpg" alt="The thief" loading="lazy"><figcaption>The thief</figcaption></figure></div></li>
+
+      <li data-num="5"><b>Hunt the bird &mdash; three times.</b> Shield out, hold the <b>spirit vision</b> and scan the map: <b>birds chirping = you're close</b>. When you see it, <b>shield-blast it</b>. There are <b>40 possible spots</b> (the reference points to Glitch's YouTube video for all of them), and <b>only one bird per round</b>.</li>
+
+      <li data-num="6"><b>The fourth bird &mdash; Zombie Blood.</b> The last bird sits at one of the video's "<b>Zombie Blood</b>" spots and is <b>invisible</b>: you know you're facing it when you see a <b>glint of light and hear a man crying</b>. Blast the code box and enter <b>872</b> for a Zombie Blood power-up, grab it, run to the spot, confirm in spirit vision (<b>don't stare or it flies off</b>) and <b>throw the Hell's Retriever at its feet</b>. The Kronorium drops nearby. Fail = next round.
+        <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-q-872.jpg" alt="872 at the Citadel Tunnels box = Zombie Blood" loading="lazy"><figcaption>872 at the Citadel Tunnels box = Zombie Blood</figcaption></figure><figure class="shot"><img src="../img/botd/bd-q-book-found.jpg" alt="The Kronorium, back on the ground" loading="lazy"><figcaption>The Kronorium, back on the ground</figcaption></figure></div></li>
+
+      <li data-num="7"><b>Start a trial.</b> Place the Kronorium on the <b>corpse in the electric chair</b>; hold use to stop the pages, then read the <b>three-digit number</b> through the shield's spirit vision. Blast the <b>code box</b> and enter it: the <b>lighthouse beam</b> points at a portal &mdash; find it in spirit vision and <b>blast the portal</b>. Five trials, <b>random order, one per round</b>; fail one and the book gives a new code next round.
+        <div class="callout"><b>No beam?</b> Michigan Avenue's trial shows no beam &mdash; just look for the portal there.</div>
+        <figure class="shot"><img src="../img/botd/bd-q-number.jpg" alt="The number in the book &mdash; spirit vision" loading="lazy"><figcaption>The number in the book &mdash; spirit vision</figcaption></figure>
+        <p><b>The five trials</b> (each ends with a <b>red orb</b>):</p>
+        <details class="acc">
+          <summary><img src="../img/botd/bd-t-docks-skeleton.jpg" alt="" style="object-fit:cover">
+            <span><b>Docks trial</b><br><small>Morse code + a ghost escort</small></span></summary>
+          <div class="acc-body">
+            <ol class="steps">
+              <li>Blast the <b>Docks</b> portal. Solo: enter <b>872</b> for a Zombie Blood first (Temporal Gift elixir before grabbing it); co-op: one player holds a zombie.</li>
+              <li>In the <b>Warden's Office</b>, behind the locked gate (the Acid Gat part cage), is a <b>morse machine</b>. Hold use briefly = dot, hold 2&ndash;3 s = dash, a second between entries. <b>The Warden laughs when an entry is wrong</b> &mdash; so try dashes until he laughs, write the code down as you go; your character confirms when it's done.</li>
+              <li>Go to the <b>Infirmary</b> room with the <b>skeleton on the operating table</b>, kill a zombie there, and find the ghost in spirit vision. Blast it, hold use on it, then <b>feed it souls</b> until it follows you.
+                <figure class="shot"><img src="../img/botd/bd-t-docks-skeleton.jpg" alt="The operating-table room" loading="lazy"><figcaption>The operating-table room</figcaption></figure></li>
+              <li>Walk it to the <b>gondola</b>, ride down with it, and lead it to the <b>Docks portal</b> &mdash; it leaves the orb.</li>
+            </ol>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><img src="../img/botd/bd-t-showers-banjo.jpg" alt="" style="object-fit:cover">
+            <span><b>Showers trial</b><br><small>The banjo &mdash; the frustrating one</small></span></summary>
+          <div class="acc-body">
+            <ol class="steps">
+              <li>Blast the <b>Showers</b> portal. A ghost offers a <b>banjo</b> &mdash; hold use to take it.
+                <figure class="shot"><img src="../img/botd/bd-t-showers-banjo.jpg" alt="The banjo ghost" loading="lazy"><figcaption>The banjo ghost</figcaption></figure></li>
+              <li><b>Stand in the blue circle</b> (outside it you take damage) and get kills &mdash; the zombies don't have to be in it. The circle <b>moves</b> after a while; keep following it until the banjo stops taking souls.
+                <figure class="shot"><img src="../img/botd/bd-t-showers-circle.jpg" alt="The circle on the floor" loading="lazy"><figcaption>The circle on the floor</figcaption></figure></li>
+              <li>Co-op: <b>every player</b> has to take the banjo and do this. A <b>banjo strum</b> = done; hand it back to the ghost for the orb.</li>
+            </ol>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><img src="../img/botd/bd-t-ph-machine.jpg" alt="" style="object-fit:cover">
+            <span><b>Power House trial</b><br><small>Simon says, symbols, a helpless ghost</small></span></summary>
+          <div class="acc-body">
+            <ol class="steps">
+              <li>Blast the <b>Power House</b> portal, then run to <b>Building 64</b> at the Docks: a smoking, stopped machine. Hold use to start <b>Simon says</b> &mdash; a power box lights, you confirm it, then two, up to <b>five</b>.
+                <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-t-ph-machine.jpg" alt="The stopped machine in Building 64" loading="lazy"><figcaption>The stopped machine in Building 64</figcaption></figure><figure class="shot"><img src="../img/botd/bd-t-ph-panels.jpg" alt="Panel numbering to memorise by (Glitch)" loading="lazy"><figcaption>Panel numbering to memorise by (Glitch)</figcaption></figure></div></li>
+              <li>At the end <b>three panels keep flashing</b> &mdash; photograph the <b>symbols on the paper under them</b>. Before leaving, grab the <b>punch card</b> on the shelf between the two archways to the Citadel.
+                <figure class="shot"><img src="../img/botd/bd-t-ph-card.jpg" alt="The punch card shelf" loading="lazy"><figcaption>The punch card shelf</figcaption></figure></li>
+              <li>In <b>Model Industries</b>, hold use on the machine: screens light up. Find your three symbols on the screens, hold use on each &mdash; you get a <b>new symbol</b> each time. Photograph those too.
+                <figure class="shot"><img src="../img/botd/bd-t-ph-screens.jpg" alt="The Model Industries machine and screens" loading="lazy"><figcaption>The Model Industries machine and screens</figcaption></figure></li>
+              <li>In the <b>Power House</b>, a ghost wanders trying switches and failing. Find the three switches with your <b>new</b> symbols under them, and <b>blast the ghost as he heads for each one</b> so he can pull it. Three pulls = orb.
+                <figure class="shot"><img src="../img/botd/bd-t-ph-ghost.jpg" alt="The Power House ghost" loading="lazy"><figcaption>The Power House ghost</figcaption></figure></li>
+            </ol>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><img src="../img/botd/bd-t-mich-ghost.jpg" alt="" style="object-fit:cover">
+            <span><b>Michigan Avenue trial</b><br><small>Protect the ghost across the map</small></span></summary>
+          <div class="acc-body">
+            <div class="callout">Stock up first: ammo, a specialist charge, Monkey Bombs, the Magmagat, Undead Man Walking if anyone has it.</div>
+            <ol class="steps">
+              <li>Blast the <b>Michigan Avenue</b> portal, then go to the <b>Cafeteria</b> (down the stairs from the Infirmary), kill a zombie and find the ghost in spirit vision. Blast it so everyone can see it.
+                <figure class="shot"><img src="../img/botd/bd-t-mich-ghost.jpg" alt="The Cafeteria ghost" loading="lazy"><figcaption>The Cafeteria ghost</figcaption></figure></li>
+              <li><b>Escort him to the portal.</b> Magmagat fire under his feet, Monkey Bombs to pull the crowd, specialist for the hordes &mdash; but <b>specialist weapons hurt him</b>, so aim away. He drops the orb at the portal.</li>
+            </ol>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><img src="../img/botd/bd-wpn-shield.jpg" alt="" style="object-fit:cover">
+            <span><b>New Industries trial</b><br><small>Drain and blast the killer ghost &times;5</small></span></summary>
+          <div class="acc-body">
+            <div class="callout">Go in with <b>max shield charges</b> &mdash; four with the Attuned shield.</div>
+            <ol class="steps">
+              <li>Blast the <b>New Industries</b> portal, then kill a zombie in <b>D-Block</b>: a <b>hostile ghost</b> appears in spirit vision, heading off to murder a worker ghost in New Industries. Blast him visible.</li>
+              <li><b>Drain him with the key attack</b> until he vanishes, find him again in spirit vision, blast him &mdash; <b>five times in all</b>. He turns redder each time (solo: keep zombies alive to refill charges).</li>
+              <li>When he's almost fully red and changes posture, <b>run ahead to New Industries</b> and wait by the doorway. As he comes through, <b>trigger the spinning chain trap</b>. Collect the orb once it stops.</li>
+            </ol>
+          </div>
+        </details></li>
+
+      <li data-num="8"><b>Five orbs on the map, then the key.</b> Place all five orbs on the lab map. Go up with <b>PaP'd Magmagat / M1927 / Hades / MOG 12</b>, all perks and a full shield. Hold use on the <b>Kronorium</b> in the chamber: the <b>Summoning Key</b> goes into the corpse, the Warden knocks you out, and you wake in a cell.</li>
+
+      <li data-num="9"><b>Out of the cells.</b> After the Warden's speech the <b>bird opens your cell</b>. <b>Take your gear from the bag</b> and refill the shield at the bench if you built it there. Follow the bird through the prison and the <b>Recreation Yard</b> back to Richtofen's Lab &mdash; dogs and Wardens the whole way. Outside <b>Model Industries</b> a <b>giant Warden</b> takes no damage until the ghosts and the bird lift him away; grab the <b>last orb</b>, place it on the map, and a door on the right opens.</li>
+
+      <li data-num="10"><b>The boss.</b> Up the stairs to the garage door: everyone stands on an <b>unlit light</b> and holds use.
+        <ul>
+          <li>Waves of <b>dogs, zombies and Wardens</b>. When the <b>giant Warden</b> appears in a <b>red circle with three orbs</b> over his head, get in the circle and <b>shoot the orbs</b>.</li>
+          <li>Circle gone &rarr; turn around and <b>shield-blast the orb on top of the central machine, twice</b>. Do the whole thing <b>twice</b>.</li>
+          <li>Richtofen curses the machine &mdash; whoever <b>is Richtofen</b> holds use to enter it (solo, a bot does it). Everyone else runs from an <b>invincible Warden</b>.</li>
+          <li>Richtofen returns in knight's armour with the <b>Fire Staff crystal</b>; he holds use at the arena to strip the giant Warden's immunity. <b>Kill him.</b> Cutscene &mdash; "escape".</li>
+        </ul>
+        <figure class="shot"><img src="../img/botd/bd-warden.jpg" alt="The Warden" loading="lazy"><figcaption>The Warden (CoD wiki)</figcaption></figure></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs &amp; achievements</h2>
+    <p class="blurb">The reference is an achievement walkthrough, so this tab is its achievement list. The songs and jump scares aren't covered &mdash; send a reference and I'll add them.</p>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-pap-catwalk.jpg" alt="" style="object-fit:cover">
+        <span><b>Round 20 on the West side</b><br><small>Never open the Catwalk</small></span></summary>
+      <div class="acc-body">
+        <p>Reach <b>round 20 without opening the Catwalk</b>. You keep the whole West side and <b>one perk</b>. Counts on <b>casual with three bots</b>. Hit the box for a <b>Blundergat</b> plus a wall rifle (VAPR), open every door, and run the loop: courtyard outside Richtofen's Lab &rarr; Model Industries &rarr; tunnel to the Power House &rarr; stairs back up. Keep moving so nothing spawns in front of you.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-shield.jpg" alt="" style="object-fit:cover">
+        <span><b>Shield revive</b><br><small>Revive a player with a blast</small></span></summary>
+      <div class="acc-body">
+        <p>Bank one blast (key-drain three zombies), then hold spirit vision on a downed player and fire the blast at them.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/botd/bd-gondola2.jpg" alt="" style="object-fit:cover">
+        <span><b>Gondola ride with the Warden</b><br><small>Best done solo</small></span></summary>
+      <div class="acc-body">
+        <p>Solo gives you two free self-revives. Flip the <b>Docks</b> power switch &mdash; a Warden spawns &mdash; call the gondola down and survive until its <b>green lights and bell</b>. With <b>750 points</b>, board with him and start the ride. He'll probably down you; <b>it still counts</b> when the gondola reaches the cell block.</p>
+        <figure class="shot"><img src="../img/botd/bd-gondola2.jpg" alt="Inside the gondola" loading="lazy"><figcaption>Inside the gondola</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/botd/bd-ach-tommy.jpg" alt="" style="object-fit:cover">
+        <span><b>Retriever + Spoon + Blundergat + Tommy Gun</b><br><small>All four at once</small></span></summary>
+      <div class="acc-body">
+        <p><b>Normal difficulty</b> (the Spoon doesn't exist on casual) and <b>no attachments or death effects on the Tommy Gun</b> or it won't pop. The Tommy Gun is a <b>1,500 wall-buy at the Docks</b>, in the corner under the "Dock" sign. Blundergat from the box or the free quest.</p>
+        <figure class="shot"><img src="../img/botd/bd-ach-tommy.jpg" alt="The Tommy Gun wall-buy at the Docks" loading="lazy"><figcaption>The Tommy Gun wall-buy at the Docks</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/botd/bd-ach-gondola.jpg" alt="" style="object-fit:cover">
+        <span><b>Feed the wolves from afar</b><br><small>Gondola, Citadel and Model Industries &mdash; buggy</small></span></summary>
+      <div class="acc-body">
+        <p>Feed a wolf head from each of three places in one game. Do it <b>co-op</b> with a sniper/tactical rifle (ABR, Paladin, Koshka, Essex) &mdash; a friend trains zombies by the head, you kill one from the spot. Claymores by the head, triggered by a led zombie, also work. Buggy: may need a second try.</p>
+        <ol class="steps">
+          <li><b>Model Industries</b> (the room above Richtofen's Lab): shoot into the New Industries wolf-head room from here.
+            <figure class="shot"><img src="../img/botd/bd-ach-model.jpg" alt="Where to stand in Model Industries" loading="lazy"><figcaption>Where to stand in Model Industries</figcaption></figure></li>
+          <li><b>Citadel</b>: under the Cell Block 2nd Floor head, look up through the grated floor and shoot through it.
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-ach-citadel1.jpg" alt="The wall to approach in the Citadel" loading="lazy"><figcaption>The wall to approach in the Citadel</figcaption></figure><figure class="shot"><img src="../img/botd/bd-ach-citadel2.jpg" alt="Looking up through the grate" loading="lazy"><figcaption>Looking up through the grate</figcaption></figure></div></li>
+          <li><b>Gondola</b>: ride from the Docks toward the prison and shoot into the Eagle's Plaza alley before it stops.
+            <figure class="shot"><img src="../img/botd/bd-ach-gondola.jpg" alt="The view of the alley from the gondola" loading="lazy"><figcaption>The view of the alley from the gondola</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-blundergat.png" alt="">
+        <span><b>Warden with all three gats</b><br><small>Blundergat, Magmagat, Acidgat in one game</small></span></summary>
+      <div class="acc-body">
+        <p>Kill a Warden with the plain Blundergat, upgrade to the <b>Magmagat</b> and kill the next, then apply the <b>Acid Gat kit</b> and kill a third. <button class="xref" data-goto="wonder">See Wonder Weapons</button></p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/botd/bd-rd-charged.jpg" alt="" style="object-fit:cover">
+        <span><b>Max Redeemer kills</b><br><small>Buggy &mdash; keep throwing</small></span></summary>
+      <div class="acc-body">
+        <p>With the <b>Hell's Redeemer</b>, charge it (three blue rings pulse under you) and throw it into a big horde; an <b>Insta-Kill</b> helps. Reports say aim at their feet, or pause before it returns. Repeat until it pops.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">Mob of the Dead's arsenal, rebuilt: the Hell's Retriever and its upgrade, the Blundergat and its two elements, and the Spoon. The Retriever comes first &mdash; most of the rest needs it.</p>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-retriever.png" alt="">
+        <span><b>Hell's Retriever</b><br><small>Feed the three wolf heads</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Feed each wolf head</b> by killing zombies next to it until it stops eating and sinks into the wall:
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-hr-wolf-ni.jpg" alt="New Industries &mdash; inside the factory by spawn" loading="lazy"><figcaption>New Industries &mdash; inside the factory by spawn</figcaption></figure><figure class="shot"><img src="../img/botd/bd-hr-wolf-cb2.jpg" alt="Cell Block 2nd Floor &mdash; on the metal sheets" loading="lazy"><figcaption>Cell Block 2nd Floor &mdash; on the metal sheets</figcaption></figure><figure class="shot"><img src="../img/botd/bd-hr-wolf-eagle.jpg" alt="Eagle's Plaza &mdash; the alley past the Warden's Office" loading="lazy"><figcaption>Eagle's Plaza &mdash; the alley past the Warden's Office</figcaption></figure></div></li>
+          <li>Take the <b>fast-travel gate inside the Warden's House</b> and <b>hold use while flying</b> &mdash; you grab the Retriever on the way past.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-redeemer.jpg" alt="" style="object-fit:cover">
+        <span><b>Hell's Redeemer</b><br><small>Needs the shield + the Retriever</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>In the <b>Recreation Yard</b>, get <b>30 kills with charged throws</b> (hold the throw button) &mdash; the tomahawk glows blue in flight. A <b>wolf howl</b> = done.
+            <figure class="shot"><img src="../img/botd/bd-rd-charged.jpg" alt="A charged throw, glowing blue" loading="lazy"><figcaption>A charged throw, glowing blue</figcaption></figure></li>
+          <li><b>Find the wolf symbol</b> in spirit vision (shield out, hold the vision button) &mdash; one of ten spots &mdash; and <b>throw the Retriever at it</b>. The game takes the tomahawk.
+            <p><b>Recreation Yard:</b></p>
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-rd-ry1.jpg" alt="Lava-pool path, left of the Swordfish" loading="lazy"><figcaption>Lava-pool path, left of the Swordfish</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ry2.jpg" alt="Wall left of the Mystery Box" loading="lazy"><figcaption>Wall left of the Mystery Box</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ry3.jpg" alt="Rubble right of the prison stairs" loading="lazy"><figcaption>Rubble right of the prison stairs</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ry4.jpg" alt="Metal sheet before the prison stairs" loading="lazy"><figcaption>Metal sheet before the prison stairs</figcaption></figure></div>
+            <p><b>Citadel:</b></p>
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-rd-ci1.jpg" alt="Below the three wolf-head symbols" loading="lazy"><figcaption>Below the three wolf-head symbols</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ci2.jpg" alt="Wall to the left of that one" loading="lazy"><figcaption>Wall to the left of that one</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ci3.jpg" alt="Behind you, behind a gate" loading="lazy"><figcaption>Behind you, behind a gate</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ci4.jpg" alt="Hole in the wall before the stairs down" loading="lazy"><figcaption>Hole in the wall before the stairs down</figcaption></figure></div>
+            <p><b>Eagle's Plaza:</b></p>
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-rd-ep1.jpg" alt="Lava pool across from the wolf head, left of a pipe" loading="lazy"><figcaption>Lava pool across from the wolf head, left of a pipe</figcaption></figure><figure class="shot"><img src="../img/botd/bd-rd-ep2.jpg" alt="Same pool, on sheet metal" loading="lazy"><figcaption>Same pool, on sheet metal</figcaption></figure></div></li>
+          <li><b>Next dog round</b> (fog): shield out, <b>take dog souls</b> to charge blasts, <b>keep one dog alive</b>, and hunt the <b>ghost dog</b> in spirit vision anywhere on the map &mdash; <b>footprints</b> mean you're close. <b>Blast it</b>.
+            <figure class="shot"><img src="../img/botd/bd-rd-dog.jpg" alt="Ghost-dog footprints" loading="lazy"><figcaption>Ghost-dog footprints</figcaption></figure></li>
+          <li>Take the <b>Warden's House fast travel</b> again &mdash; the tomahawk glows blue on the way past. Hold use to grab the <b>Hell's Redeemer</b>.
+            <figure class="shot"><img src="../img/botd/bd-rd-glow.jpg" alt="Glowing blue = upgraded" loading="lazy"><figcaption>Glowing blue = upgraded</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-blundergat.png" alt="">
+        <span><b>Blundergat</b><br><small>Free from the Warden's desk &mdash; 5 blue skulls</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>Hell's Retriever</b>.</li></ul></div>
+        <ol class="steps">
+          <li><b>Throw the Retriever at five blue skulls:</b>
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-bg-skull-eagle.jpg" alt="Eagle's Plaza &mdash; by the wolf head outside the Warden's Office" loading="lazy"><figcaption>Eagle's Plaza &mdash; by the wolf head outside the Warden's Office</figcaption></figure><figure class="shot"><img src="../img/botd/bd-bg-skull-roof.jpg" alt="Roof &mdash; behind the Pack-a-Punch power box" loading="lazy"><figcaption>Roof &mdash; behind the Pack-a-Punch power box</figcaption></figure><figure class="shot"><img src="../img/botd/bd-bg-skull-cd.jpg" alt="C-D Street &mdash; inside a cell toilet" loading="lazy"><figcaption>C-D Street &mdash; inside a cell toilet</figcaption></figure><figure class="shot"><img src="../img/botd/bd-bg-skull-west.jpg" alt="West Grounds &mdash; catwalk outside Model Industries" loading="lazy"><figcaption>West Grounds &mdash; catwalk outside Model Industries</figcaption></figure><figure class="shot"><img src="../img/botd/bd-bg-skull-docks.jpg" alt="Docks &mdash; top of a wooden pole" loading="lazy"><figcaption>Docks &mdash; top of a wooden pole</figcaption></figure></div></li>
+          <li>Collect it from the <b>Warden's desk</b>.
+            <figure class="shot"><img src="../img/botd/bd-bg-desk.jpg" alt="The Blundergat on the Warden's desk" loading="lazy"><figcaption>The Blundergat on the Warden's desk</figcaption></figure></li>
+        </ol>
+        <p class="blurb">Pack-a-Punched it becomes <b>The Sweeper</b>. Skull shots courtesy of r/codzombies via the reference.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-sweeper.png" alt="">
+        <span><b>The Sweeper</b><br><small>Pack-a-Punched Blundergat, no element</small></span></summary>
+      <div class="acc-body">
+        <p>The plain PaP upgrade &mdash; the reference's pick alongside a PaP'd Magmagat for the quest. <button class="xref" data-goto="pap">See Pack-a-Punch</button></p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-acidgat.png" alt="">
+        <span><b>Acidgat</b><br><small>Blundergat + the Acid Gat Kit</small></span></summary>
+      <div class="acc-body">
+        <p>Build the <b>Acid Gat Kit</b> (three parts, two behind Warden's-key locks) and apply it to a Blundergat or Magmagat. <button class="xref" data-goto="build">See Buildables</button></p>
+        <figure class="shot"><img src="../img/botd/bd-wpn-vitriolic.jpg" alt="Pack-a-Punched: Vitriolic Withering (CoD wiki)" loading="lazy"><figcaption>Pack-a-Punched: Vitriolic Withering (CoD wiki)</figcaption></figure>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-magmagat.png" alt="">
+        <span><b>Magmagat</b><br><small>The fireplace, 15&ndash;20 souls, and a run</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>Hold use with the Blundergat (or Acidgat) out at the <b>Warden's House fireplace</b> to place it. You're <b>locked in</b>.
+            <figure class="shot"><img src="../img/botd/bd-mg-fireplace.jpg" alt="The fireplace" loading="lazy"><figcaption>The fireplace</figcaption></figure></li>
+          <li>Kill zombies and <b>pick up the blue orbs</b> they leave &mdash; <b>15&ndash;20 souls</b> &mdash; and place them at the fireplace. Take back the <b>Tempered Blundergat</b>.</li>
+          <li><b>Run it to New Industries</b> before its blue flame dies, passing the <b>fire barrels</b> along the way to re-light it. Best at round's end with one zombie left &mdash; you have to cross the Catwalk.</li>
+          <li>Hold use at the <b>big machine in New Industries</b>; a moment later, take back your <b>Magmagat</b>.
+            <figure class="shot"><img src="../img/botd/bd-mg-machine.jpg" alt="The machine in New Industries" loading="lazy"><figcaption>The machine in New Industries</figcaption></figure></li>
+        </ol>
+        <figure class="shot"><img src="../img/botd/bd-wpn-magnus.jpg" alt="Pack-a-Punched: Magnus Operandi (CoD wiki)" loading="lazy"><figcaption>Pack-a-Punched: Magnus Operandi (CoD wiki)</figcaption></figure>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-spoon.png" alt="">
+        <span><b>The Spoon</b><br><small>Normal difficulty only &mdash; needs the Retriever + Warden's key</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>With the <b>Warden's key</b>, unlock the code box behind the gate in the <b>Citadel Tunnels</b> by the Docks.
+            <figure class="shot"><img src="../img/botd/bd-sp-codebox.jpg" alt="The code box behind the gate" loading="lazy"><figcaption>The code box behind the gate</figcaption></figure></li>
+          <li>In the <b>Warden's Office</b>, stand here and hold spirit vision: <b>three numbers</b> on the pillars. They change every game.
+            <figure class="shot"><img src="../img/botd/bd-sp-numbers.jpg" alt="The numbers on the pillars" loading="lazy"><figcaption>The numbers on the pillars</figcaption></figure></li>
+          <li>Back at the box, <b>shield-blast it</b>, then tap each digit to enter the code. A cage drops into the water with the <b>skeleton holding the Spoon</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-sp-code0.jpg" alt="The box, ready for input" loading="lazy"><figcaption>The box, ready for input</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sp-code1.jpg" alt="Entering the code" loading="lazy"><figcaption>Entering the code</figcaption></figure></div></li>
+          <li>At the <b>Docks</b>, blast the <b>power box by the water</b>, look up: a crane swings a fishing net with the skeleton in it. <b>Throw the Retriever at the skeleton when it's right over the box on the dock</b> &mdash; the Spoon drops for everyone.
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-sp-dockbox.jpg" alt="The Docks power box" loading="lazy"><figcaption>The Docks power box</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sp-crane.jpg" alt="The crane and the net" loading="lazy"><figcaption>The crane and the net</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sp-spoon.jpg" alt="The Spoon on the dock box" loading="lazy"><figcaption>The Spoon on the dock box</figcaption></figure></div></li>
+        </ol>
+        <p class="blurb">The Golden Spork / Scalpel upgrades aren't in the reference &mdash; send one and I'll add them.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables</h2>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-wpn-shield.jpg" alt="" style="object-fit:cover">
+        <span><b>Spectral Shield</b><br><small>Key + Essence + Grate &mdash; the map's Swiss-army knife</small></span></summary>
+      <div class="acc-body">
+        <div class="shot-grid icon-grid"><figure class="shot"><img src="../img/botd/bd-ic-key.png" alt="Warden's Key" loading="lazy"><figcaption>Warden's Key</figcaption></figure><figure class="shot"><img src="../img/botd/bd-ic-essence.png" alt="Spectral Essence" loading="lazy"><figcaption>Spectral Essence</figcaption></figure><figure class="shot"><img src="../img/botd/bd-ic-grate.png" alt="Grate" loading="lazy"><figcaption>Grate</figcaption></figure></div>
+        <ol class="steps">
+          <li><b>Key</b> &mdash; dropped by the <b>first Warden you kill</b> (one can spawn on the Catwalk run; one is guaranteed once both power switches are on).
+            <figure class="shot"><img src="../img/botd/bd-sh-key.jpg" alt="The Warden's key on the ground" loading="lazy"><figcaption>The Warden's key on the ground</figcaption></figure></li>
+          <li><b>Spectral Essence</b> &mdash; on one of the three red Afterlife boxes:
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-sh-ess-library.jpg" alt="Library (the old MotD spawn room)" loading="lazy"><figcaption>Library (the old MotD spawn room)</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sh-ess-times.jpg" alt="Times Square, by the Showers entrance" loading="lazy"><figcaption>Times Square, by the Showers entrance</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sh-ess-michigan.jpg" alt="Michigan Avenue, outside the Warden's Office" loading="lazy"><figcaption>Michigan Avenue, outside the Warden's Office</figcaption></figure></div></li>
+          <li><b>Grate</b> &mdash; in or near the Citadel:
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-sh-grate1.jpg" alt="On a wall down the Citadel spiral" loading="lazy"><figcaption>On a wall down the Citadel spiral</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sh-grate2.jpg" alt="Down the stairs from the code box, by rubble" loading="lazy"><figcaption>Down the stairs from the code box, by rubble</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sh-grate3.jpg" alt="Outside, across from Building 64" loading="lazy"><figcaption>Outside, across from Building 64</figcaption></figure></div></li>
+          <li><b>Build it on the Cell Block 3rd Floor table</b> &mdash; the reference's pick, and you can refill it there during the quest's escape.
+            <figure class="shot"><img src="../img/botd/bd-sh-table.jpg" alt="The 3rd Floor build table" loading="lazy"><figcaption>The 3rd Floor build table</figcaption></figure></li>
+        </ol>
+        <div class="callout"><b>How it works:</b> shield out, hold fire = <b>key attack</b> (4&ndash;5 s per zombie; <b>3 drains = 1 blast</b>). Hold aim = <b>spirit vision</b>; aim + fire = <b>spirit blast</b>. Blasts power boxes, start trials, revive teammates. It's needed for Pack-a-Punch, the Redeemer, the Spoon and the whole quest.</div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-sh-lock1.jpg" alt="" style="object-fit:cover">
+        <span><b>Attuned Spectral Shield</b><br><small>Upgrade: drain the Mystery Box lock</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The shield and the <b>Hell's Retriever</b>.</li></ul></div>
+        <ol class="steps">
+          <li>Everyone by the box. Spin it, and <b>while it's moving</b> (a lock shows instead of a weapon) <b>key-drain the lock</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-sh-lock1.jpg" alt="Draining the lock" loading="lazy"><figcaption>Draining the lock</figcaption></figure><figure class="shot"><img src="../img/botd/bd-sh-lock2.jpg" alt="The keyhole turning blue" loading="lazy"><figcaption>The keyhole turning blue</figcaption></figure></div></li>
+          <li>When the keyhole turns <b>blue</b>, <b>throw the Retriever at the lock</b> &mdash; everyone at once so each player gets one. The shield becomes the <b>Attuned Spectral Shield</b>: <b>four blast charges</b> and more durability.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/botd/bd-ic-agcase.png" alt="">
+        <span><b>Acid Gat Kit</b><br><small>3 parts &mdash; two need the Warden's key</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Case</b> &mdash; on the ground in the <b>Transverse Tunnel</b> (New Industries to the Power House).
+            <figure class="shot"><img src="../img/botd/bd-ag-part1.jpg" alt="The case in the Transverse Tunnel" loading="lazy"><figcaption>The case in the Transverse Tunnel</figcaption></figure></li>
+          <li><b>Motor</b> &mdash; <b>Warden's Office</b>, in the locked cage with the orange lock; open it with the Warden's key.
+            <figure class="shot"><img src="../img/botd/bd-ag-part2.jpg" alt="The cage in the Warden's Office" loading="lazy"><figcaption>The cage in the Warden's Office</figcaption></figure></li>
+          <li><b>Third part</b> &mdash; <b>Infirmary</b>, on the way to the roof, in the locked cabinet behind the Soda perk's wall; Warden's key again.
+            <figure class="shot"><img src="../img/botd/bd-ag-part3.jpg" alt="The Infirmary cabinet" loading="lazy"><figcaption>The Infirmary cabinet</figcaption></figure></li>
+          <li>Build at any free table &mdash; the reference uses the one <b>by the Transverse Tunnel</b>. Then apply it to a Blundergat. <button class="xref" data-goto="wonder">See Wonder Weapons</button>
+            <figure class="shot"><img src="../img/botd/bd-ag-table.jpg" alt="The Transverse Tunnel table" loading="lazy"><figcaption>The Transverse Tunnel table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">Two power switches, a sprint across the Catwalk, and the shield does the rest. The machine moves between three spots.</p>
+    <ol class="steps">
+      <li><b>Power, West side</b> &mdash; the switch inside the <b>Power House</b>.
+        <figure class="shot"><img src="../img/botd/bd-pw-house.jpg" alt="The Power House switch" loading="lazy"><figcaption>The Power House switch</figcaption></figure></li>
+      <li><b>Open the Catwalk.</b> With that switch on, hold use at the door under the "Catwalk" sign. It's an <b>endurance run</b>: zombies, hellhounds, maybe a Warden &mdash; use your specialist and keep pushing forward until you come out in the old Mob of the Dead spawn room.
+        <figure class="shot"><img src="../img/botd/bd-pap-catwalk.jpg" alt="The Catwalk door" loading="lazy"><figcaption>The Catwalk door</figcaption></figure></li>
+      <li><b>Power, Docks</b> &mdash; the second switch inside <b>Building 64</b>. <b>Both on = a Warden spawns</b>; kill him for the key if you don't have it yet.
+        <figure class="shot"><img src="../img/botd/bd-pw-b64.jpg" alt="The Building 64 switch" loading="lazy"><figcaption>The Building 64 switch</figcaption></figure></li>
+      <li><b>Blast the roof box.</b> Build the shield, then go through the Infirmary to the <b>Roof</b>. Key-drain three zombies for a blast, hold spirit vision, and fire it at the <b>power box beside Pack-a-Punch</b>. <button class="xref" data-goto="build">See Buildables</button>
+        <figure class="shot"><img src="../img/botd/bd-pap-box.jpg" alt="The roof power box in spirit vision" loading="lazy"><figcaption>The roof power box in spirit vision</figcaption></figure></li>
+    </ol>
+    <div class="callout">The machine rotates between the <b>Power House</b> near spawn, the <b>Docks power room</b> and the <b>Roof</b>.</div>
+    <h2>Gondola</h2>
+    <p class="blurb">Between the prison and the Docks, once <b>both switches</b> are on. Boards at the <b>Docks Bridge</b> and the <b>Cell Block 3rd Floor</b>.</p>
+    <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-gondola1.jpg" alt="The Docks Bridge station" loading="lazy"><figcaption>The Docks Bridge station</figcaption></figure><figure class="shot"><img src="../img/botd/bd-gondola2.jpg" alt="Riding it up to the cell block" loading="lazy"><figcaption>Riding it up to the cell block</figcaption></figure></div>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Four machines, fixed spots. They're labelled by slot &mdash; <b>Brew, Cola, Soda, Tonic</b> &mdash; and each sells whatever perk you put in that loadout slot before the game.</p>
+    <div class="callout"><b>The reference's loadout for the quest:</b> Quick Revive (Brew), Stamin-Up (Cola), Dying Wish (Soda), Deadshot Dealer (Tonic). Elixirs: Undead Man Walking, Nowhere But There in co-op, Temporal Gift solo.</div>
+    <table class="data-table">
+      <thead><tr><th>Machine</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Brew</b></td><td>2500</td><td>Your loadout's 1st perk</td><td>Outside the Power House</td></tr>
+        <tr><td><b>Cola</b></td><td>3000</td><td>Your loadout's 2nd perk</td><td>Docks Bridge, in the small courtyard</td></tr>
+        <tr><td><b>Soda</b></td><td>3500</td><td>Your loadout's 3rd perk</td><td>Infirmary, near the entrance to the roof</td></tr>
+        <tr><td><b>Tonic</b></td><td>4000</td><td>Your loadout's 4th perk</td><td>Inside the Warden's Office</td></tr>
+      </tbody>
+    </table>
+    <h2>What each machine looks like</h2>
+    <div class="shot-grid"><figure class="shot"><img src="../img/botd/bd-perk-brew.jpg" alt="Brew &mdash; outside the Power House" loading="lazy"><figcaption>Brew &mdash; outside the Power House</figcaption></figure><figure class="shot"><img src="../img/botd/bd-perk-cola.jpg" alt="Cola &mdash; Docks Bridge courtyard" loading="lazy"><figcaption>Cola &mdash; Docks Bridge courtyard</figcaption></figure><figure class="shot"><img src="../img/botd/bd-perk-soda.jpg" alt="Soda &mdash; Infirmary, by the roof entrance" loading="lazy"><figcaption>Soda &mdash; Infirmary, by the roof entrance</figcaption></figure><figure class="shot"><img src="../img/botd/bd-perk-tonic.jpg" alt="Tonic &mdash; Warden's Office" loading="lazy"><figcaption>Tonic &mdash; Warden's Office</figcaption></figure></div>
+    <p class="blurb">Costs follow the BO4 slot ladder (first perk bought 2500, then 3000 / 3500 / 4000) &mdash; the reference doesn't quote prices, so correct me if yours differ.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>

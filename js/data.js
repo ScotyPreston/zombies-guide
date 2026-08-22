@@ -55,7 +55,7 @@ const GAMES = [
     maps: [
       { id: "voyage", name: "Voyage of Despair", note: "The Titanic", built: true },
       { id: "ix", name: "IX", note: "The arena", built: true },
-      { id: "botd", name: "Blood of the Dead" },
+      { id: "botd", name: "Blood of the Dead", note: "Alcatraz — the hardest one", built: true },
       { id: "classified", name: "Classified" },
       { id: "dotn", name: "Dead of the Night", note: "The haunted manor", built: true },
       { id: "ancient-evil", name: "Ancient Evil" },
