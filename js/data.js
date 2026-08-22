@@ -56,7 +56,7 @@ const GAMES = [
       { id: "voyage", name: "Voyage of Despair", note: "The Titanic", built: true },
       { id: "ix", name: "IX", note: "The arena", built: true },
       { id: "botd", name: "Blood of the Dead", note: "Alcatraz — the hardest one", built: true },
-      { id: "classified", name: "Classified" },
+      { id: "classified", name: "Classified", note: "\"Five\" remade — Project Skadi", built: true },
       { id: "dotn", name: "Dead of the Night", note: "The haunted manor", built: true },
       { id: "ancient-evil", name: "Ancient Evil", note: "Delphi — God Hands + Tributes", built: true },
       { id: "alpha-omega", name: "Alpha Omega", note: "Nuketown — Ray Gun Mk II variants", built: true },
