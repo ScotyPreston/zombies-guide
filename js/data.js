@@ -53,7 +53,7 @@ const GAMES = [
     accent2: "#7be0d3",
     tagline: "Chaos story & Aether finale",
     maps: [
-      { id: "voyage", name: "Voyage of Despair" },
+      { id: "voyage", name: "Voyage of Despair", note: "The Titanic", built: true },
       { id: "ix", name: "IX", note: "The arena", built: true },
       { id: "botd", name: "Blood of the Dead" },
       { id: "classified", name: "Classified" },

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a1118">
+<title>Voyage of Despair &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Voyage of Despair: the Titanic at night — ice-blue water + Stoker ember */
+  :root {
+    --map-bg: #0a1118;
+    --map-bg2: #121c26;
+    --bg: #0a1118;
+    --bg-card: #121c26;
+    --bg-card-hover: #1a2633;
+    --line: #2a3a4a;
+    --map-accent: #5fc8e8;
+    --map-accent2: #e8703a;
+    --map-glow: rgba(95, 200, 232, 0.30);
+  }
+  /* the four plasma icons: small, four across at every width */
+  .shot-grid.icon-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .shot-grid.icon-grid .shot img { max-width: 110px; margin: 0 auto; display: block; aspect-ratio: 1 / 1; height: auto; }
+  .shot-grid.icon-grid .shot figcaption { text-align: center; }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="voyage">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo4">&#8249; Black Ops 4</a></nav>
+
+  <header class="map-header">
+    <h1>Voyage of Despair</h1>
+    <div class="sub">Black Ops 4 &middot; The Titanic, maiden voyage</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b></li>
+        <li><b>Pack-a-Punch open</b> and <b>the water drained</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li>The <b>Kraken</b>, upgraded to the poison version, <b>J&ouml;rmungandr's Fang</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+      </ul>
+    </div>
+    <p class="blurb">"Abandon Ship" &mdash; the Chaos crew earns the Odin Sentinel Artefact on a sinking Titanic. Pen and paper for the clocks.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Find the four clocks and their symbols.</b> Six clocks are on the ship; <b>four of them show a time other than 11:40</b>. For each one, write down the <b>time</b> and the <b>triangle symbol chalked nearby</b>. The symbols are four triangles: up, up with a line, down, down with a line.
+        <div class="callout"><b>Symbol translation:</b> the chart shows each triangle and which dial it belongs to later. Note them as "TIME &ndash; UP/LINE", "TIME &ndash; DOWN/NO LINE" and so on.</div>
+        <figure class="shot"><img src="../img/voyage/vd-q-symbols.jpg" alt="The four triangle symbols and which dial each one controls" loading="lazy"><figcaption>The four triangle symbols and which dial each one controls (symbol shots: CoD wiki)</figcaption></figure>
+        <ul>
+          <li><b>Mail Room</b> &mdash; clock right of the doorway to the Cargo Hold; symbol under the metal stairs by the Vapr wall-buy.</li>
+          <li><b>Bridge</b> &mdash; clock right above the steering wheel in the room behind the four dials; symbol under the desk behind the wheel, to the left.</li>
+          <li><b>Upper Grand Staircase</b> &mdash; clock engraved into the wall at the top of the stairs; symbol above a closed door to the left when you turn around.</li>
+          <li><b>1st Class Lounge</b> &mdash; mantelpiece clock above the fireplace; symbol on the wall under a three-piece candle holder, left of the Mystery Box spawn.</li>
+          <li><b>Galley</b> &mdash; clock on the wall opposite the hanging corpse; symbol on the side of the cabinet to the clock's left.</li>
+          <li><b>3rd Class Berths</b> &mdash; clock at the foot of the stairs from the Poop Deck; symbol under those stairs, behind the crates and luggage.</li>
+        </ul>
+        <div class="shot-grid"><figure class="shot"><img src="../img/voyage/vd-q-clock-ugs.jpg" alt="Upper Grand Staircase &mdash; the clock carved into the wall" loading="lazy"><figcaption>Upper Grand Staircase &mdash; the clock carved into the wall</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-q-clock-3rd.jpg" alt="3rd Class Berths &mdash; the clock at the foot of the stairs" loading="lazy"><figcaption>3rd Class Berths &mdash; the clock at the foot of the stairs</figcaption></figure></div></li>
+
+      <li data-num="2"><b>Bridge dials = the minutes.</b> At the front of the Bridge, by the steering wheel, are <b>four dials, each engraved with one of the symbols</b>. Turn each arrow to the <b>minute</b> from that symbol's clock &mdash; it moves in 5-minute notches (12:10 = two notches right). All four right and they lock in place.
+        <figure class="shot"><img src="../img/voyage/vd-q-bridge-dials.jpg" alt="The four Bridge dials by the wheel" loading="lazy"><figcaption>The four Bridge dials by the wheel</figcaption></figure></li>
+
+      <li data-num="3"><b>Poop Deck dials = the hours (line symbols).</b> At the far end of the Poop Deck, where you first touched the Sentinel Artefact, are <b>two unmarked dials by the wheel</b>: <b>left = UP + LINE</b>, <b>right = DOWN + LINE</b>. Enter each one's <b>hour</b>. They start at 12: turning left goes 11, 10, 9&hellip;; turning right goes 1, 2, 3&hellip;
+        <figure class="shot"><img src="../img/voyage/vd-q-poop-dials.jpg" alt="The two Poop Deck dials either side of the wheel" loading="lazy"><figcaption>The two Poop Deck dials either side of the wheel</figcaption></figure></li>
+
+      <li data-num="4"><b>Engine Room dials = the hours (plain symbols).</b> Down on the <b>lower walkways</b> (dry, if you drained the water) four dials sit on the sides of a pole. <b>Ignore the bottom-right and top-left</b> &mdash; they're visibly busted. <b>Bottom-left = UP</b>, <b>top-right = DOWN</b>. Same hour rules as the Poop Deck. A ding and chorus means all eight dials are right.</li>
+
+      <li data-num="5"><b>Find the four sparking outlets.</b> Six outlet spots; <b>four will be sparking red, green, blue or yellow</b>:
+        <ul>
+          <li><b>3rd Class Berths</b> &mdash; down the first stairs from the Poop Deck, take a left; on the right-hand wall.</li>
+          <li><b>Aft Decks</b> &mdash; up the stairs from the Poop Deck, through a central zombie window.</li>
+          <li><b>1st Class Lounge</b> &mdash; next to the Zeus perk statue.</li>
+          <li><b>Upper Grand Staircase</b> &mdash; near the symbol spot, right of the clock along the wall.</li>
+          <li><b>Dining Hall</b> &mdash; facing the Ra perk statue, turn around and walk right; behind a white wooden panel.</li>
+          <li><b>State Rooms</b> &mdash; from the Forecastle, ground-floor left entrance, first room on the left; on the wall by two paintings.</li>
+        </ul>
+        <figure class="shot"><img src="../img/voyage/vd-q-outlet.jpg" alt="A sparking outlet in the Dining Hall" loading="lazy"><figcaption>A sparking outlet in the Dining Hall</figcaption></figure></li>
+
+      <li data-num="6"><b>Kill the matching elemental at each outlet.</b> Lead the elemental zombie of that colour to its outlet and <b>kill it right next to it</b> &mdash; a ritual symbol appears on the floor. Four outlets, four symbols.
+        <figure class="shot"><img src="../img/voyage/vd-q-ritual.jpg" alt="A ritual symbol burned into the floor" loading="lazy"><figcaption>A ritual symbol burned into the floor</figcaption></figure></li>
+
+      <li data-num="7"><b>The four rituals &mdash; Poison &rarr; Water &rarr; Electric &rarr; Fire.</b> <b>Everyone</b> stands on the Poison symbol and interacts: you're teleported into a survival fight &mdash; kill everything that comes. Pick up the <b>white (fake) Sentinel Artefact</b> afterwards or you can't teleport to the next one. Repeat in order; <b>wrong order = start over</b>. After Fire you receive the <b>real Sentinel Artefact</b>.
+        <div class="callout"><b>It's finicky:</b> a second symbol sometimes won't appear while another is already on the floor. Easiest is one at a time &mdash; kill the Poison elemental, run its ritual, then the Water one, and so on.</div></li>
+
+      <li data-num="8"><b>Plug the nine leaks.</b> With <b>J&ouml;rmungandr's Fang</b> (or the base Decayed Kraken), go to the <b>Turbine Room</b> and shoot every <b>steaming burst pipe</b> along the walls &mdash; a kill hitmarker confirms each. <b>Nine in total.</b> The water starts rising again when you're done.
+        <figure class="shot"><img src="../img/voyage/vd-q-leaks.jpg" alt="Shooting the leaking pipes with the poison Kraken" loading="lazy"><figcaption>Shooting the leaking pipes with the poison Kraken (credit MrDalekJD)</figcaption></figure></li>
+
+      <li data-num="9"><b>Pack-a-Punch the Sentinel Artefact.</b> The machine must be <b>in the Turbine Room</b>: if it is, use it now; if not, finish the round and it teleports back there. It's <b>free</b>. Then head back out to the Forecastle.</li>
+
+      <li data-num="10"><b>Find the nine planet symbols.</b> Each chalk mark is a planet:
+        <ul>
+          <li><b>Sun</b> &mdash; Forecastle, at the back on the side of the curved funnel by the fast-travel portal.</li>
+          <li><b>Mercury</b> &mdash; Mail Room, bottom of the second flight of stairs, on your left.</li>
+          <li><b>Venus</b> &mdash; Millionaire Suites (from the Lower Grand Staircase), under the bedside table.</li>
+          <li><b>Moon</b> &mdash; Lower Grand Staircase, on a closed white door right of the stairs.</li>
+          <li><b>Mars</b> &mdash; Boiler Room: face the fast-travel portal, turn around, go prone &mdash; below the floor on the wall that sticks out by a red pipe.</li>
+          <li><b>Saturn</b> &mdash; Bridge: past the metal-beam-floor room (a shield part spawns there), next room on the right, on the side of a cabinet by the zombie window.</li>
+          <li><b>Jupiter</b> &mdash; Engine Room: face the Odin perk statue, turn around &mdash; on the floor by the stairs down.</li>
+          <li><b>Uranus</b> &mdash; State Rooms, in the bathroom opposite the MOG-12 wall-buy, behind the potted plant in the corner.</li>
+          <li><b>Neptune</b> &mdash; Aft Decks, inside the "RMS Titanic &ndash; Liverpool" ring buoy near the top of the hanging lifeboat.</li>
+        </ul>
+        <figure class="shot"><img src="../img/voyage/vd-q-neptune.jpg" alt="Neptune &mdash; inside the ring buoy on the Aft Decks" loading="lazy"><figcaption>Neptune &mdash; inside the ring buoy on the Aft Decks</figcaption></figure></li>
+
+      <li data-num="11"><b>The solar system model.</b> In the <b>Cargo Hold</b>, interact with the model of the solar system &mdash; the planets <b>flash in a random order</b>. <b>Write the order down.</b>
+        <div class="callout"><b>Warning:</b> starting this spawns <b>endless zombies</b> &mdash; the round won't end until you finish or fail the step. Stock up first.</div>
+        <figure class="shot"><img src="../img/voyage/vd-q-orrery.jpg" alt="The solar system model in the Cargo Hold" loading="lazy"><figcaption>The solar system model in the Cargo Hold (credit NoahJ456)</figcaption></figure></li>
+
+      <li data-num="12"><b>Shoot the planets in that order.</b> Outside, the planets, Sun and a huge Moon hang in the sky &mdash; <b>Neptune is in the water</b>, floating around and surfacing now and then. Shoot a planet, then <b>run to its chalk symbol and interact with the orb before the timer runs out</b>; miss it and you wait a full round for another go. <b>The Sun is always last</b> &mdash; make sure you have ammo and Pack-a-Punched guns before you shoot it.
+        <figure class="shot"><img src="../img/voyage/vd-q-sky.jpg" alt="The planets in the night sky" loading="lazy"><figcaption>The planets in the night sky (credit NoahJ456)</figcaption></figure></li>
+
+      <li data-num="13"><b>Shoot the Sun and run.</b> From the Forecastle, shoot the Sun; its orb rests by the Sun symbol. <b>All players interact</b> &mdash; white flash, timer starts. Race to the <b>Poop Deck</b>: take the <b>right-hand staircase</b> and smash the ice blocks as fast as you can. At the far end a <b>red symbol</b> appears on the floor &mdash; the boss portal. Don't touch it until everyone is ready.
+        <div class="callout">Take at least one <b>Pack-a-Punched Hellion Salvo</b> in &mdash; its damage and splash carry the boss fight.</div>
+        <figure class="shot"><img src="../img/voyage/vd-q-race.jpg" alt="The Poop Deck at the end of the race" loading="lazy"><figcaption>The Poop Deck at the end of the race (credit MrDalekJD)</figcaption></figure></li>
+
+      <li data-num="14"><b>The Eye of Odin.</b> You land in the water &mdash; swim to the nearby tree, use the Sentinel Artefact there, and you're back on the boat with the Eye.
+        <ul>
+          <li><b>Forecastle:</b> the Eye can't be hurt. Kill every Stoker, elemental and Blightfather that spawns &rarr; teleport.</li>
+          <li><b>Engine Room:</b> same again, Eye still invulnerable &rarr; teleport.</li>
+          <li><b>State Rooms:</b> normal zombies and Stokers only. The Eye fires a <b>blue beam that freezes you</b> &mdash; <b>melee to break out</b>. <b>While it fires, shoot it in the pupil</b> (Hellion Salvo) &rarr; teleport.</li>
+          <li><b>Promenade Starboard Deck:</b> the Eye flies around the ship in the water &mdash; keep hitting it with the Hellion Salvo.</li>
+          <li><b>Poop Deck:</b> someone needs the <b>Kraken</b>. Keep shooting; when the Eye retreats to the very back and <b>starts charging</b>, <b>shoot it with the Kraken</b> to stop it (the ice version works best). If it finishes the charge, <b>everyone without Dying Wish goes down</b>. Stop it <b>three times</b> and it dies &mdash; cutscene.</li>
+        </ul>
+        <div class="shot-grid"><figure class="shot"><img src="../img/voyage/vd-bs-eye.jpg" alt="The Eye of Odin over the Poop Deck" loading="lazy"><figcaption>The Eye of Odin over the Poop Deck (credit RADAUSTIN27)</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-bs-beam.jpg" alt="The freeze beam &mdash; melee out, shoot the pupil" loading="lazy"><figcaption>The freeze beam &mdash; melee out, shoot the pupil (CoD wiki)</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-bs-charge.jpg" alt="The charge attack &mdash; stop it with the Kraken" loading="lazy"><figcaption>The charge attack &mdash; stop it with the Kraken (CoD wiki)</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs</h2>
+    <p class="blurb">The GamesRadar guide this page was built from covers the main quest, the Kraken, the shield and Pack-a-Punch only. Send a reference for the side eggs (the "Drowning" song, free perk, the hourglass fast-travel, low-gravity zombies, the Bowie Knife upgrade) and I'll add them here.</p>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">The Kraken can drop from the Mystery Box &mdash; or take the guaranteed route. Then upgrade it: Pack-a-Punch makes the Cirein-Cr&ograve;in Crasher, and the Distillation Kit adds one of four elements.</p>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-kraken.png" alt="">
+        <span><b>Kraken</b><br><small>The guaranteed route &mdash; no box luck needed</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Kill a Stoker for its key.</b> Stokers are the big fiery ones flinging hot coals with a shovel &mdash; they tend to show up around <b>round 10</b>. Shoot its <b>glowing weak spots</b> to kill it and it drops the <b>Stoker's Key</b>.
+            <div class="shot-grid"><figure class="shot"><img src="../img/voyage/vd-k-stoker.jpg" alt="A Stoker on the Forecastle" loading="lazy"><figcaption>A Stoker on the Forecastle</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-k-stoker-wiki.jpg" alt="The Stoker up close &mdash; aim for the glow" loading="lazy"><figcaption>The Stoker up close &mdash; aim for the glow (CoD wiki)</figcaption></figure></div></li>
+          <li><b>Find the treasure chest</b> &mdash; one of five spots:
+            <ul>
+              <li><b>Mail Room</b> &mdash; below the Forecastle, right of the staircase.</li>
+              <li><b>Turbine Room</b> &mdash; right of the Pack-a-Punch pedestal at the end of the path.</li>
+              <li><b>Provisions</b> &mdash; in the slaughter room / freezer.</li>
+              <li><b>Galley</b> &mdash; back-left corner.</li>
+              <li><b>State Rooms</b> &mdash; very back of the ground floor, by the door to the Millionaire Suites.</li>
+            </ul>
+            <figure class="shot"><img src="../img/voyage/vd-k-chest.jpg" alt="The treasure chest" loading="lazy"><figcaption>The treasure chest</figcaption></figure></li>
+          <li><b>Feed it, three times.</b> Use the key on the chest, then <b>kill zombies next to it</b> &mdash; it drinks their souls, vanishes and reappears at one of the other spots. Find it and feed it again; <b>after the third</b>, an item appears inside.
+            <figure class="shot"><img src="../img/voyage/vd-k-chest-open.jpg" alt="The chest open and glowing in the Mail Room" loading="lazy"><figcaption>The chest open and glowing in the Mail Room</figcaption></figure></li>
+          <li><b>Take the item to its crate.</b> Which item you got decides where the Kraken lands:
+            <table class="data-table">
+              <thead><tr><th>Item</th><th>Crate</th></tr></thead>
+              <tbody>
+                <tr><td><b>Binoculars</b></td><td>Forecastle &mdash; wooden box at the very back of spawn, right-hand side</td></tr>
+                <tr><td><b>Compass</b></td><td>Boat Deck &mdash; top of the Grand Staircase, left; crate on the left</td></tr>
+                <tr><td><b>Globe</b></td><td>Mid Deck &mdash; crate on the right-hand side</td></tr>
+                <tr><td><b>Tool</b></td><td>Aft Decks &mdash; facing the Poop Deck, left-hand side crate</td></tr>
+                <tr><td><b>Telescope</b></td><td>Poop Deck &mdash; crate at the very back</td></tr>
+              </tbody>
+            </table>
+            Walk up to the right crate and a <b>tentacle bursts out of the water</b> and drops the Kraken on it.
+            <figure class="shot"><img src="../img/voyage/vd-k-crate.jpg" alt="The crate on the Forecastle &mdash; binoculars" loading="lazy"><figcaption>The crate on the Forecastle &mdash; binoculars</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-crasher.png" alt="">
+        <span><b>Cirein-Cr&ograve;in Crasher</b><br><small>Pack-a-Punched Kraken</small></span></summary>
+      <div class="acc-body">
+        <p>Put the Kraken through Pack-a-Punch: the magazine doubles to <b>12 shots</b>. The element upgrades below work on the Crasher too &mdash; and that's the version you want going into the finale. <button class="xref" data-goto="pap">See Pack-a-Punch</button></p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-build-kit.jpg" alt="" style="object-fit:cover">
+        <span><b>Element upgrades &mdash; do this first</b><br><small>Distillation Kit + a plasma</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>Distillation Kit built</b> on the Engine Room table. <button class="xref" data-goto="build">See Buildables</button></li></ul></div>
+        <ol class="steps">
+          <li><b>Get a plasma.</b> Kill <b>elemental (Catalyst) zombies</b> of the type you want &mdash; the mutated ones have a chance to drop their <b>concentrated plasma</b>: fire, ice, poison or electric.
+            <div class="shot-grid"><figure class="shot"><img src="../img/voyage/vd-u-decay.jpg" alt="Concentrated Decay (poison) on the Poop Deck" loading="lazy"><figcaption>Concentrated Decay (poison) on the Poop Deck</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-u-purity.jpg" alt="Concentrated Purity (ice) drop" loading="lazy"><figcaption>Concentrated Purity (ice) drop</figcaption></figure></div>
+            <div class="shot-grid icon-grid"><figure class="shot"><img src="../img/voyage/vd-ic-radiance.png" alt="Concentrated Radiance = fire" loading="lazy"><figcaption>Radiance = fire</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-ic-purity.png" alt="Concentrated Purity = ice" loading="lazy"><figcaption>Purity = ice</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-ic-plasma.png" alt="Concentrated Plasma = electric" loading="lazy"><figcaption>Plasma = electric</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-ic-decay.png" alt="Concentrated Decay = poison" loading="lazy"><figcaption>Decay = poison</figcaption></figure></div></li>
+          <li><b>Upgrade at the kit.</b> Interact with the Distillation Kit with the Kraken in hand &mdash; <b>6,000 points</b> for the Crasher (3,000 if the Kraken isn't Pack-a-Punched). It also <b>refills your ammo</b>. You can swap elements as often as you like, as long as you bring a new plasma each time.</li>
+        </ol>
+        <div class="callout">The main quest needs the <b>poison</b> one, <b>J&ouml;rmungandr's Fang</b>, for the leaking pipes. <button class="xref" data-goto="main">See the main quest</button></div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-fire.png" alt="">
+        <span><b>Breath of Leviathan</b><br><small>Fire &mdash; Concentrated Radiance</small></span></summary>
+      <div class="acc-body">
+        <p>Fires <b>two linked projectiles</b> like chain shot, straight ahead; they burst after about a second or when they hit the scenery. The shot itself barely hurts zombies and <b>doesn't explode on them</b> &mdash; aim at the floor or wall behind the pack.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-water.png" alt="">
+        <span><b>Grip of Akkorokamui</b><br><small>Ice &mdash; Concentrated Purity</small></span></summary>
+      <div class="acc-body">
+        <p>A single shot that leaves a <b>freezing patch</b> on impact, slowing everything in it. <b>The best version for stopping the Eye of Odin's charge</b> in the boss fight.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-electric.png" alt="">
+        <span><b>Inkanyamba's Roar</b><br><small>Electric &mdash; Concentrated Plasma</small></span></summary>
+      <div class="acc-body">
+        <p>A <b>shotgun spread</b> of small bolts with no explosion. Anything it doesn't kill gets <b>knocked flat</b> &mdash; easy to finish, but on high rounds the bodies still block your path.</p>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-poison.png" alt="">
+        <span><b>J&ouml;rmungandr's Fang</b><br><small>Poison &mdash; Concentrated Decay &middot; needed for the quest</small></span></summary>
+      <div class="acc-body">
+        <p>A single shot that <b>passes straight through zombies</b> and only bursts on the scenery (a smaller blast than the others). Survivors are left <b>disoriented</b>. This is the one that <b>plugs the nine Turbine Room leaks</b> in the main quest.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables</h2>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-wpn-shield.png" alt="">
+        <span><b>Ballistic Shield</b><br><small>3 parts &mdash; blocks hits and carries an automatic pistol</small></span></summary>
+      <div class="acc-body">
+        <p class="blurb">Not needed for the main quest, but it blocks zombie hits and shoots &mdash; well worth building.</p>
+        <ol class="steps">
+          <li><b>Part 1 &mdash; State Rooms</b> (ground floor, from the Forecastle):
+            <ul>
+              <li>Keep right: on a <b>rocking chair</b> seen through the gaping holes in the walls.</li>
+              <li>Cross to the left into the <b>laundry room</b>: on a shelf next to the towels.</li>
+              <li>The next room ahead with another hole in the wall: on an <b>armchair by a single bed</b>.</li>
+            </ul>
+            <figure class="shot"><img src="../img/voyage/vd-sh-part1.jpg" alt="Laundry room shelf &mdash; next to the towels" loading="lazy"><figcaption>Laundry room shelf &mdash; next to the towels</figcaption></figure></li>
+          <li><b>Part 2 &mdash; Bridge</b> (up the right-hand stairs from the Forecastle):
+            <ul>
+              <li>Turn around at the top: on the left by the <b>smashed window</b> looking in at the four dials and the wheel.</li>
+              <li>Right-hand door at the back of the Bridge: just inside the second door, on a <b>wooden crate on metal beams</b>.</li>
+              <li>Further in: sitting on a <b>handrail</b> in the middle &mdash; impossible to miss.</li>
+            </ul>
+            <figure class="shot"><img src="../img/voyage/vd-sh-part2.jpg" alt="The Bridge &mdash; by the smashed window" loading="lazy"><figcaption>The Bridge &mdash; by the smashed window</figcaption></figure></li>
+          <li><b>Part 3 &mdash; Provisions / 3rd Class Berths:</b>
+            <ul>
+              <li>From the freezer, head for the Engine Room door but look left: behind a <b>stack of boxes</b> by the door.</li>
+              <li>Left-hand side, end of the hallway: right at the back in front of the <b>burning area</b> you can't enter.</li>
+              <li><b>3rd Class Berths</b> above Provisions: up the stairs, on a <b>handrail</b> through a big hole in the wall.</li>
+            </ul></li>
+          <li><b>Build it on the Poop Deck</b> &mdash; the bench is just down from the Pack-a-Punch pedestal.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/voyage/vd-build-kit.jpg" alt="" style="object-fit:cover">
+        <span><b>Distillation Kit</b><br><small>3 parts + a plasma &mdash; the Kraken's element upgrade station</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Part 1 &mdash; Cargo Hold:</b> at the Pack-a-Punch pedestal turn around &mdash; on the <b>crates to the left</b>, or towards the <b>middle of the room on other luggage</b>.</li>
+          <li><b>Part 2 &mdash; Galley:</b> at the back, on the <b>table blocking off the fire</b>, or down the corridor at the far end on the <b>left-most shelf</b> next to rolled-up papers.</li>
+          <li><b>Part 3 &mdash; 1st Class Lounge:</b> from the A Deck landing of the Grand Staircase go through the door on the right (by the Mystery Box) and up the plank ramp &mdash; on the <b>first table to your right</b>, or round the corner to the left on <b>another table</b>.
+            <figure class="shot"><img src="../img/voyage/vd-u-part3.jpg" alt="1st Class Lounge &mdash; the part on the table" loading="lazy"><figcaption>1st Class Lounge &mdash; the part on the table</figcaption></figure></li>
+          <li><b>Part 4 is a plasma</b> from an elemental zombie, then build at the <b>table on the side of the Engine Room</b>. Upgrading and the four elements are covered in the weapons tab. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">No power switch &mdash; the Sentinel Artefact opens the ship. Four pedestals; <b>the last one you touch is where the machine spawns</b>, and it moves between them afterwards.</p>
+    <ol class="steps">
+      <li><b>Reach the Poop Deck and wake the Sentinel Artefact.</b> Open the bottom door in the Forecastle, go through the State Rooms and keep opening the doors ahead until you come out on the Poop Deck. The <b>blue light on the raised platform</b> is the artefact &mdash; interact. An explosion goes off in the distance and a red beam hits the pedestal below.</li>
+      <li><b>Touch all four pedestals.</b> Fast-travel from the Poop Deck back to the Forecastle and take them in this order so the machine ends up on the Poop Deck:
+        <ul>
+          <li><b>Cargo Hold</b> &mdash; Mail Room below the Forecastle, open the Cargo Hold door, swim to the very back.</li>
+          <li><b>Lower Grand Staircase</b> &mdash; go down the big staircase until you can't go any further; the pedestal is in the dark straight ahead.</li>
+          <li><b>Turbine Room</b> &mdash; doorway under the Poop Deck into Provisions, through the door past the slaughter room into the Engine Room, swim down to the back; pedestal underwater by the red turbine.</li>
+          <li><b>Poop Deck</b> &mdash; last. The machine spawns here, the handiest spot of the four.</li>
+        </ul>
+        <div class="shot-grid"><figure class="shot"><img src="../img/voyage/vd-pap-pedestal.jpg" alt="The Cargo Hold pedestal" loading="lazy"><figcaption>The Cargo Hold pedestal</figcaption></figure><figure class="shot"><img src="../img/voyage/vd-pap-machine.jpg" alt="The machine, here in the Turbine Room" loading="lazy"><figcaption>The machine, here in the Turbine Room</figcaption></figure></div></li>
+      <li><b>Drain the water while you're down there.</b> At the <b>Cargo Hold</b> pedestal look right: a <b>red handle on the pipes</b> &mdash; turn it and the room slowly drains. In the <b>Turbine Room</b>, swim past the pedestal into the <b>Boiler Room</b>: an identical handle under a light on the right, by the blue pipes. Both done = no more swimming.
+        <figure class="shot"><img src="../img/voyage/vd-pap-drain-cargo.jpg" alt="The Cargo Hold drain handle" loading="lazy"><figcaption>The Cargo Hold drain handle</figcaption></figure></li>
+    </ol>
+    <div class="callout">The machine rotates between the four pedestals. Walk up to a pedestal it isn't at and it <b>tells you where it is</b>.</div>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perks &mdash; the Black Ops 4 way</h2>
+    <p class="blurb">BO4 changed the system: there are no fixed perk machines. You pick <b>four perks in your loadout before the game</b>, and they map to the four altar slots you buy in order at <b>2500 / 3000 / 3500 / 4000</b>.</p>
+    <table class="data-table">
+      <thead><tr><th>Slot</th><th>Cost</th><th>Where the altars are</th></tr></thead>
+      <tbody>
+        <tr><td><b>1st perk</b></td><td>2500</td><td rowspan="4">The altars are god statues around the ship: <b>Zeus</b> in the 1st Class Lounge, <b>Ra</b> in the Dining Hall, <b>Odin</b> in the Engine Room. The fourth, <b>Danu</b>, isn't placed in this page's reference &mdash; send a photo.</td></tr>
+        <tr><td><b>2nd perk</b></td><td>3000</td></tr>
+        <tr><td><b>3rd perk</b></td><td>3500</td></tr>
+        <tr><td><b>4th perk</b></td><td>4000</td></tr>
+      </tbody>
+    </table>
+    <div class="callout"><b>Loadout tip for Voyage:</b> bring <b>Dying Wish</b> &mdash; it's the only thing that survives the Eye of Odin's charge attack if you fail to stop it. <button class="xref" data-goto="main">See the main quest</button></div>
+    <p class="blurb">Send altar photos and corrections and I'll finish this tab properly.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
