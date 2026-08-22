@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d1218">
+<title>Tag der Toten &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Tag der Toten: Siberian ice + lighthouse amber */
+  :root {
+    --map-bg: #0d1218;
+    --map-bg2: #151c25;
+    --bg: #0d1218;
+    --bg-card: #151c25;
+    --bg-card-hover: #1e2732;
+    --line: #2c3846;
+    --map-accent: #7fd4ff;
+    --map-accent2: #f0b23c;
+    --map-glow: rgba(127, 212, 255, 0.30);
+  }
+  .shot-grid.icon-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .shot-grid.icon-grid .shot img { max-width: 110px; margin: 0 auto; display: block; aspect-ratio: 1 / 1; height: auto; }
+  .shot-grid.icon-grid .shot figcaption { text-align: center; }
+  /* totem challenge tables: fixed columns so the Reward column never slides off a narrow screen */
+  #tab-totems .data-table { width: 100%; table-layout: fixed; }
+  #tab-totems .data-table th:first-child, #tab-totems .data-table td:first-child { width: 66%; }
+  #tab-totems .data-table td, #tab-totems .data-table th { overflow-wrap: anywhere; }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="tag">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo4">&#8249; Black Ops 4</a></nav>
+
+  <header class="map-header">
+    <h1>Tag der Toten</h1>
+    <div class="sub">Black Ops 4 &middot; Call of the Dead, reborn &mdash; the Aether finale</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Wonder Weapons</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="totems">Totems</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b> <b>Normal difficulty, no modifiers.</b></li>
+        <li><b>All three power switches, Pack-a-Punch, the zipline handle and Golden Pack-a-Punch.</b> <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li><b>Two totems' full challenge sets</b> completed. <button class="xref" data-goto="totems">See Totems</button></li>
+        <li><b>Samantha's Music Boxes</b>, a <b>stick of dynamite</b>, and the <b>shield</b>. <button class="xref" data-goto="build">See Buildables</button></li>
+        <li>The <b>Wunderwaffe</b>. <button class="xref" data-goto="wonder">See Wonder Weapons</button></li>
+      </ul>
+    </div>
+    <p class="blurb">"Salvation Lies Above" &mdash; the last Aether quest. Easier than Blood of the Dead or Voyage, but long: the Seal of Duality goes round the map three times.</p>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Wake the Hermit, finish two totems.</b> Flip the <b>Docks switch</b> at spawn and climb to the <b>top of the Lighthouse</b> so the Hermit notices you &mdash; that activates the challenge totems. Complete <b>every challenge on two totems</b> (the reference recommends Lighthouse Station and Forecastle). Set up Pack-a-Punch, power, the Music Boxes, shield and Wunderwaffe while you're at it.</li>
+
+      <li data-num="2"><b>The dials.</b> Back at the top of the Lighthouse the Hermit winches down a <b>set of dials</b>. Take them to <b>Artifact Storage</b> &mdash; the room with the Cola perk &mdash; and hold use on the <b>four wall slots</b>. <b>Rotate each dial until it dings.</b></li>
+
+      <li data-num="3"><b>Offerings three.</b> <b>Subtitles on.</b> The Apothicon Blood starts talking; when the subtitle says <b>"Find us offerings three"</b>, listen: each clue is "<i>[Apothicon word]</i>, where ______". Ignore the word, note the <b>phrase</b> &mdash; each maps to one of <b>20 spots</b> holding a bone or organ (the reference points to GregFPS's video for the phrase-to-spot list). <b>Three offerings.</b></li>
+
+      <li data-num="4"><b>The Seal of Duality.</b> A fourth clue leads to a <b>board on a wall</b>: melee it down to reveal a <b>safe</b> (four possible spots, video in the reference). <b>Dynamite the safe</b> and take the Seal.</li>
+
+      <li data-num="5"><b>The big orb.</b> Place the Seal on the <b>barrel under the red orb</b> in Artifact Storage. The orb bounces round the room &mdash; <b>shoot it until your screen flashes white three times</b> and it settles back over the barrel.</li>
+
+      <li data-num="6"><b>Three small orbs.</b> Three orange orbs are out on the map. <b>Don't walk up to one</b> &mdash; it relocates. From a distance, <b>throw a snowball at it, then shoot it once it turns blue</b>: it flies home to Artifact Storage. All three back, repeat the snowball-and-shoot inside the room and they merge into the big orb. Take the Seal off the barrel.</li>
+
+      <li data-num="7"><b>The campfire.</b> In the <b>Sunken Path</b>, place the Seal on the campfire and <b>throw a Samantha's Music Box at it</b>: the flame turns blue, zombies vanish, dialogue plays. When it's orange again, take the Seal back.</li>
+
+      <li data-num="8"><b>Soapstones.</b> Take <b>two soapstones</b> from the Hermit. Behind the Lighthouse toward the Boathouse, place them in the two <b>square dents in the snow</b>, then fire the <b>Lighthouse trap</b> to heat them (stay clear of the laser). Grab them and get to the <b>Facility without touching water</b> &mdash; stairs to the zipline. In <b>Human Infusion</b> slot one stone into the panel; carry the other to the <b>scorch mark in the Decontamination hallway</b>, freeze it with that trap, and slot it in too. A <b>fuse</b> pops out: take it to the <b>big metal door downstairs in Lighthouse Station</b> and fit it in the panel on the right.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-q-stones.jpg" alt="The two dents in the snow behind the Lighthouse" loading="lazy"><figcaption>The two dents in the snow behind the Lighthouse</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-lh-trap.jpg" alt="The Lighthouse trap switch" loading="lazy"><figcaption>The Lighthouse trap switch</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-infusion.jpg" alt="The Human Infusion panel" loading="lazy"><figcaption>The Human Infusion panel</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-decon.jpg" alt="The Decontamination scorch mark" loading="lazy"><figcaption>The Decontamination scorch mark</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-fuse-door.jpg" alt="The fuse panel by the metal door" loading="lazy"><figcaption>The fuse panel by the metal door</figcaption></figure></div></li>
+
+      <li data-num="9"><b>Power the fuse.</b> With the <b>Wunderwaffe</b>, shoot the <b>two batteries outside the Facility</b> (one shot each, they spark). Then kill an <b>electric zombie beside each of three generators</b> until it sparks. Hold use on the fuse: the door opens &mdash; take the <b>crystal</b>. Put the Seal on the barrel again.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-q-battery1.jpg" alt="Battery 1, outside the Facility" loading="lazy"><figcaption>Battery 1, outside the Facility</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-battery2.jpg" alt="Battery 2" loading="lazy"><figcaption>Battery 2</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-gen1.jpg" alt="Generator &mdash; Lighthouse Station, by the main door" loading="lazy"><figcaption>Generator &mdash; Lighthouse Station, by the main door</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-gen2.jpg" alt="Generator &mdash; Lighthouse Approach, outside the blue-rock cave" loading="lazy"><figcaption>Generator &mdash; Lighthouse Approach, outside the blue-rock cave</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-gen3.jpg" alt="Generator &mdash; Boathouse, across from the trap switch" loading="lazy"><figcaption>Generator &mdash; Boathouse, across from the trap switch</figcaption></figure></div></li>
+
+      <li data-num="10"><b>Orbs and campfire, round two.</b> Repeat steps 5&ndash;7 exactly: shoot the big orb to three flashes, snowball-and-shoot the three small orbs home and into the big one, Seal to the campfire, Music Box, blue flame, take it back.</li>
+
+      <li data-num="11"><b>Lockdown and the four Pack-a-Punches.</b>
+        <div class="callout"><b>Upgrade every gun you care about BEFORE this step &mdash; Pack-a-Punch becomes unusable afterwards.</b></div>
+        <b>All players</b> at the top of the Lighthouse: put the Seal on the Hermit's plank and <b>survive a ~2-minute lockdown</b> inside (split the horde across floors in co-op). He winches the Seal back. Take it to the Pack-a-Punch <b>the lighthouse beam points at</b>, upgrade it, and <b>charge the machine with nearby kills</b> until it returns the Seal; the beam moves on &mdash; <b>all four locations</b>. Then the orb dance a <b>third</b> time (the small orbs stay in the room this time) and the campfire a third time.</li>
+
+      <li data-num="12"><b>The Seal's journey &mdash; the "boss".</b> All perks, full shield. Flinger on the <b>Sun Deck</b> to the island, upgrade the Seal at <b>Golden Pack-a-Punch</b>, charge it. It throws up a <b>bubble shield</b> and the map transforms &mdash; <b>all water becomes lava</b> (hop the rocks). <b>Stay inside the bubble</b> as the Seal walks the map; outside it you burn. When it stops, <b>kill zombies beside it to charge it</b> (Max Ammo + Carpenter each time). It climbs the Lighthouse and heads for the Facility &mdash; <b>take the zipline</b>, it catches up. In <b>Human Infusion</b> the bubble shrinks: keep charging it from inside until the screen flashes and every zombie despawns. Take the <b>Agarthan Device</b> to the Hermit, then watch the Lighthouse from the <b>Sun Deck</b> as he leaves &mdash; he's Pablo Marinus. The device drops on the <b>Forecastle</b>: hold use, and in the final cinematic <b>push the stick forward</b> to walk the children into the light.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-bs-transformed.jpg" alt="The island transformed &mdash; lava everywhere (CoD wiki)" loading="lazy"><figcaption>The island transformed &mdash; lava everywhere (CoD wiki)</figcaption></figure><figure class="shot"><img src="../img/tag/tg-agarthan.jpg" alt="The Agarthan Device (CoD wiki)" loading="lazy"><figcaption>The Agarthan Device (CoD wiki)</figcaption></figure><figure class="shot"><img src="../img/tag/tg-q-hermit.jpg" alt="The Hermit leaves" loading="lazy"><figcaption>The Hermit leaves</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs &amp; achievements</h2>
+    <p class="blurb">The reference is an achievement walkthrough &mdash; its side content and achievements. The two songs and the jump scares aren't covered; send a reference and I'll add them.</p>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-romero.jpg" alt="" style="object-fit:cover">
+        <span><b>George Romero's glasses &mdash; free 500</b><br><small>Lighthouse Station</small></span></summary>
+      <div class="acc-body"><p>On a table in <b>Lighthouse Station</b>, a pair of big glasses. Every player can hold use on them once for 500 points. A tribute to George A. Romero.</p>
+        <figure class="shot"><img src="../img/tag/tg-romero.jpg" alt="The glasses" loading="lazy"><figcaption>The glasses</figcaption></figure></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-flinger.jpg" alt="" style="object-fit:cover">
+        <span><b>"The Secret" &mdash; the flinger to Mars</b><br><small>One player per game; inconsistent</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Dynamite the barricade on the Facility platform</b>; behind it is a <b>flinger with a broken fuse box</b>.
+            <figure class="shot"><img src="../img/tag/tg-flinger.jpg" alt="The flinger and its broken fuse box" loading="lazy"><figcaption>The flinger and its broken fuse box</figcaption></figure></li>
+          <li>Take the fuse box to the <b>Hermit</b>; he hands it back repaired. Put it back on the flinger.</li>
+          <li>Getting the flinger to send you to the secret is <b>hit-and-miss</b> (solo and co-op methods both exist &mdash; the reference links a solo video). You land in water: <b>keep meleeing when you freeze</b>, and swim through the cave until you reach a <b>beach looking at Mars</b>.
+            <figure class="shot"><img src="../img/tag/tg-mars.jpg" alt="The beach at the end (CoD wiki)" loading="lazy"><figcaption>The beach at the end (CoD wiki)</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-bell-c.jpg" alt="" style="object-fit:cover">
+        <span><b>Four bells in 12 seconds</b><br><small>The easiest one in the game</small></span></summary>
+      <div class="acc-body"><p>Throw four snowballs in a row at the four bells at spawn. <button class="xref" data-goto="totems">Bell locations are in Totems</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-snowballs.jpg" alt="" style="object-fit:cover">
+        <span><b>Five Hellhounds with snowballs / freeze 10 at once</b><br><small>Snowballs, or the Tundragun into a horde</small></span></summary>
+      <div class="acc-body"><p>Snowball five dogs in one game. The freeze-10 usually pops alongside it in co-op; otherwise fire the <b>Tundragun</b> into a packed horde.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-zip-facility.jpg" alt="" style="object-fit:cover">
+        <span><b>All nine ziplines, no kills, no downs</b><br><small>Only counts between the first and last ride</small></span></summary>
+      <div class="acc-body"><p>From your <b>first zipline</b> until you've ridden all nine, <b>don't kill anything and don't go down</b>. Kills before the first ride are fine. The reference has a video of the route.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-dyn-b1.jpg" alt="" style="object-fit:cover">
+        <span><b>Open every path without power</b><br><small>23 doors, 3 dynamites, the water pipe &mdash; no switches</small></span></summary>
+      <div class="acc-body"><p>Never touch a power switch (it can't be turned off). Buy all <b>23 doors</b> (3 from spawn, 5 out of the Lighthouse, 7 on the freighter, 4 in the Facility, 1 in Lighthouse Cove, 1 out of the Cove toward the ship, 1 in the blue-rock cave, 1 Beach-to-ship), <b>dynamite all three red-X barricades</b>, and <b>shoot the blue pipe in Artifact Storage</b> to put out the Sunken Path fire. No perks, no power.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-strife-jar.jpg" alt="" style="object-fit:cover">
+        <span><b>Break the jar on the Lighthouse with the Strife</b><br><small>Start with the Strife</small></span></summary>
+      <div class="acc-body"><p>From the <b>Loading Platform</b> at the Facility, shoot the near-invisible jar on top of the Lighthouse with the <b>Strife</b>. Line the spot up with a sniper first.</p>
+        <figure class="shot"><img src="../img/tag/tg-strife-jar.jpg" alt="Where the jar is" loading="lazy"><figcaption>Where the jar is</figcaption></figure></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-gpap-machine.jpg" alt="" style="object-fit:cover">
+        <span><b>Pack at all five locations</b><br><small>Four normal spots + Golden</small></span></summary>
+      <div class="acc-body"><p>Use Pack-a-Punch at all four rotating spots and at Golden Pack-a-Punch in one game &mdash; normal PaP one gun, Golden a different one. <button class="xref" data-goto="pap">See Pack-a-Punch</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-tot-lighthouse.jpg" alt="" style="object-fit:cover">
+        <span><b>Light up all the totems</b><br><small>All 15 challenges in one game</small></span></summary>
+      <div class="acc-body"><p><button class="xref" data-goto="totems">See Totems</button></p></div>
+    </details>
+  </section>
+
+  <!-- ============ WONDER WEAPONS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Wonder Weapons</h2>
+    <p class="blurb">Three in the box. The Tundragun and the Wunderwaffe each have a free route; the Thundergun is box-only.</p>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-wpn-tundragun.png" alt="">
+        <span><b>Tundragun</b><br><small>Free: five snowball targets, in order</small></span></summary>
+      <div class="acc-body">
+        <p>Throw a snowball at each target <b>in this order</b>; the Tundragun then appears in the box <b>left of the last target</b>.</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-tg-t1.jpg" alt="1 &mdash; above the doorway outside Specimen Storage" loading="lazy"><figcaption>1 &mdash; above the doorway outside Specimen Storage</figcaption></figure><figure class="shot"><img src="../img/tag/tg-tg-t2.jpg" alt="2 &mdash; Lagoon, inside a tunnel" loading="lazy"><figcaption>2 &mdash; Lagoon, inside a tunnel</figcaption></figure><figure class="shot"><img src="../img/tag/tg-tg-t3.jpg" alt="3 &mdash; Sun Deck, outside the power-room doorway" loading="lazy"><figcaption>3 &mdash; Sun Deck, outside the power-room doorway</figcaption></figure><figure class="shot"><img src="../img/tag/tg-tg-t4.jpg" alt="4 &mdash; Lighthouse Level 3, staircase support beam" loading="lazy"><figcaption>4 &mdash; Lighthouse Level 3, staircase support beam</figcaption></figure><figure class="shot"><img src="../img/tag/tg-tg-t5.jpg" alt="5 &mdash; Cargo Hold, in the water after the zipline" loading="lazy"><figcaption>5 &mdash; Cargo Hold, in the water after the zipline</figcaption></figure></div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-wpn-waffe.png" alt="">
+        <span><b>Wunderwaffe DG-Scharfsch&uuml;tze</b><br><small>Free: icicle, pot, Vril Device, reward chest</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>zipline handle</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li></ul></div>
+        <ol class="steps">
+          <li><b>Shoot down an icicle</b> (one of three) and pick it up.
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-ww-ice1.jpg" alt="Outside the blue-rock cave, toward the Beach" loading="lazy"><figcaption>Outside the blue-rock cave, toward the Beach</figcaption></figure><figure class="shot"><img src="../img/tag/tg-ww-ice2.jpg" alt="Lighthouse Cove, outside the walkway stairs" loading="lazy"><figcaption>Lighthouse Cove, outside the walkway stairs</figcaption></figure><figure class="shot"><img src="../img/tag/tg-ww-ice3.jpg" alt="Lighthouse main deck, before the stairs to the door" loading="lazy"><figcaption>Lighthouse main deck, before the stairs to the door</figcaption></figure></div></li>
+          <li><b>Melt it in the cooking pot</b> at the end of the <b>Forecastle</b>; after about a minute, take the <b>key</b> from the pot.
+            <figure class="shot"><img src="../img/tag/tg-ww-pot.jpg" alt="The cooking pot on the Forecastle" loading="lazy"><figcaption>The cooking pot on the Forecastle</figcaption></figure></li>
+          <li>Zipline to the Facility, <b>Specimen Storage</b>: open the <b>safe on the desk</b> &mdash; the <b>Vril Device</b>. <b>Kill zombies beside it</b> until it glows and stops taking souls, then take it.
+            <figure class="shot"><img src="../img/tag/tg-ww-safe.jpg" alt="The safe in Specimen Storage" loading="lazy"><figcaption>The safe in Specimen Storage</figcaption></figure></li>
+          <li>Give the Vril Device to the <b>Hermit</b> on his plank; he sends down a <b>Reward Key</b>. The <b>reward chest is on the floor just right of the plank</b> &mdash; the Wunderwaffe.</li>
+        </ol>
+        <div class="callout">Needed in the main quest to shoot the two Facility batteries. <button class="xref" data-goto="main">See the main quest</button></div>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-wpn-thundergun.png" alt="">
+        <span><b>Thundergun</b><br><small>Mystery Box only</small></span></summary>
+      <div class="acc-body"><p>No quest on this map &mdash; pull it from the box. The reference suggests at least one player carries it (or the Wunderwaffe) into the finale.</p></div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables &amp; equipment</h2>
+    <div class="shot-grid icon-grid"><figure class="shot"><img src="../img/tag/tg-ic-snowball.png" alt="Snowballs" loading="lazy"><figcaption>Snowballs</figcaption></figure><figure class="shot"><img src="../img/tag/tg-ic-dynamite.png" alt="Dynamite" loading="lazy"><figcaption>Dynamite</figcaption></figure><figure class="shot"><img src="../img/tag/tg-ic-keycard.png" alt="Keycard" loading="lazy"><figcaption>Keycard</figcaption></figure><figure class="shot"><img src="../img/tag/tg-ic-crank.png" alt="Crank wheel" loading="lazy"><figcaption>Crank wheel</figcaption></figure></div>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-ic-shield.png" alt="">
+        <span><b>Shield</b><br><small>3 parts &mdash; Docks, Lagoon/Crevasse, Lighthouse</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Part 1</b> &mdash; Docks:
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-sh-p1a.jpg" alt="Against the tall gas pump" loading="lazy"><figcaption>Against the tall gas pump</figcaption></figure><figure class="shot"><img src="../img/tag/tg-sh-p1b.jpg" alt="Against the boat in the water, left of the switch" loading="lazy"><figcaption>Against the boat in the water, left of the switch</figcaption></figure><figure class="shot"><img src="../img/tag/tg-sh-p1c.jpg" alt="On the ice shards past the boat" loading="lazy"><figcaption>On the ice shards past the boat</figcaption></figure></div></li>
+          <li><b>Part 2</b> &mdash; Lagoon / Frozen Crevasse:
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-sh-p2a.jpg" alt="Crevasse &mdash; jump the ice shards to the glowing-blue-rock side" loading="lazy"><figcaption>Crevasse &mdash; jump the ice shards to the glowing-blue-rock side</figcaption></figure><figure class="shot"><img src="../img/tag/tg-sh-p2b.jpg" alt="Crevasse &mdash; the side with the boards" loading="lazy"><figcaption>Crevasse &mdash; the side with the boards</figcaption></figure><figure class="shot"><img src="../img/tag/tg-sh-p2c.jpg" alt="Lagoon &mdash; rock by the Pack-a-Punch spot (big icicle if the machine's away)" loading="lazy"><figcaption>Lagoon &mdash; rock by the Pack-a-Punch spot (big icicle if the machine's away)</figcaption></figure></div></li>
+          <li><b>Part 3</b> &mdash; Lighthouse:
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-sh-p3a.jpg" alt="Level 1, wall by some boards" loading="lazy"><figcaption>Level 1, wall by some boards</figcaption></figure><figure class="shot"><img src="../img/tag/tg-sh-p3b.jpg" alt="Level 2, right of the lit-up number 2" loading="lazy"><figcaption>Level 2, right of the lit-up number 2</figcaption></figure><figure class="shot"><img src="../img/tag/tg-sh-p3c.jpg" alt="Level 3, railing across from the outside door" loading="lazy"><figcaption>Level 3, railing across from the outside door</figcaption></figure></div></li>
+          <li><b>Build it in Lighthouse Station</b> (the reference's pick).
+            <figure class="shot"><img src="../img/tag/tg-sh-table.jpg" alt="The Lighthouse Station table" loading="lazy"><figcaption>The Lighthouse Station table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-snowballs.jpg" alt="" style="object-fit:cover">
+        <span><b>Snowballs &amp; Dynamite</b><br><small>Infinite snowballs; dynamite from flame zombies</small></span></summary>
+      <div class="acc-body">
+        <p><b>Snowballs</b> freeze and shatter zombies, <b>never run out</b> (piles everywhere &mdash; hold use), and stack on top of your grenade. Totem challenges, the Tundragun, the orbs and the soup all use them.</p>
+        <figure class="shot"><img src="../img/tag/tg-snowballs.jpg" alt="A snowball pile" loading="lazy"><figcaption>A snowball pile</figcaption></figure>
+        <ol class="steps">
+          <li><b>Dynamite parts</b> &mdash; with snowballs equipped, <b>snowball the flame zombies</b> that spawn in normal rounds; each kill drops one of <b>three parts</b>.
+            <figure class="shot"><img src="../img/tag/tg-dyn-zombie.jpg" alt="A flame zombie" loading="lazy"><figcaption>A flame zombie</figcaption></figure></li>
+          <li><b>Build it</b> &mdash; the reference uses the <b>Gangway</b> on the freighter, a short walk from Soda.
+            <figure class="shot"><img src="../img/tag/tg-dyn-table.jpg" alt="The Gangway table" loading="lazy"><figcaption>The Gangway table</figcaption></figure></li>
+          <li><b>Use it</b> on a barricade (hold use, back off) &mdash; three on the map, plus the Seal's safe and the flinger barricade in the quests.
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-dyn-b1.jpg" alt="Lighthouse Cove, toward the Beach" loading="lazy"><figcaption>Lighthouse Cove, toward the Beach</figcaption></figure><figure class="shot"><img src="../img/tag/tg-dyn-b2.jpg" alt="Lagoon, to the Sunken Path" loading="lazy"><figcaption>Lagoon, to the Sunken Path</figcaption></figure><figure class="shot"><img src="../img/tag/tg-dyn-b3.jpg" alt="Outside the Facility, on the walkway" loading="lazy"><figcaption>Outside the Facility, on the walkway</figcaption></figure></div></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-wpn-musicbox.png" alt="">
+        <span><b>Samantha's Music Box</b><br><small>Two keycards and a vault lockdown</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li>The <b>zipline handle</b> and the <b>Facility power on</b>. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li></ul></div>
+        <ol class="steps">
+          <li><b>Decontamination keycard</b> &mdash; one of three:
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-mb-dec1.jpg" alt="In a dryer" loading="lazy"><figcaption>In a dryer</figcaption></figure><figure class="shot"><img src="../img/tag/tg-mb-dec2.jpg" alt="In an eye-wash station" loading="lazy"><figcaption>In an eye-wash station</figcaption></figure><figure class="shot"><img src="../img/tag/tg-mb-dec3.jpg" alt="In a sink" loading="lazy"><figcaption>In a sink</figcaption></figure></div></li>
+          <li><b>Specimen Storage keycard</b> &mdash; one of three:
+            <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-mb-spec1.jpg" alt="In the post boxes" loading="lazy"><figcaption>In the post boxes</figcaption></figure><figure class="shot"><img src="../img/tag/tg-mb-spec2.jpg" alt="In a cell toilet" loading="lazy"><figcaption>In a cell toilet</figcaption></figure><figure class="shot"><img src="../img/tag/tg-mb-spec3.jpg" alt="Canister rack right of the Vril safe" loading="lazy"><figcaption>Canister rack right of the Vril safe</figcaption></figure></div></li>
+          <li><b>Security Lobby:</b> both cards into the two slots left of the front desk; wait for them to eject and take them back.</li>
+          <li><b>Human Infusion:</b> cards into the slots either side of the big vault, then hold use on the vault door &mdash; <b>~1-minute lockdown</b>. The vault opens with the Music Boxes. <b>They replace your current grenade.</b>
+            <figure class="shot"><img src="../img/tag/tg-mb-vault.jpg" alt="The vault in Human Infusion" loading="lazy"><figcaption>The vault in Human Infusion</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ TOTEMS ============ -->
+  <section class="tab-panel" id="tab-totems">
+    <h2>Challenge totems</h2>
+    <p class="blurb">Five totems, three challenges each, powered once you've handed the Hermit the blue rock. <b>Collect each reward before the next challenge starts.</b> The main quest needs <b>two totems fully done</b>; all fifteen in one game is an achievement.</p>
+
+    <details class="acc">
+      <summary><img src="../img/tag/tg-tot-lighthouse.jpg" alt="" style="object-fit:cover">
+        <span><b>Lighthouse Station</b><br><small>Headshots &middot; shield bashes &middot; the pee jars</small></span></summary>
+      <div class="acc-body">
+        <table class="data-table">
+          <thead><tr><th>Challenge</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Headshot kills &mdash; collect the brains</td><td>Carpenter</td></tr>
+            <tr><td>Kills with a shield bash</td><td>Full Power</td></tr>
+            <tr><td>Pee jars from Lighthouse Level 4 emptied in the Beach water</td><td>Self Revives</td></tr>
+          </tbody>
+        </table>
+        <div class="callout"><b>Pee jars:</b> they're in the Hermit's room at the top. Carry one <b>walking only &mdash; no sprinting, no jumping</b> &mdash; all the way down to the Beach water and hold use to empty it. Repeat until done.</div>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-tot-beach.jpg" alt="" style="object-fit:cover">
+        <span><b>Beach</b><br><small>Snowballs &middot; Lighthouse trap &middot; the S.O.S. signs</small></span></summary>
+      <div class="acc-body">
+        <table class="data-table">
+          <thead><tr><th>Challenge</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Snowball kills</td><td>Bonus Points</td></tr>
+            <tr><td>Kills with the Lighthouse trap (switch outside the Lighthouse by the Boathouse entrance)</td><td>Insta-Kill</td></tr>
+            <tr><td>Complete the 3 S.O.S. messages with snowballs</td><td>Break ice faster</td></tr>
+          </tbody>
+        </table>
+        <p><b>S.O.S.:</b> throw snowballs at the parts of the letters that <b>aren't fully white</b> &mdash; they stick. Signs at the <b>Beach</b>, the <b>Lighthouse</b> (by this totem's neighbour at Lighthouse Station) and the <b>boat entrance on the Sunken Path</b>.</p>
+        <figure class="shot"><img src="../img/tag/tg-tot-beach.jpg" alt="The Beach S.O.S., partly filled" loading="lazy"><figcaption>The Beach S.O.S., partly filled</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-tot-forecastle.jpg" alt="" style="object-fit:cover">
+        <span><b>Forecastle</b><br><small>Standing still &middot; melee &middot; the soup</small></span></summary>
+      <div class="acc-body">
+        <table class="data-table">
+          <thead><tr><th>Challenge</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Kills while standing still</td><td>Carpenter</td></tr>
+            <tr><td>Melee kills</td><td>Fire Sale</td></tr>
+            <tr><td>Soup: find the ingredients, add them to the pot, add water</td><td>Armor</td></tr>
+          </tbody>
+        </table>
+        <p><b>Ingredients</b> (one per area, three possible spots each):</p>
+        <p><b>Gangway</b></p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-soup1.jpg" alt="Red booth seat" loading="lazy"><figcaption>Red booth seat</figcaption></figure><figure class="shot"><img src="../img/tag/tg-soup2.jpg" alt="Island countertop" loading="lazy"><figcaption>Island countertop</figcaption></figure><figure class="shot"><img src="../img/tag/tg-soup3.jpg" alt="Bar countertop" loading="lazy"><figcaption>Bar countertop</figcaption></figure></div>
+        <p><b>Beach</b></p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-soup4.jpg" alt="Wooden barrel" loading="lazy"><figcaption>Wooden barrel</figcaption></figure><figure class="shot"><img src="../img/tag/tg-soup5.jpg" alt="Bush" loading="lazy"><figcaption>Bush</figcaption></figure><figure class="shot"><img src="../img/tag/tg-soup6.jpg" alt="Thompson wall-buy" loading="lazy"><figcaption>Thompson wall-buy</figcaption></figure></div>
+        <p><b>Boathouse</b></p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-soup7.jpg" alt="MOG wall-buy" loading="lazy"><figcaption>MOG wall-buy</figcaption></figure><figure class="shot"><img src="../img/tag/tg-soup8.jpg" alt="Heater" loading="lazy"><figcaption>Heater</figcaption></figure><figure class="shot"><img src="../img/tag/tg-soup9.jpg" alt="Oven" loading="lazy"><figcaption>Oven</figcaption></figure></div>
+        <p>Hold use on the <b>cooking pot at the end of the Forecastle</b> to add them, then <b>throw a snowball into the pot</b> for the water.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-tot-loading.jpg" alt="" style="object-fit:cover">
+        <span><b>Loading Platform (Facility)</b><br><small>Flings &middot; zipline kills &middot; whack-a-mole</small></span></summary>
+      <div class="acc-body">
+        <table class="data-table">
+          <thead><tr><th>Challenge</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Fling zombies</td><td>Insta-Kill</td></tr>
+            <tr><td>Kills while riding a zipline</td><td>Team Full Power</td></tr>
+            <tr><td>Whack-a-mole with snowballs only</td><td>Traps half price</td></tr>
+          </tbody>
+        </table>
+        <p><b>Whack-a-mole:</b> the station is outside by the totem &mdash; snowball the target to start, then snowball every target that pops up.</p>
+        <figure class="shot"><img src="../img/tag/tg-whack.jpg" alt="The whack-a-mole station" loading="lazy"><figcaption>The whack-a-mole station</figcaption></figure>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/tag/tg-tot-crevasse.jpg" alt="" style="object-fit:cover">
+        <span><b>Frozen Crevasse</b><br><small>Freezing water &middot; shatters &middot; the Hermit's tune</small></span></summary>
+      <div class="acc-body">
+        <table class="data-table">
+          <thead><tr><th>Challenge</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Kills while standing in freezing water</td><td>&mdash;</td></tr>
+            <tr><td>Shatter frozen zombies</td><td>&mdash;</td></tr>
+            <tr><td>Play the Hermit's favourite tune on the Docks bells</td><td>Snowball capacity 6 &rarr; 10</td></tr>
+          </tbody>
+        </table>
+        <p><b>The tune:</b> subtitles on &mdash; the Hermit sings the note letters. Write them down in order and hit the bells at the Docks. Only <b>C, G, A, E</b> exist:</p>
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-bell-c.jpg" alt="Bell C" loading="lazy"><figcaption>Bell C</figcaption></figure><figure class="shot"><img src="../img/tag/tg-bell-g.jpg" alt="Bell G" loading="lazy"><figcaption>Bell G</figcaption></figure><figure class="shot"><img src="../img/tag/tg-bell-a.jpg" alt="Bell A" loading="lazy"><figcaption>Bell A</figcaption></figure><figure class="shot"><img src="../img/tag/tg-bell-e.jpg" alt="Bell E" loading="lazy"><figcaption>Bell E</figcaption></figure></div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">Three switches, a blue rock for the Hermit, and a machine that follows the lighthouse beam between four spots &mdash; plus the <b>Golden Pack-a-Punch</b> on the island, which maxes a gun for 5,000.</p>
+    <h2>Power</h2>
+    <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-pw-docks.jpg" alt="Switch 1 &mdash; Docks, right in front of spawn" loading="lazy"><figcaption>Switch 1 &mdash; Docks, right in front of spawn</figcaption></figure><figure class="shot"><img src="../img/tag/tg-pw-bridge.jpg" alt="Switch 2 &mdash; Bridge, top floor of the ship behind a buyable door" loading="lazy"><figcaption>Switch 2 &mdash; Bridge, top floor of the ship behind a buyable door</figcaption></figure><figure class="shot"><img src="../img/tag/tg-pw-facility.jpg" alt="Switch 3 &mdash; Human Infusion, bottom of the Facility (needs the zipline handle)" loading="lazy"><figcaption>Switch 3 &mdash; Human Infusion, bottom of the Facility (needs the zipline handle)</figcaption></figure></div>
+    <h2>Pack-a-Punch</h2>
+    <ol class="steps">
+      <li><b>Docks and Bridge switches on.</b></li>
+      <li><b>The blue rock.</b> In the cave from the Lighthouse down to the Beach (<b>Lighthouse Approach</b>) a big blue rock sits on one of the walls &mdash; melee it and pick it up.
+        <figure class="shot"><img src="../img/tag/tg-pap-rock.jpg" alt="The blue rock, knocked down" loading="lazy"><figcaption>The blue rock, knocked down</figcaption></figure></li>
+      <li><b>Give it to the Hermit</b> at the top of the Lighthouse: he winches a board down, put the rock on it. Pack-a-Punch now rotates between four spots &mdash; <b>the lighthouse beam points at the current one</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-pap-lagoon.jpg" alt="Lagoon, just off spawn" loading="lazy"><figcaption>Lagoon, just off spawn</figcaption></figure><figure class="shot"><img src="../img/tag/tg-pap-beach.jpg" alt="Beach &mdash; the original Call of the Dead spawn" loading="lazy"><figcaption>Beach &mdash; the original Call of the Dead spawn</figcaption></figure><figure class="shot"><img src="../img/tag/tg-pap-boathouse.jpg" alt="Boathouse, behind the Lighthouse" loading="lazy"><figcaption>Boathouse, behind the Lighthouse</figcaption></figure><figure class="shot"><img src="../img/tag/tg-pap-pipe.jpg" alt="Sunken Path &mdash; shoot the blue pipe above the fire in Artifact Storage first" loading="lazy"><figcaption>Sunken Path &mdash; shoot the blue pipe above the fire in Artifact Storage first</figcaption></figure><figure class="shot"><img src="../img/tag/tg-pap-sunken.jpg" alt="Sunken Path spot, fire out" loading="lazy"><figcaption>Sunken Path spot, fire out</figcaption></figure></div></li>
+    </ol>
+    <h2>Ziplines &amp; Golden Pack-a-Punch</h2>
+    <ol class="steps">
+      <li><b>Zipline 1 &mdash; Sun Deck.</b> Find the crank wheel (three spots in the Stern), fit it to the crank and hold use until it stops asking.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-zip1-c1.jpg" alt="Right of Cola, against the wall" loading="lazy"><figcaption>Right of Cola, against the wall</figcaption></figure><figure class="shot"><img src="../img/tag/tg-zip1-c2.jpg" alt="On a box in the little hallway in front of Cola" loading="lazy"><figcaption>On a box in the little hallway in front of Cola</figcaption></figure><figure class="shot"><img src="../img/tag/tg-zip1-c3.jpg" alt="Facing Cola, turn right and follow the ship's edge" loading="lazy"><figcaption>Facing Cola, turn right and follow the ship's edge</figcaption></figure><figure class="shot"><img src="../img/tag/tg-zip1-place.jpg" alt="The Sun Deck crank" loading="lazy"><figcaption>The Sun Deck crank</figcaption></figure></div></li>
+      <li><b>Zipline 2 &mdash; Main Deck.</b> Crank wheel in one of three Forecastle spots.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-zip2-c1.jpg" alt="On the ground by an open container with barrels" loading="lazy"><figcaption>On the ground by an open container with barrels</figcaption></figure><figure class="shot"><img src="../img/tag/tg-zip2-c2.jpg" alt="Left of the Auger wall-buy" loading="lazy"><figcaption>Left of the Auger wall-buy</figcaption></figure><figure class="shot"><img src="../img/tag/tg-zip2-c3.jpg" alt="On a generator by the Forecastle Mystery Box" loading="lazy"><figcaption>On a generator by the Forecastle Mystery Box</figcaption></figure><figure class="shot"><img src="../img/tag/tg-zip2-place.jpg" alt="The Main Deck crank" loading="lazy"><figcaption>The Main Deck crank</figcaption></figure></div></li>
+      <li><b>The zipline handle.</b> Back at the top of the Lighthouse the Hermit sends it down. Ride the zipline on the Lighthouse's outer ring to the <b>Facility</b>.
+        <figure class="shot"><img src="../img/tag/tg-zip-facility.jpg" alt="The zipline to the Facility" loading="lazy"><figcaption>The zipline to the Facility</figcaption></figure></li>
+      <li><b>Facility power.</b> Inside, down to the big vault and the lower level: flip the <b>Human Infusion switch</b> &mdash; Nikolai confirms there's power for Golden Pack-a-Punch.</li>
+      <li><b>Golden Pack-a-Punch.</b> When the lighthouse points out to sea (Nikolai usually says so), <b>all players</b> stand on the <b>Sun Deck jump pad</b> outside the Bridge power room. <b>5,000 fully upgrades a gun</b> (instead of 15,000). The island floods with zombies while you're there &mdash; only go to upgrade.
+        <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-gpap-pad.jpg" alt="The Sun Deck jump pad" loading="lazy"><figcaption>The Sun Deck jump pad</figcaption></figure><figure class="shot"><img src="../img/tag/tg-gpap-machine.jpg" alt="Golden Pack-a-Punch on the island" loading="lazy"><figcaption>Golden Pack-a-Punch on the island</figcaption></figure></div></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Four machines, fixed spots. They're labelled by slot &mdash; <b>Brew, Cola, Soda, Tonic</b> &mdash; and each sells whatever perk you put in that loadout slot before the game.</p>
+    <div class="callout"><b>The reference's quest loadout:</b> Quick Revive (Brew), Stamin-Up (Cola), Dying Wish (Soda), Deadshot Dealer (Tonic); <b>Ragnarok</b> specialist for everyone.</div>
+    <table class="data-table">
+      <thead><tr><th>Machine</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Brew</b></td><td>2500</td><td>Your loadout's 1st perk</td><td>Lagoon, near spawn</td></tr>
+        <tr><td><b>Cola</b></td><td>3000</td><td>Your loadout's 2nd perk</td><td>Artifact Storage, up the stairs from the red orb</td></tr>
+        <tr><td><b>Soda</b></td><td>3500</td><td>Your loadout's 3rd perk</td><td>Stern &mdash; up the Beach stairs onto the deck, right through a door</td></tr>
+        <tr><td><b>Tonic</b></td><td>4000</td><td>Your loadout's 4th perk</td><td>Decontamination &mdash; Facility, right doorway from the entrance</td></tr>
+      </tbody>
+    </table>
+    <h2>What each machine looks like</h2>
+    <div class="shot-grid"><figure class="shot"><img src="../img/tag/tg-perk-brew.jpg" alt="Brew &mdash; Lagoon" loading="lazy"><figcaption>Brew &mdash; Lagoon</figcaption></figure><figure class="shot"><img src="../img/tag/tg-perk-cola.jpg" alt="Cola &mdash; Artifact Storage" loading="lazy"><figcaption>Cola &mdash; Artifact Storage</figcaption></figure><figure class="shot"><img src="../img/tag/tg-perk-soda.jpg" alt="Soda &mdash; Stern" loading="lazy"><figcaption>Soda &mdash; Stern</figcaption></figure><figure class="shot"><img src="../img/tag/tg-perk-tonic.jpg" alt="Tonic &mdash; Decontamination" loading="lazy"><figcaption>Tonic &mdash; Decontamination</figcaption></figure></div>
+    <p class="blurb">Costs follow the BO4 slot ladder (first perk bought 2500, then 3000 / 3500 / 4000) &mdash; the reference doesn't quote prices, so correct me if yours differ.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>

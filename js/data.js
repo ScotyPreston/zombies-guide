@@ -60,7 +60,7 @@ const GAMES = [
       { id: "dotn", name: "Dead of the Night", note: "The haunted manor", built: true },
       { id: "ancient-evil", name: "Ancient Evil", note: "Delphi — God Hands + Tributes", built: true },
       { id: "alpha-omega", name: "Alpha Omega", note: "Nuketown — Ray Gun Mk II variants", built: true },
-      { id: "tag", name: "Tag der Toten" }
+      { id: "tag", name: "Tag der Toten", note: "The Aether finale — Seal of Duality", built: true }
     ]
   },
   {
