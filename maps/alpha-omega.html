@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f1412">
+<title>Alpha Omega &ndash; Guide</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/map.css">
+<style>
+  /* Alpha Omega: Nuketown — 50s turquoise + mustard */
+  :root {
+    --map-bg: #0f1412;
+    --map-bg2: #18201c;
+    --bg: #0f1412;
+    --bg-card: #18201c;
+    --bg-card-hover: #222c26;
+    --line: #2f3c35;
+    --map-accent: #5fd3c4;
+    --map-accent2: #e8b64a;
+    --map-glow: rgba(95, 211, 196, 0.30);
+  }
+  .shot-grid.icon-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .shot-grid.icon-grid .shot img { max-width: 110px; margin: 0 auto; display: block; aspect-ratio: 1 / 1; height: auto; }
+  .shot-grid.icon-grid .shot figcaption { text-align: center; }
+</style>
+<!-- pwa:begin -->
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Zombies">
+<meta name="application-name" content="Zombies">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon-180.png">
+<link rel="icon" sizes="192x192" href="../icons/icon-192.png">
+<link rel="icon" sizes="32x32" href="../icons/favicon-32.png">
+<!-- pwa:end -->
+</head>
+<body class="map-page" data-map="alpha-omega">
+<div class="wrap">
+
+  <nav class="back-bar"><a href="../game.html?g=bo4">&#8249; Black Ops 4</a></nav>
+
+  <header class="map-header">
+    <h1>Alpha Omega</h1>
+    <div class="sub">Black Ops 4 &middot; Nuketown, overrun</div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn" data-tab="main" data-default>Main Easter Egg</button>
+    <button class="tab-btn" data-tab="side">Side Easter Eggs</button>
+    <button class="tab-btn" data-tab="wonder">Ray Guns</button>
+    <button class="tab-btn" data-tab="build">Buildables</button>
+    <button class="tab-btn" data-tab="pap">Pack-a-Punch</button>
+    <button class="tab-btn" data-tab="perks">Perks</button>
+  </nav>
+
+  <!-- ============ MAIN EASTER EGG ============ -->
+  <section class="tab-panel" id="tab-main">
+    <div class="req-box">
+      <h3>Requirements</h3>
+      <ul>
+        <li><b>Players: 1&ndash;4.</b> <b>Normal difficulty, no modifiers.</b></li>
+        <li><b>Power on and Pack-a-Punch open.</b> <button class="xref" data-goto="pap">See Pack-a-Punch</button></li>
+        <li>The <b>Telepads</b> built. <button class="xref" data-goto="build">See Buildables</button></li>
+        <li>A <b>Brain Rot</b> gun (double Pack-a-Punch) for step 9; <b>Galvaknuckles</b> (5,000, bought during step 2).</li>
+      </ul>
+    </div>
+    <p class="blurb">"Electromagnetic Awakening Party" &mdash; do everything Rushmore tells you, until he gives you the Elemental Shard. <b>Talk to Rushmore between every step</b> &mdash; his monitors are in Operations.</p>
+    <figure class="shot"><img src="../img/alpha-omega/ao-rushmore.jpg" alt="Rushmore &mdash; the face on the Operations monitors" loading="lazy"><figcaption>Rushmore &mdash; the face on the Operations monitors</figcaption></figure>
+
+    <h2>The full quest</h2>
+    <p class="blurb">Tap a step to check it off &mdash; progress saves on this device.</p>
+    <ol class="steps">
+      <li data-num="1"><b>Report to Rushmore.</b> With Pack-a-Punch open, finish a round &mdash; someone starts yelling at you to report to Operations. Hold use on the big green monitors.</li>
+
+      <li data-num="2"><b>The static TV and the Galvaknuckles.</b> One of four TVs in the bunker shows a <b>white static screen</b> (don't confuse it with the Ray Gun TVs &mdash; only one spawns, the others don't matter). Then buy the door on the <b>truck outside the Yellow House</b> and the <b>Galvaknuckles for 5,000</b> inside. Bring a zombie to the static TV and <b>kill it with a Galvaknuckle punch in front of the screen</b> &mdash; the TV reads out <b>five letter + number codes</b>. <b>Turn subtitles on and record a clip</b>; you need all five.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-tr-tv-diner.jpg" alt="Diner TV" loading="lazy"><figcaption>Diner TV</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-tv-beds1.jpg" alt="Beds &mdash; hallway right of Pack-a-Punch" loading="lazy"><figcaption>Beds &mdash; hallway right of Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-tv-beds2.jpg" alt="Beds &mdash; left of Pack-a-Punch" loading="lazy"><figcaption>Beds &mdash; left of Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-tv-lounge.jpg" alt="Lounge TV" loading="lazy"><figcaption>Lounge TV</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-galva.jpg" alt="Galvaknuckles in the truck &mdash; 5,000" loading="lazy"><figcaption>Galvaknuckles in the truck &mdash; 5,000</figcaption></figure></div></li>
+
+      <li data-num="3"><b>Set the clocks, in the order you heard them.</b> Each code is a house letter and a time ("D, 0745" = Transfusion Facility, 7:45). Go to each house <b>in the order read out</b>, hold use on its clock and turn the hands to that time. Rushmore says <b>"security clearance granted"</b> after each correct one.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-tr-clock-a.jpg" alt="A &mdash; Yellow House" loading="lazy"><figcaption>A &mdash; Yellow House</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-clock-b.jpg" alt="B &mdash; Green House" loading="lazy"><figcaption>B &mdash; Green House</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-clock-c.jpg" alt="C &mdash; Prisoner Holding" loading="lazy"><figcaption>C &mdash; Prisoner Holding</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-clock-d.jpg" alt="D &mdash; Transfusion Facility" loading="lazy"><figcaption>D &mdash; Transfusion Facility</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-clock-e.jpg" alt="E &mdash; Operations" loading="lazy"><figcaption>E &mdash; Operations</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-clock-f.jpg" alt="F &mdash; APD Interrogation" loading="lazy"><figcaption>F &mdash; APD Interrogation</figcaption></figure></div></li>
+
+      <li data-num="4"><b>The sixth clock and the keypad.</b> One house letter was never read out: its clock <b>spins and stops on a random time</b>. Turn that time into four digits (12:00 &rarr; 1200) and enter it on <b>Rushmore's keypad</b> (hold use per digit, then Enter). That unlocks <b>every house trap</b> and opens <b>free gun lockers in Operations and Prisoner Holding</b> &mdash; take them. Rushmore still "denies access" &mdash; that's correct.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-tr-locker1.jpg" alt="Operations locker" loading="lazy"><figcaption>Operations locker</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tr-locker2.jpg" alt="Prisoner Holding locker" loading="lazy"><figcaption>Prisoner Holding locker</figcaption></figure></div></li>
+
+      <li data-num="5"><b>Walk the red crawler home.</b> <b>Talk to Rushmore first or the step won't trigger</b>, and do it as early as you can &mdash; it only gets harder. A <b>red-glowing Nova crawler</b> spawns in the bunker (Rushmore comments when it's near). <b>Don't shoot it</b>: walk it to the <b>Transfusion Facility</b>, staying close or it loses interest and heads back. It hops through the <b>window through the archway on the left wall</b> inside the front door. Killed it or lost it = next round.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-q-crawler.jpg" alt="The red crawler in the bunker" loading="lazy"><figcaption>The red crawler in the bunker</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-window.jpg" alt="The window it climbs through" loading="lazy"><figcaption>The window it climbs through</figcaption></figure></div></li>
+
+      <li data-num="6"><b>Four authorisation codes &mdash; wake Sergeant A.D.A.M.</b> Rushmore wants a missing canister back, which means activating A.D.A.M. Find four papers (note the <b>name at the top</b> of each):
+        <ul>
+          <li><b>Operation Toy Soldier</b> &mdash; desk left of Rushmore. <b>Always 7626.</b></li>
+          <li><b>Sawyer</b> &mdash; APD Interrogation, one of three desks.</li>
+          <li><b>McCain</b> &mdash; APD Control (the bunker under Interrogation): <b>shoot the stack of papers</b> on the desk.</li>
+          <li><b>Pernell</b> &mdash; take the key from the <b>key box in Solitary</b> (right of the mannequin's front desk), then open the <b>Yellow House upstairs desk drawer</b>.</li>
+        </ul>
+        Enter <b>7626 first</b>, then the codes <b>in the order Rushmore names them</b> ("McCain authorization code required&hellip;"). "Sergeant A.D.A.M. has been activated."
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-q-code-toy.jpg" alt="Toy Soldier &mdash; 7626, beside Rushmore" loading="lazy"><figcaption>Toy Soldier &mdash; 7626, beside Rushmore</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-code-sawyer1.jpg" alt="Sawyer &mdash; desk right of the chair mannequin" loading="lazy"><figcaption>Sawyer &mdash; desk right of the chair mannequin</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-code-sawyer2.jpg" alt="Sawyer &mdash; desk under the stairs, left of the mannequin" loading="lazy"><figcaption>Sawyer &mdash; desk under the stairs, left of the mannequin</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-code-sawyer3.jpg" alt="Sawyer &mdash; upstairs desk by the hole in the wall" loading="lazy"><figcaption>Sawyer &mdash; upstairs desk by the hole in the wall</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-code-mccain.jpg" alt="McCain &mdash; shoot the paper stack in APD Control" loading="lazy"><figcaption>McCain &mdash; shoot the paper stack in APD Control</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-keybox.jpg" alt="The key box in Solitary" loading="lazy"><figcaption>The key box in Solitary</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-code-pernell.jpg" alt="Pernell &mdash; the Yellow House upstairs drawer" loading="lazy"><figcaption>Pernell &mdash; the Yellow House upstairs drawer</figcaption></figure></div></li>
+
+      <li data-num="7"><b>Marlton's door and the canister.</b> Green House backyard, down the <b>first flight of bunker stairs</b>: behind barrels, left of the graffiti "<i>Should have nuked this place when I had the chance</i>", is a big metal door. <b>Melee it</b> &mdash; Marlton talks. Go to <b>Storage</b>, find the <b>Sgt. A.D.A.M. poster</b> and buy the Sergeant <b>for free</b> at the door right of it. Back at the metal door, <b>wait for A.D.A.M. to arrive</b>; Marlton panics and throws a <b>canister</b> through. Put it on the <b>shelf with the other canisters in the Transfusion Facility</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-q-door.jpg" alt="The metal door by the graffiti" loading="lazy"><figcaption>The metal door by the graffiti</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-adam-buy.jpg" alt="Buy A.D.A.M. here in Storage" loading="lazy"><figcaption>Buy A.D.A.M. here in Storage</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-canister.jpg" alt="The canister shelf in the Transfusion Facility" loading="lazy"><figcaption>The canister shelf in the Transfusion Facility</figcaption></figure></div></li>
+
+      <li data-num="8"><b>The server run.</b> Place one telepad <b>in the Power House left of the switch</b> and the other <b>by the Brew perk</b>. Left of the Power House telepad a fuse sits behind glass: <b>lure a Jolting Jack into zapping the glass</b> (dodge the shot) and it lifts. Grab the server and <b>sprint to Operations through the telepads before it overheats</b>; place it on the <b>server wall by Rushmore</b>. Failed = wait a few seconds, grab it again, same round.
+        <figure class="shot"><img src="../img/alpha-omega/ao-q-fuse.jpg" alt="The fuse behind glass in the Power House" loading="lazy"><figcaption>The fuse behind glass in the Power House</figcaption></figure></li>
+
+      <li data-num="9"><b>Brain Rot codes.</b> Three pictures leak <b>green mist</b>. Shoot a zombie nearby with a <b>Brain Rot</b> gun &mdash; it knocks the picture down, revealing a code behind it. Collect all three, then enter them on Rushmore's keypad <b>quickly, one after another</b>.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-q-pic-green.jpg" alt="Green House &mdash; top of the stairs" loading="lazy"><figcaption>Green House &mdash; top of the stairs</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-pic-lounge.jpg" alt="Lounge &mdash; just before the exit" loading="lazy"><figcaption>Lounge &mdash; just before the exit</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-pic-beds.jpg" alt="Beds &mdash; by the telepad spot" loading="lazy"><figcaption>Beds &mdash; by the telepad spot</figcaption></figure></div></li>
+
+      <li data-num="10"><b>Restore the power.</b> The lights go out. Set <b>six bunker power boxes</b>: <b>Diner UP &middot; Beds UP &middot; Lounge DOWN &middot; Generators UP &middot; Solitary DOWN &middot; Storage DOWN</b>, then flip the switch in the Power House again.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-q-box-diner.jpg" alt="Diner &mdash; UP" loading="lazy"><figcaption>Diner &mdash; UP</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-box-beds.jpg" alt="Beds &mdash; UP" loading="lazy"><figcaption>Beds &mdash; UP</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-box-lounge.jpg" alt="Lounge &mdash; DOWN" loading="lazy"><figcaption>Lounge &mdash; DOWN</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-box-gen.jpg" alt="Generators &mdash; UP" loading="lazy"><figcaption>Generators &mdash; UP</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-box-solitary.jpg" alt="Solitary &mdash; DOWN" loading="lazy"><figcaption>Solitary &mdash; DOWN</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-box-storage.jpg" alt="Storage &mdash; DOWN" loading="lazy"><figcaption>Storage &mdash; DOWN</figcaption></figure></div></li>
+
+      <li data-num="11"><b>Three sparking mannequins.</b> New mannequins <b>sparking blue</b> appear (backyards of the Green and Yellow houses, the Diner, the Lounge, behind the Transfusion Facility and Prisoner Holding). Interact &rarr; <b>~1 minute lockdown</b> &rarr; it drops an <b>arm or a head</b>. Three mannequins = <b>two arms and a head</b>. Fit them to the <b>mannequin in the chair in APD Interrogation</b>; the round pauses for dialogue.
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-q-mannequin.jpg" alt="A sparking mannequin" loading="lazy"><figcaption>A sparking mannequin</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-q-mannequin-chair.jpg" alt="The mannequin in the chair, rebuilt" loading="lazy"><figcaption>The mannequin in the chair, rebuilt</figcaption></figure></div></li>
+
+      <li data-num="12"><b>Follow the blue orb.</b> A <b>blue orb</b> is somewhere on the map, usually in a <b>zombie spawn window</b>. Check every window and door; once found, <b>stay with it</b> as it drifts to APD Interrogation (lose it = next round). It enters the mannequin &mdash; more story &mdash; then one last talk with Rushmore unlocks the fight.</li>
+
+      <li data-num="13"><b>The Avogadro.</b> Full shield, all perks, PaP'd guns, <b>Monkey Bombs</b>, and ideally a <b>Porter's Mark II-V</b>. Everyone holds use on the <b>central console in APD Control</b>.
+        <ul>
+          <li><b>Charge one corner canister</b> of the APD pyramid by killing the <b>A.D.A.M. units</b> that now spawn near it. The pyramid opens: the <b>Avogadro</b>. A nuke seals the surface &mdash; you're in the bunker for good.</li>
+          <li><b>Four soul canisters</b> &mdash; the <b>four monitors in APD Control show the order, left to right</b>: Lounge, Diner, Beds, Storage. Hold use on one, then kill A.D.A.M.s and dogs beside it. The Avogadro chases and shocks &mdash; keep the room between you; if he shocks a canister, wait for it to come back. Full = Rushmore speaks, <b>Max Ammo + Carpenter drop &mdash; grab them and leave fast</b>, he electrifies the area. <b>Beds is always last.</b></li>
+          <li>After Beds, run through Generators back to <b>APD Control</b> and wait for him. <b>Monkey Bomb, then melee</b> &mdash; he kneels; shooting him <b>knocks him in the direction you fire</b>. Melee and push him to the <b>foot of the APD stairs</b> until he's sucked back in.</li>
+          <li>Use the <b>console again</b> to teleport him; the APD opens with the <b>Elemental Shard</b> inside. Grab it &mdash; cutscene.</li>
+        </ul>
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-bs-console.jpg" alt="The console that starts the fight" loading="lazy"><figcaption>The console that starts the fight</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-bs-avogadro.jpg" alt="The Avogadro" loading="lazy"><figcaption>The Avogadro</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-bs-monitors.jpg" alt="The four monitors &mdash; canister order" loading="lazy"><figcaption>The four monitors &mdash; canister order</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-bs-can-lounge.jpg" alt="Lounge canister" loading="lazy"><figcaption>Lounge canister</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-bs-can-diner.jpg" alt="Diner canister" loading="lazy"><figcaption>Diner canister</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-bs-can-beds.jpg" alt="Beds canister &mdash; last" loading="lazy"><figcaption>Beds canister &mdash; last</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-bs-can-storage.jpg" alt="Storage canister" loading="lazy"><figcaption>Storage canister</figcaption></figure></div></li>
+    </ol>
+    <button class="reset-progress">Reset checked steps</button>
+  </section>
+
+  <!-- ============ SIDE EASTER EGGS ============ -->
+  <section class="tab-panel" id="tab-side">
+    <h2>Side Easter Eggs &amp; achievements</h2>
+    <p class="blurb">The reference is an achievement walkthrough &mdash; these are its map achievements plus the traps. The "I Am The Well" song and the jump scares aren't covered; send a reference and I'll add them.</p>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-tr-locker1.jpg" alt="" style="object-fit:cover">
+        <span><b>Traps &amp; the free weapon lockers</b><br><small>Unlocked by the clock-code quest</small></span></summary>
+      <div class="acc-body">
+        <p>Steps 1&ndash;4 of the main quest (static TV, Galvaknuckles, clocks, keypad) switch on every trap and open the lockers &mdash; normal difficulty only. <button class="xref" data-goto="main">See the main quest</button></p>
+        <table class="data-table">
+          <thead><tr><th>Trap</th><th>Where</th><th>Cost</th></tr></thead>
+          <tbody>
+            <tr><td><b>Electric</b></td><td>Green House</td><td>1000</td></tr>
+            <tr><td><b>Fire</b></td><td>Yellow House downstairs</td><td>1000</td></tr>
+            <tr><td><b>Ceiling fan</b></td><td>Green House downstairs</td><td>1000</td></tr>
+            <tr><td><b>Acid</b></td><td>Transfusion Facility</td><td>1000</td></tr>
+            <tr><td><b>APD</b></td><td>APD Interrogation</td><td>1000</td></tr>
+          </tbody>
+        </table>
+        <p><b>Achievement:</b> 11 kills with each of the five traps in one game.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-pap-machine.jpg" alt="" style="object-fit:cover">
+        <span><b>Pack-a-Punch by round 5</b><br><small>Shopping Free / Extra Credit elixirs help</small></span></summary>
+      <div class="acc-body"><p>Power, the lockdown and all four vents before round 5. <button class="xref" data-goto="pap">See Pack-a-Punch</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-v.png" alt="">
+        <span><b>Construct a Ray Gun / construct all four</b><br><small>Any variant pops the first; all four in one game pops the second</small></span></summary>
+      <div class="acc-body"><p><button class="xref" data-goto="wonder">See Ray Guns</button></p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-v-pap.jpg" alt="" style="object-fit:cover">
+        <span><b>Stun 10 zombies at once with the Mark II-V</b><br><small>Short bursts into a tight horde</small></span></summary>
+      <div class="acc-body"><p>Bunch a big horde up and fire <b>short bursts</b> at two or three zombies &mdash; the shock chains to the ones next to them. Ten stunned at once and it pops.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-pw-switch.jpg" alt="" style="object-fit:cover">
+        <span><b>Round 20 in Security Checkpoint</b><br><small>Never leave spawn &mdash; don't fall off the bus</small></span></summary>
+      <div class="acc-body"><p>Checkpoint Zulu is a narrow corridor with a ramp onto a bus roof &mdash; <b>falling off the bus into the map fails it</b>. Wraith fires, a MOG 12 to start, a shield elixir and specialist-charging elixirs; casual difficulty is allowed. Pops when round 21 starts.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-galva.png" alt="">
+        <span><b>115 Galvaknuckle kills</b><br><small>Solo zombies only</small></span></summary>
+      <div class="acc-body"><p>Buy the truck door outside the Yellow House and the Galvaknuckles (5,000). Punch <b>lone</b> zombies &mdash; never a horde &mdash; until 115.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-perk-brew.jpg" alt="" style="object-fit:cover">
+        <span><b>All four perks in 35 seconds</b><br><small>Telepads + Path of Sorrows</small></span></summary>
+      <div class="acc-body"><p>Power, PaP and telepads ready; <b>Path of Sorrows</b> specialist, Stamin-Up as Cola, Secret Sauce elsewhere, <b>12,000 points and no perks</b>. Telepad in the <b>Diner by Soda</b>, the other <b>by Brew</b>. Buy Cola &rarr; run to Brew &rarr; telepad to Soda &rarr; pop the specialist for speed &rarr; sprint to Tonic.</p></div>
+    </details>
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-v-pole1.jpg" alt="" style="object-fit:cover">
+        <span><b>15 Jolting Jacks on rooftops with grenades</b><br><small>Frags, Acid Bombs or a PaP'd Trebuchet &mdash; not wraith fires</small></span></summary>
+      <div class="acc-body"><p>Easiest with the <b>M1897 Trebuchet</b> off the wall, Pack-a-Punched into a mini grenade launcher. Horde in the street outside the houses and check the roofs whenever you hear a Jack.</p></div>
+    </details>
+  </section>
+
+  <!-- ============ RAY GUNS ============ -->
+  <section class="tab-panel" id="tab-wonder">
+    <h2>Ray Gun Mark II variants</h2>
+    <p class="blurb">Four craftable Ray Guns, each from an <b>alternate ammo type</b> on a re-packed gun plus a canister charged with souls. Build the <b>Assembly Kit</b> and unlock the <b>frames</b> first; each variant Pack-a-Punches into its <b>Porter's</b> version.</p>
+    <div class="shot-grid icon-grid"><figure class="shot"><img src="../img/alpha-omega/ao-ic-fuse-v.png" alt="V canister" loading="lazy"><figcaption>V &middot; Kill-O-Watt</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ic-fuse-x.png" alt="X canister" loading="lazy"><figcaption>X &middot; Cryofreeze</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ic-fuse-y.png" alt="Y canister" loading="lazy"><figcaption>Y &middot; Brain Rot</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ic-fuse-z.png" alt="Z canister" loading="lazy"><figcaption>Z &middot; Fire Bomb</figcaption></figure></div>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-mk2.png" alt="">
+        <span><b>The frames &mdash; do this first</b><br><small>Rushmore, four TVs, a four-digit code</small></span></summary>
+      <div class="acc-body">
+        <div class="req-box"><h3>Requirements</h3><ul><li><b>Pack-a-Punch open</b>, then one more round. <button class="xref" data-goto="pap">See Pack-a-Punch</button></li><li>The <b>Assembly Kit built</b>. <button class="xref" data-goto="build">See Buildables</button></li></ul></div>
+        <ol class="steps">
+          <li><b>Talk to Rushmore</b> &mdash; the face on the big green monitors in Operations.
+            <figure class="shot"><img src="../img/alpha-omega/ao-rushmore.jpg" alt="Rushmore" loading="lazy"><figcaption>Rushmore</figcaption></figure></li>
+          <li><b>Four TVs, one at a time.</b> Whichever TV shows <b>static</b>, hold use: a Ray Gun image appears, and you <b>feed it souls</b> with nearby kills. Full = it shows a <b>number</b>. <b>Write the numbers down in the order you get them</b>; the static moves to the next TV at random.
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-rg-tv1.jpg" alt="Yellow House backyard table" loading="lazy"><figcaption>Yellow House backyard table</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-rg-tv2.jpg" alt="APD Control, cart by the pyramid" loading="lazy"><figcaption>APD Control, cart by the pyramid</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-rg-tv3.jpg" alt="Diner, on a divider" loading="lazy"><figcaption>Diner, on a divider</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-rg-tv4.jpg" alt="Site Entrance, by the yellow gate to Brew" loading="lazy"><figcaption>Site Entrance, by the yellow gate to Brew</figcaption></figure></div></li>
+          <li><b>Enter the four digits</b> on the keypad left of Rushmore (look at a key, hold use; then Enter). The cabinet behind you lifts &mdash; <b>take a frame</b> before starting any variant.
+            <figure class="shot"><img src="../img/alpha-omega/ao-rg-frames.jpg" alt="The frames cabinet" loading="lazy"><figcaption>The frames cabinet</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-v.png" alt="">
+        <span><b>Ray Gun Mark II-V</b><br><small>Electric beam &mdash; Kill-O-Watt</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>Get a gun with <b>Kill-O-Watt</b> (re-pack at Pack-a-Punch). In the Generators area one panel glows <b>yellow</b> &mdash; shoot it with the Kill-O-Watt gun and take the canister.
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-v-panel1.jpg" alt="Right-hand wall on the path right of Pack-a-Punch" loading="lazy"><figcaption>Right-hand wall on the path right of Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-v-panel2.jpg" alt="Left of the lockdown generator" loading="lazy"><figcaption>Left of the lockdown generator</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-v-panel3.jpg" alt="Left of the Tonic perk" loading="lazy"><figcaption>Left of the Tonic perk</figcaption></figure></div></li>
+          <li>Outside, one of <b>five light poles sparks yellow</b>: shoot the metal at the top so it holds a yellow orb. Do all five and a beam links them.
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-v-pole1.jpg" alt="In front of the Transfusion Facility" loading="lazy"><figcaption>In front of the Transfusion Facility</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-v-pole2.jpg" alt="In front of Prisoner Holding" loading="lazy"><figcaption>In front of Prisoner Holding</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-v-pole3.jpg" alt="In front of the APD house" loading="lazy"><figcaption>In front of the APD house</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-v-pole4.jpg" alt="Transfusion Facility backyard (1 of 2)" loading="lazy"><figcaption>Transfusion Facility backyard (1 of 2)</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-v-pole5.jpg" alt="Transfusion Facility backyard (2 of 2)" loading="lazy"><figcaption>Transfusion Facility backyard (2 of 2)</figcaption></figure></div></li>
+          <li>Hold use on the <b>generator in front of the Yellow House</b> to seat the canister, then <b>stay in the yellow circle and get kills</b> until it stops taking souls. Take it to the <b>Assembly Kit</b> upstairs in Operations and craft the <b>Mark II-V</b>.
+            <figure class="shot"><img src="../img/alpha-omega/ao-v-generator.jpg" alt="The generator outside the Yellow House" loading="lazy"><figcaption>The generator outside the Yellow House</figcaption></figure></li>
+        </ol>
+        <figure class="shot"><img src="../img/alpha-omega/ao-v-pap.jpg" alt="Pack-a-Punched: Porter's Mark II-V (CoD wiki)" loading="lazy"><figcaption>Pack-a-Punched: Porter's Mark II-V (CoD wiki)</figcaption></figure>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-x.png" alt="">
+        <span><b>Ray Gun Mark II-X</b><br><small>Full-auto &mdash; Cryofreeze</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>Get a <b>Cryofreeze</b> gun. One cabinet leaks <b>blue mist</b>: shoot it with the Cryofreeze gun and take the canister.
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-x-cab1.jpg" alt="Operations garage" loading="lazy"><figcaption>Operations garage</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-x-cab2.jpg" alt="Prisoner Holding, by the door to the driveway" loading="lazy"><figcaption>Prisoner Holding, by the door to the driveway</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-x-cab3.jpg" alt="APD Interrogation, right of the chair mannequin" loading="lazy"><figcaption>APD Interrogation, right of the chair mannequin</figcaption></figure></div></li>
+          <li>In the bunker, zombies spawn with a <b>blue glow</b>: freeze one, <b>melee it</b>, and collect the <b>blue goo</b> it drops. <b>Three times.</b></li>
+          <li>Place the canister on the <b>APD Control table</b> by the big canisters; <b>kills inside the blue circle</b> until it's full, then craft the <b>Mark II-X</b> at the Assembly Kit.
+            <figure class="shot"><img src="../img/alpha-omega/ao-x-table.jpg" alt="The APD Control table" loading="lazy"><figcaption>The APD Control table</figcaption></figure></li>
+        </ol>
+        <figure class="shot"><img src="../img/alpha-omega/ao-x-pap.jpg" alt="Pack-a-Punched: Porter's Mark II-X (CoD wiki)" loading="lazy"><figcaption>Pack-a-Punched: Porter's Mark II-X (CoD wiki)</figcaption></figure>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-y.png" alt="">
+        <span><b>Ray Gun Mark II-Y</b><br><small>Explosive charge &mdash; Brain Rot</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>Get a <b>Brain Rot</b> gun. One dirt pile leaks <b>green mist</b>: shoot a zombie near it with Brain Rot and it <b>digs up</b> the canister.
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-y-pile1.jpg" alt="Green House backyard, by the bunker entrance" loading="lazy"><figcaption>Green House backyard, by the bunker entrance</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-y-pile2.jpg" alt="Yellow House backyard, by the tunnel to Prisoner Holding" loading="lazy"><figcaption>Yellow House backyard, by the tunnel to Prisoner Holding</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-y-pile3.jpg" alt="Center Street, light post right of Brew" loading="lazy"><figcaption>Center Street, light post right of Brew</figcaption></figure></div></li>
+          <li>A <b>golden orb</b> floats over one of the telepad pads: <b>place a telepad there and shoot the orb</b> &mdash; it teleports. Find it again, do the same, and <b>this time jump into the telepad after it</b>. The orb flies to <b>Storage</b>.</li>
+          <li>Seat the canister in Storage, <b>kills in the orange circle</b> until full, craft the <b>Mark II-Y</b>.
+            <figure class="shot"><img src="../img/alpha-omega/ao-y-storage.jpg" alt="The canister spot in Storage" loading="lazy"><figcaption>The canister spot in Storage</figcaption></figure></li>
+        </ol>
+        <figure class="shot"><img src="../img/alpha-omega/ao-y-pap.jpg" alt="Pack-a-Punched: Porter's Mark II-Y (CoD wiki)" loading="lazy"><figcaption>Pack-a-Punched: Porter's Mark II-Y (CoD wiki)</figcaption></figure>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-wpn-z.png" alt="">
+        <span><b>Ray Gun Mark II-Z</b><br><small>Shotgun &mdash; Fire Bomb</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li>Get a <b>Fire Bomb</b> gun. One kitchen cabinet leaks <b>orange mist</b>: shoot it, it burns away, take the canister.
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-z-cab1.jpg" alt="Green House kitchen, left side" loading="lazy"><figcaption>Green House kitchen, left side</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-z-cab2.jpg" alt="Yellow House kitchen, right side" loading="lazy"><figcaption>Yellow House kitchen, right side</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-z-cab3.jpg" alt="Lounge, right side by the plants" loading="lazy"><figcaption>Lounge, right side by the plants</figcaption></figure></div></li>
+          <li>One house outside puffs <b>purple smoke from its chimney</b>: <b>land a grenade on top of the chimney</b> to snuff it and light the fireplace inside. <i>(The reference shows the throw on video.)</i></li>
+          <li><b>Kills in the purple circle</b> inside that house until the canister is full, then craft the <b>Mark II-Z</b>.</li>
+        </ol>
+        <figure class="shot"><img src="../img/alpha-omega/ao-z-pap.jpg" alt="Pack-a-Punched: Porter's Mark II-Z (CoD wiki)" loading="lazy"><figcaption>Pack-a-Punched: Porter's Mark II-Z (CoD wiki)</figcaption></figure>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ BUILDABLES ============ -->
+  <section class="tab-panel" id="tab-build">
+    <h2>Buildables</h2>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-ic-shield.png" alt="">
+        <span><b>Shield</b><br><small>Body + handle + window</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Body</b> &mdash; Cul-de-Sac:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-sh-body1.jpg" alt="Back-left tyre of the bus nearest the Green House" loading="lazy"><figcaption>Back-left tyre of the bus nearest the Green House</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-sh-body2.jpg" alt="Against the green car in the Green House driveway" loading="lazy"><figcaption>Against the green car in the Green House driveway</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-sh-body3.jpg" alt="Debris pile left of the red truck with the Galvaknuckles" loading="lazy"><figcaption>Debris pile left of the red truck with the Galvaknuckles</figcaption></figure></div></li>
+          <li><b>Handle</b> &mdash; Operations:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-sh-handle1.jpg" alt="On a file cabinet in the garage" loading="lazy"><figcaption>On a file cabinet in the garage</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-sh-handle2.jpg" alt="Desk in front of the green monitors, right of the KRM" loading="lazy"><figcaption>Desk in front of the green monitors, right of the KRM</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-sh-handle3.jpg" alt="Upstairs cabinet by the big hole in the wall" loading="lazy"><figcaption>Upstairs cabinet by the big hole in the wall</figcaption></figure></div></li>
+          <li><b>Window</b> &mdash; Beds:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-sh-window1.jpg" alt="Shelf with cardboard boxes, right of Pack-a-Punch" loading="lazy"><figcaption>Shelf with cardboard boxes, right of Pack-a-Punch</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-sh-window2.jpg" alt="Dresser by the window full of mannequins" loading="lazy"><figcaption>Dresser by the window full of mannequins</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-sh-window3.jpg" alt="Chair behind a fallen shelf, right of the KN-57" loading="lazy"><figcaption>Chair behind a fallen shelf, right of the KN-57</figcaption></figure></div></li>
+          <li><b>Build it</b> &mdash; the reference uses the table <b>upstairs in the Green House</b>.
+            <figure class="shot"><img src="../img/alpha-omega/ao-sh-table.jpg" alt="The Green House upstairs table" loading="lazy"><figcaption>The Green House upstairs table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-ic-telepad.png" alt="">
+        <span><b>Telepads</b><br><small>Two placeable pads that link for teleporting</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Part 1</b> &mdash; Transfusion Facility:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-tp-p1a.jpg" alt="Locker right of the front door" loading="lazy"><figcaption>Locker right of the front door</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tp-p1b.jpg" alt="Pallets with boxes in the backyard" loading="lazy"><figcaption>Pallets with boxes in the backyard</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tp-p1c.jpg" alt="Below an operating chair" loading="lazy"><figcaption>Below an operating chair</figcaption></figure></div></li>
+          <li><b>Part 2</b> &mdash; Green House:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-tp-p2a.jpg" alt="Ledge outside &mdash; go out through the hole in the wall" loading="lazy"><figcaption>Ledge outside &mdash; go out through the hole in the wall</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tp-p2b.jpg" alt="Kitchen, against the cabinets" loading="lazy"><figcaption>Kitchen, against the cabinets</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tp-p2c.jpg" alt="Right-hand corner inside the front door" loading="lazy"><figcaption>Right-hand corner inside the front door</figcaption></figure></div></li>
+          <li><b>Part 3</b> &mdash; Generators:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-tp-p3a.jpg" alt="Against a big generator across from the perk" loading="lazy"><figcaption>Against a big generator across from the perk</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tp-p3b.jpg" alt="Left side behind debris, entering from the right hallway" loading="lazy"><figcaption>Left side behind debris, entering from the right hallway</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-tp-p3c.jpg" alt="Wall with buckets, right of the previous spot" loading="lazy"><figcaption>Wall with buckets, right of the previous spot</figcaption></figure></div></li>
+          <li><b>Build it</b> &mdash; the reference uses the table in the <b>APD Control room</b>. Pads drop on marked spots around the map; the main quest needs them for the server run. <button class="xref" data-goto="main">See the main quest</button>
+            <figure class="shot"><img src="../img/alpha-omega/ao-tp-table.jpg" alt="The APD Control table" loading="lazy"><figcaption>The APD Control table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="acc">
+      <summary><img src="../img/alpha-omega/ao-ak-kit.jpg" alt="" style="object-fit:cover">
+        <span><b>Assembly Kit</b><br><small>Tubing + container + canister &mdash; the Ray Gun workbench</small></span></summary>
+      <div class="acc-body">
+        <ol class="steps">
+          <li><b>Tubing</b> &mdash; Yellow House:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-ak-tube1.jpg" alt="Downstairs kitchen table" loading="lazy"><figcaption>Downstairs kitchen table</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ak-tube2.jpg" alt="Upstairs table with a lamp" loading="lazy"><figcaption>Upstairs table with a lamp</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ak-tube3.jpg" alt="Upstairs bookshelf" loading="lazy"><figcaption>Upstairs bookshelf</figcaption></figure></div></li>
+          <li><b>Container</b> &mdash; Storage:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-ak-cont1.jpg" alt="Shelf with cans" loading="lazy"><figcaption>Shelf with cans</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ak-cont2.jpg" alt="Barrel by the tunnel to Generators" loading="lazy"><figcaption>Barrel by the tunnel to Generators</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ak-cont3.jpg" alt="Barrel by the bunker exit" loading="lazy"><figcaption>Barrel by the bunker exit</figcaption></figure></div></li>
+          <li><b>Canister</b> &mdash; APD Control / Solitary:
+            <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-ak-can1.jpg" alt="Chair at one of the consoles" loading="lazy"><figcaption>Chair at one of the consoles</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ak-can2.jpg" alt="Front desk in Solitary" loading="lazy"><figcaption>Front desk in Solitary</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-ak-can3.jpg" alt="Cart in the main control room" loading="lazy"><figcaption>Cart in the main control room</figcaption></figure></div></li>
+          <li><b>Build it upstairs in Operations</b> &mdash; every Ray Gun variant is crafted here. <button class="xref" data-goto="wonder">See Ray Guns</button>
+            <figure class="shot"><img src="../img/alpha-omega/ao-ak-table.jpg" alt="The Operations upstairs table" loading="lazy"><figcaption>The Operations upstairs table</figcaption></figure></li>
+        </ol>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PACK-A-PUNCH ============ -->
+  <section class="tab-panel" id="tab-pap">
+    <h2>Pack-a-Punch</h2>
+    <p class="blurb">Power, a bunker lockdown, then four gas vents to clear by hand.</p>
+    <ol class="steps">
+      <li><b>Power.</b> The switch is in the <b>Power House</b> in the Cul-de-Sac &mdash; the house with the open garage behind the Nuketown sign.
+        <figure class="shot"><img src="../img/alpha-omega/ao-pw-switch.jpg" alt="The Power House switch" loading="lazy"><figcaption>The Power House switch</figcaption></figure></li>
+      <li><b>The lockdown.</b> Behind the houses, down into the bunkers; doors either side of the Pack-a-Punch machine lead to <b>Generators</b>. Hold use on the console and <b>survive the lockdown</b> &mdash; gas crawlers and sprinters. It ends with "ventilation systems could not be cleared".
+        <figure class="shot"><img src="../img/alpha-omega/ao-pap-console.jpg" alt="The Generators console" loading="lazy"><figcaption>The Generators console</figcaption></figure></li>
+      <li><b>Clear the four vents.</b> Back up top, <b>four of the six houses leak green gas</b>. Each has a vent unit in its <b>backyard or garage</b> (Prisoner Holding's is by the back door); a unit that needs clearing glows neon green. Hold use on it.
+        <div class="callout"><b>Several fast gas zombies spawn on you the moment you touch a valve</b> &mdash; step off and deal with them rather than die at the vent.</div>
+        <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-pap-vent-house.jpg" alt="A house leaking gas" loading="lazy"><figcaption>A house leaking gas</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-pap-vent-unit.jpg" alt="A vent unit that needs clearing" loading="lazy"><figcaption>A vent unit that needs clearing</figcaption></figure></div></li>
+      <li><b>Pack-a-Punch is live</b> in the <b>Beds</b> area of the bunker.
+        <figure class="shot"><img src="../img/alpha-omega/ao-pap-machine.jpg" alt="The machine in Beds" loading="lazy"><figcaption>The machine in Beds</figcaption></figure></li>
+    </ol>
+  </section>
+
+  <!-- ============ PERKS ============ -->
+  <section class="tab-panel" id="tab-perks">
+    <h2>Perk machines</h2>
+    <p class="blurb">Four machines, fixed spots. They're labelled by slot &mdash; <b>Brew, Cola, Soda, Tonic</b> &mdash; and each sells whatever perk you put in that loadout slot before the game.</p>
+    <div class="callout"><b>The reference's quest loadout:</b> Quick Revive (Brew), Stamin-Up (Cola), Dying Wish (Soda), Deadshot Dealer (Tonic); <b>Ragnarok</b> specialist for everyone.</div>
+    <table class="data-table">
+      <thead><tr><th>Machine</th><th>Cost</th><th>What it does</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td><b>Brew</b></td><td>2500</td><td>Your loadout's 1st perk</td><td>Central Street</td></tr>
+        <tr><td><b>Cola</b></td><td>3000</td><td>Your loadout's 2nd perk</td><td>Yellow House downstairs, in the garage</td></tr>
+        <tr><td><b>Soda</b></td><td>3500</td><td>Your loadout's 3rd perk</td><td>Bunker &mdash; the Diner</td></tr>
+        <tr><td><b>Tonic</b></td><td>4000</td><td>Your loadout's 4th perk</td><td>Bunker &mdash; Generators</td></tr>
+      </tbody>
+    </table>
+    <h2>What each machine looks like</h2>
+    <div class="shot-grid"><figure class="shot"><img src="../img/alpha-omega/ao-perk-brew.jpg" alt="Brew &mdash; Central Street" loading="lazy"><figcaption>Brew &mdash; Central Street</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-perk-cola.jpg" alt="Cola &mdash; Yellow House garage" loading="lazy"><figcaption>Cola &mdash; Yellow House garage</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-perk-soda.jpg" alt="Soda &mdash; the Diner" loading="lazy"><figcaption>Soda &mdash; the Diner</figcaption></figure><figure class="shot"><img src="../img/alpha-omega/ao-perk-tonic.jpg" alt="Tonic &mdash; Generators" loading="lazy"><figcaption>Tonic &mdash; Generators</figcaption></figure></div>
+    <p class="blurb">Costs follow the BO4 slot ladder (first perk bought 2500, then 3000 / 3500 / 4000) &mdash; the reference doesn't quote prices, so correct me if yours differ.</p>
+  </section>
+
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/pwa.js" defer></script>
+</body>
+</html>
